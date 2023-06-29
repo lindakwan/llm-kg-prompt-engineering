@@ -25,19 +25,39 @@ for i, item in enumerate(data):
     qa_pairs[i]["question"] = question
     qa_pairs[i]["response"] = response.strip()
 
-    # Generate a SPARQL query for each question
-    prompt = PromptTemplate(
-        input_variables=["question"],
-        template="Generate a SPARQL query to extract facts from Wikidata related to the following question: {question}"
+    # Extract knowledge graph facts from the response
+    llm_facts_prompt = PromptTemplate(
+        input_variables=["response"],
+        template="Extract knowledge graph facts from the following: {response}"
     )
 
-    sparql_query = llm(prompt.format(question=question))
+    llm_facts = llm_facts_prompt.format(response=response)
+
+    # Using the extracted facts, generate some SPARQL queries
+    sparql_prompt = PromptTemplate(
+        input_variables=["facts"],
+        template="Convert the following facts to SPARQL queries: {facts}"
+    )
+
+    sparql_queries = llm(sparql_prompt.format(facts=llm_facts))
+
+    # Generate a SPARQL query for each question
+    # prompt = PromptTemplate(
+    #     input_variables=["question"],
+    #     template="Generate a SPARQL query to extract Wikidata facts for the following question: {question}"
+    # )
+
+    # sparql_query = llm(prompt.format(question=question))
 
     print("Q:", question)
     print("A:", response.strip(), "\n")
-    print("SPARQL:", sparql_query, "\n")
+    print("Facts:", llm_facts, "\n")
+    print("SPARQL:", sparql_queries, "\n")
 
-    qa_pairs[i]["sparql_query"] = sparql_query
+    # print("SPARQL:", sparql_query, "\n")
+
+    qa_pairs[i]["llm_facts"] = llm_facts
+    qa_pairs[i]["sparql_queries"] = sparql_queries
 
 # Save the QA pairs in a JSON file
 with open("../output/qa_pairs.json", "w") as f:
