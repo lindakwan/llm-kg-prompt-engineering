@@ -1,5 +1,6 @@
 import os
 import json
+import csv
 from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
 
@@ -7,23 +8,30 @@ from langchain.prompts import PromptTemplate
 os.environ["OPENAI_API_KEY"] = "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"
 
 # Load the data
-file = open("../data/nq_data_simple/train25.json", "r")
-data = json.load(file)
+# file = open("../data/nq_data_simple/train25.json", "r")
+# data = json.load(file)
+
+# Load the data
+file = open("../data/mmlu_test/high_school_geography_test.csv", "r")
+csv_reader = csv.reader(file, delimiter=',')
+data = []
+for row in csv_reader:
+    data.append({"question_text": row[0], "choices": row[1:-1], "correct_answer": row[-1]})
 
 # Create the language model
 llm = OpenAI(temperature=0)
 
 # Create a list of QA pairs
-qa_pairs = dict()
+# qa_pairs = dict()
 
 # Generate a response for each question
-for i, item in enumerate(data):
+for i, item in enumerate(data[:5]):
     question = item['question_text']
     response = llm.predict(question)
 
-    qa_pairs[i] = dict()
-    qa_pairs[i]["question"] = question
-    qa_pairs[i]["response"] = response.strip()
+    # qa_pairs[i] = dict()
+    # qa_pairs[i]["question"] = question
+    # qa_pairs[i]["response"] = response.strip()
 
     # Extract knowledge graph facts from the response
     llm_facts_prompt = PromptTemplate(
@@ -56,9 +64,9 @@ for i, item in enumerate(data):
 
     # print("SPARQL:", sparql_query, "\n")
 
-    qa_pairs[i]["llm_facts"] = llm_facts
-    qa_pairs[i]["sparql_queries"] = sparql_queries
+    # qa_pairs[i]["llm_facts"] = llm_facts
+    # qa_pairs[i]["sparql_queries"] = sparql_queries
 
 # Save the QA pairs in a JSON file
-with open("../output/qa_pairs.json", "w") as f:
-    json.dump(qa_pairs, f, indent=4)
+# with open("../output/qa_pairs.json", "w") as f:
+#     json.dump(qa_pairs, f, indent=4)
