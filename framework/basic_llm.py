@@ -9,7 +9,7 @@ from langchain.prompts import PromptTemplate
 os.environ["OPENAI_API_KEY"] = "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"
 
 # Load the data
-file = open("../data/mmlu_test/high_school_geography_test.csv", "r")
+file = open("../data/mmlu_test/high_school_government_and_politics_test.csv", "r")
 csv_reader = csv.reader(file, delimiter=',')
 data = []
 for row in csv_reader:
@@ -23,9 +23,12 @@ num_correct = 0
 # Generate a response for each question
 for i, item in enumerate(data):
     question = item['question_text']
+    print("Q:", question)
 
     # Convert the list of choices to a string
     choices_text = "\n".join([str(i+1) + ". " + choice for i, choice in enumerate(item['choices'])])
+    print("Options:")
+    print(choices_text)
 
     # Create the prompt template which structures the llm input
     prompt = PromptTemplate(
@@ -35,15 +38,16 @@ for i, item in enumerate(data):
 
     # Generate the response
     response = llm(prompt.format(question=question, choices=choices_text))
+    print("Response:", response.strip())
 
     # Convert the response to the numbered choice
     numbers = [int(num) for num in re.findall(r'\d+', response.strip().split(".")[0])]
-    numbered_output = numbers[-1]
+    if len(numbers) == 0:
+        numbered_output = 1
+    else:
+        numbered_output = numbers[-1]
     letter_output = chr(ord('A') + int(numbered_output) - 1)
 
-    print("Q:", question)
-    print("Options:")
-    print(choices_text)
     print("Generated answer:", letter_output)
 
     # Evaluate the response
@@ -58,8 +62,8 @@ for i, item in enumerate(data):
     item["llm_answer"] = letter_output
     item["llm_is_correct"] = is_correct
 
-print("Accuracy:", num_correct / len(data))
+print("EM:", num_correct / len(data))
 
 # Save the QA sets in a JSON file
-with open("../output/qa_sets.json", "w") as f:
+with open("../output/qa_sets_government.json", "w") as f:
     json.dump(data, f, indent=4)
