@@ -45,7 +45,7 @@ llm = OpenAI(temperature=0)
 num_correct = 0
 
 # Generate a response for each question
-for ident, item in enumerate(data):  # 66:68  # 85:87  # 189:190
+for ident, item in enumerate(data[:5]):  # 66:68  # 85:87  # 189:190
     question = item['question_text']
     response = llm.predict(question)
 
@@ -77,6 +77,35 @@ for ident, item in enumerate(data):  # 66:68  # 85:87  # 189:190
         ents_aliases[ent.kb_id_].append(ent.text)
 
     for i, ent1 in enumerate(entities):
+        '''
+        subj_results = perform_sparql_query(f"""
+               SELECT ?pred ?obj
+                WHERE {{
+                    <{ent1}> ?pred ?obj.
+                    FILTER(!isLiteral(?obj) || lang(?obj) = "" || langMatches(lang(?obj), "EN"))
+                }}
+            """)
+
+        preds_objs = [(result['pred']['value'], result['obj']['value']) for result in subj_results['results']['bindings']]
+
+        for pred, obj in preds_objs:
+            sparql_results.append({"subject": ent1, "predicate": pred, "object": obj,
+                                   "subject_aliases": ents_aliases[ent1]})
+
+        obj_results = perform_sparql_query(f"""
+               SELECT ?subj ?pred
+                WHERE {{
+                    ?subj ?pred <{ent1}>.
+                }}
+            """)
+
+        subjs_preds = [(result['subj']['value'], result['pred']['value']) for result in obj_results['results']['bindings']]
+
+        for subj, pred in subjs_preds:
+            sparql_results.append({"subject": subj, "predicate": pred, "object": ent1,
+                                   "object_aliases": ents_aliases[ent1]})
+        '''
+
         for ent2 in entities[i + 1:]:
             if ent1 != ent2:
                 results1 = perform_sparql_query(f"""
@@ -113,6 +142,20 @@ for ident, item in enumerate(data):  # 66:68  # 85:87  # 189:190
                     sparql_results.append({"subject": ent2, "object": ent1, "predicates": preds2,
                                            "subject_aliases": ents_aliases[ent2], "object_aliases": ents_aliases[ent1]})
 
+    '''
+    context_string = ""
+
+    for sparql_result in sparql_results:
+        subject_alias = sparql_result.get("subject_aliases",
+                                          [sparql_result["subject"].split("/")[-1].split("#")[-1]])[0]
+        object_alias = sparql_result.get("object_aliases",
+                                            [sparql_result["object"].split("/")[-1].split("#")[-1]])[0]
+        predicate_alias = sparql_result["predicate"].split("/")[-1].split("#")[-1]
+        context_string += f"{subject_alias} {predicate_alias} {object_alias} . "
+
+    print("Context String:", context_string, "\n")
+    '''
+
     context_string = ""
 
     for sparql_result in sparql_results:
@@ -120,7 +163,7 @@ for ident, item in enumerate(data):  # 66:68  # 85:87  # 189:190
         object_alias = sparql_result["object_aliases"][0]
 
         for predicate in sparql_result["predicates"]:
-            predicate_alias = predicate.split("/")[-1]
+            predicate_alias = predicate.split("/")[-1].split("#")[-1].replace("_", " ")
             context_string += f"{subject_alias} {predicate_alias} {object_alias} . "
 
     print("Context String:", context_string, "\n")
@@ -181,3 +224,4 @@ print("EM:", num_correct / len(data))
 # Save the QA pairs in a JSON file
 with open("../output/qa_sets_geography_kg.json", "w") as f:
     json.dump(data, f, indent=4)
+
