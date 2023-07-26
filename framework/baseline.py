@@ -9,7 +9,9 @@ from langchain.prompts import PromptTemplate
 from SPARQLWrapper import SPARQLWrapper, JSON
 
 # OpenAI API key
-os.environ["OPENAI_API_KEY"] = "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"
+openai_api_key_file = open("../openai_api_key.txt", "r")
+os.environ["OPENAI_API_KEY"] = openai_api_key_file.read().strip()
+openai_api_key_file.close()
 
 sparql_wd = SPARQLWrapper("https://query.wikidata.org/sparql")
 
@@ -31,7 +33,7 @@ llm = OpenAI(temperature=0)
 # qa_pairs = dict()
 
 # Generate a response for each question
-for i, item in enumerate(data[66:71]):
+for i, item in enumerate(data[66:68]):  # 66:71
     question = item['question_text']
     response = llm.predict(question)
 
@@ -60,29 +62,6 @@ for i, item in enumerate(data[66:71]):
     llm_facts = llm_facts_json["choices"][0]["message"]["content"]
 
     # Using the extracted facts, generate some SPARQL queries
-    # sparql_prompt = PromptTemplate(
-    #     input_variables=["facts"],
-    #     template="Convert each RDF triple to a SPARQL query on wikidata: {facts}"
-    # )
-
-    # sparql_json = openai.ChatCompletion.create(
-    #     model="gpt-3.5-turbo",
-    #     messages=[
-    #         {
-    #             "role": "system",
-    #             "content": "You will be provided with a table of RDF triples, and your task is to create a list of \
-    #                        Wikidata SPARQL queries that can be used to verify their existence in the knowledge graph."
-    #                        # \nFor example: 1. SELECT ?subject ?predicate ?object WHERE { ... }"
-    #         },
-    #         {
-    #             "role": "user",
-    #             "content": f"{llm_facts}"
-    #         }
-    #     ],
-    #     temperature=0,
-    #     max_tokens=2000
-    # )
-
     sparql_json = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=[
@@ -104,12 +83,6 @@ for i, item in enumerate(data[66:71]):
 
     sparql_queries = re.findall(r"\bASK(?:\s+WHERE)?\b\s*\{[^}]*\}", sparql_query_output, re.IGNORECASE)
 
-    # sparql_query = llm(sparql_prompt.format(facts=llm_facts))
-
-    # sparql_wd.setQuery(sparql_query)
-    # sparql_wd.setReturnFormat(JSON)
-    # sparql_results = sparql_wd.query().convert()
-
     print("Q:", question)
     print("A:", response.strip(), "\n")
     print("Facts:", llm_facts, "\n")
@@ -125,10 +98,6 @@ for i, item in enumerate(data[66:71]):
         sparql_results.append(sparql_result["boolean"])
         print("Result:", sparql_result["boolean"], "\n")
 
-    # print("Results:", sparql_results, "\n")
-
-    # print("SPARQL:", sparql_query, "\n")
-
     # qa_pairs[i]["llm_facts"] = llm_facts
     # qa_pairs[i]["sparql_queries"] = sparql_queries
 
@@ -138,20 +107,41 @@ for i, item in enumerate(data[66:71]):
         messages=[
             {
                 "role": "system",
-                "content": "You will be provided with a text, and your task is to extract a list of RDF entities."
+                "content": "You will be provided with text, and your task is to extract a numbered list of \
+                           keywords from it."
             },
             {
                 "role": "user",
                 "content": f"{question}"
             }
         ],
-        temperature=0,
+        temperature=0.5,
         max_tokens=256
     )
 
     entities_output = entities_json["choices"][0]["message"]["content"]
 
+    # Parse the list output into a Python list
+    e_list = entities_output.split("\n")
+    new_e_list = []
+
     print("Entities:", entities_output)
+
+    # Remove the numbers from the list
+    for k in range(len(e_list)):
+        if e_list[k][:1].isdigit():
+            idx = e_list[k].find(".")
+            if idx != -1:
+                new_e_list.append(e_list[k][idx+1:].lstrip())
+
+    # Example SPARQL Query
+    # SELECT ?subject ?predicate ?object
+    # WHERE
+    # {
+    #     wd: Q1299 ?predicate ?object.
+    # }
+
+    print("Entities List:", new_e_list, "\n")
 
 # Save the QA pairs in a JSON file
 # with open("../output/qa_pairs.json", "w") as f:

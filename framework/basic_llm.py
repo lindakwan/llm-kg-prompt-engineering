@@ -6,7 +6,9 @@ from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
 
 # OpenAI API key
-os.environ["OPENAI_API_KEY"] = "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"
+openai_api_key_file = open("../openai_api_key.txt", "r")
+os.environ["OPENAI_API_KEY"] = openai_api_key_file.read().strip()
+openai_api_key_file.close()
 
 # Load the data
 file = open("../data/mmlu_test/high_school_government_and_politics_test.csv", "r")
