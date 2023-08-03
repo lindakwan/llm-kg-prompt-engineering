@@ -39,6 +39,10 @@ for row in csv_reader:
 # Create the language model
 llm = OpenAI(temperature=0)
 
+# Create NLP model for extracting entities
+nlp = spacy.blank("en")
+nlp.add_pipe("dbpedia_spotlight")
+
 # Create a list of QA pairs
 # qa_pairs = dict()
 
@@ -51,9 +55,6 @@ for ident, item in enumerate(data[:5]):  # 66:68  # 85:87  # 189:190
 
     print("Q:", question)
     print("A:", response.strip(), "\n")
-
-    nlp = spacy.blank("en")
-    nlp.add_pipe("dbpedia_spotlight")
 
     # qa_pairs[ident] = dict()
     # qa_pairs[ident]["question"] = question

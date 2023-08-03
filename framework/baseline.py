@@ -2,6 +2,8 @@ import os
 import json
 import csv
 import re
+import subprocess
+import ast
 
 import openai
 from langchain.llms import OpenAI
@@ -33,14 +35,109 @@ llm = OpenAI(temperature=0)
 # qa_pairs = dict()
 
 # Generate a response for each question
-for i, item in enumerate(data[66:68]):  # 66:71
+for i, item in enumerate(data[66:67]):  # 66:71
     question = item['question_text']
     response = llm.predict(question)
+
+    print("Q:", question)
+    print("A:", response.strip(), "\n")
 
     # qa_pairs[i] = dict()
     # qa_pairs[i]["question"] = question
     # qa_pairs[i]["response"] = response.strip()
 
+    question_escaped = question.replace('"', '\\\"')
+    response_escaped = response.strip().replace('"', '\\\"')
+
+    # Extract entities from the response
+    extraction_output = subprocess.run(["curl", "--header", "Content-Type: application/json", "--request", "POST",
+                                        "--data", f"{{\"text\":\"{question_escaped} {response_escaped}\"}}",
+                                        'https://labs.tib.eu/falcon/falcon2/api?mode=long'], capture_output=True, text=True)
+
+    # Dictionary of entities and relations from extraction process
+    try:
+        dic_ents_rels = json.loads(extraction_output.stdout)
+    except json.decoder.JSONDecodeError:
+        dic_ents_rels = dict()
+
+    print("Entities and Relations:", dic_ents_rels)
+    print()
+
+    # Feed question, LLM response, and entities and relations into LLM
+    # Extract knowledge graph facts from the response
+    llm_facts_json = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=[
+            {
+                "role": "system",
+                "content": "You will be provided with text and a dictionary of entities and relations, \
+                and your task is to extract triples from the text in the form (subject URI, predicate URI, object URI)."
+            },
+            {
+                "role": "user",
+                "content": f"Text: {question} {response.strip()}\nEntities and Relations: {dic_ents_rels}"
+            }
+        ],
+        temperature=0,
+        max_tokens=256
+    )
+
+    print("LLM Facts JSON:", llm_facts_json)
+
+    # Extract triples from the LLM extraction output
+    triples = re.findall(r"\(\s*([^,]+)\s*,\s*([^,]+)\s*,\s*([^,]+)\s*\)",
+                         llm_facts_json["choices"][0]["message"]["content"], re.IGNORECASE)
+
+    true_count = 0
+
+    # For each triple, perform a SPARQL query to verify the truthfulness
+    for triple in triples:
+        print("Subject:", triple[0])
+        print("Predicate:", triple[1])
+        print("Object:", triple[2])
+
+        # Convert the triple to SPARQL format
+        if triple[0].startswith("http://"):
+            subject = f"<{triple[0]}>"
+        elif triple[0][1:-1].startswith("http://"):
+            subject = f"<{triple[0][1:-1]}>"
+        else:
+            subject = triple[0]
+
+        if triple[1].startswith("http://"):
+            predicate = f"<{triple[1]}>"
+        elif triple[1][1:-1].startswith("http://"):
+            predicate = f"<{triple[1][1:-1]}>"
+        else:
+            predicate = triple[1]
+
+        if triple[2].startswith("http://"):
+            obj = f"<{triple[2]}>"
+        elif triple[2][1:-1].startswith("http://"):
+            obj = f"<{triple[2][1:-1]}>"
+        else:
+            obj = triple[2]
+
+        sparql_query = f"ASK {{{subject} {predicate} {obj}.}}"
+
+        print(sparql_query)
+
+        # Perform the SPARQL query
+        sparql_wd.setQuery(sparql_query)
+        sparql_wd.setReturnFormat(JSON)
+        sparql_result = sparql_wd.query().convert()
+        print("Result:", sparql_result["boolean"], "\n")
+        print()
+
+        if sparql_result["boolean"]:
+            true_count += 1
+
+    print("True Count:", true_count)
+    print()
+
+    # Evaluate the truthfulness of the response
+
+    '''
     # Extract knowledge graph facts from the response
     llm_facts_json = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
@@ -142,6 +239,7 @@ for i, item in enumerate(data[66:68]):  # 66:71
     # }
 
     print("Entities List:", new_e_list, "\n")
+    '''
 
 # Save the QA pairs in a JSON file
 # with open("../output/qa_pairs.json", "w") as f:
