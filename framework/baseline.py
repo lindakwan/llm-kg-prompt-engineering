@@ -3,23 +3,47 @@ import json
 import csv
 import re
 import subprocess
-import ast
 
 import openai
 from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
 from SPARQLWrapper import SPARQLWrapper, JSON
+import spacy
 
 # OpenAI API key
 openai_api_key_file = open("../openai_api_key.txt", "r")
 os.environ["OPENAI_API_KEY"] = openai_api_key_file.read().strip()
 openai_api_key_file.close()
 
-sparql_wd = SPARQLWrapper("https://query.wikidata.org/sparql")
+# sparql_wd = SPARQLWrapper("https://query.wikidata.org/sparql")
+sparql_dbp = SPARQLWrapper("http://dbpedia.org/sparql")
 
-# Load the data
-# file = open("../data/nq_data_simple/train25.json", "r")
-# data = json.load(file)
+
+def get_name_from_dbpedia_uri(uri):
+    return uri.split("/")[-1].replace("_", " ")
+
+
+def execute_sparql_query(query, endpoint):
+    """
+    Perform a SPARQL query
+    :param query: The SPARQL query
+    :param endpoint: The SPARQL endpoint
+    :return: Output of the query
+    """
+    endpoint.setQuery(query)
+    endpoint.setReturnFormat(JSON)
+    results = endpoint.query().convert()
+    return results
+
+
+def uri_to_sparql_format(uri):
+    if uri.startswith("http://"):
+        return f"<{uri}>", get_name_from_dbpedia_uri(uri)
+    elif uri[1:-1].startswith("http://"):
+        return f"<{uri[1:-1]}>", get_name_from_dbpedia_uri(uri[1:-1])
+    else:
+        return uri, uri
+
 
 # Load the data
 file = open("../data/mmlu_test/high_school_geography_test.csv", "r")
@@ -31,11 +55,15 @@ for row in csv_reader:
 # Create the language model
 llm = OpenAI(temperature=0)
 
+# Create NLP model for extracting entities
+nlp = spacy.blank("en")
+nlp.add_pipe("dbpedia_spotlight")
+
 # Create a list of QA pairs
 # qa_pairs = dict()
 
 # Generate a response for each question
-for i, item in enumerate(data[66:67]):  # 66:71
+for i, item in enumerate(data[66:70]):  # 66:71
     question = item['question_text']
     response = llm.predict(question)
 
@@ -46,22 +74,33 @@ for i, item in enumerate(data[66:67]):  # 66:71
     # qa_pairs[i]["question"] = question
     # qa_pairs[i]["response"] = response.strip()
 
+    dbp_spotlight_output = nlp(question + " " + response.strip())
+    ent_list = [(ent.text, ent.kb_id_, ent._.dbpedia_raw_result['@similarityScore']) for ent in
+                dbp_spotlight_output.ents]
+    ent_ids = [ent.kb_id_ for ent in dbp_spotlight_output.ents]
+
+    print("Doc:", dbp_spotlight_output)
+    print("Entities:", ent_list)
+
     question_escaped = question.replace('"', '\\\"')
     response_escaped = response.strip().replace('"', '\\\"')
 
-    # Extract entities from the response
-    extraction_output = subprocess.run(["curl", "--header", "Content-Type: application/json", "--request", "POST",
-                                        "--data", f"{{\"text\":\"{question_escaped} {response_escaped}\"}}",
-                                        'https://labs.tib.eu/falcon/falcon2/api?mode=long'], capture_output=True, text=True)
+    # Extract relations from the response
+    falcon_output = subprocess.run(["curl", "--header", "Content-Type: application/json", "--request", "POST",
+                                    "--data", f"{{\"text\":\"{question_escaped} {response_escaped}\"}}",
+                                    'https://labs.tib.eu/falcon/falcon2/api?mode=long&db=1'], capture_output=True, text=True)
+    # Maybe get top k results instead
 
-    # Dictionary of entities and relations from extraction process
+    # Obtain list of relations from extraction process
     try:
-        dic_ents_rels = json.loads(extraction_output.stdout)
+        dic_ents_rels = json.loads(falcon_output.stdout)
+        relations_dbpedia = dic_ents_rels['relations_dbpedia']
     except json.decoder.JSONDecodeError:
         dic_ents_rels = dict()
+        relations_dbpedia = []
 
-    print("Entities and Relations:", dic_ents_rels)
-    print()
+    relation_ids = [rel['URI'] for rel in relations_dbpedia]
+    print("Relations:", relations_dbpedia)
 
     # Feed question, LLM response, and entities and relations into LLM
     # Extract knowledge graph facts from the response
@@ -70,12 +109,12 @@ for i, item in enumerate(data[66:67]):  # 66:71
         messages=[
             {
                 "role": "system",
-                "content": "You will be provided with text and a dictionary of entities and relations, \
-                and your task is to extract triples from the text in the form (subject URI, predicate URI, object URI)."
+                "content": "You will be provided with text, list of entities, and list of relations. \
+                Your task is to extract triples from the text in the form (subject URI, predicate URI, object URI)."
             },
             {
                 "role": "user",
-                "content": f"Text: {question} {response.strip()}\nEntities and Relations: {dic_ents_rels}"
+                "content": f"Text: {question} {response.strip()}\nEntities: {ent_ids}\nRelations: {relation_ids}"
             }
         ],
         temperature=0,
@@ -88,51 +127,75 @@ for i, item in enumerate(data[66:67]):  # 66:71
     triples = re.findall(r"\(\s*([^,]+)\s*,\s*([^,]+)\s*,\s*([^,]+)\s*\)",
                          llm_facts_json["choices"][0]["message"]["content"], re.IGNORECASE)
 
+    print(triples)
+    print()
+
     true_count = 0
+    true_facts = []
+    true_facts_names = []
 
     # For each triple, perform a SPARQL query to verify the truthfulness
-    for triple in triples:
-        print("Subject:", triple[0])
-        print("Predicate:", triple[1])
-        print("Object:", triple[2])
+    for s, p, o in triples:
+        print("Subject:", s)
+        print("Predicate:", p)
+        print("Object:", o)
 
         # Convert the triple to SPARQL format
-        if triple[0].startswith("http://"):
-            subject = f"<{triple[0]}>"
-        elif triple[0][1:-1].startswith("http://"):
-            subject = f"<{triple[0][1:-1]}>"
-        else:
-            subject = triple[0]
-
-        if triple[1].startswith("http://"):
-            predicate = f"<{triple[1]}>"
-        elif triple[1][1:-1].startswith("http://"):
-            predicate = f"<{triple[1][1:-1]}>"
-        else:
-            predicate = triple[1]
-
-        if triple[2].startswith("http://"):
-            obj = f"<{triple[2]}>"
-        elif triple[2][1:-1].startswith("http://"):
-            obj = f"<{triple[2][1:-1]}>"
-        else:
-            obj = triple[2]
+        subject, s_name = uri_to_sparql_format(s)
+        predicate, p_name = uri_to_sparql_format(p)
+        obj, o_name = uri_to_sparql_format(o)
 
         sparql_query = f"ASK {{{subject} {predicate} {obj}.}}"
 
         print(sparql_query)
 
         # Perform the SPARQL query
-        sparql_wd.setQuery(sparql_query)
-        sparql_wd.setReturnFormat(JSON)
-        sparql_result = sparql_wd.query().convert()
+        sparql_result = execute_sparql_query(sparql_query, sparql_dbp)
         print("Result:", sparql_result["boolean"], "\n")
         print()
 
         if sparql_result["boolean"]:
             true_count += 1
+            true_facts.append((subject, predicate, obj))
+            true_facts_names.append((s_name, p_name, o_name))
+        else:
+            # Swap subject and object in case if the direction is incorrect
+            sparql_query = f"ASK {{{obj} {predicate} {subject}.}}"
+            print(sparql_query)
+
+            # Perform the SPARQL query
+            sparql_result = execute_sparql_query(sparql_query, sparql_dbp)
+            print("Result:", sparql_result["boolean"], "\n")
+            print()
+
+            if sparql_result["boolean"]:
+                true_count += 1
+                true_facts.append((obj, predicate, subject))
+                true_facts_names.append((o_name, p_name, s_name))
 
     print("True Count:", true_count)
+    print("% True:", true_count / len(triples))
+    print()
+
+    facts_sequence = ""
+
+    for s, p, o in true_facts_names:
+        facts_sequence += f"{s} {p} {o}."
+
+    print("Facts Sequence", facts_sequence)
+
+    facts_seq_length = len(facts_sequence.strip().split(" "))
+    response_length = len(response.strip().split(" "))
+
+    print("Length Facts Sequence / Length Response:", facts_seq_length / response_length)
+    print()
+
+    true_entities = []
+    for s, p, o in true_facts:
+        true_entities.append(s)
+        true_entities.append(o)
+
+    print(true_entities)
     print()
 
     # Evaluate the truthfulness of the response
