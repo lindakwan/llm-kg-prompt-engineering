@@ -20,7 +20,7 @@ sparql_dbp = SPARQLWrapper("http://dbpedia.org/sparql")
 
 
 def get_name_from_dbpedia_uri(uri):
-    return uri.split("/")[-1].replace("_", " ")
+    return uri.split("/")[-1].split("#")[-1].replace("_", " ")
 
 
 def execute_sparql_query(query, endpoint):
@@ -63,7 +63,7 @@ nlp.add_pipe("dbpedia_spotlight")
 # qa_pairs = dict()
 
 # Generate a response for each question
-for i, item in enumerate(data[66:70]):  # 66:71
+for i, item in enumerate(data[67:68]):  # 66:71
     question = item['question_text']
     response = llm.predict(question)
 
@@ -121,7 +121,7 @@ for i, item in enumerate(data[66:70]):  # 66:71
         max_tokens=256
     )
 
-    print("LLM Facts JSON:", llm_facts_json)
+    # print("LLM Facts JSON:", llm_facts_json)
 
     # Extract triples from the LLM extraction output
     triples = re.findall(r"\(\s*([^,]+)\s*,\s*([^,]+)\s*,\s*([^,]+)\s*\)",
@@ -136,9 +136,9 @@ for i, item in enumerate(data[66:70]):  # 66:71
 
     # For each triple, perform a SPARQL query to verify the truthfulness
     for s, p, o in triples:
-        print("Subject:", s)
-        print("Predicate:", p)
-        print("Object:", o)
+        # print("Subject:", s)
+        # print("Predicate:", p)
+        # print("Object:", o)
 
         # Convert the triple to SPARQL format
         subject, s_name = uri_to_sparql_format(s)
@@ -180,128 +180,56 @@ for i, item in enumerate(data[66:70]):  # 66:71
     facts_sequence = ""
 
     for s, p, o in true_facts_names:
-        facts_sequence += f"{s} {p} {o}."
+        facts_sequence += f"{s} {p} {o}. "
 
     print("Facts Sequence", facts_sequence)
 
     facts_seq_length = len(facts_sequence.strip().split(" "))
     response_length = len(response.strip().split(" "))
 
+    # Evaluate the truthfulness of the response
     print("Length Facts Sequence / Length Response:", facts_seq_length / response_length)
     print()
 
-    true_entities = []
+    true_entities = set()
     for s, p, o in true_facts:
-        true_entities.append(s)
-        true_entities.append(o)
+        true_entities.add(s)
+        true_entities.add(o)
 
-    print(true_entities)
+    true_relations = set()
+    for s, p, o in true_facts:
+        true_relations.add(p)
+
+    print("True entities:", true_entities)
+    print("True relations:", true_relations)
     print()
 
-    # Evaluate the truthfulness of the response
+    # Do knowledge graph enrichment
+    if len(true_entities) > 0:
+        sparql_query = f'SELECT ?predicate ?object WHERE {{{list(true_entities)[-1]} ?predicate ?object. \
+        FILTER(!isLiteral(?object) || lang(?object) = "" || langMatches(lang(?object), "EN"))}}'
+        print(sparql_query)
+        sparql_result = execute_sparql_query(sparql_query, sparql_dbp)
+        print(sparql_result)
+        print()
+        with open("../output/example_sparql_result.json", "w") as f:
+            json.dump(sparql_result, f, indent=4)
 
     '''
-    # Extract knowledge graph facts from the response
-    llm_facts_json = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
-        messages=[
-            {
-                "role": "system",
-                "content": "You will be provided with text, and your task is to extract RDF triples \
-                and parse them into table format.\nSubject | Predicate | Object"
-            },
-            {
-                "role": "user",
-                "content": f"{response}"
-            }
-        ],
-        temperature=0,
-        max_tokens=256
-    )
-
-    llm_facts = llm_facts_json["choices"][0]["message"]["content"]
-
-    # Using the extracted facts, generate some SPARQL queries
-    sparql_json = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
-        messages=[
-            {
-                "role": "system",
-                "content": "You will be provided with a table of RDF triples, and your task is to create a list of \
-                           ASK SPARQL queries on Wikidata that can be used to verify those facts."
-            },
-            {
-                "role": "user",
-                "content": f"{llm_facts}"
-            }
-        ],
-        temperature=0,
-        max_tokens=2000
-    )
-
-    sparql_query_output = sparql_json["choices"][0]["message"]["content"]
-
-    sparql_queries = re.findall(r"\bASK(?:\s+WHERE)?\b\s*\{[^}]*\}", sparql_query_output, re.IGNORECASE)
-
-    print("Q:", question)
-    print("A:", response.strip(), "\n")
-    print("Facts:", llm_facts, "\n")
-    print("SPARQL:", sparql_query_output, "\n")
-    print("Queries:", sparql_queries, "\n")
-
-    sparql_results = []
-
-    for query in sparql_queries:
-        sparql_wd.setQuery(query)
-        sparql_wd.setReturnFormat(JSON)
-        sparql_result = sparql_wd.query().convert()
-        sparql_results.append(sparql_result["boolean"])
-        print("Result:", sparql_result["boolean"], "\n")
-
-    # qa_pairs[i]["llm_facts"] = llm_facts
-    # qa_pairs[i]["sparql_queries"] = sparql_queries
-
-    # Identify entities in the question
-    entities_json = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
-        messages=[
-            {
-                "role": "system",
-                "content": "You will be provided with text, and your task is to extract a numbered list of \
-                           keywords from it."
-            },
-            {
-                "role": "user",
-                "content": f"{question}"
-            }
-        ],
-        temperature=0.5,
-        max_tokens=256
-    )
-
-    entities_output = entities_json["choices"][0]["message"]["content"]
-
-    # Parse the list output into a Python list
-    e_list = entities_output.split("\n")
-    new_e_list = []
-
-    print("Entities:", entities_output)
-
-    # Remove the numbers from the list
-    for k in range(len(e_list)):
-        if e_list[k][:1].isdigit():
-            idx = e_list[k].find(".")
-            if idx != -1:
-                new_e_list.append(e_list[k][idx+1:].lstrip())
-
     # Example SPARQL Query
-    # SELECT ?subject ?predicate ?object
-    # WHERE
-    # {
-    #     wd: Q1299 ?predicate ?object.
-    # }
-
-    print("Entities List:", new_e_list, "\n")
+    SELECT ?subject ?predicate ?object
+    WHERE
+    {
+        wd: Q1299 ?predicate ?object.
+    }
+    
+    SELECT ?predicate ?object
+    WHERE {
+        <http://dbpedia.org/resource/Romance_languages> ?predicate ?object.
+        FILTER((!isLiteral(?object) || lang(?object) = "" || langMatches(lang(?object), "EN")) 
+        && (regex(str(?predicate), "http://dbpedia.org/property/")
+        || regex(str(?predicate), "http://dbpedia.org/ontology/")))
+}
     '''
 
 # Save the QA pairs in a JSON file
