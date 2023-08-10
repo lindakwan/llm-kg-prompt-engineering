@@ -10,6 +10,8 @@ from langchain.prompts import PromptTemplate
 from SPARQLWrapper import SPARQLWrapper, JSON
 import spacy
 
+import framework.utilities.sparql_functions as sparql_f
+
 # OpenAI API key
 openai_api_key_file = open("../openai_api_key.txt", "r")
 os.environ["OPENAI_API_KEY"] = openai_api_key_file.read().strip()
@@ -17,33 +19,6 @@ openai_api_key_file.close()
 
 # sparql_wd = SPARQLWrapper("https://query.wikidata.org/sparql")
 sparql_dbp = SPARQLWrapper("http://dbpedia.org/sparql")
-
-
-def get_name_from_dbpedia_uri(uri):
-    return uri.split("/")[-1].split("#")[-1].replace("_", " ")
-
-
-def execute_sparql_query(query, endpoint):
-    """
-    Perform a SPARQL query
-    :param query: The SPARQL query
-    :param endpoint: The SPARQL endpoint
-    :return: Output of the query
-    """
-    endpoint.setQuery(query)
-    endpoint.setReturnFormat(JSON)
-    results = endpoint.query().convert()
-    return results
-
-
-def uri_to_sparql_format(uri):
-    if uri.startswith("http://"):
-        return f"<{uri}>", get_name_from_dbpedia_uri(uri)
-    elif uri[1:-1].startswith("http://"):
-        return f"<{uri[1:-1]}>", get_name_from_dbpedia_uri(uri[1:-1])
-    else:
-        return uri, uri
-
 
 # Load the data
 file = open("../data/mmlu_test/high_school_geography_test.csv", "r")
@@ -141,16 +116,16 @@ for i, item in enumerate(data[67:68]):  # 66:71
         # print("Object:", o)
 
         # Convert the triple to SPARQL format
-        subject, s_name = uri_to_sparql_format(s)
-        predicate, p_name = uri_to_sparql_format(p)
-        obj, o_name = uri_to_sparql_format(o)
+        subject, s_name = sparql_f.uri_to_sparql_format(s)
+        predicate, p_name = sparql_f.uri_to_sparql_format(p)
+        obj, o_name = sparql_f.uri_to_sparql_format(o)
 
         sparql_query = f"ASK {{{subject} {predicate} {obj}.}}"
 
         print(sparql_query)
 
         # Perform the SPARQL query
-        sparql_result = execute_sparql_query(sparql_query, sparql_dbp)
+        sparql_result = sparql_f.execute_sparql_query(sparql_query, sparql_dbp)
         print("Result:", sparql_result["boolean"], "\n")
         print()
 
@@ -164,7 +139,7 @@ for i, item in enumerate(data[67:68]):  # 66:71
             print(sparql_query)
 
             # Perform the SPARQL query
-            sparql_result = execute_sparql_query(sparql_query, sparql_dbp)
+            sparql_result = sparql_f.execute_sparql_query(sparql_query, sparql_dbp)
             print("Result:", sparql_result["boolean"], "\n")
             print()
 
@@ -209,11 +184,9 @@ for i, item in enumerate(data[67:68]):  # 66:71
         sparql_query = f'SELECT ?predicate ?object WHERE {{{list(true_entities)[-1]} ?predicate ?object. \
         FILTER(!isLiteral(?object) || lang(?object) = "" || langMatches(lang(?object), "EN"))}}'
         print(sparql_query)
-        sparql_result = execute_sparql_query(sparql_query, sparql_dbp)
+        sparql_result = sparql_f.execute_sparql_query(sparql_query, sparql_dbp)
         print(sparql_result)
         print()
-        with open("../output/example_sparql_result.json", "w") as f:
-            json.dump(sparql_result, f, indent=4)
 
     '''
     # Example SPARQL Query
