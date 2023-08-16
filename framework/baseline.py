@@ -12,11 +12,7 @@ from SPARQLWrapper import SPARQLWrapper, JSON
 import spacy
 
 import utilities.sparql_functions as sparql_f
-
-# OpenAI API key
-# openai_api_key_file = open("../openai_api_key.txt", "r")
-# os.environ["OPENAI_API_KEY"] = openai_api_key_file.read().strip()
-# openai_api_key_file.close()
+import utilities.eval_metrics as eval_metrics
 
 # sparql_wd = SPARQLWrapper("https://query.wikidata.org/sparql")
 sparql_dbp = SPARQLWrapper("http://dbpedia.org/sparql")
@@ -39,7 +35,7 @@ nlp.add_pipe("dbpedia_spotlight")
 # qa_pairs = dict()
 
 # Generate a response for each question
-for i, item in enumerate(data[66:70]):  # 66:71
+for i, item in enumerate(data[67:68]):  # 66:71
     question = item['question_text']
     response = llm.predict(question)
 
@@ -50,33 +46,66 @@ for i, item in enumerate(data[66:70]):  # 66:71
     # qa_pairs[i]["question"] = question
     # qa_pairs[i]["response"] = response.strip()
 
-    dbp_spotlight_output = nlp(question + " " + response.strip())
-    ent_list = [(ent.text, ent.kb_id_, ent._.dbpedia_raw_result['@similarityScore']) for ent in
-                dbp_spotlight_output.ents]
-    ent_ids = [ent.kb_id_ for ent in dbp_spotlight_output.ents]
+    # dbp_spotlight_output = nlp(question + " " + response.strip())
+    # ent_list = [(ent.text, ent.kb_id_, ent._.dbpedia_raw_result['@similarityScore']) for ent in
+    #             dbp_spotlight_output.ents]
+    # ent_ids = [ent.kb_id_ for ent in dbp_spotlight_output.ents]
 
-    print("Doc:", dbp_spotlight_output)
-    print("Entities:", ent_list)
+    # print("Doc:", dbp_spotlight_output)
+    # print("Entities:", ent_list)
 
     question_escaped = question.replace('"', '\\\"')
     response_escaped = response.strip().replace('"', '\\\"')
 
-    # Extract relations from the response
+    entities_json = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=[
+            {
+                "role": "system",
+                "content": "You will be provided with text. \
+                    Your task is to identify a list of entities mentioned in the text. No documentation, \
+                    no explanation, only python3 list."
+            },
+            {
+                "role": "user",
+                "content": f"Text: {question} {response.strip()}"
+            }
+        ],
+        temperature=0,
+        max_tokens=256
+    )
+
+    # print(entities_json)
+
+    entity_names = ast.literal_eval(entities_json["choices"][0]["message"]["content"])
+    print(entity_names)
+    num_of_identified_ents = len(entity_names)
+    print("Number of entities identified:", num_of_identified_ents)
+    print()
+
+    # Extract entities and relations from the response
+    # Get top 5 results
     falcon_output = subprocess.run(["curl", "--header", "Content-Type: application/json", "--request", "POST",
                                     "--data", f"{{\"text\":\"{question_escaped} {response_escaped}\"}}",
-                                    'https://labs.tib.eu/falcon/falcon2/api?mode=long&db=1'], capture_output=True, text=True)
-    # Maybe get top k results instead
+                                    'https://labs.tib.eu/falcon/falcon2/api?mode=long&db=1&k=5'], capture_output=True, text=True)
 
     # Obtain list of relations from extraction process
     try:
         dic_ents_rels = json.loads(falcon_output.stdout)
         relations_dbpedia = dic_ents_rels['relations_dbpedia']
+        entities_dbpedia = dic_ents_rels['entities_dbpedia']
     except json.decoder.JSONDecodeError:
         dic_ents_rels = dict()
         relations_dbpedia = []
+        entities_dbpedia = []
 
-    relation_ids = [rel['URI'] for rel in relations_dbpedia]
-    print("Relations:", relations_dbpedia)
+    entities_ids = [ent['URI'] for ent in entities_dbpedia]
+    print("Entities:", entities_ids)
+    print()
+
+    relations_ids = [rel['URI'] for rel in relations_dbpedia]
+    print("Relations:", relations_ids)
+    print()
 
     # Feed question, LLM response, and entities and relations into LLM
     # Extract knowledge graph facts from the response
@@ -86,11 +115,12 @@ for i, item in enumerate(data[66:70]):  # 66:71
             {
                 "role": "system",
                 "content": "You will be provided with text, list of entities, and list of relations. \
-                Your task is to extract triples from the text in the form (subject URI, predicate URI, object URI)."
+                Using the lists of entities and relations, your task is to extract triples from the text in \
+                the form (subject URI, predicate URI, object URI)."
             },
             {
                 "role": "user",
-                "content": f"Text: {question} {response.strip()}\nEntities: {ent_ids}\nRelations: {relation_ids}"
+                "content": f"Text: {question} {response.strip()}\nEntities: {entities_ids}\nRelations: {relations_ids}"
             }
         ],
         temperature=0,
@@ -103,7 +133,7 @@ for i, item in enumerate(data[66:70]):  # 66:71
     triples = re.findall(r"\(\s*([^,]+)\s*,\s*([^,]+)\s*,\s*([^,]+)\s*\)",
                          llm_facts_json["choices"][0]["message"]["content"], re.IGNORECASE)
 
-    print(triples)
+    print("Triples:", triples)
     print()
 
     true_count = 0
@@ -112,10 +142,6 @@ for i, item in enumerate(data[66:70]):  # 66:71
 
     # For each triple, perform a SPARQL query to verify the truthfulness
     for s, p, o in triples:
-        # print("Subject:", s)
-        # print("Predicate:", p)
-        # print("Object:", o)
-
         # Convert the triple to SPARQL format
         subject, s_name = sparql_f.uri_to_sparql_format(s)
         predicate, p_name = sparql_f.uri_to_sparql_format(p)
@@ -153,6 +179,19 @@ for i, item in enumerate(data[66:70]):  # 66:71
     print("% True:", true_count / len(triples))
     print()
 
+    # Calculate the number of linked entities
+    linked_entities = set()
+    for s, p, o in triples:
+        linked_entities.add(s)
+        linked_entities.add(o)
+    print("Linked Entities:", linked_entities)
+    print("Number of Linked Entities:", len(linked_entities))
+
+    # Evaluate the truthfulness of the response
+    eval_score = eval_metrics.simple_evaluation(entity_names, linked_entities, triples, true_facts_uris)
+    print("Evaluation Score:", eval_score)
+    print()
+
     facts_sequence = ""
 
     for s_name, p_name, o_name in true_facts_names:
@@ -160,97 +199,113 @@ for i, item in enumerate(data[66:70]):  # 66:71
 
     print("Facts Sequence", facts_sequence)
 
-    facts_seq_length = len(facts_sequence.strip().split(" "))
-    response_length = len(response.strip().split(" "))
-
-    # Evaluate the truthfulness of the response
-    print("Length Facts Sequence / Length Response:", facts_seq_length / response_length)
-    print()
+#     facts_seq_length = len(facts_sequence.strip().split(" "))
+#     response_length = len(response.strip().split(" "))
+#
+#     # Evaluate the truthfulness of the response
+#     print("Length Facts Sequence / Length Response:", facts_seq_length / response_length)
+#     print()
 
     true_entities = dict()
-    for i, (s_uri, _, o_uri) in enumerate(true_facts_uris):
-        s_name, _, o_name = true_facts_names[i]
+    for j, (s_uri, _, o_uri) in enumerate(true_facts_uris):
+        s_name, _, o_name = true_facts_names[j]
         true_entities[s_uri] = s_name
         true_entities[o_uri] = o_name
 
     true_relations = dict()
-    for i, (_, p_uri, _) in enumerate(true_facts_uris):
-        true_relations[p_uri] = true_facts_names[i][1]
+    for j, (_, p_uri, _) in enumerate(true_facts_uris):
+        true_relations[p_uri] = true_facts_names[j][1]
 
     print("True entities:", true_entities)
     print("True relations:", true_relations)
     print()
 
     # Do knowledge graph enrichment
+    filtered_facts = []
     if len(true_entities) > 0:
-        subject = list(true_entities.keys())[0]
-        sparql_query = f'SELECT ?predicate ?object WHERE {{{subject} ?predicate ?object. \
-        FILTER(!isLiteral(?object) || lang(?object) = "" || langMatches(lang(?object), "EN"))}}'
-        print(sparql_query)
-        sparql_output = sparql_f.execute_sparql_query(sparql_query, sparql_dbp)
-        sparql_bindings = sparql_output['results']['bindings']
-
-        unique_predicates = dict()
-        # unique_entities = dict()
-
-        # unique_entities[true_entities[subject]] = subject
-
-        for binding in sparql_bindings:
-            predicate = binding['predicate']['value']
-            predicate_alias = sparql_f.get_name_from_dbpedia_uri(predicate)
-            if predicate_alias not in unique_predicates:
-                unique_predicates[predicate_alias] = []
-            unique_predicates[predicate_alias].append(predicate)
-
-            # obj = binding['object']['value']
-            # obj_alias = sparql_f.get_name_from_dbpedia_uri(obj)
-            # if obj_alias not in unique_entities:
-            #     unique_entities[obj_alias] = []
-            # unique_entities[obj_alias] = obj
-
-        # print("Unique predicates:", unique_predicates.keys())
-        # print("Unique entities:", unique_entities.keys())
-
-        # Given a list of predicates, use the LLM to get the order of predicates by most relevant
-        relevant_preds_json = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
-            messages=[
-                {
-                    "role": "system",
-                    "content": "You will be provided with question text and a list of predicates. \
-                    Your task is to order the predicates by most relevant to text. No documentation, no explanation, \
-                    only python3 code."
-                },
-                {
-                    "role": "user",
-                    "content": f"Text: {question}\nPredicates: {unique_predicates.keys()}"
-                }
-            ],
-            temperature=0,
-            max_tokens=256
-        )
-
-        # print(relevant_preds_json)
-        # print()
-
-        relevant_preds = ast.literal_eval(relevant_preds_json["choices"][0]["message"]["content"])
-
-        print("Relevant predicates:", relevant_preds)
-        print()
-
-        top5 = relevant_preds[:5]
-
-        filtered_facts = []
-
-        # Execute SPARQL query for each of the top 5 predicates
-        for pred in top5:
-            sparql_query = f'SELECT ?object WHERE {{{subject} <{unique_predicates[pred][0]}> ?object. \
+        # Execute SPARQL query to get the list of predicate/object pairs
+        # subject = list(true_entities.keys())[0]
+        for subject in list(true_entities.keys()):
+            print("Subject:", subject)
+            sparql_query = f'SELECT ?predicate WHERE {{{subject} ?predicate ?object. \
             FILTER(!isLiteral(?object) || lang(?object) = "" || langMatches(lang(?object), "EN"))}}'
             print(sparql_query)
             sparql_output = sparql_f.execute_sparql_query(sparql_query, sparql_dbp)
             sparql_bindings = sparql_output['results']['bindings']
 
-            print(sparql_bindings)
+            unique_predicates = dict()
+
+            for binding in sparql_bindings:
+                predicate = binding['predicate']['value']
+                predicate_alias = sparql_f.get_name_from_dbpedia_uri(predicate)
+                if predicate_alias not in unique_predicates:
+                    unique_predicates[predicate_alias] = []
+                unique_predicates[predicate_alias].append(predicate)
+
+            # print("Unique predicates:", unique_predicates.keys())
+
+            # Given a list of predicates, use the LLM to get the order of predicates by most relevant
+            relevant_preds_json = openai.ChatCompletion.create(
+                model="gpt-3.5-turbo",
+                messages=[
+                    {
+                        "role": "system",
+                        "content": "You will be provided with question text and a list of predicates. \
+                        Your task is to order the predicates by most relevant to text. No documentation, no explanation, \
+                        only python3 code."
+                    },
+                    {
+                        "role": "user",
+                        "content": f"Text: {question}\nPredicates: {unique_predicates.keys()}"
+                    }
+                ],
+                temperature=0,
+                max_tokens=1000
+            )
+
+            relevant_preds_opt = relevant_preds_json["choices"][0]["message"]["content"]
+            print("Relevant predicates output:", relevant_preds_opt)
+
+            relevant_preds = ast.literal_eval(re.findall(r'\[.*?\]', relevant_preds_opt)[0])
+
+            # print("Relevant predicates:", relevant_preds)
+            # print()
+
+            # Get the top 3 most relevant predicates
+            top_preds = relevant_preds[:3]
+
+            print("Top predicates:", top_preds)
+            print()
+
+            # Execute SPARQL query for each of the top 5 predicates
+            for pred in top_preds:
+                pred_uri = unique_predicates[pred][0]
+                sparql_query = f'SELECT ?object WHERE {{{subject} <{pred_uri}> ?object. \
+                FILTER(!isLiteral(?object) || lang(?object) = "" || langMatches(lang(?object), "EN"))}}'
+                print(sparql_query)
+                sparql_output = sparql_f.execute_sparql_query(sparql_query, sparql_dbp)
+                sparql_bindings = sparql_output['results']['bindings']
+
+                # print(sparql_bindings)
+
+                for binding in sparql_bindings:
+                    obj = binding['object']['value']
+                    filtered_facts.append((subject, pred_uri, obj))
+
+    # print("Filtered facts:", filtered_facts)
+
+    context_string = ""
+    for s, p, o in filtered_facts:
+        s_name = true_entities[s]
+        p_name = sparql_f.get_name_from_dbpedia_uri(p)
+        o_name = sparql_f.get_name_from_dbpedia_uri(o)
+        context_string += f"{s_name} {p_name} {o_name}. "
+
+    print("Context String:", context_string)
+
+    new_response = llm.predict(f"{question}\nContext:{context_string}")
+
+    print("New Response:", new_response.strip())
 
         # relevant_entities_json = openai.ChatCompletion.create(
         #     model="gpt-3.5-turbo",
@@ -278,14 +333,14 @@ for i, item in enumerate(data[66:70]):  # 66:71
     {
         wd: Q1299 ?predicate ?object.
     }
-    
+
     SELECT ?predicate ?object
     WHERE {
         <http://dbpedia.org/resource/Romance_languages> ?predicate ?object.
-        FILTER((!isLiteral(?object) || lang(?object) = "" || langMatches(lang(?object), "EN")) 
+        FILTER((!isLiteral(?object) || lang(?object) = "" || langMatches(lang(?object), "EN"))
         && (regex(str(?predicate), "http://dbpedia.org/property/")
         || regex(str(?predicate), "http://dbpedia.org/ontology/")))
-}
+    }
     '''
 
 # Save the QA pairs in a JSON file

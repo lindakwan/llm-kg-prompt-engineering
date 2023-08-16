@@ -5,6 +5,13 @@ def get_name_from_dbpedia_uri(uri):
     return uri.split("/")[-1].split("#")[-1].replace("_", " ")
 
 
+def remove_brackets(uri):
+    if uri.startswith("<") and uri.endswith(">"):
+        return uri[1:-1]
+    else:
+        return uri
+
+
 def execute_sparql_query(query, endpoint):
     """
     Perform a SPARQL query
