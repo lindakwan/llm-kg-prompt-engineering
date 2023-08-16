@@ -23,5 +23,7 @@ def uri_to_sparql_format(uri):
         return f"<{uri}>", get_name_from_dbpedia_uri(uri)
     elif uri[1:-1].startswith("http://"):
         return f"<{uri[1:-1]}>", get_name_from_dbpedia_uri(uri[1:-1])
+    elif not uri.startswith("\"") or not uri.endswith("'"):
+        return f"\"{uri}\"", get_name_from_dbpedia_uri(uri)
     else:
         return uri, uri

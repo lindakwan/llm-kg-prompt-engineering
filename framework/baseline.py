@@ -3,6 +3,7 @@ import json
 import csv
 import re
 import subprocess
+import ast
 
 import openai
 from langchain.llms import OpenAI
@@ -10,12 +11,12 @@ from langchain.prompts import PromptTemplate
 from SPARQLWrapper import SPARQLWrapper, JSON
 import spacy
 
-import framework.utilities.sparql_functions as sparql_f
+import utilities.sparql_functions as sparql_f
 
 # OpenAI API key
-openai_api_key_file = open("../openai_api_key.txt", "r")
-os.environ["OPENAI_API_KEY"] = openai_api_key_file.read().strip()
-openai_api_key_file.close()
+# openai_api_key_file = open("../openai_api_key.txt", "r")
+# os.environ["OPENAI_API_KEY"] = openai_api_key_file.read().strip()
+# openai_api_key_file.close()
 
 # sparql_wd = SPARQLWrapper("https://query.wikidata.org/sparql")
 sparql_dbp = SPARQLWrapper("http://dbpedia.org/sparql")
@@ -38,7 +39,7 @@ nlp.add_pipe("dbpedia_spotlight")
 # qa_pairs = dict()
 
 # Generate a response for each question
-for i, item in enumerate(data[67:68]):  # 66:71
+for i, item in enumerate(data[66:70]):  # 66:71
     question = item['question_text']
     response = llm.predict(question)
 
@@ -106,7 +107,7 @@ for i, item in enumerate(data[67:68]):  # 66:71
     print()
 
     true_count = 0
-    true_facts = []
+    true_facts_uris = []
     true_facts_names = []
 
     # For each triple, perform a SPARQL query to verify the truthfulness
@@ -131,7 +132,7 @@ for i, item in enumerate(data[67:68]):  # 66:71
 
         if sparql_result["boolean"]:
             true_count += 1
-            true_facts.append((subject, predicate, obj))
+            true_facts_uris.append((subject, predicate, obj))
             true_facts_names.append((s_name, p_name, o_name))
         else:
             # Swap subject and object in case if the direction is incorrect
@@ -145,7 +146,7 @@ for i, item in enumerate(data[67:68]):  # 66:71
 
             if sparql_result["boolean"]:
                 true_count += 1
-                true_facts.append((obj, predicate, subject))
+                true_facts_uris.append((obj, predicate, subject))
                 true_facts_names.append((o_name, p_name, s_name))
 
     print("True Count:", true_count)
@@ -154,8 +155,8 @@ for i, item in enumerate(data[67:68]):  # 66:71
 
     facts_sequence = ""
 
-    for s, p, o in true_facts_names:
-        facts_sequence += f"{s} {p} {o}. "
+    for s_name, p_name, o_name in true_facts_names:
+        facts_sequence += f"{s_name} {p_name} {o_name}. "
 
     print("Facts Sequence", facts_sequence)
 
@@ -166,14 +167,15 @@ for i, item in enumerate(data[67:68]):  # 66:71
     print("Length Facts Sequence / Length Response:", facts_seq_length / response_length)
     print()
 
-    true_entities = set()
-    for s, p, o in true_facts:
-        true_entities.add(s)
-        true_entities.add(o)
+    true_entities = dict()
+    for i, (s_uri, _, o_uri) in enumerate(true_facts_uris):
+        s_name, _, o_name = true_facts_names[i]
+        true_entities[s_uri] = s_name
+        true_entities[o_uri] = o_name
 
-    true_relations = set()
-    for s, p, o in true_facts:
-        true_relations.add(p)
+    true_relations = dict()
+    for i, (_, p_uri, _) in enumerate(true_facts_uris):
+        true_relations[p_uri] = true_facts_names[i][1]
 
     print("True entities:", true_entities)
     print("True relations:", true_relations)
@@ -181,12 +183,93 @@ for i, item in enumerate(data[67:68]):  # 66:71
 
     # Do knowledge graph enrichment
     if len(true_entities) > 0:
-        sparql_query = f'SELECT ?predicate ?object WHERE {{{list(true_entities)[-1]} ?predicate ?object. \
+        subject = list(true_entities.keys())[0]
+        sparql_query = f'SELECT ?predicate ?object WHERE {{{subject} ?predicate ?object. \
         FILTER(!isLiteral(?object) || lang(?object) = "" || langMatches(lang(?object), "EN"))}}'
         print(sparql_query)
-        sparql_result = sparql_f.execute_sparql_query(sparql_query, sparql_dbp)
-        print(sparql_result)
+        sparql_output = sparql_f.execute_sparql_query(sparql_query, sparql_dbp)
+        sparql_bindings = sparql_output['results']['bindings']
+
+        unique_predicates = dict()
+        # unique_entities = dict()
+
+        # unique_entities[true_entities[subject]] = subject
+
+        for binding in sparql_bindings:
+            predicate = binding['predicate']['value']
+            predicate_alias = sparql_f.get_name_from_dbpedia_uri(predicate)
+            if predicate_alias not in unique_predicates:
+                unique_predicates[predicate_alias] = []
+            unique_predicates[predicate_alias].append(predicate)
+
+            # obj = binding['object']['value']
+            # obj_alias = sparql_f.get_name_from_dbpedia_uri(obj)
+            # if obj_alias not in unique_entities:
+            #     unique_entities[obj_alias] = []
+            # unique_entities[obj_alias] = obj
+
+        # print("Unique predicates:", unique_predicates.keys())
+        # print("Unique entities:", unique_entities.keys())
+
+        # Given a list of predicates, use the LLM to get the order of predicates by most relevant
+        relevant_preds_json = openai.ChatCompletion.create(
+            model="gpt-3.5-turbo",
+            messages=[
+                {
+                    "role": "system",
+                    "content": "You will be provided with question text and a list of predicates. \
+                    Your task is to order the predicates by most relevant to text. No documentation, no explanation, \
+                    only python3 code."
+                },
+                {
+                    "role": "user",
+                    "content": f"Text: {question}\nPredicates: {unique_predicates.keys()}"
+                }
+            ],
+            temperature=0,
+            max_tokens=256
+        )
+
+        # print(relevant_preds_json)
+        # print()
+
+        relevant_preds = ast.literal_eval(relevant_preds_json["choices"][0]["message"]["content"])
+
+        print("Relevant predicates:", relevant_preds)
         print()
+
+        top5 = relevant_preds[:5]
+
+        filtered_facts = []
+
+        # Execute SPARQL query for each of the top 5 predicates
+        for pred in top5:
+            sparql_query = f'SELECT ?object WHERE {{{subject} <{unique_predicates[pred][0]}> ?object. \
+            FILTER(!isLiteral(?object) || lang(?object) = "" || langMatches(lang(?object), "EN"))}}'
+            print(sparql_query)
+            sparql_output = sparql_f.execute_sparql_query(sparql_query, sparql_dbp)
+            sparql_bindings = sparql_output['results']['bindings']
+
+            print(sparql_bindings)
+
+        # relevant_entities_json = openai.ChatCompletion.create(
+        #     model="gpt-3.5-turbo",
+        #     messages=[
+        #         {
+        #             "role": "system",
+        #             "content": "You will be provided with question text and a list of entities. \
+        #             Your task is to order the entities by most relevant to text."
+        #         },
+        #         {
+        #             "role": "user",
+        #             "content": f"Text: {question}\nEntities: {unique_entities.keys()}"
+        #         }
+        #     ],
+        #     temperature=0,
+        #     max_tokens=256
+        # )
+        #
+        # print(relevant_entities_json)
 
     '''
     # Example SPARQL Query
