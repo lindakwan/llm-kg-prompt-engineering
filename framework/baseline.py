@@ -268,9 +268,6 @@ for i, item in enumerate(data[67:68]):  # 66:71
 
             relevant_preds = ast.literal_eval(re.findall(r'\[.*?\]', relevant_preds_opt)[0])
 
-            # print("Relevant predicates:", relevant_preds)
-            # print()
-
             # Get the top 3 most relevant predicates
             top_preds = relevant_preds[:3]
 
