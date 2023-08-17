@@ -13,6 +13,7 @@ import spacy
 
 import utilities.sparql_functions as sparql_f
 import utilities.eval_metrics as eval_metrics
+import utilities.llm_tasks_prompts as llm_tasks
 
 # sparql_wd = SPARQLWrapper("https://query.wikidata.org/sparql")
 sparql_dbp = SPARQLWrapper("http://dbpedia.org/sparql")
@@ -57,27 +58,8 @@ for i, item in enumerate(data[67:68]):  # 66:71
     question_escaped = question.replace('"', '\\\"')
     response_escaped = response.strip().replace('"', '\\\"')
 
-    entities_json = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
-        messages=[
-            {
-                "role": "system",
-                "content": "You will be provided with text. \
-                    Your task is to identify a list of entities mentioned in the text. No documentation, \
-                    no explanation, only python3 list."
-            },
-            {
-                "role": "user",
-                "content": f"Text: {question} {response.strip()}"
-            }
-        ],
-        temperature=0,
-        max_tokens=256
-    )
+    entity_names = llm_tasks.extract_entities(f"{question} {response.strip()}")
 
-    # print(entities_json)
-
-    entity_names = ast.literal_eval(entities_json["choices"][0]["message"]["content"])
     print(entity_names)
     num_of_identified_ents = len(entity_names)
     print("Number of entities identified:", num_of_identified_ents)
@@ -109,30 +91,7 @@ for i, item in enumerate(data[67:68]):  # 66:71
 
     # Feed question, LLM response, and entities and relations into LLM
     # Extract knowledge graph facts from the response
-    llm_facts_json = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
-        messages=[
-            {
-                "role": "system",
-                "content": "You will be provided with text, list of entities, and list of relations. \
-                Using the lists of entities and relations, your task is to extract triples from the text in \
-                the form (subject URI, predicate URI, object URI)."
-            },
-            {
-                "role": "user",
-                "content": f"Text: {question} {response.strip()}\nEntities: {entities_ids}\nRelations: {relations_ids}"
-            }
-        ],
-        temperature=0,
-        max_tokens=256
-    )
-
-    # print("LLM Facts JSON:", llm_facts_json)
-
-    # Extract triples from the LLM extraction output
-    triples = re.findall(r"\(\s*([^,]+)\s*,\s*([^,]+)\s*,\s*([^,]+)\s*\)",
-                         llm_facts_json["choices"][0]["message"]["content"], re.IGNORECASE)
-
+    triples = llm_tasks.extract_kg_facts(f"{question} {response.strip()}", entities_ids, relations_ids)
     print("Triples:", triples)
     print()
 
@@ -245,31 +204,7 @@ for i, item in enumerate(data[67:68]):  # 66:71
             # print("Unique predicates:", unique_predicates.keys())
 
             # Given a list of predicates, use the LLM to get the order of predicates by most relevant
-            relevant_preds_json = openai.ChatCompletion.create(
-                model="gpt-3.5-turbo",
-                messages=[
-                    {
-                        "role": "system",
-                        "content": "You will be provided with question text and a list of predicates. \
-                        Your task is to order the predicates by most relevant to text. No documentation, no explanation, \
-                        only python3 code."
-                    },
-                    {
-                        "role": "user",
-                        "content": f"Text: {question}\nPredicates: {unique_predicates.keys()}"
-                    }
-                ],
-                temperature=0,
-                max_tokens=1000
-            )
-
-            relevant_preds_opt = relevant_preds_json["choices"][0]["message"]["content"]
-            print("Relevant predicates output:", relevant_preds_opt)
-
-            relevant_preds = ast.literal_eval(re.findall(r'\[.*?\]', relevant_preds_opt)[0])
-
-            # Get the top 3 most relevant predicates
-            top_preds = relevant_preds[:3]
+            top_preds = llm_tasks.extract_relevant_predicates(question, list(unique_predicates.keys()), k=3)
 
             print("Top predicates:", top_preds)
             print()
@@ -288,8 +223,6 @@ for i, item in enumerate(data[67:68]):  # 66:71
                 for binding in sparql_bindings:
                     obj = binding['object']['value']
                     filtered_facts.append((subject, pred_uri, obj))
-
-    # print("Filtered facts:", filtered_facts)
 
     context_string = ""
     for s, p, o in filtered_facts:

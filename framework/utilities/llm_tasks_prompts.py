@@ -21,7 +21,9 @@ def extract_entities(text):
         temperature=0,
         max_tokens=256
     )
-    return entities_json["choices"][0]["message"]["content"]
+    extracted_entities = entities_json["choices"][0]["message"]["content"]
+    entity_names = ast.literal_eval(extracted_entities)
+    return entity_names
 
 
 def extract_kg_facts(text, entities, relations):
