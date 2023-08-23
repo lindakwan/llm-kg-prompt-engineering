@@ -67,7 +67,7 @@ def extract_relevant_predicates(text, predicates, k=3):
             }
         ],
         temperature=0,
-        max_tokens=1000
+        max_tokens=2000
     )
 
     relevant_preds_opt = relevant_preds_json["choices"][0]["message"]["content"]
