@@ -17,3 +17,10 @@ def generate_parameters(query):
         'language': 'en'
     }
     return params
+
+
+def fetch_wikidata_from_query(query):
+    params = generate_parameters(query)
+    data = fetch_wikidata(params)
+    data = data.json()
+    return data
