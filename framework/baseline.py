@@ -15,6 +15,7 @@ import spacy
 import utilities.sparql_functions as sparql_f
 import utilities.eval_metrics as eval_metrics
 import utilities.llm_tasks_prompts as llm_tasks
+import utilities.entity_link as el
 from utilities.timeout import time_limit, TimeoutException
 
 # sparql_wd = SPARQLWrapper("https://query.wikidata.org/sparql")
@@ -74,6 +75,17 @@ for i, item in enumerate(data):  # 66:71
             print()
 
             qa_pairs[i]["entity_names"] = entity_names
+
+            for ent_name in entity_names:
+                res = el.fetch_wikidata_from_query(ent_name)
+                if len(res['search']) == 0:
+                    print('Sorry, no results')
+                else:
+                    label = res['search'][0]["label"]
+                    uri = res['search'][0]["concepturi"]
+                    description = res['search'][0]["description"]
+                    print(label, uri, description)
+            print()
 
             # Extract entities and relations from the response
             # Get top 5 results
