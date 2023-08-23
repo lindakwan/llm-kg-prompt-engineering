@@ -259,6 +259,8 @@ for i, item in enumerate(data):  # 66:71
 
                 print("Context String:", context_string)
 
+                qa_pairs[i]["context_string"] = context_string
+
                 new_prompt = PromptTemplate(
                     input_variables=["question", "context"],
                     template="Question: {question}\nContext: {context}",
