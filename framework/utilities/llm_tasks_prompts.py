@@ -1,6 +1,10 @@
 import openai
 import re
 import ast
+from langchain.prompts import PromptTemplate
+from langchain.llms import OpenAI
+
+llm = OpenAI(temperature=0)
 
 
 def extract_entities(text):
@@ -79,3 +83,14 @@ def extract_relevant_predicates(text, predicates, k=3):
     top_preds = relevant_preds[:k]
 
     return top_preds
+
+
+def select_mc_response_based(question, response, choices):
+    mc_prompt = PromptTemplate(
+        input_variables=["question", "response", "choices"],
+        template="Output the best one of the numbered options for the following question and response:\n \
+                            Question: {question}\nResponse: {response}\nOptions:\n{choices}"
+    )
+
+    choices_text = "\n".join([str(i + 1) + ". " + choice for i, choice in enumerate(choices)])
+    choice_response = llm(mc_prompt.format(question=question, response=response.strip(), choices=choices_text))

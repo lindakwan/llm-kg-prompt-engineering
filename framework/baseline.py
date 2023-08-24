@@ -16,24 +16,26 @@ import utilities.sparql_functions as sparql_f
 import utilities.eval_metrics as eval_metrics
 import utilities.llm_tasks_prompts as llm_tasks
 import utilities.entity_link as el
+import utilities.data_io as dio
 from utilities.timeout import time_limit, TimeoutException
 
-# sparql_wd = SPARQLWrapper("https://query.wikidata.org/sparql")
+sparql_wd = SPARQLWrapper("https://query.wikidata.org/sparql")
 sparql_dbp = SPARQLWrapper("http://dbpedia.org/sparql")
 
+# Add arguments to the command line
+# < insert data options here >
+
 # Load the data
-file = open("../data/mmlu_test/high_school_geography_test.csv", "r")
-csv_reader = csv.reader(file, delimiter=',')
-data = []
-for row in csv_reader:
-    data.append({"question_text": row[0], "choices": row[1:-1], "correct_answer": row[-1]})
+# file = open("../data/mmlu_test/high_school_geography_test.csv", "r")
+# csv_reader = csv.reader(file, delimiter=',')
+# data = []
+# for row in csv_reader:
+#     data.append({"question_text": row[0], "choices": row[1:-1], "correct_answer": row[-1]})
+
+data = dio.read_data("../data/mmlu_test/high_school_geography_test.csv")
 
 # Create the language model
 llm = OpenAI(temperature=0)
-
-# Create NLP model for extracting entities
-nlp = spacy.blank("en")
-nlp.add_pipe("dbpedia_spotlight")
 
 # Create a list of QA pairs
 qa_pairs = dict()
@@ -41,7 +43,7 @@ qa_pairs = dict()
 num_correct = 0
 
 # Generate a response for each question
-for i, item in enumerate(data):  # 66:71
+for i, item in enumerate(data[67:68]):  # 66:71
     question = item['question_text']
     response = llm.predict(question)
 
@@ -52,14 +54,6 @@ for i, item in enumerate(data):  # 66:71
     qa_pairs[i]["question"] = question
     qa_pairs[i]["choices"] = item['choices']
     qa_pairs[i]["initial_response"] = response.strip()
-
-    # dbp_spotlight_output = nlp(question + " " + response.strip())
-    # ent_list = [(ent.text, ent.kb_id_, ent._.dbpedia_raw_result['@similarityScore']) for ent in
-    #             dbp_spotlight_output.ents]
-    # ent_ids = [ent.kb_id_ for ent in dbp_spotlight_output.ents]
-
-    # print("Doc:", dbp_spotlight_output)
-    # print("Entities:", ent_list)
 
     new_response = ""
     try:
@@ -89,7 +83,7 @@ for i, item in enumerate(data):  # 66:71
 
             # Extract entities and relations from the response
             # Get top 5 results
-            print("Retriving from FALCON...")
+            print("Retrieving from FALCON...")
             falcon_output = subprocess.run(["curl", "--header", "Content-Type: application/json", "--request", "POST",
                                             "--data", f"{{\"text\":\"{question_escaped} {response_escaped}\"}}",
                                             'https://labs.tib.eu/falcon/falcon2/api?mode=long&db=1&k=3'], capture_output=True, text=True)
@@ -368,5 +362,5 @@ for i, item in enumerate(data):  # 66:71
 print("EM:", num_correct / len(data))
 
 # Save the QA pairs in a JSON file
-with open("../output/qa_sets_llm_kg_geography.json", "w") as f:
+with open("../output/qa_sets_llm_kg_geography01.json", "w") as f:
     json.dump(qa_pairs, f, indent=4)
