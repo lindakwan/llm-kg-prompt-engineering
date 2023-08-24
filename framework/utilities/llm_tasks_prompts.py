@@ -94,3 +94,18 @@ def select_mc_response_based(question, response, choices):
 
     choices_text = "\n".join([str(i + 1) + ". " + choice for i, choice in enumerate(choices)])
     choice_response = llm(mc_prompt.format(question=question, response=response.strip(), choices=choices_text))
+
+    print("Choice Response:", choice_response.strip())
+
+    # Convert the response to the numbered choice
+    numbers = [int(num) for num in re.findall(r'\d+', choice_response.strip().split(".")[0])]
+    if len(numbers) == 0:
+        # Choose A by default if no output
+        numbered_output = 1
+    else:
+        numbered_output = numbers[-1]
+    letter_output = chr(ord('A') + int(numbered_output) - 1)
+
+    print("Generated answer:", letter_output)
+
+    return letter_output
