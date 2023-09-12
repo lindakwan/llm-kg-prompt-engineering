@@ -1,9 +1,5 @@
-import os
 import json
-import csv
-import re
 import subprocess
-import ast
 
 import openai
 from langchain.llms import OpenAI
@@ -20,18 +16,12 @@ import utilities.data_io as dio
 from utilities.timeout import time_limit, TimeoutException
 
 sparql_wd = SPARQLWrapper("https://query.wikidata.org/sparql")
-sparql_dbp = SPARQLWrapper("http://dbpedia.org/sparql")
+# sparql_dbp = SPARQLWrapper("http://dbpedia.org/sparql")
 
 # Add arguments to the command line
 # < insert data options here >
 
 # Load the data
-# file = open("../data/mmlu_test/high_school_geography_test.csv", "r")
-# csv_reader = csv.reader(file, delimiter=',')
-# data = []
-# for row in csv_reader:
-#     data.append({"question_text": row[0], "choices": row[1:-1], "correct_answer": row[-1]})
-
 data = dio.read_data("../data/mmlu_test/high_school_geography_test.csv")
 
 # Create the language model
@@ -43,7 +33,7 @@ qa_pairs = dict()
 num_correct = 0
 
 # Generate a response for each question
-for i, item in enumerate(data[67:68]):  # 66:71
+for i, item in enumerate(data[66:68]):  # 66:71
     question = item['question_text']
     response = llm.predict(question)
 
@@ -57,10 +47,11 @@ for i, item in enumerate(data[67:68]):  # 66:71
 
     new_response = ""
     try:
-        with time_limit(60):
+        with time_limit(120):
             question_escaped = question.replace('"', '\\\"')
             response_escaped = response.strip().replace('"', '\\\"')
 
+            # Use the LLM to extract entities from the response
             entity_names = llm_tasks.extract_entities(f"{question} {response.strip()}")
 
             print(entity_names)
@@ -70,156 +61,159 @@ for i, item in enumerate(data[67:68]):  # 66:71
 
             qa_pairs[i]["entity_names"] = entity_names
 
-            for ent_name in entity_names:
-                res = el.fetch_wikidata_from_query(ent_name)
-                if len(res['search']) == 0:
-                    print('Sorry, no results')
-                else:
-                    label = res['search'][0]["label"]
-                    uri = res['search'][0]["concepturi"]
-                    description = res['search'][0]["description"]
-                    print(label, uri, description)
-            print()
-
-            # Extract entities and relations from the response
-            # Get top 5 results
-            print("Retrieving from FALCON...")
-            falcon_output = subprocess.run(["curl", "--header", "Content-Type: application/json", "--request", "POST",
-                                            "--data", f"{{\"text\":\"{question_escaped} {response_escaped}\"}}",
-                                            'https://labs.tib.eu/falcon/falcon2/api?mode=long&db=1&k=3'], capture_output=True, text=True)
-            print("Retrival complete.\n")
-
-            # Obtain list of relations from extraction process
-            try:
-                dic_ents_rels = json.loads(falcon_output.stdout)
-                relations_dbpedia = dic_ents_rels['relations_dbpedia']
-                entities_dbpedia = dic_ents_rels['entities_dbpedia']
-            except json.decoder.JSONDecodeError:
-                dic_ents_rels = dict()
-                relations_dbpedia = []
-                entities_dbpedia = []
-
-            entities_ids = [ent['URI'] for ent in entities_dbpedia]
-            print("Entities:", entities_ids)
-            print()
-
-            qa_pairs[i]["entities_ids"] = entities_ids
-
-            relations_ids = [rel['URI'] for rel in relations_dbpedia]
-            print("Relations:", relations_ids)
-            print()
-
-            qa_pairs[i]["relations_ids"] = relations_ids
-
             # Feed question, LLM response, and entities and relations into LLM
             # Extract knowledge graph facts from the response
-            triples = llm_tasks.extract_kg_facts(f"{question} {response.strip()}", entities_ids, relations_ids)
-            print("Triples:", triples)
+            triples_names = llm_tasks.extract_kg_facts_given_entities(f"{question} {response.strip()}", entity_names)
+            print("Triples:", triples_names)
             print()
 
-            qa_pairs[i]["triples"] = triples
+            qa_pairs[i]["triples"] = triples_names
+
+            entities_name_uri_map = dict()
+            relations_name_uri_map = dict()
+
+            uri_name_map = dict()
+
+            extr_triples_uris = []
+
+            # Convert the triples to a list of URIs
+            for s, p, o in triples_names:
+                # Use REST API to get the URI of the entity/property
+                if s not in entities_name_uri_map:
+                    entities_name_uri_map[s] = el.fetch_wikidata_from_query(s)
+                if p not in relations_name_uri_map:
+                    relations_name_uri_map[p] = el.fetch_wikidata_from_query(p, ent_type='property')
+                if o not in entities_name_uri_map:
+                    entities_name_uri_map[o] = el.fetch_wikidata_from_query(o)
+
+                uris = []  # Used to construct the triple as a tuple of URIs
+
+                for j, component in enumerate([s, p, o]):
+                    # Retrieve the URI of the entity/property
+                    if j == 1:
+                        info = relations_name_uri_map[component]
+                    else:
+                        info = entities_name_uri_map[component]
+
+                    if len(info['search']) == 0:
+                        print('Sorry, no results for "' + component + '"')
+                        uris.append('"' + component + '"')  # Use name of entity/property (quoted) instead
+                        uri_name_map['"' + component + '"'] = component
+                    else:
+                        label = info['search'][0]["label"]
+                        uri = info['search'][0]["concepturi"]
+                        description = info['search'][0]["description"]
+                        print(label, uri, description)
+                        uris.append(uri)
+                        uri_name_map[uri] = component
+                print()
+
+                extr_triples_uris.append(tuple(uris))
+
+            # Print triples as tuple of URIs
+            print("Extracted triples URIs:", extr_triples_uris)
 
             true_count = 0
             true_facts_uris = []
             true_facts_names = []
+            true_entities_uris = set()
 
             # For each triple, perform a SPARQL query to verify the truthfulness
-            for s, p, o in triples:
+            for s, p, o in extr_triples_uris:
                 # Convert the triple to SPARQL format
-                subject, s_name = sparql_f.uri_to_sparql_format(s)
-                predicate, p_name = sparql_f.uri_to_sparql_format(p)
-                obj, o_name = sparql_f.uri_to_sparql_format(o)
+                s_format = sparql_f.uri_to_sparql_format_wikidata(s)
+                p_format = sparql_f.uri_to_sparql_format_wikidata(p)
+                o_format = sparql_f.uri_to_sparql_format_wikidata(o)
 
-                sparql_query = f"ASK {{{subject} {predicate} {obj}.}}"
+                # sparql_query = f"ASK {{{subject} {predicate} {obj}.}}"
+                sparql_query = f"ASK {{{s_format} ?predicate {o_format}.}}"
 
                 print(sparql_query)
 
                 # Perform the SPARQL query
-                sparql_result = sparql_f.execute_sparql_query(sparql_query, sparql_dbp)
+                sparql_result = sparql_f.execute_sparql_query(sparql_query, sparql_wd)
                 print("Result:", sparql_result["boolean"], "\n")
                 print()
 
                 if sparql_result["boolean"]:
                     true_count += 1
-                    true_facts_uris.append((subject, predicate, obj))
-                    true_facts_names.append((s_name, p_name, o_name))
+                    true_facts_uris.append((s, p, o))
+                    true_facts_names.append((uri_name_map[s], uri_name_map[p], uri_name_map[o]))
+                    true_entities_uris.add(s)
+                    true_entities_uris.add(o)
+
                 else:
                     # Swap subject and object in case if the direction is incorrect
-                    sparql_query = f"ASK {{{obj} {predicate} {subject}.}}"
+                    # sparql_query = f"ASK {{{obj} {predicate} {subject}.}}"
+                    sparql_query = f"ASK {{{o_format} ?predicate {s_format}.}}"
                     print(sparql_query)
 
                     # Perform the SPARQL query
-                    sparql_result = sparql_f.execute_sparql_query(sparql_query, sparql_dbp)
+                    sparql_result = sparql_f.execute_sparql_query(sparql_query, sparql_wd)
                     print("Result:", sparql_result["boolean"], "\n")
                     print()
 
                     if sparql_result["boolean"]:
                         true_count += 1
-                        true_facts_uris.append((obj, predicate, subject))
-                        true_facts_names.append((o_name, p_name, s_name))
+                        true_facts_uris.append((o, p, s))
+                        true_facts_names.append((uri_name_map[o], uri_name_map[p], uri_name_map[s]))
+                        true_entities_uris.add(s)
+                        true_entities_uris.add(o)
 
             print("True Count:", true_count)
-            print("% True:", true_count / len(triples))
+            print("% True:", true_count / len(extr_triples_uris))
             print()
 
+            print("True facts names:", true_facts_names)
+
             qa_pairs[i]["true_count"] = true_count
-            qa_pairs[i]["% true"] = true_count / len(triples)
+            qa_pairs[i]["% true"] = true_count / len(extr_triples_uris)
 
             # Calculate the number of linked entities
             linked_entities = set()
-            for s, p, o in triples:
+            for s, p, o in extr_triples_uris:
                 linked_entities.add(s)
                 linked_entities.add(o)
             print("Linked Entities:", linked_entities)
             print("Number of Linked Entities:", len(linked_entities))
 
             # Evaluate the truthfulness of the response
-            eval_score = eval_metrics.simple_evaluation(entity_names, linked_entities, triples, true_facts_uris)
+            eval_score = eval_metrics.simple_evaluation(entity_names, linked_entities,
+                                                        extr_triples_uris, true_facts_uris)
             print("Evaluation Score:", eval_score)
             print()
 
             qa_pairs[i]["evaluation_score"] = eval_score
 
-            # facts_sequence = ""
-            #
-            # for s_name, p_name, o_name in true_facts_names:
-            #     facts_sequence += f"{s_name} {p_name} {o_name}. "
-            #
-            # print("Facts Sequence", facts_sequence)
-
-        #     facts_seq_length = len(facts_sequence.strip().split(" "))
-        #     response_length = len(response.strip().split(" "))
-        #
-        #     # Evaluate the truthfulness of the response
-        #     print("Length Facts Sequence / Length Response:", facts_seq_length / response_length)
-        #     print()
-
             if eval_score < 0.5:
-                true_entities = dict()
-                for j, (s_uri, _, o_uri) in enumerate(true_facts_uris):
-                    s_name, _, o_name = true_facts_names[j]
-                    true_entities[s_uri] = s_name
-                    true_entities[o_uri] = o_name
+                # Retrieve all entities from the true facts
+                # true_entities = dict()
+                # for j, (s_uri, _, o_uri) in enumerate(true_facts_uris):
+                #     s_name, _, o_name = true_facts_names[j]
+                #     true_entities[s_uri] = s_name
+                #     true_entities[o_uri] = o_name
+                #
+                # true_relations = dict()
+                # for j, (_, p_uri, _) in enumerate(true_facts_uris):
+                #     true_relations[p_uri] = true_facts_names[j][1]
 
-                true_relations = dict()
-                for j, (_, p_uri, _) in enumerate(true_facts_uris):
-                    true_relations[p_uri] = true_facts_names[j][1]
-
-                print("True entities:", true_entities)
-                print("True relations:", true_relations)
+                print("True entities:", true_entities_uris)
+                # print("True relations:", true_relations)
                 print()
+
+                quit()  # TODO: Remove quit placeholder
 
                 # Do knowledge graph enrichment
                 filtered_facts = []
-                if len(true_entities) > 0:
+                if len(true_entities_uris) > 0:  # TODO: Combine true entities with entities extracted from question
                     # Execute SPARQL query to get the list of predicate/object pairs
                     # subject = list(true_entities.keys())[0]
-                    for subject in list(true_entities.keys()):
+                    for subject in list(true_entities_uris):  # TODO: Check this line
                         print("Subject:", subject)
                         sparql_query = f'SELECT ?predicate WHERE {{{subject} ?predicate ?object. \
                         FILTER(!isLiteral(?object) || lang(?object) = "" || langMatches(lang(?object), "EN"))}}'
                         print(sparql_query)
-                        sparql_output = sparql_f.execute_sparql_query(sparql_query, sparql_dbp)
+                        sparql_output = sparql_f.execute_sparql_query(sparql_query, sparql_wd)
                         sparql_bindings = sparql_output['results']['bindings']
 
                         unique_predicates = dict()
@@ -245,7 +239,7 @@ for i, item in enumerate(data[67:68]):  # 66:71
                             sparql_query = f'SELECT ?object WHERE {{{subject} <{pred_uri}> ?object. \
                             FILTER(!isLiteral(?object) || lang(?object) = "" || langMatches(lang(?object), "EN"))}}'
                             print(sparql_query)
-                            sparql_output = sparql_f.execute_sparql_query(sparql_query, sparql_dbp)
+                            sparql_output = sparql_f.execute_sparql_query(sparql_query, sparql_wd)
                             sparql_bindings = sparql_output['results']['bindings']
 
                             # print(sparql_bindings)
@@ -258,7 +252,7 @@ for i, item in enumerate(data[67:68]):  # 66:71
 
                 context_string = ""
                 for s, p, o in filtered_facts:
-                    s_name = true_entities[s]
+                    s_name = uri_name_map[s]  # TODO: Check this line
                     p_name = sparql_f.get_name_from_dbpedia_uri(p)
                     o_name = sparql_f.get_name_from_dbpedia_uri(o)
                     context_string += f"{s_name} {p_name} {o_name}. "
@@ -282,28 +276,13 @@ for i, item in enumerate(data[67:68]):  # 66:71
         print("Timeout Exception")
         new_response = response.strip()
         qa_pairs[i]["timeout"] = True
-    except:
+    except Exception as exc:
+        print("Error:", exc)
         new_response = response.strip()
-        qa_pairs[i]["error"] = True
+        qa_pairs[i]["error"] = str(exc)
 
-    mc_prompt = PromptTemplate(
-        input_variables=["question", "response", "choices"],
-        template="Output the best one of the numbered options for the following question and response:\n \
-                        Question: {question}\nResponse: {response}\nOptions:\n{choices}"
-    )
-
-    choices_text = "\n".join([str(i + 1) + ". " + choice for i, choice in enumerate(item['choices'])])
-    choice_response = llm(mc_prompt.format(question=question, response=new_response.strip(), choices=choices_text))
-
-    print("Choice Response:", choice_response.strip())
-
-    # Convert the response to the numbered choice
-    numbers = [int(num) for num in re.findall(r'\d+', choice_response.strip().split(".")[0])]
-    if len(numbers) == 0:
-        numbered_output = 1
-    else:
-        numbered_output = numbers[-1]
-    letter_output = chr(ord('A') + int(numbered_output) - 1)
+    # Generate the letter output based on the response
+    letter_output = llm_tasks.select_mc_response_based(question, new_response.strip(), item['choices'])
 
     print("Generated answer:", letter_output)
 
@@ -321,26 +300,24 @@ for i, item in enumerate(data[67:68]):  # 66:71
 
     # new_response = llm.predict(f"{question}\nContext:{context_string}")
 
-
-
-        # relevant_entities_json = openai.ChatCompletion.create(
-        #     model="gpt-3.5-turbo",
-        #     messages=[
-        #         {
-        #             "role": "system",
-        #             "content": "You will be provided with question text and a list of entities. \
-        #             Your task is to order the entities by most relevant to text."
-        #         },
-        #         {
-        #             "role": "user",
-        #             "content": f"Text: {question}\nEntities: {unique_entities.keys()}"
-        #         }
-        #     ],
-        #     temperature=0,
-        #     max_tokens=256
-        # )
-        #
-        # print(relevant_entities_json)
+    # relevant_entities_json = openai.ChatCompletion.create(
+    #     model="gpt-3.5-turbo",
+    #     messages=[
+    #         {
+    #             "role": "system",
+    #             "content": "You will be provided with question text and a list of entities. \
+    #             Your task is to order the entities by most relevant to text."
+    #         },
+    #         {
+    #             "role": "user",
+    #             "content": f"Text: {question}\nEntities: {unique_entities.keys()}"
+    #         }
+    #     ],
+    #     temperature=0,
+    #     max_tokens=256
+    # )
+    #
+    # print(relevant_entities_json)
 
     '''
     # Example SPARQL Query
@@ -364,3 +341,7 @@ print("EM:", num_correct / len(data))
 # Save the QA pairs in a JSON file
 with open("../output/qa_sets_llm_kg_geography01.json", "w") as f:
     json.dump(qa_pairs, f, indent=4)
+
+# 2 steps
+# ASK {<http://www.wikidata.org/entity/Q652> ?predicate1 ?object1.
+#      ?subject2 ?predicate2 <http://www.wikidata.org/entity/Q19814>.}

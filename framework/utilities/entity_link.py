@@ -28,7 +28,7 @@ def generate_parameters(query, ent_type='item', limit=5):
     return params
 
 
-def fetch_wikidata_from_query(query, ent_type='item', limit=5):
+def fetch_wikidata_from_query(query, ent_type='item', limit=1):
     """
     Use wikidata API to find matching URIs for an entity or property
     :param query: entity or property to match
@@ -40,3 +40,19 @@ def fetch_wikidata_from_query(query, ent_type='item', limit=5):
     data = fetch_wikidata(params)
     data = data.json()
     return data
+
+
+def condense_wikidata_results(data):
+    """
+    Condense the wikidata API results into a dictionary
+    :param data: the query results
+    :return: a dictionary of the query results
+    """
+    results = []
+    for match in data['search']:
+        results.append({
+            'label': match['label'],
+            'uri': match['concepturi'],
+            'description': match['description']
+        })
+    return results
