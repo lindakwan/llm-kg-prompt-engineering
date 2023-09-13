@@ -53,7 +53,7 @@ def condense_wikidata_results(data):
         results.append({
             'label': match['label'],
             'uri': match['concepturi'],
-            'description': match['description']
+            'description': match.get("description", "No description available.")
         })
     return results
 
