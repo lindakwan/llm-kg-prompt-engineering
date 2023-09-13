@@ -20,7 +20,7 @@ def extract_entities(text):
                 "role": "system",
                 "content": "You will be provided with text. \
                     Your task is to identify a list of entities mentioned in the text. No documentation, \
-                    no explanation, only python3 list."
+                    no explanation, only python3 list code, escape all apostrophes with backslash."
             },
             {
                 "role": "user",
@@ -43,7 +43,7 @@ def extract_relations(text):
                 "role": "system",
                 "content": "You will be provided with text. \
                     Your task is to identify a list of predicate names mentioned in the text. No documentation, \
-                    no explanation, only python3 list."
+                    no explanation, only python3 list code, escape all apostrophes with backslash."
             },
             {
                 "role": "user",
@@ -136,7 +136,7 @@ def extract_relevant_predicates(text, predicates, k=3):
                 "role": "system",
                 "content": "You will be provided with question text and a list of predicates. \
                 Your task is to order the predicates by most relevant to text. No documentation, no explanation, \
-                only valid python3 list."
+                only valid python3 list code, escape all apostrophes with backslash."
             },
             {
                 "role": "user",

@@ -1,0 +1,753 @@
+{
+    "start_time": "2023-09-13 19:51:57.109372",
+    "0": {
+        "question": "The main factor preventing subsistence economies from advancing economically is the lack of",
+        "choices": [
+            "a currency.",
+            "a well-connected transportation infrastructure.",
+            "government activity.",
+            "a banking service."
+        ],
+        "initial_response": "capital. Subsistence economies are typically characterized by low levels of capital, which limits their ability to invest in new technologies, infrastructure, and other resources that are necessary for economic growth. Without access to capital, subsistence economies are unable to take advantage of the opportunities that come with economic growth. Additionally, subsistence economies often lack the necessary resources and infrastructure to support economic growth, such as access to markets, transportation networks, and educational institutions. Without these resources, subsistence economies are unable to take advantage of the opportunities that come with economic growth.",
+        "question_entity_names": [
+            "subsistence economies",
+            "advancing economically",
+            "lack of"
+        ],
+        "response_entity_names": [
+            "capital",
+            "Subsistence economies",
+            "low levels of capital",
+            "invest",
+            "new technologies",
+            "infrastructure",
+            "resources",
+            "economic growth",
+            "access to capital",
+            "opportunities",
+            "subsistence economies",
+            "resources",
+            "infrastructure",
+            "economic growth",
+            "access to markets",
+            "transportation networks",
+            "educational institutions"
+        ],
+        "extracted_triples": [
+            [
+                "subsistence economies",
+                "preventing",
+                "advancing economically"
+            ],
+            [
+                "subsistence economies",
+                "characterized by",
+                "low levels of capital"
+            ],
+            [
+                "subsistence economies",
+                "lack",
+                "necessary resources and infrastructure"
+            ],
+            [
+                "subsistence economies",
+                "unable to take advantage of",
+                "opportunities that come with economic growth"
+            ],
+            [
+                "subsistence economies",
+                "unable to take advantage of",
+                "opportunities that come with economic growth"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "\"subsistence economies\"",
+                "\"preventing\"",
+                "\"advancing economically\""
+            ],
+            [
+                "\"subsistence economies\"",
+                "http://www.wikidata.org/entity/P1552",
+                "\"low levels of capital\""
+            ],
+            [
+                "\"subsistence economies\"",
+                "http://www.wikidata.org/entity/P6477",
+                "\"necessary resources and infrastructure\""
+            ],
+            [
+                "\"subsistence economies\"",
+                "\"unable to take advantage of\"",
+                "\"opportunities that come with economic growth\""
+            ],
+            [
+                "\"subsistence economies\"",
+                "\"unable to take advantage of\"",
+                "\"opportunities that come with economic growth\""
+            ]
+        ],
+        "question_entities_uris": [
+            "\"subsistence economies\"",
+            "\"advancing economically\"",
+            "http://www.wikidata.org/entity/Q661015"
+        ],
+        "uri_name_map": {
+            "\"subsistence economies\"": "subsistence economies",
+            "\"preventing\"": "preventing",
+            "\"advancing economically\"": "advancing economically",
+            "http://www.wikidata.org/entity/P1552": "characterized by",
+            "\"low levels of capital\"": "low levels of capital",
+            "http://www.wikidata.org/entity/P6477": "lack",
+            "\"necessary resources and infrastructure\"": "necessary resources and infrastructure",
+            "\"unable to take advantage of\"": "unable to take advantage of",
+            "\"opportunities that come with economic growth\"": "opportunities that come with economic growth",
+            "http://www.wikidata.org/entity/Q661015": "lack of"
+        },
+        "true_count": 0,
+        "% true": 0.0,
+        "evaluation_score": 0.03125,
+        "below_threshold": true,
+        "true_entities": [],
+        "top_predicates_advancing economically": [],
+        "top_predicates_lack of": [
+            "instance of",
+            "subclass of",
+            "exact match"
+        ],
+        "top_predicates_subsistence economies": [],
+        "filtered_facts_for_context": [
+            [
+                "lack of",
+                "instance of",
+                "class of disease"
+            ],
+            [
+                "lack of",
+                "subclass of",
+                "disease"
+            ],
+            [
+                "lack of",
+                "subclass of",
+                "esophageal disease"
+            ],
+            [
+                "lack of",
+                "exact match",
+                "http://identifiers.org/doid/DOID:9164"
+            ],
+            [
+                "lack of",
+                "exact match",
+                "http://purl.obolibrary.org/obo/DOID_9164"
+            ]
+        ],
+        "context_string": "lack of instance of class of disease. lack of subclass of disease. lack of subclass of esophageal disease. lack of exact match http://identifiers.org/doid/DOID:9164. lack of exact match http://purl.obolibrary.org/obo/DOID_9164. ",
+        "new_response": "Answer: resources and capital.",
+        "llm_answer": "C",
+        "llm_is_correct": false
+    },
+    "1": {
+        "question": "The tendency for a population to continue to grow long after replacement fertility has been achieved is called",
+        "choices": [
+            "zero population growth.",
+            "rapid growth rate.",
+            "homeostatic plateau.",
+            "demographic momentum."
+        ],
+        "initial_response": "population momentum. This occurs because the population is still growing due to the large number of people in the reproductive age group, even though the fertility rate has dropped. This means that the population will continue to grow for some time before it stabilizes.",
+        "question_entity_names": [
+            "population",
+            "replacement fertility"
+        ],
+        "response_entity_names": [
+            "population momentum"
+        ],
+        "extracted_triples": [
+            [
+                "population",
+                "continue to grow",
+                "long after replacement fertility has been achieved"
+            ],
+            [
+                "population momentum",
+                "called",
+                "population momentum"
+            ],
+            [
+                "population",
+                "still growing",
+                "due to the large number of people in the reproductive age group"
+            ],
+            [
+                "population",
+                "continue to grow",
+                "for some time before it stabilizes"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "http://www.wikidata.org/entity/Q33829",
+                "\"continue to grow\"",
+                "\"long after replacement fertility has been achieved\""
+            ],
+            [
+                "http://www.wikidata.org/entity/Q7229810",
+                "http://www.wikidata.org/entity/P511",
+                "http://www.wikidata.org/entity/Q7229810"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q33829",
+                "\"still growing\"",
+                "\"due to the large number of people in the reproductive age group\""
+            ],
+            [
+                "http://www.wikidata.org/entity/Q33829",
+                "\"continue to grow\"",
+                "\"for some time before it stabilizes\""
+            ]
+        ],
+        "question_entities_uris": [
+            "http://www.wikidata.org/entity/Q33829",
+            "http://www.wikidata.org/entity/Q81653847"
+        ],
+        "uri_name_map": {
+            "http://www.wikidata.org/entity/Q33829": "population",
+            "\"continue to grow\"": "continue to grow",
+            "\"long after replacement fertility has been achieved\"": "long after replacement fertility has been achieved",
+            "http://www.wikidata.org/entity/Q7229810": "population momentum",
+            "http://www.wikidata.org/entity/P511": "called",
+            "\"still growing\"": "still growing",
+            "\"due to the large number of people in the reproductive age group\"": "due to the large number of people in the reproductive age group",
+            "\"for some time before it stabilizes\"": "for some time before it stabilizes",
+            "http://www.wikidata.org/entity/Q81653847": "replacement fertility"
+        },
+        "true_count": 0,
+        "% true": 0.0,
+        "evaluation_score": 0.1,
+        "below_threshold": true,
+        "true_entities": [],
+        "top_predicates_population": [
+            "subclass of",
+            "image",
+            "described by source"
+        ],
+        "top_predicates_replacement fertility": [
+            "instance of"
+        ],
+        "filtered_facts_for_context": [
+            [
+                "population",
+                "subclass of",
+                "population"
+            ],
+            [
+                "population",
+                "subclass of",
+                "demographics"
+            ],
+            [
+                "population",
+                "subclass of",
+                "group of humans"
+            ],
+            [
+                "population",
+                "image",
+                "http://commons.wikimedia.org/wiki/Special:FilePath/India%20-%20Chennai%20-%20busy%20T.%20Nagar%20market%201%20%283059480968%29.jpg"
+            ],
+            [
+                "population",
+                "described by source",
+                "Brockhaus and Efron Encyclopedic Dictionary"
+            ],
+            [
+                "population",
+                "described by source",
+                "Armenian Soviet Encyclopedia"
+            ],
+            [
+                "population",
+                "described by source",
+                "Small Brockhaus and Efron Encyclopedic Dictionary"
+            ],
+            [
+                "population",
+                "described by source",
+                "New Encyclopedic Dictionary"
+            ],
+            [
+                "replacement fertility",
+                "instance of",
+                "scholarly article"
+            ]
+        ],
+        "context_string": "population subclass of population. population subclass of demographics. population subclass of group of humans. population image http://commons.wikimedia.org/wiki/Special:FilePath/India%20-%20Chennai%20-%20busy%20T.%20Nagar%20market%201%20%283059480968%29.jpg. population described by source Brockhaus and Efron Encyclopedic Dictionary. population described by source Armenian Soviet Encyclopedia. population described by source Small Brockhaus and Efron Encyclopedic Dictionary. population described by source New Encyclopedic Dictionary. replacement fertility instance of scholarly article. ",
+        "new_response": "Answer: Population Momentum",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "2": {
+        "question": "The tendency for migration to decrease with distance is called",
+        "choices": [
+            "push factors.",
+            "pull factors.",
+            "distance decay.",
+            "migration selectivity."
+        ],
+        "initial_response": "the distance-decay effect. This effect is based on the idea that the further away a person is from their home, the less likely they are to migrate. This is because the costs associated with long-distance migration, such as transportation and the cost of living, increase with distance. Additionally, the social and cultural ties that people have to their home region tend to decrease with distance, making them less likely to migrate.",
+        "question_entity_names": [
+            "migration"
+        ],
+        "response_entity_names": [
+            "distance-decay effect",
+            "person",
+            "home",
+            "migration",
+            "costs",
+            "transportation",
+            "cost of living",
+            "social ties",
+            "cultural ties",
+            "home region"
+        ],
+        "extracted_triples": [
+            [
+                "migration",
+                "decrease with",
+                "distance"
+            ],
+            [
+                "distance-decay effect",
+                "called",
+                "tendency for migration to decrease with distance"
+            ],
+            [
+                "effect",
+                "based on",
+                "idea"
+            ],
+            [
+                "person",
+                "further away from",
+                "home"
+            ],
+            [
+                "person",
+                "less likely to",
+                "migrate"
+            ],
+            [
+                "costs",
+                "associated with",
+                "long-distance migration"
+            ],
+            [
+                "costs",
+                "increase with",
+                "distance"
+            ],
+            [
+                "transportation",
+                "associated with",
+                "long-distance migration"
+            ],
+            [
+                "cost of living",
+                "associated with",
+                "long-distance migration"
+            ],
+            [
+                "social ties",
+                "decrease with",
+                "distance"
+            ],
+            [
+                "cultural ties",
+                "decrease with",
+                "distance"
+            ],
+            [
+                "people",
+                "have",
+                "social and cultural ties"
+            ],
+            [
+                "people",
+                "less likely to",
+                "migrate"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "http://www.wikidata.org/entity/Q177626",
+                "\"decrease with\"",
+                "http://www.wikidata.org/entity/Q847073"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q52772253",
+                "http://www.wikidata.org/entity/P511",
+                "\"tendency for migration to decrease with distance\""
+            ],
+            [
+                "http://www.wikidata.org/entity/Q2995644",
+                "http://www.wikidata.org/entity/P144",
+                "http://www.wikidata.org/entity/Q131841"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q215627",
+                "\"further away from\"",
+                "http://www.wikidata.org/entity/Q699405"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q215627",
+                "\"less likely to\"",
+                "http://www.wikidata.org/entity/Q6844316"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q2851421",
+                "http://www.wikidata.org/entity/P3095",
+                "http://www.wikidata.org/entity/Q46197400"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q2851421",
+                "\"increase with\"",
+                "http://www.wikidata.org/entity/Q847073"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q7590",
+                "http://www.wikidata.org/entity/P3095",
+                "http://www.wikidata.org/entity/Q46197400"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q575619",
+                "http://www.wikidata.org/entity/P3095",
+                "http://www.wikidata.org/entity/Q46197400"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q34374739",
+                "\"decrease with\"",
+                "http://www.wikidata.org/entity/Q847073"
+            ],
+            [
+                "\"cultural ties\"",
+                "\"decrease with\"",
+                "http://www.wikidata.org/entity/Q847073"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q5",
+                "http://www.wikidata.org/entity/P527",
+                "\"social and cultural ties\""
+            ],
+            [
+                "http://www.wikidata.org/entity/Q5",
+                "\"less likely to\"",
+                "http://www.wikidata.org/entity/Q6844316"
+            ]
+        ],
+        "question_entities_uris": [
+            "http://www.wikidata.org/entity/Q177626"
+        ],
+        "uri_name_map": {
+            "http://www.wikidata.org/entity/Q177626": "migration",
+            "\"decrease with\"": "decrease with",
+            "http://www.wikidata.org/entity/Q847073": "distance",
+            "http://www.wikidata.org/entity/Q52772253": "distance-decay effect",
+            "http://www.wikidata.org/entity/P511": "called",
+            "\"tendency for migration to decrease with distance\"": "tendency for migration to decrease with distance",
+            "http://www.wikidata.org/entity/Q2995644": "effect",
+            "http://www.wikidata.org/entity/P144": "based on",
+            "http://www.wikidata.org/entity/Q131841": "idea",
+            "http://www.wikidata.org/entity/Q215627": "person",
+            "\"further away from\"": "further away from",
+            "http://www.wikidata.org/entity/Q699405": "home",
+            "\"less likely to\"": "less likely to",
+            "http://www.wikidata.org/entity/Q6844316": "migrate",
+            "http://www.wikidata.org/entity/Q2851421": "costs",
+            "http://www.wikidata.org/entity/P3095": "associated with",
+            "http://www.wikidata.org/entity/Q46197400": "long-distance migration",
+            "\"increase with\"": "increase with",
+            "http://www.wikidata.org/entity/Q7590": "transportation",
+            "http://www.wikidata.org/entity/Q575619": "cost of living",
+            "http://www.wikidata.org/entity/Q34374739": "social ties",
+            "\"cultural ties\"": "cultural ties",
+            "http://www.wikidata.org/entity/Q5": "people",
+            "http://www.wikidata.org/entity/P527": "have",
+            "\"social and cultural ties\"": "social and cultural ties"
+        },
+        "true_count": 0,
+        "% true": 0.0,
+        "evaluation_score": 0.1,
+        "below_threshold": true,
+        "true_entities": [],
+        "top_predicates_migration": [
+            "subclass of",
+            "has cause",
+            "described by source"
+        ],
+        "filtered_facts_for_context": [
+            [
+                "migration",
+                "subclass of",
+                "occurrence"
+            ],
+            [
+                "migration",
+                "subclass of",
+                "migration"
+            ],
+            [
+                "migration",
+                "has cause",
+                "push and pull factors"
+            ],
+            [
+                "migration",
+                "described by source",
+                "Armenian Soviet Encyclopedia"
+            ],
+            [
+                "migration",
+                "described by source",
+                "Internetowa encyklopedia PWN"
+            ],
+            [
+                "migration",
+                "described by source",
+                "Great Soviet Encyclopedia (1926\u20131947)"
+            ]
+        ],
+        "context_string": "migration subclass of occurrence. migration subclass of migration. migration has cause push and pull factors. migration described by source Armenian Soviet Encyclopedia. migration described by source Internetowa encyklopedia PWN. migration described by source Great Soviet Encyclopedia (1926\u20131947). ",
+        "new_response": "Answer: The law of distance decay.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "3": {
+        "question": "Which zone contains low-income slums, ethnic ghettos, and general deterioration in Burgess's concentric zone model of urban form?",
+        "choices": [
+            "First",
+            "Second",
+            "Third",
+            "Fourth"
+        ],
+        "initial_response": "The zone of transition contains low-income slums, ethnic ghettos, and general deterioration in Burgess's concentric zone model of urban form.",
+        "question_entity_names": [
+            "zone",
+            "low-income slums",
+            "ethnic ghettos",
+            "general deterioration",
+            "Burgess's concentric zone model",
+            "urban form"
+        ],
+        "response_entity_names": [
+            "The zone of transition",
+            "low-income slums",
+            "ethnic ghettos",
+            "Burgess's concentric zone model",
+            "urban form"
+        ],
+        "extracted_triples": [
+            [
+                "Burgess's concentric zone model",
+                "contains",
+                "low-income slums"
+            ],
+            [
+                "Burgess's concentric zone model",
+                "contains",
+                "ethnic ghettos"
+            ],
+            [
+                "Burgess's concentric zone model",
+                "contains",
+                "general deterioration"
+            ],
+            [
+                "Burgess's concentric zone model",
+                "of",
+                "urban form"
+            ],
+            [
+                "The zone of transition",
+                "contains",
+                "low-income slums"
+            ],
+            [
+                "The zone of transition",
+                "contains",
+                "ethnic ghettos"
+            ],
+            [
+                "The zone of transition",
+                "contains",
+                "general deterioration"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "\"Burgess's concentric zone model\"",
+                "http://www.wikidata.org/entity/P527",
+                "\"low-income slums\""
+            ],
+            [
+                "\"Burgess's concentric zone model\"",
+                "http://www.wikidata.org/entity/P527",
+                "\"ethnic ghettos\""
+            ],
+            [
+                "\"Burgess's concentric zone model\"",
+                "http://www.wikidata.org/entity/P527",
+                "http://www.wikidata.org/entity/Q66831004"
+            ],
+            [
+                "\"Burgess's concentric zone model\"",
+                "http://www.wikidata.org/entity/P642",
+                "http://www.wikidata.org/entity/Q106929407"
+            ],
+            [
+                "\"The zone of transition\"",
+                "http://www.wikidata.org/entity/P527",
+                "\"low-income slums\""
+            ],
+            [
+                "\"The zone of transition\"",
+                "http://www.wikidata.org/entity/P527",
+                "\"ethnic ghettos\""
+            ],
+            [
+                "\"The zone of transition\"",
+                "http://www.wikidata.org/entity/P527",
+                "http://www.wikidata.org/entity/Q66831004"
+            ]
+        ],
+        "question_entities_uris": [
+            "http://www.wikidata.org/entity/Q183366",
+            "\"low-income slums\"",
+            "\"ethnic ghettos\"",
+            "http://www.wikidata.org/entity/Q66831004",
+            "\"Burgess's concentric zone model\"",
+            "http://www.wikidata.org/entity/Q106929407"
+        ],
+        "uri_name_map": {
+            "\"Burgess's concentric zone model\"": "Burgess's concentric zone model",
+            "http://www.wikidata.org/entity/P527": "contains",
+            "\"low-income slums\"": "low-income slums",
+            "\"ethnic ghettos\"": "ethnic ghettos",
+            "http://www.wikidata.org/entity/Q66831004": "general deterioration",
+            "http://www.wikidata.org/entity/P642": "of",
+            "http://www.wikidata.org/entity/Q106929407": "urban form",
+            "\"The zone of transition\"": "The zone of transition",
+            "http://www.wikidata.org/entity/Q183366": "zone"
+        },
+        "true_count": 0,
+        "% true": 0.0,
+        "evaluation_score": 0.08571428571428572,
+        "below_threshold": true,
+        "true_entities": [],
+        "top_predicates_zone": [
+            "subclass of",
+            "instance of",
+            "described by source"
+        ],
+        "top_predicates_low-income slums": [],
+        "top_predicates_Burgess's concentric zone model": [],
+        "top_predicates_urban form": [
+            "title",
+            "instance of",
+            "author name string"
+        ],
+        "top_predicates_general deterioration": [
+            "issue",
+            "title",
+            "author name string"
+        ],
+        "top_predicates_ethnic ghettos": [],
+        "filtered_facts_for_context": [
+            [
+                "zone",
+                "subclass of",
+                "administrative territorial entity"
+            ],
+            [
+                "zone",
+                "subclass of",
+                "geographic region"
+            ],
+            [
+                "zone",
+                "instance of",
+                "designation for an administrative territorial entity"
+            ],
+            [
+                "zone",
+                "described by source",
+                "Brockhaus and Efron Encyclopedic Dictionary"
+            ],
+            [
+                "zone",
+                "described by source",
+                "Grosses vollst\u00e4ndiges Universal-Lexicon Aller Wissenschafften und K\u00fcnste"
+            ],
+            [
+                "zone",
+                "described by source",
+                "Explanatory Dictionary of the Living Great Russian Language"
+            ],
+            [
+                "zone",
+                "described by source",
+                "Armenian Soviet Encyclopedia"
+            ],
+            [
+                "zone",
+                "described by source",
+                "Small Brockhaus and Efron Encyclopedic Dictionary"
+            ],
+            [
+                "zone",
+                "described by source",
+                "Dictionary of Common Goods"
+            ],
+            [
+                "urban form",
+                "title",
+                "Urban Form"
+            ],
+            [
+                "urban form",
+                "instance of",
+                "scholarly article"
+            ],
+            [
+                "urban form",
+                "author name string",
+                "G Holmes Perkins"
+            ],
+            [
+                "general deterioration",
+                "issue",
+                "05"
+            ],
+            [
+                "general deterioration",
+                "title",
+                "General Deterioration Equation for Pavement Performance"
+            ],
+            [
+                "general deterioration",
+                "author name string",
+                "\u5b59\u7acb\u519b"
+            ],
+            [
+                "general deterioration",
+                "author name string",
+                "\u5218\u559c\u5e73"
+            ]
+        ],
+        "context_string": "zone subclass of administrative territorial entity. zone subclass of geographic region. zone instance of designation for an administrative territorial entity. zone described by source Brockhaus and Efron Encyclopedic Dictionary. zone described by source Grosses vollst\u00e4ndiges Universal-Lexicon Aller Wissenschafften und K\u00fcnste. zone described by source Explanatory Dictionary of the Living Great Russian Language. zone described by source Armenian Soviet Encyclopedia. zone described by source Small Brockhaus and Efron Encyclopedic Dictionary. zone described by source Dictionary of Common Goods. urban form title Urban Form. urban form instance of scholarly article. urban form author name string G Holmes Perkins. general deterioration issue 05. general deterioration title General Deterioration Equation for Pavement Performance. general deterioration author name string \u5b59\u7acb\u519b. general deterioration author name string \u5218\u559c\u5e73. ",
+        "new_response": "Answer: Zone 5",
+        "llm_answer": "E",
+        "llm_is_correct": false
+    }
+}

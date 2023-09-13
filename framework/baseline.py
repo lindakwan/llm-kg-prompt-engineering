@@ -17,7 +17,9 @@ from utilities.timeout import time_limit, TimeoutException
 # Create a list of QA pairs
 qa_pairs = dict()
 
-qa_pairs['start_time'] = str(datetime.datetime.now())
+start_time = datetime.datetime.now()
+
+qa_pairs['start_time'] = str(start_time)
 
 sparql_wd = SPARQLWrapper("https://query.wikidata.org/sparql")
 # sparql_dbp = SPARQLWrapper("http://dbpedia.org/sparql")
@@ -32,10 +34,12 @@ json_output_path = ""
 
 if args.dataset == "geography":
     dataset_path = "../data/mmlu_test/high_school_geography_test.csv"
-    json_output_path = "../output/qa_sets_llm_kg_geography_wd.json"
+    json_output_path = f"../output/qa_sets_llm_kg_geography_wd_{start_time.timestamp()}.json"
+    # json_output_path = f"../output/qa_sets_llm_kg_geography01.json"
 elif args.dataset == "government_and_politics":
     dataset_path = "../data/mmlu_test/high_school_government_and_politics_test.csv"
-    json_output_path = "../output/qa_sets_llm_kg_government_and_politics_wd.json"
+    json_output_path = f"../output/qa_sets_llm_kg_government_and_politics_wd_{start_time.timestamp()}.json"
+    # json_output_path = f"../output/qa_sets_llm_kg_government_and_politics01.json"
 else:
     print("Invalid dataset.")
     exit()
@@ -125,7 +129,7 @@ for i, item in enumerate(data):  # 66:71  # 36:37
                     else:
                         label = info['search'][0]["label"]
                         uri = info['search'][0]["concepturi"]
-                        description = info['search'][0]["description"]
+                        description = info['search'][0].get("description", "No description available.")
                         print(label, uri, description)
                         uris.append(uri)
                         uri_name_map[uri] = component
@@ -200,13 +204,19 @@ for i, item in enumerate(data):  # 66:71  # 36:37
                         true_entities_uris.add(o)
 
             print("True Count:", true_count)
-            print("% True:", true_count / len(extr_triples_uris))
+
+            if len(extr_triples_uris) > 0:
+                frac_true = true_count / len(extr_triples_uris)
+            else:
+                frac_true = 0
+
+            print("% True:", frac_true)
             print()
 
             print("True facts names:", true_facts_names)
 
             qa_pairs[i]["true_count"] = true_count
-            qa_pairs[i]["% true"] = true_count / len(extr_triples_uris)
+            qa_pairs[i]["% true"] = frac_true
 
             # Calculate the number of linked entities
             linked_entities = set()

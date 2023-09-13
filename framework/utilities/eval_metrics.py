@@ -7,7 +7,18 @@ def simple_evaluation(entities, linked_entities, facts, true_facts):
     num_of_linked_entities = min(len(linked_entities), num_of_entities)
     num_of_facts = len(facts)
     num_of_true_facts = len(true_facts)
-    score = alpha * (num_of_linked_entities / num_of_entities) + (1 - alpha) * (num_of_true_facts / num_of_facts)
+
+    if num_of_entities == 0:
+        frac_entities = 0
+    else:
+        frac_entities = num_of_linked_entities / num_of_entities
+
+    if num_of_facts == 0:
+        frac_facts = 0
+    else:
+        frac_facts = num_of_true_facts / num_of_facts
+
+    score = alpha * frac_entities + (1 - alpha) * frac_facts
     return score
 
 

@@ -1,0 +1,267 @@
+{
+    "start_time": "2023-09-13 19:54:03.062284",
+    "0": {
+        "question": "Which of the following best describes the balance the Supreme Court has struck between the establishment clause and the free-exercise clause?",
+        "choices": [
+            "Freedom of speech is protected except in certain situations, such as yelling \"fire\" in a crowded theater.",
+            "Once a church has been recognized by the federal government, its tax-exempt status can never be revoked.",
+            "Once Congress has created an administrative agency, that agency can be dissolved only by a constitutional amendment.",
+            "State-sponsored prayer during school hours is prohibited, but voluntary prayer by student groups before school is allowed."
+        ],
+        "initial_response": "The Supreme Court has struck a balance between the establishment clause and the free-exercise clause by allowing for some government involvement in religious matters, such as providing funding for religious schools, while also protecting individuals\u2019 rights to freely practice their religion without government interference.",
+        "question_entity_names": [
+            "Supreme Court",
+            "establishment clause",
+            "free-exercise clause"
+        ],
+        "response_entity_names": [
+            "Supreme Court",
+            "establishment clause",
+            "free-exercise clause",
+            "government",
+            "religious matters",
+            "funding",
+            "religious schools",
+            "individuals",
+            "rights",
+            "religion",
+            "government interference"
+        ],
+        "extracted_triples": [
+            [
+                "Supreme Court",
+                "has struck",
+                "balance"
+            ],
+            [
+                "Supreme Court",
+                "has struck",
+                "balance between establishment clause and free-exercise clause"
+            ],
+            [
+                "Supreme Court",
+                "has struck",
+                "balance between establishment clause and free-exercise clause by allowing for some government involvement in religious matters"
+            ],
+            [
+                "Supreme Court",
+                "has struck",
+                "balance between establishment clause and free-exercise clause by allowing for some government involvement in religious matters such as providing funding for religious schools"
+            ],
+            [
+                "Supreme Court",
+                "has struck",
+                "balance between establishment clause and free-exercise clause by allowing for some government involvement in religious matters such as providing funding for religious schools while also protecting individuals' rights"
+            ],
+            [
+                "Supreme Court",
+                "has struck",
+                "balance between establishment clause and free-exercise clause by allowing for some government involvement in religious matters such as providing funding for religious schools while also protecting individuals' rights to freely practice their religion"
+            ],
+            [
+                "Supreme Court",
+                "has struck",
+                "balance between establishment clause and free-exercise clause by allowing for some government involvement in religious matters such as providing funding for religious schools while also protecting individuals' rights to freely practice their religion without government interference"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "http://www.wikidata.org/entity/Q11201",
+                "\"has struck\"",
+                "http://www.wikidata.org/entity/Q134566"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q11201",
+                "\"has struck\"",
+                "\"balance between establishment clause and free-exercise clause\""
+            ],
+            [
+                "http://www.wikidata.org/entity/Q11201",
+                "\"has struck\"",
+                "\"balance between establishment clause and free-exercise clause by allowing for some government involvement in religious matters\""
+            ],
+            [
+                "http://www.wikidata.org/entity/Q11201",
+                "\"has struck\"",
+                "\"balance between establishment clause and free-exercise clause by allowing for some government involvement in religious matters such as providing funding for religious schools\""
+            ],
+            [
+                "http://www.wikidata.org/entity/Q11201",
+                "\"has struck\"",
+                "\"balance between establishment clause and free-exercise clause by allowing for some government involvement in religious matters such as providing funding for religious schools while also protecting individuals' rights\""
+            ],
+            [
+                "http://www.wikidata.org/entity/Q11201",
+                "\"has struck\"",
+                "\"balance between establishment clause and free-exercise clause by allowing for some government involvement in religious matters such as providing funding for religious schools while also protecting individuals' rights to freely practice their religion\""
+            ],
+            [
+                "http://www.wikidata.org/entity/Q11201",
+                "\"has struck\"",
+                "\"balance between establishment clause and free-exercise clause by allowing for some government involvement in religious matters such as providing funding for religious schools while also protecting individuals' rights to freely practice their religion without government interference\""
+            ]
+        ],
+        "question_entities_uris": [
+            "http://www.wikidata.org/entity/Q11201",
+            "http://www.wikidata.org/entity/Q3308297",
+            "http://www.wikidata.org/entity/Q5499816"
+        ],
+        "uri_name_map": {
+            "http://www.wikidata.org/entity/Q11201": "Supreme Court",
+            "\"has struck\"": "has struck",
+            "http://www.wikidata.org/entity/Q134566": "balance",
+            "\"balance between establishment clause and free-exercise clause\"": "balance between establishment clause and free-exercise clause",
+            "\"balance between establishment clause and free-exercise clause by allowing for some government involvement in religious matters\"": "balance between establishment clause and free-exercise clause by allowing for some government involvement in religious matters",
+            "\"balance between establishment clause and free-exercise clause by allowing for some government involvement in religious matters such as providing funding for religious schools\"": "balance between establishment clause and free-exercise clause by allowing for some government involvement in religious matters such as providing funding for religious schools",
+            "\"balance between establishment clause and free-exercise clause by allowing for some government involvement in religious matters such as providing funding for religious schools while also protecting individuals' rights\"": "balance between establishment clause and free-exercise clause by allowing for some government involvement in religious matters such as providing funding for religious schools while also protecting individuals' rights",
+            "\"balance between establishment clause and free-exercise clause by allowing for some government involvement in religious matters such as providing funding for religious schools while also protecting individuals' rights to freely practice their religion\"": "balance between establishment clause and free-exercise clause by allowing for some government involvement in religious matters such as providing funding for religious schools while also protecting individuals' rights to freely practice their religion",
+            "\"balance between establishment clause and free-exercise clause by allowing for some government involvement in religious matters such as providing funding for religious schools while also protecting individuals' rights to freely practice their religion without government interference\"": "balance between establishment clause and free-exercise clause by allowing for some government involvement in religious matters such as providing funding for religious schools while also protecting individuals' rights to freely practice their religion without government interference",
+            "http://www.wikidata.org/entity/Q3308297": "establishment clause",
+            "http://www.wikidata.org/entity/Q5499816": "free-exercise clause"
+        },
+        "true_count": 0,
+        "% true": 0.0,
+        "evaluation_score": 0.07272727272727274,
+        "below_threshold": true,
+        "true_entities": [],
+        "top_predicates_free-exercise clause": [
+            "instance of",
+            "part of",
+            "Freebase ID"
+        ],
+        "top_predicates_establishment clause": [
+            "The First Amendment Encyclopedia ID",
+            "Encyclop\u00e6dia Britannica Online ID",
+            "JSTOR topic ID"
+        ],
+        "top_predicates_Supreme Court": [
+            "foundational text",
+            "instance of",
+            "history of topic"
+        ],
+        "filtered_facts_for_context": [
+            [
+                "free-exercise clause",
+                "instance of",
+                "clause"
+            ],
+            [
+                "free-exercise clause",
+                "part of",
+                "First Amendment to the United States Constitution Evey is right"
+            ],
+            [
+                "free-exercise clause",
+                "Freebase ID",
+                "/m/04ybd9"
+            ],
+            [
+                "establishment clause",
+                "The First Amendment Encyclopedia ID",
+                "885"
+            ],
+            [
+                "establishment clause",
+                "Encyclop\u00e6dia Britannica Online ID",
+                "topic/establishment-clause"
+            ],
+            [
+                "establishment clause",
+                "JSTOR topic ID",
+                "establishment-clause"
+            ],
+            [
+                "Supreme Court",
+                "foundational text",
+                "Article Three of the United States Constitution"
+            ],
+            [
+                "Supreme Court",
+                "instance of",
+                "supreme court"
+            ],
+            [
+                "Supreme Court",
+                "instance of",
+                "United States article III court"
+            ],
+            [
+                "Supreme Court",
+                "history of topic",
+                "history of the Supreme Court of the United States"
+            ]
+        ],
+        "context_string": "free-exercise clause instance of clause. free-exercise clause part of First Amendment to the United States Constitution Evey is right. free-exercise clause Freebase ID /m/04ybd9. establishment clause The First Amendment Encyclopedia ID 885. establishment clause Encyclop\u00e6dia Britannica Online ID topic/establishment-clause. establishment clause JSTOR topic ID establishment-clause. Supreme Court foundational text Article Three of the United States Constitution. Supreme Court instance of supreme court. Supreme Court instance of United States article III court. Supreme Court history of topic history of the Supreme Court of the United States. ",
+        "new_response": "Answer: The Supreme Court has struck a balance between the establishment clause and the free-exercise clause by upholding the right of individuals to freely exercise their religious beliefs while also ensuring that the government does not establish a state religion.",
+        "llm_answer": "E",
+        "llm_is_correct": false
+    },
+    "1": {
+        "question": "Which of the following statements does NOT accurately describe voting behavior in the United States?",
+        "choices": [
+            "Registered voters between the ages of 35 and 45 are more likely to vote than are those under the age of 21.",
+            "A registered voter who has attained his or her General Educational Development (GED) is less likely to vote than a high school dropout.",
+            "Registered voters are more likely to vote in general elections than they are in primary elections.",
+            "More women than men have voted in every presidential election since 1980."
+        ],
+        "initial_response": "\"Voting behavior in the United States is largely determined by race.\"",
+        "question_entity_names": [
+            "voting behavior",
+            "United States"
+        ],
+        "response_entity_names": [
+            "Voting behavior",
+            "United States",
+            "race"
+        ],
+        "extracted_triples": [
+            [
+                "voting behavior",
+                "accurately describe",
+                "voting behavior in the United States"
+            ],
+            [
+                "voting behavior in the United States",
+                "largely determined by",
+                "race"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "http://www.wikidata.org/entity/Q2540376",
+                "\"accurately describe\"",
+                "http://www.wikidata.org/entity/Q113474067"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q113474067",
+                "\"largely determined by\"",
+                "http://www.wikidata.org/entity/Q878123"
+            ]
+        ],
+        "question_entities_uris": [
+            "http://www.wikidata.org/entity/Q2540376",
+            "http://www.wikidata.org/entity/Q30"
+        ],
+        "uri_name_map": {
+            "http://www.wikidata.org/entity/Q2540376": "voting behavior",
+            "\"accurately describe\"": "accurately describe",
+            "http://www.wikidata.org/entity/Q113474067": "voting behavior in the United States",
+            "\"largely determined by\"": "largely determined by",
+            "http://www.wikidata.org/entity/Q878123": "race",
+            "http://www.wikidata.org/entity/Q30": "United States"
+        },
+        "true_count": 0,
+        "% true": 0.0,
+        "evaluation_score": 0.07500000000000001,
+        "below_threshold": true,
+        "true_entities": [],
+        "top_predicates_voting behavior": [
+            "subclass of",
+            "facet of",
+            "Freebase ID"
+        ],
+        "error": "This model's maximum context length is 4097 tokens. However, you requested 4403 tokens (2403 in the messages, 2000 in the completion). Please reduce the length of the messages or completion.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    }
+}
