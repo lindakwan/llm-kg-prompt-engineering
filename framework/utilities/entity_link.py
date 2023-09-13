@@ -56,3 +56,16 @@ def condense_wikidata_results(data):
             'description': match['description']
         })
     return results
+
+
+def fetch_uri_wikidata(query, ent_type='item', limit=1):
+    data = fetch_wikidata_from_query(query, ent_type=ent_type, limit=limit)
+    if len(data['search']) == 0:
+        print('Sorry, no results for "' + query + '"')
+        return '"' + query + '"'
+    else:
+        label = data['search'][0]["label"]
+        uri = data['search'][0]["concepturi"]
+        description = data['search'][0]["description"]
+        print(label, uri, description)
+        return uri

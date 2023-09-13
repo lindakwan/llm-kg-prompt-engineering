@@ -1,5 +1,6 @@
 import json
 import argparse
+import datetime
 
 from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
@@ -12,6 +13,11 @@ import utilities.llm_tasks_prompts as llm_tasks
 import utilities.entity_link as el
 import utilities.data_io as dio
 from utilities.timeout import time_limit, TimeoutException
+
+# Create a list of QA pairs
+qa_pairs = dict()
+
+qa_pairs['start_time'] = str(datetime.datetime.now())
 
 sparql_wd = SPARQLWrapper("https://query.wikidata.org/sparql")
 # sparql_dbp = SPARQLWrapper("http://dbpedia.org/sparql")
@@ -40,13 +46,10 @@ data = dio.read_data(dataset_path)
 # Create the language model
 llm = OpenAI(temperature=0)
 
-# Create a list of QA pairs
-qa_pairs = dict()
-
 num_correct = 0
 
 # Generate a response for each question
-for i, item in enumerate(data[36:40]):  # 66:71
+for i, item in enumerate(data):  # 66:71  # 36:37
     question = item['question_text']
     response = llm.predict(question)
 
@@ -65,14 +68,21 @@ for i, item in enumerate(data[36:40]):  # 66:71
             response_escaped = response.strip().replace('"', '\\\"')
 
             # Use the LLM to extract entities from the response
-            entity_names = llm_tasks.extract_entities(f"{question} {response.strip()}")
+            question_entities = llm_tasks.extract_entities(question)
+            print("Q entities:", question_entities)
 
-            print(entity_names)
+            response_entities = llm_tasks.extract_entities(response.strip())
+            print("A entities:", response_entities)
+
+            entity_names = list(dict.fromkeys(question_entities + response_entities))  # llm_tasks.extract_entities(f"{question} {response.strip()}")
+            print("All entities:", entity_names)
+
             num_of_identified_ents = len(entity_names)
             print("Number of entities identified:", num_of_identified_ents)
             print()
 
-            qa_pairs[i]["entity_names"] = entity_names
+            qa_pairs[i]["question_entity_names"] = question_entities
+            qa_pairs[i]["response_entity_names"] = response_entities
 
             # Feed question, LLM response, and entities and relations into LLM
             # Extract knowledge graph facts from the response
@@ -128,6 +138,18 @@ for i, item in enumerate(data[36:40]):  # 66:71
             print()
 
             qa_pairs[i]["extracted_triples_uris"] = extr_triples_uris
+
+            question_ent_uris = []
+            for ent_name in question_entities:
+                ent_uri = el.fetch_uri_wikidata(ent_name)
+                question_ent_uris.append(ent_uri)
+                uri_name_map[ent_uri] = ent_name
+
+            qa_pairs[i]["question_entities_uris"] = question_ent_uris
+
+            print("Question entities URIs:", question_ent_uris)
+            print()
+
             qa_pairs[i]["uri_name_map"] = uri_name_map
 
             true_count = 0
@@ -213,9 +235,13 @@ for i, item in enumerate(data[36:40]):  # 66:71
 
                 # Do knowledge graph enrichment
                 filtered_facts = []
-                if len(true_entities_uris) > 0:  # TODO: Combine true entities with entities extracted from question
+
+                # Combine true entities with entities extracted from question
+                focus_entities = true_entities_uris.union(question_ent_uris)
+
+                if len(focus_entities) > 0:
                     # Execute SPARQL query to get the list of predicate/object pairs for each subject
-                    for subject in list(true_entities_uris):
+                    for subject in list(focus_entities):
                         s_format = sparql_f.uri_to_sparql_format_wikidata(subject)
                         print("Subject:", subject)
 
@@ -350,9 +376,11 @@ for i, item in enumerate(data[36:40]):  # 66:71
 
 print("EM:", num_correct / len(data))
 
-# Save the QA pairs in a JSON file TODO: move to earlier for-loop and save after each iteration
-# with open(json_output_path, "w") as f:
-#     json.dump(qa_pairs, f, indent=4)
+qa_pairs['finish_time'] = str(datetime.datetime.now())
+
+# Save the QA pairs in a JSON file
+with open(json_output_path, "w") as f:
+    json.dump(qa_pairs, f, indent=4)
 
 # 2 steps
 # ASK {<http://www.wikidata.org/entity/Q652> ?predicate1 ?object1.
