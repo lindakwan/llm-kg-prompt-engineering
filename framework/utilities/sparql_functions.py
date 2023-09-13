@@ -39,9 +39,5 @@ def uri_to_sparql_format_dbpedia(uri):
 def uri_to_sparql_format_wikidata(uri):
     if uri.startswith("http://"):
         return f"<{uri}>"
-    elif uri[1:-1].startswith("http://"):
-        return f"<{uri[1:-1]}>"
-    elif not uri.startswith("\"") or not uri.startswith("'"):
-        return f"\"{uri}\""
     else:
         return uri

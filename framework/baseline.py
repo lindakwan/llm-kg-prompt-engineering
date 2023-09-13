@@ -1,12 +1,10 @@
 import json
-import subprocess
+import argparse
 
-import openai
 from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
-from SPARQLWrapper import SPARQLWrapper, JSON
-import spacy
+from SPARQLWrapper import SPARQLWrapper
 
 import utilities.sparql_functions as sparql_f
 import utilities.eval_metrics as eval_metrics
@@ -19,10 +17,25 @@ sparql_wd = SPARQLWrapper("https://query.wikidata.org/sparql")
 # sparql_dbp = SPARQLWrapper("http://dbpedia.org/sparql")
 
 # Add arguments to the command line
-# < insert data options here >
+parser = argparse.ArgumentParser(description='Run the combined LLM-KG on a dataset.')
+parser.add_argument('-d', '--dataset', help='The dataset to run the LLM-KG on.', required=True)
+args = parser.parse_args()
+
+dataset_path = ""
+json_output_path = ""
+
+if args.dataset == "geography":
+    dataset_path = "../data/mmlu_test/high_school_geography_test.csv"
+    json_output_path = "../output/qa_sets_llm_kg_geography_wd.json"
+elif args.dataset == "government_and_politics":
+    dataset_path = "../data/mmlu_test/high_school_government_and_politics_test.csv"
+    json_output_path = "../output/qa_sets_llm_kg_government_and_politics_wd.json"
+else:
+    print("Invalid dataset.")
+    exit()
 
 # Load the data
-data = dio.read_data("../data/mmlu_test/high_school_geography_test.csv")
+data = dio.read_data(dataset_path)
 
 # Create the language model
 llm = OpenAI(temperature=0)
@@ -33,7 +46,7 @@ qa_pairs = dict()
 num_correct = 0
 
 # Generate a response for each question
-for i, item in enumerate(data[66:68]):  # 66:71
+for i, item in enumerate(data[36:40]):  # 66:71
     question = item['question_text']
     response = llm.predict(question)
 
@@ -67,7 +80,7 @@ for i, item in enumerate(data[66:68]):  # 66:71
             print("Triples:", triples_names)
             print()
 
-            qa_pairs[i]["triples"] = triples_names
+            qa_pairs[i]["extracted_triples"] = triples_names
 
             entities_name_uri_map = dict()
             relations_name_uri_map = dict()
@@ -112,6 +125,10 @@ for i, item in enumerate(data[66:68]):  # 66:71
 
             # Print triples as tuple of URIs
             print("Extracted triples URIs:", extr_triples_uris)
+            print()
+
+            qa_pairs[i]["extracted_triples_uris"] = extr_triples_uris
+            qa_pairs[i]["uri_name_map"] = uri_name_map
 
             true_count = 0
             true_facts_uris = []
@@ -186,46 +203,51 @@ for i, item in enumerate(data[66:68]):  # 66:71
             qa_pairs[i]["evaluation_score"] = eval_score
 
             if eval_score < 0.5:
-                # Retrieve all entities from the true facts
-                # true_entities = dict()
-                # for j, (s_uri, _, o_uri) in enumerate(true_facts_uris):
-                #     s_name, _, o_name = true_facts_names[j]
-                #     true_entities[s_uri] = s_name
-                #     true_entities[o_uri] = o_name
-                #
-                # true_relations = dict()
-                # for j, (_, p_uri, _) in enumerate(true_facts_uris):
-                #     true_relations[p_uri] = true_facts_names[j][1]
+                qa_pairs[i]["below_threshold"] = True
 
                 print("True entities:", true_entities_uris)
                 # print("True relations:", true_relations)
                 print()
 
-                quit()  # TODO: Remove quit placeholder
+                qa_pairs[i]["true_entities"] = list(true_entities_uris)
 
                 # Do knowledge graph enrichment
                 filtered_facts = []
                 if len(true_entities_uris) > 0:  # TODO: Combine true entities with entities extracted from question
-                    # Execute SPARQL query to get the list of predicate/object pairs
-                    # subject = list(true_entities.keys())[0]
-                    for subject in list(true_entities_uris):  # TODO: Check this line
+                    # Execute SPARQL query to get the list of predicate/object pairs for each subject
+                    for subject in list(true_entities_uris):
+                        s_format = sparql_f.uri_to_sparql_format_wikidata(subject)
                         print("Subject:", subject)
-                        sparql_query = f'SELECT ?predicate WHERE {{{subject} ?predicate ?object. \
-                        FILTER(!isLiteral(?object) || lang(?object) = "" || langMatches(lang(?object), "EN"))}}'
+
+                        sparql_query = f'SELECT ?predicate ?propLabel ?object ?objectLabel WHERE {{ \
+                        {s_format} ?predicate ?object. \
+                        SERVICE wikibase:label {{ \
+                            bd:serviceParam wikibase:language "en" . }} \
+                        ?prop wikibase:directClaim ?predicate . \
+                        ?prop rdfs:label ?propLabel.  filter(lang(?propLabel) = "en"). \
+                        FILTER(!isLiteral(?object) || lang(?object) = "" || langMatches(lang(?object), "EN")) }}'
+
                         print(sparql_query)
                         sparql_output = sparql_f.execute_sparql_query(sparql_query, sparql_wd)
                         sparql_bindings = sparql_output['results']['bindings']
 
-                        unique_predicates = dict()
+                        # print("SPARQL bindings:", sparql_bindings)
 
+                        unique_predicates = dict()  # Map URI to alias
+
+                        # Get uris and names of unique predicates
                         for binding in sparql_bindings:
-                            predicate = binding['predicate']['value']
-                            predicate_alias = sparql_f.get_name_from_dbpedia_uri(predicate)
-                            if predicate_alias not in unique_predicates:
-                                unique_predicates[predicate_alias] = []
-                            unique_predicates[predicate_alias].append(predicate)
+                            predicate_uri = binding['predicate']['value']
+                            predicate_name = binding['propLabel']['value']
+                            if predicate_name not in unique_predicates:
+                                unique_predicates[predicate_name] = []
+                            if predicate_uri not in unique_predicates[predicate_name]:
+                                unique_predicates[predicate_name].append(predicate_uri)
 
-                        # print("Unique predicates:", unique_predicates.keys())
+                        # print("Unique predicates:", unique_predicates)
+                        # print()
+
+                        # qa_pairs[i]["unique_predicates_" + uri_name_map[subject]] = unique_predicates
 
                         # Given a list of predicates, use the LLM to get the order of predicates by most relevant
                         top_preds = llm_tasks.extract_relevant_predicates(question, list(unique_predicates.keys()), k=3)
@@ -233,28 +255,33 @@ for i, item in enumerate(data[66:68]):  # 66:71
                         print("Top predicates:", top_preds)
                         print()
 
-                        # Execute SPARQL query for each of the top 5 predicates
-                        for pred in top_preds:
-                            pred_uri = unique_predicates[pred][0]
-                            sparql_query = f'SELECT ?object WHERE {{{subject} <{pred_uri}> ?object. \
+                        qa_pairs[i]["top_predicates_" + uri_name_map[subject]] = top_preds
+
+                        # Execute SPARQL query for each of the top 3 predicates
+                        for top_pred in top_preds:
+                            pred_uri = unique_predicates[top_pred][0]
+                            top_p_format = sparql_f.uri_to_sparql_format_wikidata(pred_uri)
+                            # TODO: Use the existing SPARQL binding instead of executing a new SPARQL query
+                            sparql_query = f'SELECT ?object ?objectLabel WHERE \
+                            {{{s_format} {top_p_format} ?object. \
+                            SERVICE wikibase:label {{ \
+                                bd:serviceParam wikibase:language "en" . }} \
                             FILTER(!isLiteral(?object) || lang(?object) = "" || langMatches(lang(?object), "EN"))}}'
                             print(sparql_query)
                             sparql_output = sparql_f.execute_sparql_query(sparql_query, sparql_wd)
                             sparql_bindings = sparql_output['results']['bindings']
 
-                            # print(sparql_bindings)
-
                             for binding in sparql_bindings:
-                                obj = binding['object']['value']
-                                filtered_facts.append((subject, pred_uri, obj))
+                                objLabel = binding['objectLabel']['value']
+                                filtered_facts.append((uri_name_map[subject], top_pred, objLabel))
 
-                        print()
+                print(filtered_facts)
+                print()
+
+                qa_pairs[i]["filtered_facts_for_context"] = filtered_facts
 
                 context_string = ""
-                for s, p, o in filtered_facts:
-                    s_name = uri_name_map[s]  # TODO: Check this line
-                    p_name = sparql_f.get_name_from_dbpedia_uri(p)
-                    o_name = sparql_f.get_name_from_dbpedia_uri(o)
+                for s_name, p_name, o_name in filtered_facts:
                     context_string += f"{s_name} {p_name} {o_name}. "
 
                 print("Context String:", context_string)
@@ -270,7 +297,10 @@ for i, item in enumerate(data[66:68]):  # 66:71
                 new_response = chain.run({"question": question, "context": context_string})
 
                 print("New Response:", new_response.strip())
+
+                qa_pairs[i]["new_response"] = new_response.strip()
             else:
+                qa_pairs[i]["below_threshold"] = False
                 new_response = response.strip()
     except TimeoutException:
         print("Timeout Exception")
@@ -298,26 +328,8 @@ for i, item in enumerate(data[66:68]):  # 66:71
     qa_pairs[i]["llm_answer"] = letter_output
     qa_pairs[i]["llm_is_correct"] = is_correct
 
-    # new_response = llm.predict(f"{question}\nContext:{context_string}")
-
-    # relevant_entities_json = openai.ChatCompletion.create(
-    #     model="gpt-3.5-turbo",
-    #     messages=[
-    #         {
-    #             "role": "system",
-    #             "content": "You will be provided with question text and a list of entities. \
-    #             Your task is to order the entities by most relevant to text."
-    #         },
-    #         {
-    #             "role": "user",
-    #             "content": f"Text: {question}\nEntities: {unique_entities.keys()}"
-    #         }
-    #     ],
-    #     temperature=0,
-    #     max_tokens=256
-    # )
-    #
-    # print(relevant_entities_json)
+    with open(json_output_path, "w") as f:
+        json.dump(qa_pairs, f, indent=4)
 
     '''
     # Example SPARQL Query
@@ -338,10 +350,21 @@ for i, item in enumerate(data[66:68]):  # 66:71
 
 print("EM:", num_correct / len(data))
 
-# Save the QA pairs in a JSON file
-with open("../output/qa_sets_llm_kg_geography01.json", "w") as f:
-    json.dump(qa_pairs, f, indent=4)
+# Save the QA pairs in a JSON file TODO: move to earlier for-loop and save after each iteration
+# with open(json_output_path, "w") as f:
+#     json.dump(qa_pairs, f, indent=4)
 
 # 2 steps
 # ASK {<http://www.wikidata.org/entity/Q652> ?predicate1 ?object1.
 #      ?subject2 ?predicate2 <http://www.wikidata.org/entity/Q19814>.}
+
+# Get predicate label
+# SELECT ?predicate ?propLabel ?object ?objectLabel WHERE {
+#   <http://www.wikidata.org/entity/Q43473> ?predicate ?object.
+#   SERVICE wikibase:label {
+#     bd:serviceParam wikibase:language "en" .
+#   }
+#   ?prop wikibase:directClaim ?predicate .
+#   ?prop rdfs:label ?propLabel.  filter(lang(?propLabel) = "en").
+#   FILTER(!isLiteral(?object) || lang(?object) = "" || langMatches(lang(?object), "EN"))
+# }

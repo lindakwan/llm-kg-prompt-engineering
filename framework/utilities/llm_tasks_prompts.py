@@ -136,7 +136,7 @@ def extract_relevant_predicates(text, predicates, k=3):
                 "role": "system",
                 "content": "You will be provided with question text and a list of predicates. \
                 Your task is to order the predicates by most relevant to text. No documentation, no explanation, \
-                only python3 code."
+                only valid python3 list."
             },
             {
                 "role": "user",
@@ -147,7 +147,7 @@ def extract_relevant_predicates(text, predicates, k=3):
         max_tokens=2000
     )
 
-    relevant_preds_opt = relevant_preds_json["choices"][0]["message"]["content"]
+    relevant_preds_opt = relevant_preds_json["choices"][-1]["message"]["content"]
     print("Relevant predicates output:", relevant_preds_opt)
 
     relevant_preds = ast.literal_eval(re.findall(r'\[.*?\]', relevant_preds_opt)[0])
