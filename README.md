@@ -2,6 +2,7 @@
 Create a new file called `openai_api_key.txt` and insert your OpenAI API key there.
 
 ## Latest Results
+| Model                                                    | EM (MMLU Geography) | EM (MMLU Government & Politics) |
 |----------------------------------------------------------|---------------------|---------------------------------|
 | GPT 3.5                                                  | 0.6565656565656566  | 0.6839378238341969              |
 | GPT 3.5 + Wikidata (baseline)                            | 0.48484848484848486 | 0.6632124352331606              |
