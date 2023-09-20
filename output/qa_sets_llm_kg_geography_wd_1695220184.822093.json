@@ -9965,5 +9965,640 @@
         "new_response": "Answer: Subsistence agriculture is being replaced by large-scale commercial development in many regions around the world, including Africa, Asia, Latin America, and the Caribbean.",
         "llm_answer": "B",
         "llm_is_correct": true
+    },
+    "50": {
+        "question": "A strong movement away from all religions is called",
+        "choices": [
+            "secularism.",
+            "heathenism.",
+            "sacrilege.",
+            "nationalism."
+        ],
+        "initial_response": "secularism. Secularism is the belief that religion should not be involved in government, education, or other public aspects of society. It is based on the idea that religion is a personal matter and should not be imposed on others.",
+        "question_entity_names": [
+            "movement"
+        ],
+        "response_entity_names": [
+            "secularism",
+            "religion",
+            "government",
+            "education",
+            "public aspects of society"
+        ],
+        "extracted_triples": [
+            [
+                "movement",
+                "called",
+                "secularism"
+            ],
+            [
+                "secularism",
+                "based",
+                "the idea that religion is a personal matter"
+            ],
+            [
+                "religion",
+                "involved",
+                "government"
+            ],
+            [
+                "religion",
+                "involved",
+                "education"
+            ],
+            [
+                "religion",
+                "involved",
+                "other public aspects of society"
+            ],
+            [
+                "religion",
+                "imposed",
+                "others"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q49773",
+                "wdt:P511",
+                "wd:Q216920"
+            ],
+            [
+                "wd:Q216920",
+                "wdt:P887",
+                "wd:Q3513477"
+            ],
+            [
+                "wd:Q9174",
+                "wdt:P518",
+                "wd:Q7188"
+            ],
+            [
+                "wd:Q9174",
+                "wdt:P518",
+                "wd:Q8434"
+            ],
+            [
+                "wd:Q9174",
+                "wdt:P518",
+                "wd:Q180684"
+            ],
+            [
+                "wd:Q9174",
+                "wdt:P31",
+                "wd:Q55107540"
+            ]
+        ],
+        "question_entities_uris": [
+            "wd:Q49773"
+        ],
+        "uri_name_map": {
+            "wd:Q49773": "movement",
+            "wdt:P511": "called",
+            "wd:Q216920": "secularism",
+            "wdt:P887": "based",
+            "wd:Q3513477": "the idea that religion is a personal matter",
+            "wd:Q9174": "religion",
+            "wdt:P518": "involved",
+            "wd:Q7188": "government",
+            "wd:Q8434": "education",
+            "wd:Q180684": "other public aspects of society",
+            "wdt:P31": "imposed",
+            "wd:Q55107540": "others",
+            "http://www.wikidata.org/entity/Q110401282": "type of world view"
+        },
+        "truth_score": 0.7596061255910935,
+        "% true": 0.1266010209318489,
+        "true_facts_names": [
+            [
+                "religion",
+                "imposed",
+                "type of world view"
+            ]
+        ],
+        "true_facts_uris": [
+            [
+                "wd:Q9174",
+                "wdt:P31",
+                "http://www.wikidata.org/entity/Q110401282"
+            ]
+        ],
+        "linked_entities": [
+            "wd:Q216920",
+            "wd:Q3513477",
+            "wd:Q8434",
+            "wd:Q9174",
+            "wd:Q180684",
+            "wd:Q7188",
+            "wd:Q55107540",
+            "wd:Q49773"
+        ],
+        "evaluation_score": 0.21394091883866403,
+        "below_threshold": true,
+        "true_entities": [
+            "http://www.wikidata.org/entity/Q110401282",
+            "wd:Q9174"
+        ],
+        "top_predicates_type of world view": [
+            "subclass of",
+            "instance of",
+            "is metaclass for"
+        ],
+        "top_predicates_movement": [
+            "instance of",
+            "subclass of",
+            "different from"
+        ],
+        "top_predicates_religion": [
+            "instance of",
+            "subclass of",
+            "facet of"
+        ],
+        "filtered_facts_for_context": [
+            [
+                "type of world view",
+                "subclass of",
+                "type"
+            ],
+            [
+                "type of world view",
+                "instance of",
+                "Wikidata metaclass"
+            ],
+            [
+                "type of world view",
+                "is metaclass for",
+                "world view"
+            ],
+            [
+                "movement",
+                "instance of",
+                "type of world view"
+            ],
+            [
+                "movement",
+                "subclass of",
+                "social process"
+            ],
+            [
+                "movement",
+                "subclass of",
+                "group action"
+            ],
+            [
+                "movement",
+                "different from",
+                "Q4330229"
+            ],
+            [
+                "movement",
+                "different from",
+                "dissidence"
+            ],
+            [
+                "religion",
+                "instance of",
+                "type of world view"
+            ],
+            [
+                "religion",
+                "subclass of",
+                "ideology"
+            ],
+            [
+                "religion",
+                "subclass of",
+                "world view"
+            ],
+            [
+                "religion",
+                "subclass of",
+                "tradition"
+            ],
+            [
+                "religion",
+                "subclass of",
+                "belief system"
+            ],
+            [
+                "religion",
+                "subclass of",
+                "religion or world view"
+            ],
+            [
+                "religion",
+                "facet of",
+                "marriage"
+            ],
+            [
+                "religion",
+                "facet of",
+                "culture"
+            ],
+            [
+                "religion",
+                "facet of",
+                "myth of origins"
+            ],
+            [
+                "religion",
+                "facet of",
+                "mortality"
+            ],
+            [
+                "religion",
+                "facet of",
+                "sexual morality"
+            ]
+        ],
+        "context_string": "type of world view subclass of type. type of world view instance of Wikidata metaclass. type of world view is metaclass for world view. movement instance of type of world view. movement subclass of social process. movement subclass of group action. movement different from Q4330229. movement different from dissidence. religion instance of type of world view. religion subclass of ideology. religion subclass of world view. religion subclass of tradition. religion subclass of belief system. religion subclass of religion or world view. religion facet of marriage. religion facet of culture. religion facet of myth of origins. religion facet of mortality. religion facet of sexual morality. ",
+        "new_response": "Answer: Secularism",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "51": {
+        "question": "Regions share all of these characteristics EXCEPT",
+        "choices": [
+            "boundaries.",
+            "common features.",
+            "relative location.",
+            "easily defined."
+        ],
+        "initial_response": "the ability to pass laws.",
+        "question_entity_names": [
+            "Regions"
+        ],
+        "response_entity_names": [
+            "ability",
+            "laws"
+        ],
+        "extracted_triples": [
+            [
+                "Regions",
+                "share",
+                "characteristics"
+            ],
+            [
+                "Regions",
+                "share",
+                "ability"
+            ],
+            [
+                "Regions",
+                "share",
+                "laws"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q429976",
+                "wdt:P1107",
+                "wd:Q21127557"
+            ],
+            [
+                "wd:Q429976",
+                "wdt:P1107",
+                "wd:Q1347367"
+            ],
+            [
+                "wd:Q429976",
+                "wdt:P1107",
+                "wd:Q22096098"
+            ]
+        ],
+        "question_entities_uris": [
+            "wd:Q429976"
+        ],
+        "uri_name_map": {
+            "wd:Q429976": "Regions",
+            "wdt:P1107": "share",
+            "wd:Q21127557": "characteristics",
+            "wd:Q1347367": "ability",
+            "wd:Q22096098": "laws"
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q22096098",
+            "wd:Q1347367",
+            "wd:Q429976",
+            "wd:Q21127557"
+        ],
+        "evaluation_score": 0.1,
+        "below_threshold": true,
+        "true_entities": [],
+        "top_predicates_Regions": [
+            "image",
+            "Commons category",
+            "subclass of"
+        ],
+        "filtered_facts_for_context": [
+            [
+                "Regions",
+                "image",
+                "http://commons.wikimedia.org/wiki/Special:FilePath/Florenreiche.jpg"
+            ],
+            [
+                "Regions",
+                "image",
+                "http://commons.wikimedia.org/wiki/Special:FilePath/Floristic%20regions%20in%20Europe%20%28english%29.png"
+            ],
+            [
+                "Regions",
+                "Commons category",
+                "Phytochoria"
+            ],
+            [
+                "Regions",
+                "subclass of",
+                "territory"
+            ]
+        ],
+        "context_string": "Regions image http://commons.wikimedia.org/wiki/Special:FilePath/Florenreiche.jpg. Regions image http://commons.wikimedia.org/wiki/Special:FilePath/Floristic%20regions%20in%20Europe%20%28english%29.png. Regions Commons category Phytochoria. Regions subclass of territory. ",
+        "new_response": "A physical boundary.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "52": {
+        "question": "Which of the following U.S. main immigration flow associations is NOT correct?",
+        "choices": [
+            "Pioneer settlement to 1870\u2014Germans, British, Scotch-Irish, Africans",
+            "1870\u20131914\u2014Asians",
+            "1870\u20131914\u2014Eastern and southern Europeans",
+            "1965\u2013present\u2014Hispanics"
+        ],
+        "initial_response": "A. The majority of immigrants to the United States come from Mexico.",
+        "question_entity_names": [
+            "U.S."
+        ],
+        "response_entity_names": [
+            "United States",
+            "Mexico"
+        ],
+        "extracted_triples": [
+            [
+                "U.S.",
+                "main immigration flow associations",
+                "NOT correct"
+            ],
+            [
+                "immigrants",
+                "come",
+                "Mexico"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q30",
+                "wdt:P1534",
+                "wd:Q1065"
+            ],
+            [
+                "wd:Q3415903",
+                "wdt:P155",
+                "wd:Q96"
+            ]
+        ],
+        "question_entities_uris": [
+            "wd:Q30"
+        ],
+        "uri_name_map": {
+            "wd:Q30": "U.S.",
+            "wdt:P1534": "main immigration flow associations",
+            "wd:Q1065": "NOT correct",
+            "wd:Q3415903": "immigrants",
+            "wdt:P155": "come",
+            "wd:Q96": "Mexico",
+            "http://www.wikidata.org/prop/direct/P463": "member of"
+        },
+        "truth_score": 0.7621439994354897,
+        "% true": 0.38107199971774486,
+        "true_facts_names": [
+            [
+                "U.S.",
+                "member of",
+                "NOT correct"
+            ]
+        ],
+        "true_facts_uris": [
+            [
+                "wd:Q30",
+                "http://www.wikidata.org/prop/direct/P463",
+                "wd:Q1065"
+            ]
+        ],
+        "linked_entities": [
+            "wd:Q1065",
+            "wd:Q30",
+            "wd:Q96",
+            "wd:Q3415903"
+        ],
+        "evaluation_score": 0.44296479974597036,
+        "below_threshold": true,
+        "true_entities": [
+            "wd:Q1065",
+            "wd:Q30"
+        ],
+        "top_predicates_NOT correct": [
+            "described by source",
+            "subclass of",
+            "facet of"
+        ],
+        "top_predicates_U.S.": [
+            "country",
+            "continent",
+            "geography of topic"
+        ],
+        "filtered_facts_for_context": [
+            [
+                "NOT correct",
+                "described by source",
+                "Internetowa encyklopedia PWN"
+            ],
+            [
+                "NOT correct",
+                "described by source",
+                "Treccani's Enciclopedia on line"
+            ],
+            [
+                "NOT correct",
+                "subclass of",
+                "organization"
+            ],
+            [
+                "NOT correct",
+                "facet of",
+                "liberal international order"
+            ],
+            [
+                "U.S.",
+                "country",
+                "United States of America"
+            ],
+            [
+                "U.S.",
+                "continent",
+                "North America"
+            ],
+            [
+                "U.S.",
+                "geography of topic",
+                "geography of the United States"
+            ]
+        ],
+        "context_string": "NOT correct described by source Internetowa encyklopedia PWN. NOT correct described by source Treccani's Enciclopedia on line. NOT correct subclass of organization. NOT correct facet of liberal international order. U.S. country United States of America. U.S. continent North America. U.S. geography of topic geography of the United States. ",
+        "new_response": "Answer: NOT correct subclass of organization.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "53": {
+        "question": "Which one of the statements below is characteristic of most African cities?",
+        "choices": [
+            "They have thriving, clean residential areas.",
+            "There are jobs for most rural-to-urban migrants.",
+            "They have three separate business districts.",
+            "They have a well-developed infrastructure."
+        ],
+        "initial_response": "African cities tend to have high population densities and rapid population growth.",
+        "question_entity_names": [
+            "African cities"
+        ],
+        "response_entity_names": [
+            "African cities"
+        ],
+        "extracted_triples": [
+            [
+                "African cities",
+                "tend",
+                "high population densities"
+            ],
+            [
+                "African cities",
+                "tend",
+                "rapid population growth"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q58258548",
+                "wdt:P31",
+                "wd:Q90750824"
+            ],
+            [
+                "wd:Q58258548",
+                "wdt:P31",
+                "wd:Q58156977"
+            ]
+        ],
+        "question_entities_uris": [
+            "wd:Q58258548"
+        ],
+        "uri_name_map": {
+            "wd:Q58258548": "African cities",
+            "wdt:P31": "tend",
+            "wd:Q90750824": "high population densities",
+            "wd:Q58156977": "rapid population growth",
+            "http://www.wikidata.org/entity/Q13442814": "scholarly article"
+        },
+        "truth_score": 1.5114037396355418,
+        "% true": 0.7557018698177709,
+        "true_facts_names": [
+            [
+                "African cities",
+                "tend",
+                "scholarly article"
+            ],
+            [
+                "African cities",
+                "tend",
+                "scholarly article"
+            ]
+        ],
+        "true_facts_uris": [
+            [
+                "wd:Q58258548",
+                "wdt:P31",
+                "http://www.wikidata.org/entity/Q13442814"
+            ],
+            [
+                "wd:Q58258548",
+                "wdt:P31",
+                "http://www.wikidata.org/entity/Q13442814"
+            ]
+        ],
+        "linked_entities": [
+            "wd:Q90750824",
+            "wd:Q58156977",
+            "wd:Q58258548"
+        ],
+        "evaluation_score": 0.7801316828359938,
+        "below_threshold": true,
+        "true_entities": [
+            "http://www.wikidata.org/entity/Q13442814",
+            "wd:Q58258548"
+        ],
+        "top_predicates_scholarly article": [
+            "subclass of",
+            "image",
+            "exact match"
+        ],
+        "top_predicates_African cities": [
+            "instance of",
+            "title",
+            "author name string"
+        ],
+        "filtered_facts_for_context": [
+            [
+                "scholarly article",
+                "subclass of",
+                "article"
+            ],
+            [
+                "scholarly article",
+                "subclass of",
+                "scientific publication"
+            ],
+            [
+                "scholarly article",
+                "subclass of",
+                "scientific literature"
+            ],
+            [
+                "scholarly article",
+                "subclass of",
+                "scholarly work"
+            ],
+            [
+                "scholarly article",
+                "image",
+                "http://commons.wikimedia.org/wiki/Special:FilePath/Scientific%20citations.png"
+            ],
+            [
+                "scholarly article",
+                "exact match",
+                "https://citationstyles.org/ontology/type/article-journal"
+            ],
+            [
+                "African cities",
+                "instance of",
+                "scholarly article"
+            ],
+            [
+                "African cities",
+                "title",
+                "African Cities: Alternative Vision of Urban Theory and Practice"
+            ],
+            [
+                "African cities",
+                "author name string",
+                "Jamal M. Moosa"
+            ]
+        ],
+        "context_string": "scholarly article subclass of article. scholarly article subclass of scientific publication. scholarly article subclass of scientific literature. scholarly article subclass of scholarly work. scholarly article image http://commons.wikimedia.org/wiki/Special:FilePath/Scientific%20citations.png. scholarly article exact match https://citationstyles.org/ontology/type/article-journal. African cities instance of scholarly article. African cities title African Cities: Alternative Vision of Urban Theory and Practice. African cities author name string Jamal M. Moosa. ",
+        "new_response": "Answer: African Cities: Alternative Vision of Urban Theory and Practice was written by Jamal M. Moosa.",
+        "llm_answer": "A",
+        "llm_is_correct": false
     }
 }
