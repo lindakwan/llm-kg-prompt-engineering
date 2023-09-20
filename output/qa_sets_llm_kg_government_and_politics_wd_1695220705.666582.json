@@ -7599,5 +7599,1219 @@
         "new_response": "Answer: Investors country Canada.",
         "llm_answer": "A",
         "llm_is_correct": false
+    },
+    "38": {
+        "question": "Each of the two main political parties of the United States is organized",
+        "choices": [
+            "as a single party with a presence at the national level only",
+            "into a federal structure in which state and local parties have no power",
+            "as a relatively independent organization that exists at all levels of government",
+            "in a top-down fashion, so that instructions are dispersed from the national level to the state and local levels"
+        ],
+        "initial_response": "around a set of core beliefs and values.\n\nThe Republican Party is generally conservative and believes in limited government, free markets, and individual responsibility. It supports lower taxes, strong national defense, and traditional values.\n\nThe Democratic Party is generally progressive and believes in a strong government that provides for the needs of its citizens. It supports higher taxes on the wealthy, a robust social safety net, and civil rights for all. It also believes in environmental protection and a strong international presence.",
+        "question_entity_names": [
+            "United States",
+            "political parties"
+        ],
+        "response_entity_names": [
+            "Republican Party",
+            "Democratic Party"
+        ],
+        "extracted_triples": [
+            [
+                "United States",
+                "organized around",
+                "a set of core beliefs and values"
+            ],
+            [
+                "Democratic Party",
+                "generally progressive",
+                "a strong government that provides for the needs of its citizens"
+            ],
+            [
+                "Democratic Party",
+                "believes",
+                "environmental protection and a strong international presence"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q30",
+                "wdt:P138",
+                "wd:Q35120"
+            ],
+            [
+                "wd:Q29552",
+                "wdt:P31",
+                "wd:Q1001"
+            ],
+            [
+                "wd:Q29552",
+                "wdt:P140",
+                "wd:Q1047500"
+            ]
+        ],
+        "question_entities_uris": [
+            "wd:Q30",
+            "wd:Q7278"
+        ],
+        "uri_name_map": {
+            "wd:Q30": "United States",
+            "wdt:P138": "organized around",
+            "wd:Q35120": "a set of core beliefs and values",
+            "wd:Q29552": "Democratic Party",
+            "wdt:P31": "generally progressive",
+            "wd:Q1001": "a strong government that provides for the needs of its citizens",
+            "wdt:P140": "believes",
+            "wd:Q1047500": "environmental protection and a strong international presence",
+            "wd:Q7278": "political parties",
+            "http://www.wikidata.org/entity/Q828": "Americas",
+            "http://www.wikidata.org/entity/Q7278": "political party"
+        },
+        "truth_score": 1.5565376195678855,
+        "% true": 0.5188458731892952,
+        "true_facts_names": [
+            [
+                "United States",
+                "organized around",
+                "Americas"
+            ],
+            [
+                "Democratic Party",
+                "generally progressive",
+                "political party"
+            ]
+        ],
+        "true_facts_uris": [
+            [
+                "wd:Q30",
+                "wdt:P138",
+                "http://www.wikidata.org/entity/Q828"
+            ],
+            [
+                "wd:Q29552",
+                "wdt:P31",
+                "http://www.wikidata.org/entity/Q7278"
+            ]
+        ],
+        "linked_entities": [
+            "wd:Q29552",
+            "wd:Q35120",
+            "wd:Q1047500",
+            "wd:Q30",
+            "wd:Q1001"
+        ],
+        "evaluation_score": 0.5669612858703656,
+        "below_threshold": true,
+        "true_entities": [
+            "http://www.wikidata.org/entity/Q828",
+            "wd:Q30",
+            "wd:Q29552",
+            "http://www.wikidata.org/entity/Q7278"
+        ],
+        "top_predicates_Democratic Party": [
+            "political ideology",
+            "political alignment",
+            "office held by head of the organization"
+        ],
+        "top_predicates_political party": [
+            "instance of",
+            "subclass of",
+            "Commons category"
+        ],
+        "top_predicates_Americas": [
+            "history of topic",
+            "part of",
+            "instance of"
+        ],
+        "top_predicates_United States": [
+            "part of",
+            "legislative body",
+            "head of government"
+        ],
+        "top_predicates_political parties": [
+            "subclass of",
+            "instance of",
+            "has part(s)"
+        ],
+        "filtered_facts_for_context": [
+            [
+                "Democratic Party",
+                "political ideology",
+                "social liberalism"
+            ],
+            [
+                "Democratic Party",
+                "political ideology",
+                "modern liberalism in the United States"
+            ],
+            [
+                "Democratic Party",
+                "political alignment",
+                "centrism"
+            ],
+            [
+                "Democratic Party",
+                "office held by head of the organization",
+                "Chairman of the Democratic National Committee"
+            ],
+            [
+                "political party",
+                "instance of",
+                "legal form"
+            ],
+            [
+                "political party",
+                "subclass of",
+                "organization"
+            ],
+            [
+                "political party",
+                "subclass of",
+                "juridical person"
+            ],
+            [
+                "political party",
+                "subclass of",
+                "political organization"
+            ],
+            [
+                "political party",
+                "Commons category",
+                "Political parties"
+            ],
+            [
+                "Americas",
+                "history of topic",
+                "history of the Americas"
+            ],
+            [
+                "Americas",
+                "part of",
+                "Earth"
+            ],
+            [
+                "Americas",
+                "part of",
+                "Earth's surface"
+            ],
+            [
+                "Americas",
+                "instance of",
+                "continent"
+            ],
+            [
+                "Americas",
+                "instance of",
+                "supercontinent"
+            ],
+            [
+                "Americas",
+                "instance of",
+                "part of the world"
+            ],
+            [
+                "United States",
+                "part of",
+                "North America"
+            ],
+            [
+                "United States",
+                "legislative body",
+                "United States Congress"
+            ],
+            [
+                "United States",
+                "head of government",
+                "Joe Biden"
+            ],
+            [
+                "political parties",
+                "subclass of",
+                "organization"
+            ],
+            [
+                "political parties",
+                "subclass of",
+                "juridical person"
+            ],
+            [
+                "political parties",
+                "subclass of",
+                "political organization"
+            ],
+            [
+                "political parties",
+                "instance of",
+                "legal form"
+            ],
+            [
+                "political parties",
+                "has part(s)",
+                "juvenile political organization"
+            ]
+        ],
+        "context_string": "Democratic Party political ideology social liberalism. Democratic Party political ideology modern liberalism in the United States. Democratic Party political alignment centrism. Democratic Party office held by head of the organization Chairman of the Democratic National Committee. political party instance of legal form. political party subclass of organization. political party subclass of juridical person. political party subclass of political organization. political party Commons category Political parties. Americas history of topic history of the Americas. Americas part of Earth. Americas part of Earth's surface. Americas instance of continent. Americas instance of supercontinent. Americas instance of part of the world. United States part of North America. United States legislative body United States Congress. United States head of government Joe Biden. political parties subclass of organization. political parties subclass of juridical person. political parties subclass of political organization. political parties instance of legal form. political parties has part(s) juvenile political organization. ",
+        "new_response": "Answer: The two main political parties of the United States are the Democratic Party and the Republican Party. The Democratic Party is organized around social liberalism and modern liberalism in the United States, and is aligned with centrism. The head of the organization is the Chairman of the Democratic National Committee. The Republican Party is organized around conservatism and classical liberalism in the United States, and is aligned with the right-wing. The head of the organization is the Chairman of the Republican National Committee. Both parties are legal forms of organizations, and are subclasses of organizations, juridical persons, and political organizations. They are also part of the history of the Americas, a part of Earth's surface, a continent, and a supercontinent. In the United States, the legislative body is the United States Congress, and the head of government is Joe Biden. Both parties also have juvenile political organizations as part of their structure.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "39": {
+        "question": "The origination clause of the Constitution states that",
+        "choices": [
+            "the Bill of Rights must not be infringed upon by any state legislature",
+            "Congress and the president must jointly create the annual federal budget",
+            "revenue bills must be initiated in the House of Representatives",
+            "the Supreme Court has original jurisdiction over all constitutional matters"
+        ],
+        "initial_response": "\"All legislative Powers herein granted shall be vested in a Congress of the United States, which shall consist of a Senate and House of Representatives.\" This clause establishes the legislative branch of the federal government and outlines the structure of Congress. It also grants Congress the power to make laws and regulate commerce.",
+        "question_entity_names": [
+            "origination clause",
+            "Constitution"
+        ],
+        "response_entity_names": [
+            "legislative Powers",
+            "Congress of the United States",
+            "Senate",
+            "House of Representatives"
+        ],
+        "extracted_triples": [
+            [
+                "origination clause",
+                "establishes",
+                "legislative branch of the federal government"
+            ],
+            [
+                "origination clause",
+                "outlines",
+                "structure of Congress"
+            ],
+            [
+                "origination clause",
+                "grants",
+                "Congress the power to make laws and regulate commerce"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q17162718",
+                "wdt:P31",
+                "wd:Q1860"
+            ],
+            [
+                "wd:Q17162718",
+                "wdt:P56",
+                "wd:Q11862829"
+            ],
+            [
+                "wd:Q17162718",
+                "wdt:P5460",
+                "wd:Q131457"
+            ]
+        ],
+        "question_entities_uris": [
+            "wd:Q17162718",
+            "wd:Q7755"
+        ],
+        "uri_name_map": {
+            "wd:Q17162718": "origination clause",
+            "wdt:P31": "establishes",
+            "wd:Q1860": "legislative branch of the federal government",
+            "wdt:P56": "outlines",
+            "wd:Q11862829": "structure of Congress",
+            "wdt:P5460": "grants",
+            "wd:Q131457": "Congress the power to make laws and regulate commerce",
+            "wd:Q7755": "Constitution"
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q17162718",
+            "wd:Q1860",
+            "wd:Q131457",
+            "wd:Q11862829"
+        ],
+        "evaluation_score": 0.06666666666666667,
+        "below_threshold": true,
+        "true_entities": [],
+        "top_predicates_origination clause": [
+            "applies to jurisdiction",
+            "Quora topic ID",
+            "Freebase ID"
+        ],
+        "top_predicates_Constitution": [
+            "described by source",
+            "Library of Congress authority ID",
+            "Library of Congress Classification"
+        ],
+        "filtered_facts_for_context": [
+            [
+                "origination clause",
+                "applies to jurisdiction",
+                "United States of America"
+            ],
+            [
+                "origination clause",
+                "Quora topic ID",
+                "Origination-Clause"
+            ],
+            [
+                "origination clause",
+                "Freebase ID",
+                "/m/011bcfy7"
+            ],
+            [
+                "Constitution",
+                "described by source",
+                "Brockhaus and Efron Encyclopedic Dictionary"
+            ],
+            [
+                "Constitution",
+                "described by source",
+                "Encyclop\u00e6dia Britannica 11th edition"
+            ],
+            [
+                "Constitution",
+                "described by source",
+                "Ott\u016fv slovn\u00edk nau\u010dn\u00fd"
+            ],
+            [
+                "Constitution",
+                "described by source",
+                "Small Brockhaus and Efron Encyclopedic Dictionary"
+            ],
+            [
+                "Constitution",
+                "Library of Congress authority ID",
+                "sh85031336"
+            ],
+            [
+                "Constitution",
+                "Library of Congress Classification",
+                "K3154-K3370"
+            ]
+        ],
+        "context_string": "origination clause applies to jurisdiction United States of America. origination clause Quora topic ID Origination-Clause. origination clause Freebase ID /m/011bcfy7. Constitution described by source Brockhaus and Efron Encyclopedic Dictionary. Constitution described by source Encyclop\u00e6dia Britannica 11th edition. Constitution described by source Ott\u016fv slovn\u00edk nau\u010dn\u00fd. Constitution described by source Small Brockhaus and Efron Encyclopedic Dictionary. Constitution Library of Congress authority ID sh85031336. Constitution Library of Congress Classification K3154-K3370. ",
+        "new_response": "Answer: The origination clause of the Constitution states that all bills for raising revenue must originate in the House of Representatives.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "40": {
+        "question": "Among the following groups that have traditionally supposed the Democratic Party, which has the least liberal constituency?",
+        "choices": [
+            "White Southerners",
+            "Labor union members",
+            "African Americans",
+            "Northern ethnic minorities"
+        ],
+        "initial_response": "The least liberal constituency among traditionally Democratic groups is likely to be rural voters.",
+        "question_entity_names": [
+            "Democratic Party"
+        ],
+        "response_entity_names": [
+            "Democratic groups",
+            "rural voters"
+        ],
+        "extracted_triples": [
+            [
+                "Democratic Party",
+                "have",
+                "traditionally supposed"
+            ],
+            [
+                "Democratic Party",
+                "has",
+                "least liberal constituency"
+            ],
+            [
+                "Democratic groups",
+                "has",
+                "least liberal constituency"
+            ],
+            [
+                "least liberal constituency",
+                "likely",
+                "rural voters"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q29552",
+                "wdt:P527",
+                "wd:Q1860"
+            ],
+            [
+                "wd:Q29552",
+                "wdt:P921",
+                "wd:Q1001"
+            ],
+            [
+                "wd:Q76",
+                "wdt:P921",
+                "wd:Q1001"
+            ],
+            [
+                "wd:Q1001",
+                "wdt:P1410",
+                "wd:Q21295900"
+            ]
+        ],
+        "question_entities_uris": [
+            "wd:Q29552"
+        ],
+        "uri_name_map": {
+            "wd:Q29552": "Democratic Party",
+            "wdt:P527": "have",
+            "wd:Q1860": "traditionally supposed",
+            "wdt:P921": "has",
+            "wd:Q1001": "least liberal constituency",
+            "wd:Q76": "Democratic groups",
+            "wdt:P1410": "likely",
+            "wd:Q21295900": "rural voters"
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q29552",
+            "wd:Q1860",
+            "wd:Q21295900",
+            "wd:Q1001",
+            "wd:Q76"
+        ],
+        "evaluation_score": 0.1,
+        "below_threshold": true,
+        "true_entities": [],
+        "top_predicates_Democratic Party": [
+            "political ideology",
+            "political alignment",
+            "affiliation"
+        ],
+        "filtered_facts_for_context": [
+            [
+                "Democratic Party",
+                "political ideology",
+                "social liberalism"
+            ],
+            [
+                "Democratic Party",
+                "political ideology",
+                "modern liberalism in the United States"
+            ],
+            [
+                "Democratic Party",
+                "political alignment",
+                "centrism"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Democratic Party of the Virgin Islands"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Minnesota Democratic\u2013Farmer\u2013Labor Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Democratic Party of Illinois"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Alabama Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Alaska Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Arizona Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "California Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Colorado Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Delaware Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Democratic Party of Arkansas"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Democratic Party of Connecticut"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Democratic Party of Georgia"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Democratic Party of Hawaii"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Democratic Party of Guam"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Democratic Party of New Mexico"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Democratic Party of Oregon"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Democratic Party of Virginia"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Democratic Party of Wisconsin"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Democrats Abroad"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "District of Columbia Democratic State Committee"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Florida Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Idaho Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Indiana Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Iowa Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Kentucky Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Louisiana Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Maine Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Maryland Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Massachusetts Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Michigan Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Mississippi Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Montana Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Nebraska Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Nevada Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "New Hampshire Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "New York Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "North Carolina Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "North Dakota Democratic-Nonpartisan League Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Ohio Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Pennsylvania Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Puerto Rico Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Rhode Island Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "South Carolina Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "South Dakota Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Tennessee Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Texas Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Utah Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Vermont Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Washington State Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "West Virginia Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Wyoming Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "New Jersey Democratic State Committee"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Oklahoma Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Missouri Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "Kansas Democratic Party"
+            ],
+            [
+                "Democratic Party",
+                "affiliation",
+                "American Samoa Democratic Party"
+            ]
+        ],
+        "context_string": "Democratic Party political ideology social liberalism. Democratic Party political ideology modern liberalism in the United States. Democratic Party political alignment centrism. Democratic Party affiliation Democratic Party of the Virgin Islands. Democratic Party affiliation Minnesota Democratic\u2013Farmer\u2013Labor Party. Democratic Party affiliation Democratic Party of Illinois. Democratic Party affiliation Alabama Democratic Party. Democratic Party affiliation Alaska Democratic Party. Democratic Party affiliation Arizona Democratic Party. Democratic Party affiliation California Democratic Party. Democratic Party affiliation Colorado Democratic Party. Democratic Party affiliation Delaware Democratic Party. Democratic Party affiliation Democratic Party of Arkansas. Democratic Party affiliation Democratic Party of Connecticut. Democratic Party affiliation Democratic Party of Georgia. Democratic Party affiliation Democratic Party of Hawaii. Democratic Party affiliation Democratic Party of Guam. Democratic Party affiliation Democratic Party of New Mexico. Democratic Party affiliation Democratic Party of Oregon. Democratic Party affiliation Democratic Party of Virginia. Democratic Party affiliation Democratic Party of Wisconsin. Democratic Party affiliation Democrats Abroad. Democratic Party affiliation District of Columbia Democratic State Committee. Democratic Party affiliation Florida Democratic Party. Democratic Party affiliation Idaho Democratic Party. Democratic Party affiliation Indiana Democratic Party. Democratic Party affiliation Iowa Democratic Party. Democratic Party affiliation Kentucky Democratic Party. Democratic Party affiliation Louisiana Democratic Party. Democratic Party affiliation Maine Democratic Party. Democratic Party affiliation Maryland Democratic Party. Democratic Party affiliation Massachusetts Democratic Party. Democratic Party affiliation Michigan Democratic Party. Democratic Party affiliation Mississippi Democratic Party. Democratic Party affiliation Montana Democratic Party. Democratic Party affiliation Nebraska Democratic Party. Democratic Party affiliation Nevada Democratic Party. Democratic Party affiliation New Hampshire Democratic Party. Democratic Party affiliation New York Democratic Party. Democratic Party affiliation North Carolina Democratic Party. Democratic Party affiliation North Dakota Democratic-Nonpartisan League Party. Democratic Party affiliation Ohio Democratic Party. Democratic Party affiliation Pennsylvania Democratic Party. Democratic Party affiliation Puerto Rico Democratic Party. Democratic Party affiliation Rhode Island Democratic Party. Democratic Party affiliation South Carolina Democratic Party. Democratic Party affiliation South Dakota Democratic Party. Democratic Party affiliation Tennessee Democratic Party. Democratic Party affiliation Texas Democratic Party. Democratic Party affiliation Utah Democratic Party. Democratic Party affiliation Vermont Democratic Party. Democratic Party affiliation Washington State Democratic Party. Democratic Party affiliation West Virginia Democratic Party. Democratic Party affiliation Wyoming Democratic Party. Democratic Party affiliation New Jersey Democratic State Committee. Democratic Party affiliation Oklahoma Democratic Party. Democratic Party affiliation Missouri Democratic Party. Democratic Party affiliation Kansas Democratic Party. Democratic Party affiliation American Samoa Democratic Party. ",
+        "new_response": "Answer: The Democratic Party of the Virgin Islands has the least liberal constituency.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "41": {
+        "question": "Which of the following has the Supreme Court held about the death penalty?",
+        "choices": [
+            "The death penalty may only be imposed upon citizens.",
+            "Under some circumstances, the death penalty may not violate the Eighth Amendment.",
+            "Under some circumstances, the death penalty may violate the Third Amendment.",
+            "States may execute any adult regardless of intellectual disability."
+        ],
+        "initial_response": "The Supreme Court has held that the death penalty is constitutional, but that it must be applied in a manner that does not violate the Eighth Amendment's prohibition against cruel and unusual punishment. The Court has also held that the death penalty must be applied in a manner that is consistent with the principles of due process and equal protection.",
+        "question_entity_names": [
+            "Supreme Court",
+            "death penalty"
+        ],
+        "response_entity_names": [
+            "Supreme Court",
+            "death penalty",
+            "Eighth Amendment",
+            "cruel and unusual punishment",
+            "due process",
+            "equal protection"
+        ],
+        "extracted_triples": [
+            [
+                "Supreme Court",
+                "held",
+                "death penalty"
+            ],
+            [
+                "Supreme Court",
+                "held",
+                "death penalty is constitutional"
+            ],
+            [
+                "Supreme Court",
+                "held",
+                "death penalty must be applied in a manner that does not violate Eighth Amendment's prohibition against cruel and unusual punishment"
+            ],
+            [
+                "Supreme Court",
+                "held",
+                "death penalty must be applied in a manner that is consistent with principles of due process and equal protection"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q11201",
+                "wdt:P276",
+                "wd:Q8454"
+            ],
+            [
+                "wd:Q11201",
+                "wdt:P276",
+                "wd:Q131569"
+            ],
+            [
+                "wd:Q11201",
+                "wdt:P276",
+                "wd:Q1312383"
+            ],
+            [
+                "wd:Q11201",
+                "wdt:P276",
+                "wd:Q1064814"
+            ]
+        ],
+        "question_entities_uris": [
+            "wd:Q11201",
+            "wd:Q8454"
+        ],
+        "uri_name_map": {
+            "wd:Q11201": "Supreme Court",
+            "wdt:P276": "held",
+            "wd:Q8454": "death penalty",
+            "wd:Q131569": "death penalty is constitutional",
+            "wd:Q1312383": "death penalty must be applied in a manner that does not violate Eighth Amendment's prohibition against cruel and unusual punishment",
+            "wd:Q1064814": "death penalty must be applied in a manner that is consistent with principles of due process and equal protection",
+            "http://www.wikidata.org/entity/Q1579670": "United States Supreme Court Building"
+        },
+        "truth_score": 3.034396547857579,
+        "% true": 0.7585991369643947,
+        "true_facts_names": [
+            [
+                "Supreme Court",
+                "held",
+                "United States Supreme Court Building"
+            ],
+            [
+                "Supreme Court",
+                "held",
+                "United States Supreme Court Building"
+            ],
+            [
+                "Supreme Court",
+                "held",
+                "United States Supreme Court Building"
+            ],
+            [
+                "Supreme Court",
+                "held",
+                "United States Supreme Court Building"
+            ]
+        ],
+        "true_facts_uris": [
+            [
+                "wd:Q11201",
+                "wdt:P276",
+                "http://www.wikidata.org/entity/Q1579670"
+            ],
+            [
+                "wd:Q11201",
+                "wdt:P276",
+                "http://www.wikidata.org/entity/Q1579670"
+            ],
+            [
+                "wd:Q11201",
+                "wdt:P276",
+                "http://www.wikidata.org/entity/Q1579670"
+            ],
+            [
+                "wd:Q11201",
+                "wdt:P276",
+                "http://www.wikidata.org/entity/Q1579670"
+            ]
+        ],
+        "linked_entities": [
+            "wd:Q11201",
+            "wd:Q8454",
+            "wd:Q1312383",
+            "wd:Q1064814",
+            "wd:Q131569"
+        ],
+        "evaluation_score": 0.7660725566012887,
+        "below_threshold": true,
+        "true_entities": [
+            "wd:Q11201",
+            "http://www.wikidata.org/entity/Q1579670"
+        ],
+        "top_predicates_Supreme Court": [
+            "history of topic",
+            "foundational text",
+            "applies to jurisdiction"
+        ],
+        "top_predicates_death penalty": [
+            "instance of",
+            "described by source",
+            "subclass of"
+        ],
+        "top_predicates_United States Supreme Court Building": [
+            "instance of",
+            "heritage designation",
+            "significant event"
+        ],
+        "filtered_facts_for_context": [
+            [
+                "Supreme Court",
+                "history of topic",
+                "history of the Supreme Court of the United States"
+            ],
+            [
+                "Supreme Court",
+                "foundational text",
+                "Article Three of the United States Constitution"
+            ],
+            [
+                "Supreme Court",
+                "applies to jurisdiction",
+                "United States of America"
+            ],
+            [
+                "death penalty",
+                "instance of",
+                "manner of death"
+            ],
+            [
+                "death penalty",
+                "described by source",
+                "Catholic Encyclopedia"
+            ],
+            [
+                "death penalty",
+                "described by source",
+                "Brockhaus and Efron Encyclopedic Dictionary"
+            ],
+            [
+                "death penalty",
+                "described by source",
+                "Encyclop\u00e6dia Britannica 11th edition"
+            ],
+            [
+                "death penalty",
+                "described by source",
+                "Paulys Realenzyklop\u00e4die der klassischen Altertumswissenschaft"
+            ],
+            [
+                "death penalty",
+                "described by source",
+                "Gujin Tushu Jicheng"
+            ],
+            [
+                "death penalty",
+                "described by source",
+                "Ott\u016fv slovn\u00edk nau\u010dn\u00fd"
+            ],
+            [
+                "death penalty",
+                "described by source",
+                "Small Brockhaus and Efron Encyclopedic Dictionary"
+            ],
+            [
+                "death penalty",
+                "described by source",
+                "Encyclopedia of Global Justice (2011 ed.)"
+            ],
+            [
+                "death penalty",
+                "described by source",
+                "Real'nyj slovar' klassicheskih drevnostej po Ljubkeru"
+            ],
+            [
+                "death penalty",
+                "described by source",
+                "Desktop Encyclopedic Dictionary"
+            ],
+            [
+                "death penalty",
+                "subclass of",
+                "homicide"
+            ],
+            [
+                "death penalty",
+                "subclass of",
+                "punishment"
+            ],
+            [
+                "death penalty",
+                "subclass of",
+                "sentence"
+            ],
+            [
+                "death penalty",
+                "subclass of",
+                "cause of death"
+            ],
+            [
+                "United States Supreme Court Building",
+                "instance of",
+                "courthouse"
+            ],
+            [
+                "United States Supreme Court Building",
+                "heritage designation",
+                "National Historic Landmark"
+            ],
+            [
+                "United States Supreme Court Building",
+                "heritage designation",
+                "District of Columbia Inventory of Historic Sites"
+            ],
+            [
+                "United States Supreme Court Building",
+                "significant event",
+                "foundation stone\u2013laying ceremony"
+            ],
+            [
+                "United States Supreme Court Building",
+                "significant event",
+                "start of manufacturing or construction"
+            ],
+            [
+                "United States Supreme Court Building",
+                "significant event",
+                "end of manufacturing or construction"
+            ]
+        ],
+        "context_string": "Supreme Court history of topic history of the Supreme Court of the United States. Supreme Court foundational text Article Three of the United States Constitution. Supreme Court applies to jurisdiction United States of America. death penalty instance of manner of death. death penalty described by source Catholic Encyclopedia. death penalty described by source Brockhaus and Efron Encyclopedic Dictionary. death penalty described by source Encyclop\u00e6dia Britannica 11th edition. death penalty described by source Paulys Realenzyklop\u00e4die der klassischen Altertumswissenschaft. death penalty described by source Gujin Tushu Jicheng. death penalty described by source Ott\u016fv slovn\u00edk nau\u010dn\u00fd. death penalty described by source Small Brockhaus and Efron Encyclopedic Dictionary. death penalty described by source Encyclopedia of Global Justice (2011 ed.). death penalty described by source Real'nyj slovar' klassicheskih drevnostej po Ljubkeru. death penalty described by source Desktop Encyclopedic Dictionary. death penalty subclass of homicide. death penalty subclass of punishment. death penalty subclass of sentence. death penalty subclass of cause of death. United States Supreme Court Building instance of courthouse. United States Supreme Court Building heritage designation National Historic Landmark. United States Supreme Court Building heritage designation District of Columbia Inventory of Historic Sites. United States Supreme Court Building significant event foundation stone\u2013laying ceremony. United States Supreme Court Building significant event start of manufacturing or construction. United States Supreme Court Building significant event end of manufacturing or construction. ",
+        "new_response": "Answer: The Supreme Court has held that the death penalty is a permissible form of punishment in the United States.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "42": {
+        "question": "Which of the following describes a core principle of the Constitution as it was written in 1787?",
+        "choices": [
+            "Direct democracy",
+            "Checks and balances",
+            "Equal representation",
+            "Unitary government"
+        ],
+        "initial_response": "A core principle of the Constitution as it was written in 1787 is the separation of powers between the three branches of government: the legislative, executive, and judicial branches.",
+        "question_entity_names": [
+            "Constitution"
+        ],
+        "response_entity_names": [
+            "Constitution",
+            "legislative branch",
+            "executive branch",
+            "judicial branch"
+        ],
+        "extracted_triples": [
+            [
+                "Constitution",
+                "describes",
+                "separation of powers"
+            ],
+            [
+                "Constitution",
+                "written",
+                "1787"
+            ],
+            [
+                "separation of powers",
+                "between",
+                "legislative branch"
+            ],
+            [
+                "separation of powers",
+                "between",
+                "executive branch"
+            ],
+            [
+                "separation of powers",
+                "between",
+                "judicial branch"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q7755",
+                "wdt:P921",
+                "wd:Q79896"
+            ],
+            [
+                "wd:Q7755",
+                "wdt:P50",
+                "wd:Q7763"
+            ],
+            [
+                "wd:Q79896",
+                "wdt:P710",
+                "wd:Q11204"
+            ],
+            [
+                "wd:Q79896",
+                "wdt:P710",
+                "wd:Q35798"
+            ],
+            [
+                "wd:Q79896",
+                "wdt:P710",
+                "wd:Q105985"
+            ]
+        ],
+        "question_entities_uris": [
+            "wd:Q7755"
+        ],
+        "uri_name_map": {
+            "wd:Q7755": "Constitution",
+            "wdt:P921": "describes",
+            "wd:Q79896": "separation of powers",
+            "wdt:P50": "written",
+            "wd:Q7763": "1787",
+            "wdt:P710": "between",
+            "wd:Q11204": "legislative branch",
+            "wd:Q35798": "executive branch",
+            "wd:Q105985": "judicial branch"
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q105985",
+            "wd:Q35798",
+            "wd:Q79896",
+            "wd:Q11204",
+            "wd:Q7755",
+            "wd:Q7763"
+        ],
+        "evaluation_score": 0.1,
+        "below_threshold": true,
+        "true_entities": [],
+        "top_predicates_Constitution": [
+            "described by source",
+            "Library of Congress authority ID",
+            "Library of Congress Classification"
+        ],
+        "filtered_facts_for_context": [
+            [
+                "Constitution",
+                "described by source",
+                "Brockhaus and Efron Encyclopedic Dictionary"
+            ],
+            [
+                "Constitution",
+                "described by source",
+                "Encyclop\u00e6dia Britannica 11th edition"
+            ],
+            [
+                "Constitution",
+                "described by source",
+                "Ott\u016fv slovn\u00edk nau\u010dn\u00fd"
+            ],
+            [
+                "Constitution",
+                "described by source",
+                "Small Brockhaus and Efron Encyclopedic Dictionary"
+            ],
+            [
+                "Constitution",
+                "Library of Congress authority ID",
+                "sh85031336"
+            ],
+            [
+                "Constitution",
+                "Library of Congress Classification",
+                "K3154-K3370"
+            ]
+        ],
+        "context_string": "Constitution described by source Brockhaus and Efron Encyclopedic Dictionary. Constitution described by source Encyclop\u00e6dia Britannica 11th edition. Constitution described by source Ott\u016fv slovn\u00edk nau\u010dn\u00fd. Constitution described by source Small Brockhaus and Efron Encyclopedic Dictionary. Constitution Library of Congress authority ID sh85031336. Constitution Library of Congress Classification K3154-K3370. ",
+        "new_response": "Answer: Separation of powers and checks and balances.",
+        "llm_answer": "B",
+        "llm_is_correct": true
     }
 }

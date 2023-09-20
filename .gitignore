@@ -1,3 +1,5 @@
 virtualenv/
 .idea/
 openai_api_key.txt
+output/qa_sets_llm_kg_geography01.json
+output/qa_sets_llm_kg_government_and_politics01.json

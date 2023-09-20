@@ -8875,5 +8875,1095 @@
         "new_response": "Answer: Ernest Burgess.",
         "llm_answer": "D",
         "llm_is_correct": true
+    },
+    "45": {
+        "question": "To get to school in the morning, we ALL use this as our guide:",
+        "choices": [
+            "Rand-McNally Road Atlas.",
+            "world globe.",
+            "road map.",
+            "mental map."
+        ],
+        "initial_response": "1. Wake up early enough to get ready for school.\n2. Eat a healthy breakfast.\n3. Pack your school supplies and lunch.\n4. Put on your school uniform or clothes.\n5. Take public transportation or drive to school.\n6. Arrive at school on time.",
+        "question_entity_names": [
+            "school",
+            "morning",
+            "guide"
+        ],
+        "response_entity_names": [
+            "school"
+        ],
+        "extracted_triples": [
+            [
+                "'we'",
+                "'use '",
+                "'guide'"
+            ],
+            [
+                "'we'",
+                "'use '",
+                "'this'"
+            ],
+            [
+                "'we'",
+                "'use '",
+                "'our guide'"
+            ],
+            [
+                "'we'",
+                "'use '",
+                "'this as our guide'"
+            ],
+            [
+                "'we'",
+                "'use '",
+                "'this as our guide: 1. Wake up early enough to get ready for school.'"
+            ],
+            [
+                "'we'",
+                "'use '",
+                "'this as our guide: 2. Eat a healthy breakfast.'"
+            ],
+            [
+                "'we'",
+                "'use '",
+                "'this as our guide: 3. Pack your school supplies and lunch.'"
+            ],
+            [
+                "'we'",
+                "'use '",
+                "'this as our guide: 4. Put on your school uniform or clothes.'"
+            ],
+            [
+                "'we'",
+                "'use '",
+                "'this as our guide: 5. Take public transportation or drive to school.'"
+            ],
+            [
+                "'we'",
+                "'use '",
+                "'this as our guide: 6. Arrive at school on time.'"
+            ],
+            [
+                "'we'",
+                "'use '",
+                "'this as our guide: 1. Wake up early enough to get ready for school'"
+            ],
+            [
+                "'we'",
+                "'use '",
+                "'this as our guide: 2. Eat a healthy breakfast'"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q29639048",
+                "wdt:P1659",
+                "wd:Q120013399"
+            ],
+            [
+                "wd:Q29639048",
+                "wdt:P1659",
+                "wd:Q99603603"
+            ],
+            [
+                "wd:Q29639048",
+                "wdt:P1659",
+                "wd:Q24229398"
+            ],
+            [
+                "wd:Q29639048",
+                "wdt:P1659",
+                "wd:Q10876391"
+            ],
+            [
+                "wd:Q29639048",
+                "wdt:P1659",
+                "wd:Q108283491"
+            ],
+            [
+                "wd:Q29639048",
+                "wdt:P1659",
+                "wd:Q10876391"
+            ],
+            [
+                "wd:Q29639048",
+                "wdt:P1659",
+                "wd:Q10876391"
+            ],
+            [
+                "wd:Q29639048",
+                "wdt:P1659",
+                "wd:Q108763735"
+            ],
+            [
+                "wd:Q29639048",
+                "wdt:P1659",
+                "wd:Q108763735"
+            ],
+            [
+                "wd:Q29639048",
+                "wdt:P1659",
+                "wd:Q108763735"
+            ],
+            [
+                "wd:Q29639048",
+                "wdt:P1659",
+                "wd:Q108283491"
+            ],
+            [
+                "wd:Q29639048",
+                "wdt:P1659",
+                "wd:Q10876391"
+            ]
+        ],
+        "question_entities_uris": [
+            "wd:Q3914",
+            "wd:Q7722",
+            "wd:Q109061"
+        ],
+        "uri_name_map": {
+            "wd:Q29639048": "'we'",
+            "wdt:P1659": "'use '",
+            "wd:Q120013399": "'guide'",
+            "wd:Q99603603": "'this'",
+            "wd:Q24229398": "'our guide'",
+            "wd:Q10876391": "'this as our guide: 2. Eat a healthy breakfast'",
+            "wd:Q108283491": "'this as our guide: 1. Wake up early enough to get ready for school'",
+            "wd:Q108763735": "'this as our guide: 6. Arrive at school on time.'",
+            "wd:Q3914": "school",
+            "wd:Q7722": "morning",
+            "wd:Q109061": "guide"
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q10876391",
+            "wd:Q24229398",
+            "wd:Q99603603",
+            "wd:Q29639048",
+            "wd:Q120013399",
+            "wd:Q108763735",
+            "wd:Q108283491"
+        ],
+        "evaluation_score": 0.1,
+        "below_threshold": true,
+        "true_entities": [],
+        "top_predicates_school": [
+            "uses",
+            "image",
+            "icon"
+        ],
+        "top_predicates_morning": [
+            "part of",
+            "instance of",
+            "follows"
+        ],
+        "top_predicates_guide": [
+            "student",
+            "image",
+            "notable work"
+        ],
+        "filtered_facts_for_context": [
+            [
+                "school",
+                "image",
+                "http://commons.wikimedia.org/wiki/Special:FilePath/BogdanovBelsky%20UstnySchet.jpg"
+            ],
+            [
+                "school",
+                "icon",
+                "http://commons.wikimedia.org/wiki/Special:FilePath/Noun%2062983%20cc%20school%20icon.svg"
+            ],
+            [
+                "morning",
+                "part of",
+                "day"
+            ],
+            [
+                "morning",
+                "instance of",
+                "time of day"
+            ],
+            [
+                "morning",
+                "follows",
+                "night"
+            ],
+            [
+                "morning",
+                "follows",
+                "Q97379151"
+            ],
+            [
+                "guide",
+                "student",
+                "Giovanni Maria Tamburini"
+            ],
+            [
+                "guide",
+                "student",
+                "Paolo Biancucci"
+            ],
+            [
+                "guide",
+                "student",
+                "Giovanni Venanzi"
+            ],
+            [
+                "guide",
+                "student",
+                "Antonio Giarola"
+            ],
+            [
+                "guide",
+                "student",
+                "Emilio Savonanzi"
+            ],
+            [
+                "guide",
+                "image",
+                "http://commons.wikimedia.org/wiki/Special:FilePath/Guido%20Reni%20-%20Self-portrait%202.jpg"
+            ],
+            [
+                "guide",
+                "notable work",
+                "Massacre of the Innocents"
+            ],
+            [
+                "guide",
+                "notable work",
+                "Judith"
+            ]
+        ],
+        "context_string": "school image http://commons.wikimedia.org/wiki/Special:FilePath/BogdanovBelsky%20UstnySchet.jpg. school icon http://commons.wikimedia.org/wiki/Special:FilePath/Noun%2062983%20cc%20school%20icon.svg. morning part of day. morning instance of time of day. morning follows night. morning follows Q97379151. guide student Giovanni Maria Tamburini. guide student Paolo Biancucci. guide student Giovanni Venanzi. guide student Antonio Giarola. guide student Emilio Savonanzi. guide image http://commons.wikimedia.org/wiki/Special:FilePath/Guido%20Reni%20-%20Self-portrait%202.jpg. guide notable work Massacre of the Innocents. guide notable work Judith. ",
+        "new_response": "Answer: Our teachers.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "46": {
+        "question": "Of these, the map using the smallest map scale would be the map of",
+        "choices": [
+            "the world.",
+            "Atlanta, Georgia.",
+            "Main Street, Small Town, Ohio.",
+            "Pennsylvania."
+        ],
+        "initial_response": "the world. This map typically has a scale of 1:50,000,000 or smaller.",
+        "question_entity_names": [
+            "map"
+        ],
+        "response_entity_names": [
+            "the world"
+        ],
+        "extracted_triples": [
+            [
+                "map",
+                "scale",
+                "smallest map scale"
+            ],
+            [
+                "map",
+                "is of",
+                "the world"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q4006",
+                "wdt:P1752",
+                "wd:Q1074250"
+            ],
+            [
+                "wd:Q4006",
+                "wdt:P31",
+                "wd:Q2"
+            ]
+        ],
+        "question_entities_uris": [
+            "wd:Q4006"
+        ],
+        "uri_name_map": {
+            "wd:Q4006": "map",
+            "wdt:P1752": "scale",
+            "wd:Q1074250": "smallest map scale",
+            "wdt:P31": "is of",
+            "wd:Q2": "the world",
+            "http://www.wikidata.org/entity/Q41362222": "type of map"
+        },
+        "truth_score": 0.7323030093633218,
+        "% true": 0.3661515046816609,
+        "true_facts_names": [
+            [
+                "map",
+                "is of",
+                "type of map"
+            ]
+        ],
+        "true_facts_uris": [
+            [
+                "wd:Q4006",
+                "wdt:P31",
+                "http://www.wikidata.org/entity/Q41362222"
+            ]
+        ],
+        "linked_entities": [
+            "wd:Q2",
+            "wd:Q4006",
+            "wd:Q1074250"
+        ],
+        "evaluation_score": 0.4295363542134948,
+        "below_threshold": true,
+        "true_entities": [
+            "wd:Q4006",
+            "http://www.wikidata.org/entity/Q41362222"
+        ],
+        "top_predicates_map": [
+            "has part(s) of the class",
+            "instance of",
+            "has quality"
+        ],
+        "top_predicates_type of map": [
+            "instance of",
+            "subclass of",
+            "topic's main category"
+        ],
+        "filtered_facts_for_context": [
+            [
+                "map",
+                "has part(s) of the class",
+                "map symbol"
+            ],
+            [
+                "map",
+                "instance of",
+                "type of map"
+            ],
+            [
+                "map",
+                "has quality",
+                "type of map"
+            ],
+            [
+                "type of map",
+                "instance of",
+                "classification system"
+            ],
+            [
+                "type of map",
+                "instance of",
+                "second-order class"
+            ],
+            [
+                "type of map",
+                "subclass of",
+                "two-dimensional visual artwork genre"
+            ],
+            [
+                "type of map",
+                "topic's main category",
+                "Category:Map types"
+            ]
+        ],
+        "context_string": "map has part(s) of the class map symbol. map instance of type of map. map has quality type of map. type of map instance of classification system. type of map instance of second-order class. type of map subclass of two-dimensional visual artwork genre. type of map topic's main category Category:Map types. ",
+        "new_response": "Answer: A map of the world.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "47": {
+        "question": "An earlier boundary formed before meticulous geographic knowledge and mapping was available is known as",
+        "choices": [
+            "an antecedent boundary.",
+            "a geometric boundary.",
+            "a relict boundary.",
+            "a subsequent boundary."
+        ],
+        "initial_response": "a traditional boundary. Traditional boundaries were often based on physical features such as rivers, mountains, or other natural features. They were also based on cultural or political factors, such as tribal or clan territories. Traditional boundaries were often not precise and could be subject to change over time.",
+        "question_entity_names": [
+            "boundary",
+            "geographic knowledge",
+            "mapping"
+        ],
+        "response_entity_names": [
+            "rivers",
+            "mountains",
+            "natural features",
+            "cultural factors",
+            "political factors",
+            "tribal territories",
+            "clan territories",
+            "traditional boundaries"
+        ],
+        "extracted_triples": [
+            [
+                "boundary",
+                "formed",
+                "meticulous geographic knowledge and mapping"
+            ],
+            [
+                "traditional boundaries",
+                "based",
+                "cultural or political factors"
+            ],
+            [
+                "traditional boundaries",
+                "subject",
+                "change over time"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q133346",
+                "wdt:P571",
+                "wd:Q8224"
+            ],
+            [
+                "wd:Q18616576",
+                "wdt:P887",
+                "wd:Q1860"
+            ],
+            [
+                "wd:Q18616576",
+                "wdt:P921",
+                "wd:Q15716459"
+            ]
+        ],
+        "question_entities_uris": [
+            "wd:Q133346",
+            "wd:Q55833124",
+            "wd:Q42515"
+        ],
+        "uri_name_map": {
+            "wd:Q133346": "boundary",
+            "wdt:P571": "formed",
+            "wd:Q8224": "meticulous geographic knowledge and mapping",
+            "wd:Q18616576": "traditional boundaries",
+            "wdt:P887": "based",
+            "wd:Q1860": "cultural or political factors",
+            "wdt:P921": "subject",
+            "wd:Q15716459": "change over time",
+            "wd:Q55833124": "geographic knowledge",
+            "wd:Q42515": "mapping"
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q15716459",
+            "wd:Q133346",
+            "wd:Q8224",
+            "wd:Q1860",
+            "wd:Q18616576"
+        ],
+        "evaluation_score": 0.045454545454545456,
+        "below_threshold": true,
+        "true_entities": [],
+        "error": "The server is overloaded or not ready yet.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "48": {
+        "question": "Which of the following jobs is in the non-basic employment sector?",
+        "choices": [
+            "Software engineer",
+            "F-10 pickup truck assembly-line worker",
+            "Oil refinery worker",
+            "Parking lot attendant"
+        ],
+        "initial_response": "A. Retail Sales Associate\nB. Construction Worker\nC. Software Developer\nD. Truck Driver\n\nC. Software Developer",
+        "question_entity_names": [
+            "jobs",
+            "non-basic employment sector"
+        ],
+        "response_entity_names": [
+            "Retail Sales Associate",
+            "Construction Worker",
+            "Software Developer",
+            "Truck Driver"
+        ],
+        "extracted_triples": [
+            [
+                "'jobs'",
+                "'is '",
+                "'the non-basic employment sector'"
+            ],
+            [
+                "'Retail Sales Associate'",
+                "'is '",
+                "'the non-basic employment sector'"
+            ],
+            [
+                "'Construction Worker'",
+                "'is '",
+                "'the non-basic employment sector'"
+            ],
+            [
+                "'Software Developer'",
+                "'is '",
+                "'the non-basic employment sector'"
+            ],
+            [
+                "'Truck Driver'",
+                "'is '",
+                "'the non-basic employment sector'"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q86171178",
+                "wdt:P31",
+                "wd:Q1069781"
+            ],
+            [
+                "wd:Q474053",
+                "wdt:P31",
+                "wd:Q1069781"
+            ],
+            [
+                "wd:Q643646",
+                "wdt:P31",
+                "wd:Q1069781"
+            ],
+            [
+                "wd:Q105109",
+                "wdt:P31",
+                "wd:Q1069781"
+            ],
+            [
+                "wd:Q537802",
+                "wdt:P31",
+                "wd:Q1069781"
+            ]
+        ],
+        "question_entities_uris": [
+            "wd:Q392825",
+            "wd:Q1069640"
+        ],
+        "uri_name_map": {
+            "wd:Q86171178": "'jobs'",
+            "wdt:P31": "'is '",
+            "wd:Q1069781": "'the non-basic employment sector'",
+            "wd:Q474053": "'Retail Sales Associate'",
+            "wd:Q643646": "'Construction Worker'",
+            "wd:Q105109": "'Software Developer'",
+            "wd:Q537802": "'Truck Driver'",
+            "wd:Q392825": "jobs",
+            "wd:Q1069640": "non-basic employment sector",
+            "http://www.wikidata.org/entity/Q13442814": "scholarly article",
+            "http://www.wikidata.org/entity/Q5": "human",
+            "http://www.wikidata.org/entity/Q134556": "single"
+        },
+        "truth_score": 2.274596198378344,
+        "% true": 0.4549192396756688,
+        "true_facts_names": [
+            [
+                "'jobs'",
+                "'is '",
+                "scholarly article"
+            ],
+            [
+                "'Software Developer'",
+                "'is '",
+                "human"
+            ],
+            [
+                "'Truck Driver'",
+                "'is '",
+                "single"
+            ]
+        ],
+        "true_facts_uris": [
+            [
+                "wd:Q86171178",
+                "wdt:P31",
+                "http://www.wikidata.org/entity/Q13442814"
+            ],
+            [
+                "wd:Q105109",
+                "wdt:P31",
+                "http://www.wikidata.org/entity/Q5"
+            ],
+            [
+                "wd:Q537802",
+                "wdt:P31",
+                "http://www.wikidata.org/entity/Q134556"
+            ]
+        ],
+        "linked_entities": [
+            "wd:Q643646",
+            "wd:Q1069781",
+            "wd:Q105109",
+            "wd:Q474053",
+            "wd:Q86171178",
+            "wd:Q537802"
+        ],
+        "evaluation_score": 0.509427315708102,
+        "below_threshold": true,
+        "true_entities": [
+            "http://www.wikidata.org/entity/Q13442814",
+            "http://www.wikidata.org/entity/Q134556",
+            "wd:Q105109",
+            "wd:Q86171178",
+            "wd:Q537802",
+            "http://www.wikidata.org/entity/Q5"
+        ],
+        "top_predicates_'Truck Driver'": [
+            "part of",
+            "genre",
+            "record label"
+        ],
+        "top_predicates_scholarly article": [
+            "subclass of",
+            "image",
+            "GSSO ID"
+        ],
+        "top_predicates_human": [
+            "part of",
+            "subclass of",
+            "different from"
+        ],
+        "top_predicates_non-basic employment sector": [
+            "instance of",
+            "type of variable star",
+            "spectral class"
+        ],
+        "top_predicates_single": [
+            "subclass of",
+            "instance of",
+            "properties for this type"
+        ],
+        "top_predicates_jobs": [
+            "title",
+            "main subject",
+            "director"
+        ],
+        "top_predicates_'Software Developer'": [
+            "occupation",
+            "instance of",
+            "Commons category"
+        ],
+        "top_predicates_'jobs'": [
+            "instance of",
+            "title",
+            "published in"
+        ],
+        "filtered_facts_for_context": [
+            [
+                "'Truck Driver'",
+                "part of",
+                "Girl You Know It's True"
+            ],
+            [
+                "'Truck Driver'",
+                "genre",
+                "dance-pop"
+            ],
+            [
+                "'Truck Driver'",
+                "record label",
+                "Arista Records"
+            ],
+            [
+                "scholarly article",
+                "subclass of",
+                "article"
+            ],
+            [
+                "scholarly article",
+                "subclass of",
+                "scientific publication"
+            ],
+            [
+                "scholarly article",
+                "subclass of",
+                "scientific literature"
+            ],
+            [
+                "scholarly article",
+                "subclass of",
+                "scholarly work"
+            ],
+            [
+                "scholarly article",
+                "image",
+                "http://commons.wikimedia.org/wiki/Special:FilePath/Scientific%20citations.png"
+            ],
+            [
+                "scholarly article",
+                "GSSO ID",
+                "000047"
+            ],
+            [
+                "human",
+                "part of",
+                "society"
+            ],
+            [
+                "human",
+                "part of",
+                "biosphere"
+            ],
+            [
+                "human",
+                "part of",
+                "humanity"
+            ],
+            [
+                "human",
+                "subclass of",
+                "natural person"
+            ],
+            [
+                "human",
+                "subclass of",
+                "omnivore"
+            ],
+            [
+                "human",
+                "subclass of",
+                "person"
+            ],
+            [
+                "human",
+                "subclass of",
+                "individual animal"
+            ],
+            [
+                "human",
+                "subclass of",
+                "mammal"
+            ],
+            [
+                "human",
+                "different from",
+                "fictional character"
+            ],
+            [
+                "human",
+                "different from",
+                "person"
+            ],
+            [
+                "human",
+                "different from",
+                "people"
+            ],
+            [
+                "human",
+                "different from",
+                "Human"
+            ],
+            [
+                "non-basic employment sector",
+                "instance of",
+                "star"
+            ],
+            [
+                "non-basic employment sector",
+                "type of variable star",
+                "RS Canum Venaticorum variable"
+            ],
+            [
+                "non-basic employment sector",
+                "type of variable star",
+                "rotating variable star"
+            ],
+            [
+                "non-basic employment sector",
+                "spectral class",
+                "G8+ V"
+            ],
+            [
+                "single",
+                "subclass of",
+                "release group"
+            ],
+            [
+                "single",
+                "instance of",
+                "music release type"
+            ],
+            [
+                "single",
+                "properties for this type",
+                "genre"
+            ],
+            [
+                "single",
+                "properties for this type",
+                "producer"
+            ],
+            [
+                "single",
+                "properties for this type",
+                "performer"
+            ],
+            [
+                "single",
+                "properties for this type",
+                "record label"
+            ],
+            [
+                "single",
+                "properties for this type",
+                "place of publication"
+            ],
+            [
+                "single",
+                "properties for this type",
+                "MusicBrainz release group ID"
+            ],
+            [
+                "single",
+                "properties for this type",
+                "distribution format"
+            ],
+            [
+                "single",
+                "properties for this type",
+                "publication date"
+            ],
+            [
+                "single",
+                "properties for this type",
+                "tracklist"
+            ],
+            [
+                "single",
+                "properties for this type",
+                "AllMusic album ID"
+            ],
+            [
+                "single",
+                "properties for this type",
+                "Discogs master ID"
+            ],
+            [
+                "single",
+                "properties for this type",
+                "Spotify album ID"
+            ],
+            [
+                "single",
+                "properties for this type",
+                "Discogs release ID"
+            ],
+            [
+                "single",
+                "properties for this type",
+                "Apple Music album ID (U.S. version)"
+            ],
+            [
+                "single",
+                "properties for this type",
+                "charted in"
+            ],
+            [
+                "single",
+                "properties for this type",
+                "Deezer album ID"
+            ],
+            [
+                "single",
+                "properties for this type",
+                "Tidal album ID"
+            ],
+            [
+                "jobs",
+                "title",
+                "Jobs"
+            ],
+            [
+                "jobs",
+                "main subject",
+                "Steve Jobs"
+            ],
+            [
+                "jobs",
+                "director",
+                "Joshua Michael Stern"
+            ],
+            [
+                "'Software Developer'",
+                "occupation",
+                "entrepreneur"
+            ],
+            [
+                "'Software Developer'",
+                "instance of",
+                "human"
+            ],
+            [
+                "'Software Developer'",
+                "Commons category",
+                "Geraldo Dannemann"
+            ],
+            [
+                "'jobs'",
+                "instance of",
+                "scholarly article"
+            ],
+            [
+                "'jobs'",
+                "title",
+                "'Jobs would have been lost if I had listened to review body,' claims Hunt"
+            ],
+            [
+                "'jobs'",
+                "published in",
+                "Nursing Standard"
+            ]
+        ],
+        "context_string": "'Truck Driver' part of Girl You Know It's True. 'Truck Driver' genre dance-pop. 'Truck Driver' record label Arista Records. scholarly article subclass of article. scholarly article subclass of scientific publication. scholarly article subclass of scientific literature. scholarly article subclass of scholarly work. scholarly article image http://commons.wikimedia.org/wiki/Special:FilePath/Scientific%20citations.png. scholarly article GSSO ID 000047. human part of society. human part of biosphere. human part of humanity. human subclass of natural person. human subclass of omnivore. human subclass of person. human subclass of individual animal. human subclass of mammal. human different from fictional character. human different from person. human different from people. human different from Human. non-basic employment sector instance of star. non-basic employment sector type of variable star RS Canum Venaticorum variable. non-basic employment sector type of variable star rotating variable star. non-basic employment sector spectral class G8+ V. single subclass of release group. single instance of music release type. single properties for this type genre. single properties for this type producer. single properties for this type performer. single properties for this type record label. single properties for this type place of publication. single properties for this type MusicBrainz release group ID. single properties for this type distribution format. single properties for this type publication date. single properties for this type tracklist. single properties for this type AllMusic album ID. single properties for this type Discogs master ID. single properties for this type Spotify album ID. single properties for this type Discogs release ID. single properties for this type Apple Music album ID (U.S. version). single properties for this type charted in. single properties for this type Deezer album ID. single properties for this type Tidal album ID. jobs title Jobs. jobs main subject Steve Jobs. jobs director Joshua Michael Stern. 'Software Developer' occupation entrepreneur. 'Software Developer' instance of human. 'Software Developer' Commons category Geraldo Dannemann. 'jobs' instance of scholarly article. 'jobs' title 'Jobs would have been lost if I had listened to review body,' claims Hunt. 'jobs' published in Nursing Standard. ",
+        "new_response": "Software Developer",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "49": {
+        "question": "In which of the following regions is subsistence agriculture being replaced by large-scale commercial development?",
+        "choices": [
+            "The Swiss Alps",
+            "The Amazon Basin",
+            "North Africa",
+            "The Alaskan tundra"
+        ],
+        "initial_response": "Subsistence agriculture is being replaced by large-scale commercial development in many regions around the world, including Africa, Latin America, Southeast Asia, and the Middle East.",
+        "question_entity_names": [
+            "subsistence agriculture",
+            "large-scale commercial development"
+        ],
+        "response_entity_names": [
+            "Subsistence agriculture",
+            "large-scale commercial development",
+            "Africa",
+            "Latin America",
+            "Southeast Asia",
+            "Middle East"
+        ],
+        "extracted_triples": [
+            [
+                "subsistence agriculture",
+                "replaced",
+                "large-scale commercial development"
+            ],
+            [
+                "subsistence agriculture",
+                "replaced",
+                "large-scale commercial development"
+            ],
+            [
+                "subsistence agriculture",
+                "replaced",
+                "large-scale commercial development"
+            ],
+            [
+                "subsistence agriculture",
+                "replaced",
+                "large-scale commercial development"
+            ],
+            [
+                "subsistence agriculture",
+                "replaced",
+                "large-scale commercial development"
+            ],
+            [
+                "subsistence agriculture",
+                "replaced",
+                "large-scale commercial development"
+            ],
+            [
+                "subsistence agriculture",
+                "replaced",
+                "large-scale commercial development"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q2787508",
+                "wdt:P1365",
+                "wd:Q1860"
+            ],
+            [
+                "wd:Q2787508",
+                "wdt:P1365",
+                "wd:Q1860"
+            ],
+            [
+                "wd:Q2787508",
+                "wdt:P1365",
+                "wd:Q1860"
+            ],
+            [
+                "wd:Q2787508",
+                "wdt:P1365",
+                "wd:Q1860"
+            ],
+            [
+                "wd:Q2787508",
+                "wdt:P1365",
+                "wd:Q1860"
+            ],
+            [
+                "wd:Q2787508",
+                "wdt:P1365",
+                "wd:Q1860"
+            ],
+            [
+                "wd:Q2787508",
+                "wdt:P1365",
+                "wd:Q1860"
+            ]
+        ],
+        "question_entities_uris": [
+            "wd:Q2787508",
+            "wd:Q18603446"
+        ],
+        "uri_name_map": {
+            "wd:Q2787508": "subsistence agriculture",
+            "wdt:P1365": "replaced",
+            "wd:Q1860": "large-scale commercial development",
+            "wd:Q18603446": "large-scale commercial development"
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q2787508",
+            "wd:Q1860"
+        ],
+        "evaluation_score": 0.02857142857142857,
+        "below_threshold": true,
+        "true_entities": [],
+        "top_predicates_large-scale commercial development": [],
+        "top_predicates_subsistence agriculture": [
+            "AGROVOC ID",
+            "Analysis & Policy Observatory term ID",
+            "ISCO-88 occupation class"
+        ],
+        "filtered_facts_for_context": [
+            [
+                "subsistence agriculture",
+                "AGROVOC ID",
+                "c_7485"
+            ],
+            [
+                "subsistence agriculture",
+                "Analysis & Policy Observatory term ID",
+                "85021"
+            ],
+            [
+                "subsistence agriculture",
+                "ISCO-88 occupation class",
+                "6310"
+            ]
+        ],
+        "context_string": "subsistence agriculture AGROVOC ID c_7485. subsistence agriculture Analysis & Policy Observatory term ID 85021. subsistence agriculture ISCO-88 occupation class 6310. ",
+        "new_response": "Answer: Subsistence agriculture is being replaced by large-scale commercial development in many regions around the world, including Africa, Asia, Latin America, and the Caribbean.",
+        "llm_answer": "B",
+        "llm_is_correct": true
     }
 }
