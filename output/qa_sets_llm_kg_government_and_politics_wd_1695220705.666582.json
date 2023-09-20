@@ -39639,5 +39639,1392 @@
         "new_response": "all political advertisements, the name of the person or organization paying for the advertisement must be disclosed.",
         "llm_answer": "A",
         "llm_is_correct": true
-    }
+    },
+    "188": {
+        "question": "The absence of a political party solely dedicated to labor and working class issues in the United States",
+        "choices": [
+            "proves U.S. politicians are not concerned about serving working-class constituencies",
+            "is the result of government restrictions placed on the political activities of labor unions",
+            "reflects the difficulty of unifying a party around a single issue in a \"winner-take-all\" format",
+            "demonstrates that, in the United States, most political issues regarding workers have been decided in the workers' favor"
+        ],
+        "initial_response": "is due to a variety of factors. One of the main reasons is the lack of a unified labor movement. The labor movement in the United States is highly fragmented, with different unions representing different industries and workers. This fragmentation has made it difficult to create a unified labor party that could represent the interests of all workers.\n\nAnother factor is the lack of a unified political ideology among labor unions. While some labor unions may be more progressive and support more left-leaning policies, others may be more conservative and support more right-leaning policies. This ideological divide has made it difficult to create a unified labor party that could represent the interests of all workers.\n\nFinally, the United States has a two-party system, which makes it difficult for a third party to gain traction. The two major parties have a strong hold on the political system, and it is difficult for a third party to gain enough support to become a viable political force. This has made it difficult for a labor party to gain enough support to become a viable political force.",
+        "question_entity_names": [
+            "political party",
+            "labor",
+            "working class",
+            "United States"
+        ],
+        "response_entity_names": [
+            "United States",
+            "labor movement",
+            "unions",
+            "labor party",
+            "workers",
+            "political ideology",
+            "progressive",
+            "left-leaning policies",
+            "conservative",
+            "right-leaning policies",
+            "two-party system",
+            "third party",
+            "two major parties",
+            "viable political force"
+        ],
+        "extracted_triples": [
+            [
+                "political party",
+                "dedicated",
+                "labor and working class issues"
+            ],
+            [
+                "absence",
+                "due",
+                "variety of factors"
+            ],
+            [
+                "reasons",
+                "lack",
+                "unified labor movement"
+            ],
+            [
+                "labor movement",
+                "fragmented",
+                "different unions representing different industries and workers"
+            ],
+            [
+                "fragmentation",
+                "made difficult create",
+                "unified labor party"
+            ],
+            [
+                "factor",
+                "lack",
+                "unified political ideology among labor unions"
+            ],
+            [
+                "labor unions",
+                "progressive",
+                "support more left-leaning policies"
+            ],
+            [
+                "labor unions",
+                "conservative",
+                "support more right-leaning policies"
+            ],
+            [
+                "ideological divide",
+                "made difficult create",
+                "unified labor party"
+            ],
+            [
+                "United States",
+                "has",
+                "two-party system"
+            ],
+            [
+                "two-party system",
+                "makes difficult",
+                "third party to gain traction"
+            ],
+            [
+                "two major parties",
+                "have",
+                "strong hold on political system"
+            ],
+            [
+                "third party",
+                "difficult",
+                "gain enough support to become viable political force"
+            ],
+            [
+                "labor party",
+                "difficult",
+                "gain enough support to become viable political force"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q7278",
+                "wdt:P805",
+                "wd:Q180380"
+            ],
+            [
+                "wd:Q19829125",
+                "wdt:P828",
+                "wd:Q74773172"
+            ],
+            [
+                "wd:Q4048076",
+                "wdt:P6477",
+                "wd:Q18605131"
+            ],
+            [
+                "wd:Q208701",
+                "wdt:P155",
+                "wd:Q1069782"
+            ],
+            [
+                "wd:Q1132459",
+                "wdt:P2251",
+                "wd:Q1315127"
+            ],
+            [
+                "wd:Q813912",
+                "wdt:P6477",
+                "wd:Q1052281"
+            ],
+            [
+                "wd:Q6467234",
+                "wdt:P5338",
+                "wd:Q1069781"
+            ],
+            [
+                "wd:Q6467234",
+                "wdt:P369",
+                "wd:Q1067465"
+            ],
+            [
+                "wd:Q1070913",
+                "wdt:P2251",
+                "wd:Q1315127"
+            ],
+            [
+                "wd:Q30",
+                "wdt:P921",
+                "wd:Q233008"
+            ],
+            [
+                "wd:Q233008",
+                "wdt:P3092",
+                "wd:Q18608359"
+            ],
+            [
+                "wd:Q192283",
+                "wdt:P527",
+                "wd:Q131581"
+            ],
+            [
+                "wd:Q354239",
+                "wdt:P7252",
+                "wd:Q18608359"
+            ],
+            [
+                "wd:Q627189",
+                "wdt:P7252",
+                "wd:Q18608359"
+            ]
+        ],
+        "question_entities_uris": [
+            "wd:Q7278",
+            "wd:Q216082",
+            "wd:Q191159",
+            "wd:Q30"
+        ],
+        "uri_name_map": {
+            "wd:Q7278": "political party",
+            "wdt:P805": "dedicated",
+            "wd:Q180380": "labor and working class issues",
+            "wd:Q19829125": "absence",
+            "wdt:P828": "due",
+            "wd:Q74773172": "variety of factors",
+            "wd:Q4048076": "reasons",
+            "wdt:P6477": "lack",
+            "wd:Q18605131": "unified labor movement",
+            "wd:Q208701": "labor movement",
+            "wdt:P155": "fragmented",
+            "wd:Q1069782": "different unions representing different industries and workers",
+            "wd:Q1132459": "fragmentation",
+            "wdt:P2251": "made difficult create",
+            "wd:Q1315127": "unified labor party",
+            "wd:Q813912": "factor",
+            "wd:Q1052281": "unified political ideology among labor unions",
+            "wd:Q6467234": "labor unions",
+            "wdt:P5338": "progressive",
+            "wd:Q1069781": "support more left-leaning policies",
+            "wdt:P369": "conservative",
+            "wd:Q1067465": "support more right-leaning policies",
+            "wd:Q1070913": "ideological divide",
+            "wd:Q30": "United States",
+            "wdt:P921": "has",
+            "wd:Q233008": "two-party system",
+            "wdt:P3092": "makes difficult",
+            "wd:Q18608359": "gain enough support to become viable political force",
+            "wd:Q192283": "two major parties",
+            "wdt:P527": "have",
+            "wd:Q131581": "strong hold on political system",
+            "wd:Q354239": "third party",
+            "wdt:P7252": "difficult",
+            "wd:Q627189": "labor party",
+            "wd:Q216082": "labor",
+            "wd:Q191159": "working class"
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q74773172",
+            "wd:Q1132459",
+            "wd:Q18608359",
+            "wd:Q233008",
+            "wd:Q208701",
+            "wd:Q1315127",
+            "wd:Q18605131",
+            "wd:Q813912",
+            "wd:Q1070913",
+            "wd:Q1052281",
+            "wd:Q30",
+            "wd:Q1069782",
+            "wd:Q7278",
+            "wd:Q1067465",
+            "wd:Q354239",
+            "wd:Q19829125",
+            "wd:Q192283",
+            "wd:Q627189",
+            "wd:Q180380",
+            "wd:Q4048076",
+            "wd:Q1069781",
+            "wd:Q6467234",
+            "wd:Q131581"
+        ],
+        "evaluation_score": 0.1,
+        "below_threshold": true,
+        "true_entities": [],
+        "top_predicates_working class": [
+            "subclass of",
+            "opposite of",
+            "topic's main category"
+        ],
+        "top_predicates_United States": [
+            "part of",
+            "instance of",
+            "country"
+        ],
+        "top_predicates_labor": [
+            "political party",
+            "labor",
+            "working class"
+        ],
+        "top_predicates_political party": [
+            "subclass of",
+            "instance of",
+            "has part(s)"
+        ],
+        "filtered_facts_for_context": [
+            [
+                "working class",
+                "subclass of",
+                "social class"
+            ],
+            [
+                "working class",
+                "subclass of",
+                "high risk group"
+            ],
+            [
+                "working class",
+                "opposite of",
+                "upper class"
+            ],
+            [
+                "working class",
+                "topic's main category",
+                "Category:Working class"
+            ],
+            [
+                "United States",
+                "part of",
+                "North America"
+            ],
+            [
+                "United States",
+                "instance of",
+                "country"
+            ],
+            [
+                "United States",
+                "instance of",
+                "federal republic"
+            ],
+            [
+                "United States",
+                "instance of",
+                "superpower"
+            ],
+            [
+                "United States",
+                "instance of",
+                "constitutional republic"
+            ],
+            [
+                "United States",
+                "instance of",
+                "sovereign state"
+            ],
+            [
+                "United States",
+                "instance of",
+                "democratic republic"
+            ],
+            [
+                "United States",
+                "country",
+                "United States of America"
+            ],
+            [
+                "labor",
+                "working class",
+                "social democracy"
+            ],
+            [
+                "political party",
+                "subclass of",
+                "organization"
+            ],
+            [
+                "political party",
+                "subclass of",
+                "juridical person"
+            ],
+            [
+                "political party",
+                "subclass of",
+                "political organization"
+            ],
+            [
+                "political party",
+                "instance of",
+                "legal form"
+            ],
+            [
+                "political party",
+                "has part(s)",
+                "juvenile political organization"
+            ]
+        ],
+        "context_string": "working class subclass of social class. working class subclass of high risk group. working class opposite of upper class. working class topic's main category Category:Working class. United States part of North America. United States instance of country. United States instance of federal republic. United States instance of superpower. United States instance of constitutional republic. United States instance of sovereign state. United States instance of democratic republic. United States country United States of America. labor working class social democracy. political party subclass of organization. political party subclass of juridical person. political party subclass of political organization. political party instance of legal form. political party has part(s) juvenile political organization. ",
+        "new_response": "Answer: The absence of a political party solely dedicated to labor and working class issues in the United States can be attributed to the lack of a strong social democracy in the country. The United States is a federal republic, constitutional republic, sovereign state, and democratic republic, but does not have a strong labor movement or a political party that is dedicated to representing the interests of the working class. This is in contrast to other countries in North America, such as Canada, which have strong labor movements and political parties that are dedicated to representing the interests of the working class.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "189": {
+        "question": "The Civil Rights Act of 1964 was passed to reinforce the",
+        "choices": [
+            "presidential veto",
+            "system of checks and balances",
+            "states' power to challenge federal regulation",
+            "Fourteenth Amendment"
+        ],
+        "initial_response": "civil rights of African Americans and other minorities in the United States. It outlawed discrimination based on race, color, religion, sex, or national origin in public places, provided for the integration of schools and other public facilities, and made employment discrimination illegal. The act also created the Equal Employment Opportunity Commission (EEOC) to investigate and enforce civil rights laws.",
+        "question_entity_names": [
+            "Civil Rights Act of 1964"
+        ],
+        "response_entity_names": [
+            "African Americans",
+            "minorities",
+            "United States",
+            "discrimination",
+            "race",
+            "color",
+            "religion",
+            "sex",
+            "national origin",
+            "public places",
+            "integration",
+            "schools",
+            "public facilities",
+            "employment discrimination",
+            "Equal Employment Opportunity Commission",
+            "EEOC",
+            "civil rights laws"
+        ],
+        "extracted_triples": [
+            [
+                "Civil Rights Act of 1964",
+                "passed reinforce",
+                "civil rights of African Americans and other minorities"
+            ],
+            [
+                "Civil Rights Act of 1964",
+                "provided",
+                "integration of schools and other public facilities"
+            ],
+            [
+                "Civil Rights Act of 1964",
+                "made",
+                "employment discrimination illegal"
+            ],
+            [
+                "Civil Rights Act of 1964",
+                "created",
+                "Equal Employment Opportunity Commission"
+            ],
+            [
+                "Equal Employment Opportunity Commission",
+                "investigate enforce",
+                "civil rights laws"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q585962",
+                "wd:Q1067970",
+                "wd:Q1333112"
+            ],
+            [
+                "wd:Q585962",
+                "wdt:P137",
+                "wd:Q133492"
+            ],
+            [
+                "wd:Q585962",
+                "wdt:P571",
+                "wd:Q1860"
+            ],
+            [
+                "wd:Q585962",
+                "wdt:P571",
+                "wd:Q3673184"
+            ],
+            [
+                "wd:Q3673184",
+                "wdt:P279",
+                "wd:Q38703973"
+            ]
+        ],
+        "question_entities_uris": [
+            "wd:Q585962"
+        ],
+        "uri_name_map": {
+            "wd:Q585962": "Civil Rights Act of 1964",
+            "wd:Q1067970": "passed reinforce",
+            "wd:Q1333112": "civil rights of African Americans and other minorities",
+            "wdt:P137": "provided",
+            "wd:Q133492": "integration of schools and other public facilities",
+            "wdt:P571": "created",
+            "wd:Q1860": "employment discrimination illegal",
+            "wd:Q3673184": "Equal Employment Opportunity Commission",
+            "wdt:P279": "investigate enforce",
+            "wd:Q38703973": "civil rights laws",
+            "http://www.wikidata.org/prop/direct/P407": "language of work or name"
+        },
+        "truth_score": 0.7579910876700682,
+        "% true": 0.15159821753401365,
+        "true_facts_names": [
+            [
+                "Civil Rights Act of 1964",
+                "language of work or name",
+                "employment discrimination illegal"
+            ]
+        ],
+        "true_facts_uris": [
+            [
+                "wd:Q585962",
+                "http://www.wikidata.org/prop/direct/P407",
+                "wd:Q1860"
+            ]
+        ],
+        "linked_entities": [
+            "wd:Q1860",
+            "wd:Q38703973",
+            "wd:Q3673184",
+            "wd:Q133492",
+            "wd:Q1333112",
+            "wd:Q585962"
+        ],
+        "evaluation_score": 0.1697717291139456,
+        "below_threshold": true,
+        "true_entities": [
+            "wd:Q585962",
+            "wd:Q1860"
+        ],
+        "top_predicates_Civil Rights Act of 1964": [
+            "legislated by",
+            "United States Public Law",
+            "publication date"
+        ],
+        "top_predicates_employment discrimination illegal": [
+            "instance of",
+            "named after",
+            "country"
+        ],
+        "filtered_facts_for_context": [
+            [
+                "Civil Rights Act of 1964",
+                "legislated by",
+                "88th United States Congress"
+            ],
+            [
+                "Civil Rights Act of 1964",
+                "United States Public Law",
+                "88-352"
+            ],
+            [
+                "Civil Rights Act of 1964",
+                "publication date",
+                "1964-07-02T00:00:00Z"
+            ],
+            [
+                "employment discrimination illegal",
+                "instance of",
+                "natural language"
+            ],
+            [
+                "employment discrimination illegal",
+                "instance of",
+                "language"
+            ],
+            [
+                "employment discrimination illegal",
+                "instance of",
+                "modern language"
+            ],
+            [
+                "employment discrimination illegal",
+                "named after",
+                "England"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Canada"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Republic of Ireland"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "United States of America"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Kenya"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Ethiopia"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Ghana"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "United Kingdom"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Malta"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Belize"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Barbados"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "South Africa"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Singapore"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Bahrain"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Australia"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Cambodia"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "New Zealand"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "India"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Tuvalu"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Tonga"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Samoa"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Solomon Islands"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Vanuatu"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Papua New Guinea"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Palau"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Nauru"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Federated States of Micronesia"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Marshall Islands"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Kiribati"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Fiji"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Guyana"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Trinidad and Tobago"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Saint Vincent and the Grenadines"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Saint Lucia"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Saint Kitts and Nevis"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Jamaica"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Grenada"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "The Bahamas"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Antigua and Barbuda"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Dominica"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Jersey"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Israel"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Lebanon"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Maldives"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Malaysia"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Oman"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Pakistan"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Sri Lanka"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "United Arab Emirates"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Bhutan"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Brunei"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Tanzania"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Philippines"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Zambia"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Zimbabwe"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "South Sudan"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Botswana"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Eritrea"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "The Gambia"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Cameroon"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Lesotho"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Liberia"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Madagascar"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Malawi"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Mauritius"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Namibia"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Nigeria"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Uganda"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Rwanda"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Seychelles"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Sierra Leone"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Sudan"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Eswatini"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Gibraltar"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Cayman Islands"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Falkland Islands"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Isle of Man"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "United States Virgin Islands"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Montserrat"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "American Samoa"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Turks and Caicos Islands"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Aruba"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Bermuda"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Anguilla"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Bailiwick of Guernsey"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "British Virgin Islands"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Sint Maarten"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "K\u016bki \u02bb\u0100irani"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Niue"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Pitcairn Islands"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Tokelau"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "British Indian Ocean Territory"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Saint Martin"
+            ],
+            [
+                "employment discrimination illegal",
+                "country",
+                "Saint Helena, Ascension and Tristan da Cunha"
+            ]
+        ],
+        "context_string": "Civil Rights Act of 1964 legislated by 88th United States Congress. Civil Rights Act of 1964 United States Public Law 88-352. Civil Rights Act of 1964 publication date 1964-07-02T00:00:00Z. employment discrimination illegal instance of natural language. employment discrimination illegal instance of language. employment discrimination illegal instance of modern language. employment discrimination illegal named after England. employment discrimination illegal country Canada. employment discrimination illegal country Republic of Ireland. employment discrimination illegal country United States of America. employment discrimination illegal country Kenya. employment discrimination illegal country Ethiopia. employment discrimination illegal country Ghana. employment discrimination illegal country United Kingdom. employment discrimination illegal country Malta. employment discrimination illegal country Belize. employment discrimination illegal country Barbados. employment discrimination illegal country South Africa. employment discrimination illegal country Singapore. employment discrimination illegal country Bahrain. employment discrimination illegal country Australia. employment discrimination illegal country Cambodia. employment discrimination illegal country New Zealand. employment discrimination illegal country India. employment discrimination illegal country Tuvalu. employment discrimination illegal country Tonga. employment discrimination illegal country Samoa. employment discrimination illegal country Solomon Islands. employment discrimination illegal country Vanuatu. employment discrimination illegal country Papua New Guinea. employment discrimination illegal country Palau. employment discrimination illegal country Nauru. employment discrimination illegal country Federated States of Micronesia. employment discrimination illegal country Marshall Islands. employment discrimination illegal country Kiribati. employment discrimination illegal country Fiji. employment discrimination illegal country Guyana. employment discrimination illegal country Trinidad and Tobago. employment discrimination illegal country Saint Vincent and the Grenadines. employment discrimination illegal country Saint Lucia. employment discrimination illegal country Saint Kitts and Nevis. employment discrimination illegal country Jamaica. employment discrimination illegal country Grenada. employment discrimination illegal country The Bahamas. employment discrimination illegal country Antigua and Barbuda. employment discrimination illegal country Dominica. employment discrimination illegal country Jersey. employment discrimination illegal country Israel. employment discrimination illegal country Lebanon. employment discrimination illegal country Maldives. employment discrimination illegal country Malaysia. employment discrimination illegal country Oman. employment discrimination illegal country Pakistan. employment discrimination illegal country Sri Lanka. employment discrimination illegal country United Arab Emirates. employment discrimination illegal country Bhutan. employment discrimination illegal country Brunei. employment discrimination illegal country Tanzania. employment discrimination illegal country Philippines. employment discrimination illegal country Zambia. employment discrimination illegal country Zimbabwe. employment discrimination illegal country South Sudan. employment discrimination illegal country Botswana. employment discrimination illegal country Eritrea. employment discrimination illegal country The Gambia. employment discrimination illegal country Cameroon. employment discrimination illegal country Lesotho. employment discrimination illegal country Liberia. employment discrimination illegal country Madagascar. employment discrimination illegal country Malawi. employment discrimination illegal country Mauritius. employment discrimination illegal country Namibia. employment discrimination illegal country Nigeria. employment discrimination illegal country Uganda. employment discrimination illegal country Rwanda. employment discrimination illegal country Seychelles. employment discrimination illegal country Sierra Leone. employment discrimination illegal country Sudan. employment discrimination illegal country Eswatini. employment discrimination illegal country Gibraltar. employment discrimination illegal country Cayman Islands. employment discrimination illegal country Falkland Islands. employment discrimination illegal country Isle of Man. employment discrimination illegal country United States Virgin Islands. employment discrimination illegal country Montserrat. employment discrimination illegal country American Samoa. employment discrimination illegal country Turks and Caicos Islands. employment discrimination illegal country Aruba. employment discrimination illegal country Bermuda. employment discrimination illegal country Anguilla. employment discrimination illegal country Bailiwick of Guernsey. employment discrimination illegal country British Virgin Islands. employment discrimination illegal country Sint Maarten. employment discrimination illegal country K\u016bki \u02bb\u0100irani. employment discrimination illegal country Niue. employment discrimination illegal country Pitcairn Islands. employment discrimination illegal country Tokelau. employment discrimination illegal country British Indian Ocean Territory. employment discrimination illegal country Saint Martin. employment discrimination illegal country Saint Helena, Ascension and Tristan da Cunha. ",
+        "new_response": "Answer: The Civil Rights Act of 1964 was passed to reinforce the protection of civil rights and to make employment discrimination illegal in the United States and its territories, as well as in other countries such as Canada, the Republic of Ireland, Kenya, Ethiopia, Ghana, the United Kingdom, Malta, Belize, Barbados, South Africa, Singapore, Bahrain, Australia, Cambodia, New Zealand, India, Tuvalu, Tonga, Samoa, Solomon Islands, Vanuatu, Papua New Guinea, Palau, Nauru, Federated States of Micronesia, Marshall Islands, Kiribati, Fiji, Guyana, Trinidad and Tobago, Saint Vincent and the Grenadines, Saint Lucia, Saint Kitts and Nevis, Jamaica, Grenada, The Bahamas, Antigua and Barbuda, Dominica, Jersey, Israel, Lebanon, Maldives, Malaysia, Oman, Pakistan, Sri Lanka, United Arab Emirates, Bhutan, Brunei, Tanzania, Philippines, Zambia, Zimbabwe, South Sudan, Botswana, Eritrea, The Gambia, Cameroon, Lesotho, Liberia, Madagascar, Malawi, Mauritius, Namibia, Nigeria, Uganda, Rwanda, Seychelles, Sierra Leone, Sudan, E",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "190": {
+        "question": "Which of the following is NOT part of the \"iron triangles\" that influence public policy-making?",
+        "choices": [
+            "House committees",
+            "Senate committees",
+            "The courts",
+            "Bureaucratic agencies"
+        ],
+        "initial_response": "The media",
+        "question_entity_names": [
+            "iron triangles",
+            "public policy-making"
+        ],
+        "response_entity_names": [
+            "The media"
+        ],
+        "extracted_triples": [
+            [
+                "'iron triangles'",
+                "'influence '",
+                "'public policy-making'"
+            ],
+            [
+                "'The media'",
+                "'is part '",
+                "'iron triangles'"
+            ]
+        ],
+        "error": "list index out of range",
+        "llm_answer": "D",
+        "llm_is_correct": false
+    },
+    "191": {
+        "question": "The attorney general is the head of which of the following entities?",
+        "choices": [
+            "The Senate Judiciary Committee",
+            "The Department of Justice",
+            "The Department of State",
+            "The Judge Advocate General's Corps"
+        ],
+        "initial_response": "The attorney general is the head of the Department of Justice.",
+        "question_entity_names": [
+            "attorney general"
+        ],
+        "response_entity_names": [
+            "attorney general",
+            "head",
+            "Department of Justice"
+        ],
+        "extracted_triples": [
+            [
+                "attorney general",
+                "head",
+                "Department of Justice"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q1501926",
+                "wdt:P1037",
+                "wd:Q1058376"
+            ]
+        ],
+        "question_entities_uris": [
+            "wd:Q1501926"
+        ],
+        "uri_name_map": {
+            "wd:Q1501926": "attorney general",
+            "wdt:P1037": "head",
+            "wd:Q1058376": "Department of Justice"
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q1501926",
+            "wd:Q1058376"
+        ],
+        "evaluation_score": 0.06666666666666667,
+        "below_threshold": true,
+        "true_entities": [],
+        "top_predicates_attorney general": [
+            "instance of",
+            "subclass of",
+            "described by source"
+        ],
+        "filtered_facts_for_context": [
+            [
+                "attorney general",
+                "instance of",
+                "position"
+            ],
+            [
+                "attorney general",
+                "subclass of",
+                "public prosecutor general"
+            ],
+            [
+                "attorney general",
+                "described by source",
+                "Encyclop\u00e6dia Britannica 11th edition"
+            ],
+            [
+                "attorney general",
+                "described by source",
+                "The Nuttall Encyclop\u00e6dia"
+            ]
+        ],
+        "context_string": "attorney general instance of position. attorney general subclass of public prosecutor general. attorney general described by source Encyclop\u00e6dia Britannica 11th edition. attorney general described by source The Nuttall Encyclop\u00e6dia. ",
+        "new_response": "Answer: The attorney general is the head of the Department of Justice.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "192": {
+        "question": "The Supreme Court's decision in Miranda v. Arizona was based mainly on the",
+        "choices": [
+            "Constitutional prohibition of ex post facto laws",
+            "incorporation of the Fifth Amendment through the due process clause of the Fourteenth Amendment",
+            "Eighth Amendment restriction against cruel and unusual punishment",
+            "abolition of slavery by the Thirteenth Amendment"
+        ],
+        "initial_response": "Fifth Amendment of the United States Constitution. The Court held that the Fifth Amendment's Self-Incrimination Clause requires that criminal suspects be informed of their right to remain silent and their right to an attorney before any custodial interrogation by law enforcement. The Court also held that any statements made by the suspect during such interrogation must be voluntary and that any evidence obtained as a result of such interrogation must be excluded from trial.",
+        "question_entity_names": [
+            "Supreme Court",
+            "Miranda v. Arizona"
+        ],
+        "response_entity_names": [
+            "Fifth Amendment",
+            "United States Constitution",
+            "Self-Incrimination Clause"
+        ],
+        "extracted_triples": [
+            [
+                "Supreme Court",
+                "decision",
+                "Miranda v. Arizona"
+            ],
+            [
+                "decision in",
+                "based",
+                "Fifth Amendment of the United States Constitution"
+            ],
+            [
+                "Supreme Court",
+                "held",
+                "Fifth Amendment's Self-Incrimination Clause requires"
+            ],
+            [
+                "criminal suspects",
+                "informed",
+                "their right to remain silent and their right to an attorney"
+            ],
+            [
+                "Court",
+                "held",
+                "any statements made by the suspect during such interrogation must be voluntary"
+            ],
+            [
+                "Court",
+                "held",
+                "any evidence obtained as a result of such interrogation must be excluded from trial"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q11201",
+                "wdt:P31",
+                "wd:Q1642249"
+            ],
+            [
+                "wd:Q106901434",
+                "wdt:P887",
+                "wd:Q1860"
+            ],
+            [
+                "wd:Q11201",
+                "wdt:P276",
+                "wd:Q1126642"
+            ],
+            [
+                "wd:Q16540322",
+                "wdt:P737",
+                "wd:Q352067"
+            ],
+            [
+                "wd:Q41487",
+                "wdt:P276",
+                "wd:Q1067808"
+            ],
+            [
+                "wd:Q41487",
+                "wdt:P276",
+                "wd:Q106301764"
+            ]
+        ],
+        "question_entities_uris": [
+            "wd:Q11201",
+            "wd:Q1642249"
+        ],
+        "uri_name_map": {
+            "wd:Q11201": "Supreme Court",
+            "wdt:P31": "decision",
+            "wd:Q1642249": "Miranda v. Arizona",
+            "wd:Q106901434": "decision in",
+            "wdt:P887": "based",
+            "wd:Q1860": "Fifth Amendment of the United States Constitution",
+            "wdt:P276": "held",
+            "wd:Q1126642": "Fifth Amendment's Self-Incrimination Clause requires",
+            "wd:Q16540322": "criminal suspects",
+            "wdt:P737": "informed",
+            "wd:Q352067": "their right to remain silent and their right to an attorney",
+            "wd:Q41487": "Court",
+            "wd:Q1067808": "any statements made by the suspect during such interrogation must be voluntary",
+            "wd:Q106301764": "any evidence obtained as a result of such interrogation must be excluded from trial",
+            "http://www.wikidata.org/entity/Q119173073": "United States article III court",
+            "http://www.wikidata.org/entity/Q1579670": "United States Supreme Court Building"
+        },
+        "truth_score": 1.548034492119296,
+        "% true": 0.2580057486865493,
+        "true_facts_names": [
+            [
+                "Supreme Court",
+                "decision",
+                "United States article III court"
+            ],
+            [
+                "Supreme Court",
+                "held",
+                "United States Supreme Court Building"
+            ]
+        ],
+        "true_facts_uris": [
+            [
+                "wd:Q11201",
+                "wdt:P31",
+                "http://www.wikidata.org/entity/Q119173073"
+            ],
+            [
+                "wd:Q11201",
+                "wdt:P276",
+                "http://www.wikidata.org/entity/Q1579670"
+            ]
+        ],
+        "linked_entities": [
+            "wd:Q106301764",
+            "wd:Q11201",
+            "wd:Q1642249",
+            "wd:Q1860",
+            "wd:Q352067",
+            "wd:Q41487",
+            "wd:Q1067808",
+            "wd:Q16540322",
+            "wd:Q106901434",
+            "wd:Q1126642"
+        ],
+        "evaluation_score": 0.3322051738178944,
+        "below_threshold": true,
+        "true_entities": [
+            "wd:Q11201",
+            "http://www.wikidata.org/entity/Q119173073",
+            "http://www.wikidata.org/entity/Q1579670"
+        ],
+        "top_predicates_Supreme Court": [
+            "foundational text",
+            "history of topic",
+            "applies to jurisdiction"
+        ],
+        "top_predicates_United States article III court": [
+            "foundational text",
+            "facet of",
+            "subclass of"
+        ],
+        "top_predicates_United States Supreme Court Building": [
+            "located in the administrative territorial entity",
+            "architect",
+            "inception"
+        ],
+        "top_predicates_Miranda v. Arizona": [
+            "court",
+            "laws applied",
+            "significant event"
+        ],
+        "filtered_facts_for_context": [
+            [
+                "Supreme Court",
+                "foundational text",
+                "Article Three of the United States Constitution"
+            ],
+            [
+                "Supreme Court",
+                "history of topic",
+                "history of the Supreme Court of the United States"
+            ],
+            [
+                "Supreme Court",
+                "applies to jurisdiction",
+                "United States of America"
+            ],
+            [
+                "United States article III court",
+                "foundational text",
+                "Article Three of the United States Constitution"
+            ],
+            [
+                "United States article III court",
+                "facet of",
+                "United States federal courts"
+            ],
+            [
+                "United States article III court",
+                "subclass of",
+                "court"
+            ],
+            [
+                "United States Supreme Court Building",
+                "located in the administrative territorial entity",
+                "Washington, D.C."
+            ],
+            [
+                "United States Supreme Court Building",
+                "architect",
+                "Cass Gilbert"
+            ],
+            [
+                "United States Supreme Court Building",
+                "architect",
+                "Hermon Atkins MacNeil"
+            ],
+            [
+                "United States Supreme Court Building",
+                "architect",
+                "Robert Ingersoll Aitken"
+            ],
+            [
+                "United States Supreme Court Building",
+                "inception",
+                "1935-01-01T00:00:00Z"
+            ],
+            [
+                "Miranda v. Arizona",
+                "court",
+                "Supreme Court of the United States"
+            ],
+            [
+                "Miranda v. Arizona",
+                "laws applied",
+                "Fourteenth Amendment to the United States Constitution"
+            ],
+            [
+                "Miranda v. Arizona",
+                "laws applied",
+                "Fifth Amendment to the United States Constitution"
+            ],
+            [
+                "Miranda v. Arizona",
+                "laws applied",
+                "Sixth Amendment to the United States Constitution"
+            ],
+            [
+                "Miranda v. Arizona",
+                "significant event",
+                "oral argument"
+            ]
+        ],
+        "context_string": "Supreme Court foundational text Article Three of the United States Constitution. Supreme Court history of topic history of the Supreme Court of the United States. Supreme Court applies to jurisdiction United States of America. United States article III court foundational text Article Three of the United States Constitution. United States article III court facet of United States federal courts. United States article III court subclass of court. United States Supreme Court Building located in the administrative territorial entity Washington, D.C.. United States Supreme Court Building architect Cass Gilbert. United States Supreme Court Building architect Hermon Atkins MacNeil. United States Supreme Court Building architect Robert Ingersoll Aitken. United States Supreme Court Building inception 1935-01-01T00:00:00Z. Miranda v. Arizona court Supreme Court of the United States. Miranda v. Arizona laws applied Fourteenth Amendment to the United States Constitution. Miranda v. Arizona laws applied Fifth Amendment to the United States Constitution. Miranda v. Arizona laws applied Sixth Amendment to the United States Constitution. Miranda v. Arizona significant event oral argument. ",
+        "new_response": "Answer: The Supreme Court's decision in Miranda v. Arizona was mainly based on the Fourth, Fifth, and Sixth Amendments to the United States Constitution.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "finish_time": "2023-09-21 03:51:24.901629"
 }
