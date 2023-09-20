@@ -12,6 +12,8 @@ import utilities.eval_metrics as eval_metrics
 import utilities.llm_tasks_prompts as llm_tasks
 import utilities.entity_link as el
 import utilities.data_io as dio
+import utilities.nlp_tasks as nlp_tasks
+import utilities.emb_tasks as emb_tasks
 from utilities.timeout import time_limit, TimeoutException
 
 # Create a list of QA pairs
@@ -55,6 +57,7 @@ num_correct = 0
 # Generate a response for each question
 for i, item in enumerate(data):  # 66:71  # 36:37
     question = item['question_text']
+    # response = llm_tasks.generate_response_with_elaboration(question)
     response = llm.predict(question)
 
     print("Q:", question)
@@ -78,7 +81,7 @@ for i, item in enumerate(data):  # 66:71  # 36:37
             response_entities = llm_tasks.extract_entities(response.strip())
             print("A entities:", response_entities)
 
-            entity_names = list(dict.fromkeys(question_entities + response_entities))  # llm_tasks.extract_entities(f"{question} {response.strip()}")
+            entity_names = list(dict.fromkeys(question_entities + response_entities))
             print("All entities:", entity_names)
 
             num_of_identified_ents = len(entity_names)
@@ -90,9 +93,15 @@ for i, item in enumerate(data):  # 66:71  # 36:37
 
             # Feed question, LLM response, and entities and relations into LLM
             # Extract knowledge graph facts from the response
-            triples_names = llm_tasks.extract_kg_facts_given_entities(f"{question} {response.strip()}", entity_names)
-            print("Triples:", triples_names)
+            triples_names_long = llm_tasks.extract_kg_facts_given_entities(f"{question} {response.strip()}", entity_names)
+            print("Triples:", triples_names_long)
             print()
+
+            triples_names = []
+
+            for s, p, o in triples_names_long:
+                short_p = nlp_tasks.remove_stopwords(p)
+                triples_names.append((s, short_p, o))
 
             qa_pairs[i]["extracted_triples"] = triples_names
 
@@ -104,35 +113,27 @@ for i, item in enumerate(data):  # 66:71  # 36:37
             extr_triples_uris = []
 
             # Convert the triples to a list of URIs
-            for s, p, o in triples_names:
-                # Use REST API to get the URI of the entity/property
-                if s not in entities_name_uri_map:
-                    entities_name_uri_map[s] = el.fetch_wikidata_from_query(s)
-                if p not in relations_name_uri_map:
-                    relations_name_uri_map[p] = el.fetch_wikidata_from_query(p, ent_type='property')
-                if o not in entities_name_uri_map:
-                    entities_name_uri_map[o] = el.fetch_wikidata_from_query(o)
+            for triple in triples_names:
+                # TODO: Include description as well
+                context_str = f"{triple[0]} {triple[1]} {triple[2]}"
 
                 uris = []  # Used to construct the triple as a tuple of URIs
 
-                for j, component in enumerate([s, p, o]):
-                    # Retrieve the URI of the entity/property
+                for j, component in enumerate(triple):
+                    # Use REST API to retrieve the URI of the entity/property
                     if j == 1:
-                        info = relations_name_uri_map[component]
+                        if component not in relations_name_uri_map:
+                            relations_name_uri_map[component] = el.fetch_uri_wikidata(
+                                component, context_str, ent_type='property')
+                        uri = relations_name_uri_map[component]
                     else:
-                        info = entities_name_uri_map[component]
+                        if component not in entities_name_uri_map:
+                            entities_name_uri_map[component] = el.fetch_uri_wikidata(component, context_str)
+                        uri = entities_name_uri_map[component]
 
-                    if len(info['search']) == 0:
-                        print('Sorry, no results for "' + component + '"')
-                        uris.append('"' + component + '"')  # Use name of entity/property (quoted) instead
-                        uri_name_map['"' + component + '"'] = component
-                    else:
-                        label = info['search'][0]["label"]
-                        uri = info['search'][0]["concepturi"]
-                        description = info['search'][0].get("description", "No description available.")
-                        print(label, uri, description)
-                        uris.append(uri)
-                        uri_name_map[uri] = component
+                    uris.append(uri)
+                    uri_name_map[uri] = component
+
                 print()
 
                 extr_triples_uris.append(tuple(uris))
@@ -145,7 +146,7 @@ for i, item in enumerate(data):  # 66:71  # 36:37
 
             question_ent_uris = []
             for ent_name in question_entities:
-                ent_uri = el.fetch_uri_wikidata(ent_name)
+                ent_uri = el.fetch_uri_wikidata(ent_name, ent_name)
                 question_ent_uris.append(ent_uri)
                 uri_name_map[ent_uri] = ent_name
 
@@ -156,85 +157,94 @@ for i, item in enumerate(data):  # 66:71  # 36:37
 
             qa_pairs[i]["uri_name_map"] = uri_name_map
 
-            true_count = 0
+            truth_score = 0
             true_facts_uris = []
             true_facts_names = []
             true_entities_uris = set()
 
             # For each triple, perform a SPARQL query to verify the truthfulness
             for s, p, o in extr_triples_uris:
-                # Convert the triple to SPARQL format
-                s_format = sparql_f.uri_to_sparql_format_wikidata(s)
-                p_format = sparql_f.uri_to_sparql_format_wikidata(p)
-                o_format = sparql_f.uri_to_sparql_format_wikidata(o)
+                print("Triple:", s, p, o)
 
-                # sparql_query = f"ASK {{{subject} {predicate} {obj}.}}"
-                sparql_query = f"ASK {{{s_format} ?predicate {o_format}.}}"
+                p_uri_label_pairs, o_uri_label_pairs = sparql_f.get_sparql_results_wikidata(s, p, o)
 
-                print(sparql_query)
+                print("Predicate URI label pairs:", p_uri_label_pairs)
+                print("Object URI label pairs:", o_uri_label_pairs)
 
-                # Perform the SPARQL query
-                sparql_result = sparql_f.execute_sparql_query(sparql_query, sparql_wd)
-                print("Result:", sparql_result["boolean"], "\n")
-                print()
+                best_sim_score = 0
+                best_fact_with_names = None
+                best_fact_with_uris = None
 
-                if sparql_result["boolean"]:
-                    true_count += 1
-                    true_facts_uris.append((s, p, o))
-                    true_facts_names.append((uri_name_map[s], uri_name_map[p], uri_name_map[o]))
-                    true_entities_uris.add(s)
-                    true_entities_uris.add(o)
+                for p_uri, p_label in p_uri_label_pairs:
+                    print("Predicate URI-label pair:", p_uri, p_label)
+                    sim_score = emb_tasks.calculate_cos_sim(uri_name_map[p], p_label)
+                    print("Predicate similarity score:", sim_score)
+                    if sim_score > best_sim_score:
+                        best_sim_score = sim_score
+                        best_fact_with_names = (uri_name_map[s], p_label, uri_name_map[o])
+                        best_fact_with_uris = (s, p_uri, o)
 
-                else:
-                    # Swap subject and object in case if the direction is incorrect
-                    # sparql_query = f"ASK {{{obj} {predicate} {subject}.}}"
-                    sparql_query = f"ASK {{{o_format} ?predicate {s_format}.}}"
-                    print(sparql_query)
+                for o_uri, o_label in o_uri_label_pairs:
+                    print("Object URI-label pair:", o_uri, o_label)
+                    sim_score = emb_tasks.calculate_cos_sim(uri_name_map[o], o_label)
+                    print("Object similarity score:", sim_score)
+                    if sim_score > best_sim_score:
+                        best_sim_score = sim_score
+                        best_fact_with_names = (uri_name_map[s], uri_name_map[p], o_label)
+                        best_fact_with_uris = (s, p, o_uri)
 
-                    # Perform the SPARQL query
-                    sparql_result = sparql_f.execute_sparql_query(sparql_query, sparql_wd)
-                    print("Result:", sparql_result["boolean"], "\n")
-                    print()
+                print("Best similarity score:", best_sim_score)
+                print("Best fact with names:", best_fact_with_names)
+                print("Best fact with URIs:", best_fact_with_uris)
 
-                    if sparql_result["boolean"]:
-                        true_count += 1
-                        true_facts_uris.append((o, p, s))
-                        true_facts_names.append((uri_name_map[o], uri_name_map[p], uri_name_map[s]))
-                        true_entities_uris.add(s)
-                        true_entities_uris.add(o)
+                if best_sim_score > 0:
+                    truth_score += best_sim_score
+                    true_facts_uris.append(best_fact_with_uris)
+                    true_facts_names.append(best_fact_with_names)
+                    true_entities_uris.add(best_fact_with_uris[0])
+                    true_entities_uris.add(best_fact_with_uris[2])
 
-            print("True Count:", true_count)
+                    uri_name_map[best_fact_with_uris[0]] = best_fact_with_names[0]
+                    uri_name_map[best_fact_with_uris[1]] = best_fact_with_names[1]
+                    uri_name_map[best_fact_with_uris[2]] = best_fact_with_names[2]
+
+            print("Truth Score:", truth_score)
 
             if len(extr_triples_uris) > 0:
-                frac_true = true_count / len(extr_triples_uris)
+                frac_true = truth_score / len(extr_triples_uris)
             else:
                 frac_true = 0
-
-            print("% True:", frac_true)
-            print()
+            print("Simple measure of truthfulness:", frac_true)
 
             print("True facts names:", true_facts_names)
 
-            qa_pairs[i]["true_count"] = true_count
+            qa_pairs[i]["truth_score"] = truth_score
             qa_pairs[i]["% true"] = frac_true
+
+            qa_pairs[i]["true_facts_names"] = true_facts_names
+            qa_pairs[i]["true_facts_uris"] = true_facts_uris
 
             # Calculate the number of linked entities
             linked_entities = set()
             for s, p, o in extr_triples_uris:
-                linked_entities.add(s)
-                linked_entities.add(o)
+                if s.startswith("wd:"):
+                    linked_entities.add(s)
+                if o.startswith("wd:"):
+                    linked_entities.add(o)
             print("Linked Entities:", linked_entities)
             print("Number of Linked Entities:", len(linked_entities))
 
+            qa_pairs[i]["linked_entities"] = list(linked_entities)
+
             # Evaluate the truthfulness of the response
-            eval_score = eval_metrics.simple_evaluation(entity_names, linked_entities,
-                                                        extr_triples_uris, true_facts_uris)
+            eval_score = eval_metrics.simple_evaluation_using_similarity(entity_names, linked_entities,
+                                                                         triples_names, truth_score)
             print("Evaluation Score:", eval_score)
             print()
 
             qa_pairs[i]["evaluation_score"] = eval_score
 
-            if eval_score < 0.5:
+            if eval_score < 0.8:
                 qa_pairs[i]["below_threshold"] = True
 
                 print("True entities:", true_entities_uris)
@@ -255,13 +265,14 @@ for i, item in enumerate(data):  # 66:71  # 36:37
                         s_format = sparql_f.uri_to_sparql_format_wikidata(subject)
                         print("Subject:", subject)
 
-                        sparql_query = f'SELECT ?predicate ?propLabel ?object ?objectLabel WHERE {{ \
-                        {s_format} ?predicate ?object. \
-                        SERVICE wikibase:label {{ \
-                            bd:serviceParam wikibase:language "en" . }} \
-                        ?prop wikibase:directClaim ?predicate . \
-                        ?prop rdfs:label ?propLabel.  filter(lang(?propLabel) = "en"). \
-                        FILTER(!isLiteral(?object) || lang(?object) = "" || langMatches(lang(?object), "EN")) }}'
+                        sparql_query = f'''
+                        SELECT ?predicate ?propLabel ?object ?objectLabel WHERE {{
+                            {s_format} ?predicate ?object.
+                            SERVICE wikibase:label {{
+                                bd:serviceParam wikibase:language "en" . }}
+                            ?prop wikibase:directClaim ?predicate .
+                            ?prop rdfs:label ?propLabel.  filter(lang(?propLabel) = "en").
+                            FILTER(!isLiteral(?object) || lang(?object) = "" || langMatches(lang(?object), "EN")) }}'''
 
                         print(sparql_query)
                         sparql_output = sparql_f.execute_sparql_query(sparql_query, sparql_wd)
@@ -269,7 +280,7 @@ for i, item in enumerate(data):  # 66:71  # 36:37
 
                         # print("SPARQL bindings:", sparql_bindings)
 
-                        unique_predicates = dict()  # Map URI to alias
+                        unique_predicates = dict()  # Map alias to URI
 
                         # Get uris and names of unique predicates
                         for binding in sparql_bindings:
@@ -286,7 +297,17 @@ for i, item in enumerate(data):  # 66:71  # 36:37
                         # qa_pairs[i]["unique_predicates_" + uri_name_map[subject]] = unique_predicates
 
                         # Given a list of predicates, use the LLM to get the order of predicates by most relevant
-                        top_preds = llm_tasks.extract_relevant_predicates(question, list(unique_predicates.keys()), k=3)
+                        top_preds = []
+                        unique_pred_names = list(unique_predicates.keys())
+                        start_idx = 0
+
+                        while start_idx < len(unique_pred_names):
+                            end_idx = min(start_idx + 80, len(unique_pred_names))
+                            top_preds += llm_tasks.extract_relevant_predicates(question, unique_pred_names[start_idx:end_idx], k=3)
+                            start_idx += 80
+
+                        if len(top_preds) > 3:
+                            top_preds = llm_tasks.extract_relevant_predicates(question, top_preds, k=3)
 
                         print("Top predicates:", top_preds)
                         print()
@@ -295,14 +316,17 @@ for i, item in enumerate(data):  # 66:71  # 36:37
 
                         # Execute SPARQL query for each of the top 3 predicates
                         for top_pred in top_preds:
-                            pred_uri = unique_predicates[top_pred][0]
+                            # pred_uri = unique_predicates[top_pred][0]
+                            pred_uri = el.fetch_uri_wikidata(top_pred, top_pred, ent_type='property')
                             top_p_format = sparql_f.uri_to_sparql_format_wikidata(pred_uri)
                             # TODO: Use the existing SPARQL binding instead of executing a new SPARQL query
-                            sparql_query = f'SELECT ?object ?objectLabel WHERE \
-                            {{{s_format} {top_p_format} ?object. \
-                            SERVICE wikibase:label {{ \
-                                bd:serviceParam wikibase:language "en" . }} \
-                            FILTER(!isLiteral(?object) || lang(?object) = "" || langMatches(lang(?object), "EN"))}}'
+                            sparql_query = f'''
+                            SELECT ?object ?objectLabel WHERE {{
+                                {s_format} {top_p_format} ?object.
+                                SERVICE wikibase:label {{
+                                    bd:serviceParam wikibase:language "en" . }}
+                                FILTER(!isLiteral(?object) || lang(?object) = "" || langMatches(lang(?object), "EN"))
+                            }}'''
                             print(sparql_query)
                             sparql_output = sparql_f.execute_sparql_query(sparql_query, sparql_wd)
                             sparql_bindings = sparql_output['results']['bindings']
@@ -332,6 +356,8 @@ for i, item in enumerate(data):  # 66:71  # 36:37
                 chain = LLMChain(llm=llm, prompt=new_prompt)
                 new_response = chain.run({"question": question, "context": context_string})
 
+                # new_response = llm_tasks.generate_response_using_context_with_elaboration(question, context_string)
+
                 print("New Response:", new_response.strip())
 
                 qa_pairs[i]["new_response"] = new_response.strip()
@@ -342,10 +368,10 @@ for i, item in enumerate(data):  # 66:71  # 36:37
         print("Timeout Exception")
         new_response = response.strip()
         qa_pairs[i]["timeout"] = True
-    except Exception as exc:
-        print("Error:", exc)
-        new_response = response.strip()
-        qa_pairs[i]["error"] = str(exc)
+    # except Exception as exc:
+    #     print("Error:", exc)
+    #     new_response = response.strip()
+    #     qa_pairs[i]["error"] = str(exc)
 
     # Generate the letter output based on the response
     letter_output = llm_tasks.select_mc_response_based(question, new_response.strip(), item['choices'])

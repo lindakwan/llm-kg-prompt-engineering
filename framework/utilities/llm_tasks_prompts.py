@@ -7,6 +7,59 @@ from langchain.llms import OpenAI
 llm = OpenAI(temperature=0)
 
 
+def generate_response_with_elaboration(question):
+    """
+    Generate a response to a question with elaboration.
+    :param question: The question to generate a response to.
+    :return: The response to the question with elaboration.
+    """
+    elaboration_json = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=[
+            {
+                "role": "system",
+                "content": "You will be provided with a question. Your task is to generate a response to the \
+                question including elaboration."
+            },
+            {
+                "role": "user",
+                "content": question
+            }
+        ],
+        temperature=0,
+        max_tokens=1000
+    )
+
+    return elaboration_json["choices"][0]["message"]["content"]
+
+
+def generate_response_using_context_with_elaboration(question, context_string):
+    """
+    Generate a response to a question with elaboration with context provided.
+    :param question: The question to generate a response to.
+    :param context_string: The context represented as a string.
+    :return: The response to the question with elaboration.
+    """
+    elaboration_json = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=[
+            {
+                "role": "system",
+                "content": "You will be provided with a question and some context. Your task is to generate a \
+                response to answer the question including elaboration."
+            },
+            {
+                "role": "user",
+                "content": f"Question: {question}\nContext: {context_string}"
+            }
+        ],
+        temperature=0,
+        max_tokens=1000
+    )
+
+    return elaboration_json["choices"][0]["message"]["content"]
+
+
 def extract_entities(text):
     """
     Extract the entity names from the text.
@@ -103,8 +156,8 @@ def extract_kg_facts_given_entities(text, entities):
             {
                 "role": "system",
                 "content": "You will be provided with text and a list of entities. \
-                    Using the lists of entities and relations, your task is to extract triples from the text in \
-                    the form (subject, predicate, object)"
+                    Using the lists of entities, your task is to extract triples from the text in \
+                    the form (subject, predicate, object)."
             },
             {
                 "role": "user",
@@ -121,6 +174,41 @@ def extract_kg_facts_given_entities(text, entities):
     return triples
 
 
+def get_similar_identifier_given_context(item_name, context, item_type="property"):
+    similar_identifier_json = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=[
+            {
+                "role": "system",
+                "content": "Just provide the identifier, no other explanation or documentation."
+            },
+            {
+                "role": "user",
+                "content": f'What is the most similar Wikidata URI for the {item_type} "{item_name}" in context \
+                of sentence "{context}"?'
+            }
+        ],
+        temperature=0,
+        max_tokens=256
+    )
+
+    opt = similar_identifier_json["choices"][0]["message"]["content"]
+
+    print("Id output:", opt)
+
+    # Use regex to extract the identifier
+    if item_type == "property":
+        ids = re.findall(r'P\d+', opt)
+        if len(ids) == 0:
+            identifier = "wd:" + re.findall(r'Q\d+', opt)[0]
+        else:
+            identifier = "wdt:" + ids[0]
+    else:
+        identifier = "wd:" + re.findall(r'Q\d+', opt)[0]
+
+    return identifier
+
+
 def extract_relevant_predicates(text, predicates, k=3):
     """
     Extract the top k most relevant predicates to the text.
@@ -134,9 +222,9 @@ def extract_relevant_predicates(text, predicates, k=3):
         messages=[
             {
                 "role": "system",
-                "content": "You will be provided with question text and a list of predicates. \
-                Your task is to order the predicates by most relevant to text. No documentation, no explanation, \
-                only valid python3 list code, escape all apostrophes with backslash."
+                "content": f"You will be provided with question text and a list of predicates. \
+                Your task is to order the {k} most relevant predicates by most relevant to text. \
+                No documentation, no explanation, only valid python3 list code, escape all apostrophes with backslash."
             },
             {
                 "role": "user",
@@ -148,9 +236,15 @@ def extract_relevant_predicates(text, predicates, k=3):
     )
 
     relevant_preds_opt = relevant_preds_json["choices"][-1]["message"]["content"]
+
     print("Relevant predicates output:", relevant_preds_opt)
 
-    relevant_preds = ast.literal_eval(re.findall(r'\[.*?\]', relevant_preds_opt)[0])
+    # Escape apostrophes
+    escaped_list = re.sub(r"(?<=')([^',\[\]]*)(?<!\\)'([^',\[\]]*)(?=')", r"\1\\'\2", relevant_preds_opt)
+
+    print("Escaped relevant predicates output:", escaped_list)
+
+    relevant_preds = ast.literal_eval(re.findall(r'\[.*?\]', escaped_list)[0])
 
     # Get the top k most relevant predicates
     top_preds = relevant_preds[:k]

@@ -22,6 +22,25 @@ def simple_evaluation(entities, linked_entities, facts, true_facts):
     return score
 
 
+def simple_evaluation_using_similarity(entities, linked_entities, facts, similarity_total):
+    num_of_entities = len(entities)
+    num_of_linked_entities = min(len(linked_entities), num_of_entities)
+    num_of_facts = len(facts)
+
+    if num_of_entities == 0:
+        frac_entities = 0
+    else:
+        frac_entities = num_of_linked_entities / num_of_entities
+
+    if num_of_facts == 0:
+        frac_facts = 0
+    else:
+        frac_facts = similarity_total / num_of_facts
+
+    score = alpha * frac_entities + (1 - alpha) * frac_facts
+    return score
+
+
 def complex_evaluation(text, entities, linked_entities, facts, true_facts):
     text_length = len(text.split(" "))
     num_of_entities = len(entities)
