@@ -1,0 +1,365 @@
+{
+    "start_time": "2023-09-21 00:07:28.427580",
+    "0": {
+        "question": "Which of the following best describes the balance the Supreme Court has struck between the establishment clause and the free-exercise clause?",
+        "choices": [
+            "Freedom of speech is protected except in certain situations, such as yelling \"fire\" in a crowded theater.",
+            "Once a church has been recognized by the federal government, its tax-exempt status can never be revoked.",
+            "Once Congress has created an administrative agency, that agency can be dissolved only by a constitutional amendment.",
+            "State-sponsored prayer during school hours is prohibited, but voluntary prayer by student groups before school is allowed."
+        ],
+        "initial_response": "The Supreme Court has struck a balance between the establishment clause and the free-exercise clause by allowing for some government involvement in religious matters, such as providing funding for religious schools, while also protecting individuals\u2019 rights to freely practice their religion without government interference.",
+        "question_entity_names": [
+            "Supreme Court",
+            "establishment clause",
+            "free-exercise clause"
+        ],
+        "response_entity_names": [
+            "Supreme Court",
+            "establishment clause",
+            "free-exercise clause",
+            "government",
+            "religious matters",
+            "funding",
+            "religious schools",
+            "individuals",
+            "rights",
+            "religion",
+            "government interference"
+        ],
+        "extracted_triples": [
+            [
+                "Supreme Court",
+                "struck",
+                "balance"
+            ],
+            [
+                "Supreme Court",
+                "struck",
+                "balance between establishment clause and free-exercise clause"
+            ],
+            [
+                "Supreme Court",
+                "allowing",
+                "government involvement in religious matters"
+            ],
+            [
+                "Supreme Court",
+                "providing",
+                "funding for religious schools"
+            ],
+            [
+                "Supreme Court",
+                "protecting",
+                "individuals' rights"
+            ],
+            [
+                "individuals",
+                "practice",
+                "religion"
+            ],
+            [
+                "individuals",
+                "practice",
+                "religion without government interference"
+            ]
+        ],
+        "error": "'search'",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "1": {
+        "question": "Which of the following statements does NOT accurately describe voting behavior in the United States?",
+        "choices": [
+            "Registered voters between the ages of 35 and 45 are more likely to vote than are those under the age of 21.",
+            "A registered voter who has attained his or her General Educational Development (GED) is less likely to vote than a high school dropout.",
+            "Registered voters are more likely to vote in general elections than they are in primary elections.",
+            "More women than men have voted in every presidential election since 1980."
+        ],
+        "initial_response": "\"Voting behavior in the United States is largely determined by race.\"",
+        "question_entity_names": [
+            "voting behavior",
+            "United States"
+        ],
+        "response_entity_names": [
+            "Voting behavior",
+            "United States",
+            "race"
+        ],
+        "extracted_triples": [
+            [
+                "voting behavior",
+                "accurately describe",
+                "voting behavior in the United States"
+            ],
+            [
+                "voting behavior",
+                "accurately describe",
+                "United States"
+            ],
+            [
+                "voting behavior",
+                "accurately describe",
+                "Voting behavior"
+            ],
+            [
+                "voting behavior",
+                "accurately describe",
+                "race"
+            ]
+        ],
+        "error": "'search'",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "2": {
+        "question": "Which of the following plays the most significant role in forming a child's political views?",
+        "choices": [
+            "The geographical area in which the child grows up",
+            "The child's family",
+            "The media to which the child is exposed",
+            "The child's religion"
+        ],
+        "initial_response": "The most significant factor in forming a child's political views is their family and the environment in which they are raised. This includes the values and beliefs of their parents, the conversations they have with their family, and the media they consume.",
+        "question_entity_names": [
+            "child",
+            "political views"
+        ],
+        "response_entity_names": [
+            "child",
+            "political views",
+            "family",
+            "environment",
+            "values",
+            "beliefs",
+            "parents",
+            "conversations",
+            "media"
+        ],
+        "extracted_triples": [
+            [
+                "child",
+                "forms",
+                "political views"
+            ],
+            [
+                "family",
+                "plays role",
+                "forming child's political views"
+            ],
+            [
+                "environment",
+                "plays role",
+                "forming child's political views"
+            ],
+            [
+                "values",
+                "influence",
+                "child's political views"
+            ],
+            [
+                "beliefs",
+                "influence",
+                "child's political views"
+            ],
+            [
+                "parents",
+                "influence",
+                "child's political views"
+            ],
+            [
+                "conversations",
+                "influence",
+                "child's political views"
+            ],
+            [
+                "media",
+                "influence",
+                "child's political views"
+            ]
+        ],
+        "error": "'search'",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "3": {
+        "question": "What power was granted to the states by the Articles of Confederation but not by the Constitution?",
+        "choices": [
+            "Coining money",
+            "Authorizing constitutional amendments",
+            "Having representation in Congress",
+            "Appealing to the president to adjudicate disputes"
+        ],
+        "initial_response": "The Articles of Confederation granted the states the power to coin money, while the Constitution did not.",
+        "question_entity_names": [
+            "power",
+            "states",
+            "Articles of Confederation",
+            "Constitution"
+        ],
+        "response_entity_names": [
+            "Articles of Confederation",
+            "states",
+            "power",
+            "coin money",
+            "Constitution"
+        ],
+        "extracted_triples": [
+            [
+                "Articles of Confederation",
+                "granted",
+                "power"
+            ],
+            [
+                "states",
+                "granted",
+                "power"
+            ],
+            [
+                "Articles of Confederation",
+                "granted",
+                "power to coin money"
+            ],
+            [
+                "Constitution",
+                "grant",
+                "power to coin money"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q493620",
+                "wdt:P1027",
+                "wd:Q25107"
+            ],
+            [
+                "wd:Q104539563",
+                "wdt:P1027",
+                "wd:Q25107"
+            ],
+            [
+                "wd:Q493620",
+                "wdt:P1027",
+                "wd:Q37847"
+            ],
+            [
+                "wd:Q7755",
+                "wdt:P1027",
+                "wd:Q37847"
+            ]
+        ],
+        "question_entities_uris": [
+            "wd:Q25107",
+            "wd:Q104539563",
+            "wd:Q493620",
+            "wd:Q7755"
+        ],
+        "uri_name_map": {
+            "wd:Q493620": "Articles of Confederation",
+            "wdt:P1027": "grant",
+            "wd:Q25107": "power",
+            "wd:Q104539563": "states",
+            "wd:Q37847": "power to coin money",
+            "wd:Q7755": "Constitution"
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q25107",
+            "wd:Q7755",
+            "wd:Q37847",
+            "wd:Q493620",
+            "wd:Q104539563"
+        ],
+        "evaluation_score": 0.1,
+        "below_threshold": true,
+        "true_entities": [],
+        "top_predicates_power": [
+            "instance of",
+            "subclass of",
+            "different from"
+        ],
+        "top_predicates_states": [
+            "said to be the same as",
+            "subclass of",
+            "instance of"
+        ],
+        "top_predicates_Constitution": [
+            "subclass of",
+            "described by source",
+            "properties for this type"
+        ],
+        "error": "'search'",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "4": {
+        "question": "The primary function of political action committees (PACs) is to",
+        "choices": [
+            "contribute money to candidates for election",
+            "coordinate local get-out-the-vote campaigns",
+            "promote the defeat of incumbents in the federal and state legislatures",
+            "organize protest demonstrations and other acts of civil disobedience"
+        ],
+        "initial_response": "raise money for political campaigns. PACs are organized by individuals, corporations, unions, and other organizations to raise money for political candidates and causes. PACs can donate money directly to candidates or political parties, or they can use the money to fund independent expenditures, such as television ads, mailings, and other forms of political communication. PACs are also used to lobby elected officials and influence public policy.",
+        "question_entity_names": [
+            "political action committees",
+            "PACs"
+        ],
+        "response_entity_names": [
+            "PACs",
+            "individuals",
+            "corporations",
+            "unions",
+            "organizations",
+            "political candidates",
+            "causes",
+            "money",
+            "candidates",
+            "political parties",
+            "independent expenditures",
+            "television ads",
+            "mailings",
+            "forms of political communication",
+            "lobby elected officials",
+            "influence public policy"
+        ],
+        "extracted_triples": [
+            [
+                "political action committees",
+                "raise",
+                "money for political campaigns"
+            ],
+            [
+                "PACs",
+                "raise",
+                "money for political candidates and causes"
+            ],
+            [
+                "PACs",
+                "donate",
+                "money directly to candidates or political parties"
+            ],
+            [
+                "PACs",
+                "use",
+                "money to fund independent expenditures"
+            ],
+            [
+                "PACs",
+                "used",
+                "lobby elected officials"
+            ],
+            [
+                "PACs",
+                "used",
+                "influence public policy"
+            ]
+        ],
+        "error": "'str' object has no attribute 'json'",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    }
+}

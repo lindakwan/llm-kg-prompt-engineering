@@ -70,7 +70,7 @@ for i, item in enumerate(data):  # 66:71  # 36:37
 
     new_response = ""
     try:
-        with time_limit(120):
+        with time_limit(180):
             question_escaped = question.replace('"', '\\\"')
             response_escaped = response.strip().replace('"', '\\\"')
 
@@ -368,10 +368,10 @@ for i, item in enumerate(data):  # 66:71  # 36:37
         print("Timeout Exception")
         new_response = response.strip()
         qa_pairs[i]["timeout"] = True
-    # except Exception as exc:
-    #     print("Error:", exc)
-    #     new_response = response.strip()
-    #     qa_pairs[i]["error"] = str(exc)
+    except Exception as exc:
+        print("Error:", exc)
+        new_response = response.strip()
+        qa_pairs[i]["error"] = str(exc)
 
     # Generate the letter output based on the response
     letter_output = llm_tasks.select_mc_response_based(question, new_response.strip(), item['choices'])

@@ -1,0 +1,911 @@
+{
+    "start_time": "2023-09-21 00:04:04.320076",
+    "0": {
+        "question": "The main factor preventing subsistence economies from advancing economically is the lack of",
+        "choices": [
+            "a currency.",
+            "a well-connected transportation infrastructure.",
+            "government activity.",
+            "a banking service."
+        ],
+        "initial_response": "capital. Subsistence economies are typically characterized by low levels of capital, which limits their ability to invest in new technologies, infrastructure, and other resources that are necessary for economic growth. Without access to capital, subsistence economies are unable to take advantage of the opportunities that come with economic growth. Additionally, subsistence economies often lack the necessary resources and infrastructure to support economic growth, such as access to markets, transportation networks, and educational institutions. Without these resources, subsistence economies are unable to take advantage of the opportunities that come with economic growth.",
+        "question_entity_names": [
+            "subsistence economies",
+            "advancing economically",
+            "lack of"
+        ],
+        "response_entity_names": [
+            "capital",
+            "Subsistence economies",
+            "low levels of capital",
+            "invest",
+            "new technologies",
+            "infrastructure",
+            "resources",
+            "economic growth",
+            "access to capital",
+            "opportunities",
+            "subsistence economies",
+            "resources",
+            "infrastructure",
+            "economic growth",
+            "access to markets",
+            "transportation networks",
+            "educational institutions"
+        ],
+        "extracted_triples": [
+            [
+                "subsistence economies",
+                "preventing",
+                "advancing economically"
+            ],
+            [
+                "subsistence economies",
+                "characterized",
+                "low levels of capital"
+            ],
+            [
+                "subsistence economies",
+                "lack",
+                "capital"
+            ],
+            [
+                "subsistence economies",
+                "unable take advantage",
+                "opportunities that come with economic growth"
+            ],
+            [
+                "subsistence economies",
+                "lack",
+                "necessary resources and infrastructure"
+            ],
+            [
+                "subsistence economies",
+                "unable take advantage",
+                "opportunities that come with economic growth"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q1057592",
+                "wdt:P828",
+                "wd:Q1069781"
+            ],
+            [
+                "wd:Q1057592",
+                "wdt:P1552",
+                "wd:Q11229"
+            ],
+            [
+                "wd:Q1057592",
+                "wdt:P6477",
+                "wd:Q193893"
+            ],
+            [
+                "wd:Q1057592",
+                "wd:Q105800",
+                "wd:Q1066793"
+            ],
+            [
+                "wd:Q1057592",
+                "wdt:P6477",
+                "wd:Q29855484"
+            ],
+            [
+                "wd:Q1057592",
+                "wd:Q105800",
+                "wd:Q1066793"
+            ]
+        ],
+        "question_entities_uris": [
+            "wd:Q1057592",
+            "wd:Q1860",
+            "wd:Q661015"
+        ],
+        "uri_name_map": {
+            "wd:Q1057592": "subsistence economies",
+            "wdt:P828": "preventing",
+            "wd:Q1069781": "advancing economically",
+            "wdt:P1552": "characterized",
+            "wd:Q11229": "low levels of capital",
+            "wdt:P6477": "lack",
+            "wd:Q193893": "capital",
+            "wd:Q105800": "unable take advantage",
+            "wd:Q1066793": "opportunities that come with economic growth",
+            "wd:Q29855484": "necessary resources and infrastructure",
+            "wd:Q1860": "advancing economically",
+            "wd:Q661015": "lack of"
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q11229",
+            "wd:Q193893",
+            "wd:Q1069781",
+            "wd:Q29855484",
+            "wd:Q1057592",
+            "wd:Q1066793"
+        ],
+        "evaluation_score": 0.037500000000000006,
+        "below_threshold": true,
+        "true_entities": [],
+        "top_predicates_lack of": [
+            "instance of",
+            "subclass of",
+            "possible treatment"
+        ],
+        "error": "'search'",
+        "llm_answer": "E",
+        "llm_is_correct": false
+    },
+    "1": {
+        "question": "The tendency for a population to continue to grow long after replacement fertility has been achieved is called",
+        "choices": [
+            "zero population growth.",
+            "rapid growth rate.",
+            "homeostatic plateau.",
+            "demographic momentum."
+        ],
+        "initial_response": "population momentum. This occurs because the population is still growing due to the large number of people in the reproductive age group, even though the fertility rate has dropped. This means that the population will continue to grow for some time before it stabilizes.",
+        "question_entity_names": [
+            "population",
+            "replacement fertility"
+        ],
+        "response_entity_names": [
+            "population momentum"
+        ],
+        "extracted_triples": [
+            [
+                "population",
+                "continue grow",
+                "long after replacement fertility has been achieved"
+            ],
+            [
+                "population momentum",
+                "called",
+                "population momentum"
+            ],
+            [
+                "population",
+                "still growing",
+                "due to the large number of people in the reproductive age group"
+            ],
+            [
+                "population",
+                "continue grow",
+                "for some time before it stabilizes"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q33829",
+                "wdt:P1082",
+                "wd:Q1066790"
+            ],
+            [
+                "wd:Q7229810",
+                "wdt:P511",
+                "wd:Q7229810"
+            ],
+            [
+                "wd:Q33829",
+                "wdt:P1082",
+                "wd:Q1067972"
+            ],
+            [
+                "wd:Q33829",
+                "wdt:P1082",
+                "wd:Q1048835"
+            ]
+        ],
+        "question_entities_uris": [
+            "wd:Q33829",
+            "wd:Q81653847"
+        ],
+        "uri_name_map": {
+            "wd:Q33829": "population",
+            "wdt:P1082": "continue grow",
+            "wd:Q1066790": "long after replacement fertility has been achieved",
+            "wd:Q7229810": "population momentum",
+            "wdt:P511": "called",
+            "wd:Q1067972": "due to the large number of people in the reproductive age group",
+            "wd:Q1048835": "for some time before it stabilizes",
+            "wd:Q81653847": "replacement fertility"
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q33829",
+            "wd:Q1048835",
+            "wd:Q1066790",
+            "wd:Q1067972",
+            "wd:Q7229810"
+        ],
+        "evaluation_score": 0.1,
+        "below_threshold": true,
+        "true_entities": [],
+        "top_predicates_population": [
+            "subclass of",
+            "has part(s)",
+            "described by source"
+        ],
+        "error": "'search'",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "2": {
+        "question": "The tendency for migration to decrease with distance is called",
+        "choices": [
+            "push factors.",
+            "pull factors.",
+            "distance decay.",
+            "migration selectivity."
+        ],
+        "initial_response": "the distance-decay effect. This effect is based on the idea that the further away a person is from their home, the less likely they are to migrate. This is because the costs associated with long-distance migration, such as transportation and the cost of living, increase with distance. Additionally, the social and cultural ties that people have to their home region tend to decrease with distance, making them less likely to migrate.",
+        "question_entity_names": [
+            "migration"
+        ],
+        "response_entity_names": [
+            "distance-decay effect",
+            "person",
+            "home",
+            "migration",
+            "costs",
+            "transportation",
+            "cost of living",
+            "social ties",
+            "cultural ties",
+            "home region"
+        ],
+        "extracted_triples": [
+            [
+                "migration",
+                "decrease",
+                "distance"
+            ],
+            [
+                "distance-decay effect",
+                "called",
+                "tendency for migration to decrease with distance"
+            ],
+            [
+                "effect",
+                "based",
+                "idea"
+            ],
+            [
+                "person",
+                "away",
+                "home"
+            ],
+            [
+                "person",
+                "less likely",
+                "migrate"
+            ],
+            [
+                "costs",
+                "associated",
+                "long-distance migration"
+            ],
+            [
+                "costs",
+                "increase",
+                "distance"
+            ],
+            [
+                "transportation",
+                "associated",
+                "long-distance migration"
+            ],
+            [
+                "cost of living",
+                "associated",
+                "long-distance migration"
+            ],
+            [
+                "social ties",
+                "decrease",
+                "distance"
+            ],
+            [
+                "cultural ties",
+                "decrease",
+                "distance"
+            ],
+            [
+                "people",
+                "have",
+                "social and cultural ties"
+            ],
+            [
+                "people",
+                "less likely",
+                "migrate"
+            ]
+        ],
+        "error": "'search'",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "3": {
+        "question": "Which zone contains low-income slums, ethnic ghettos, and general deterioration in Burgess's concentric zone model of urban form?",
+        "choices": [
+            "First",
+            "Second",
+            "Third",
+            "Fourth"
+        ],
+        "initial_response": "The zone of transition contains low-income slums, ethnic ghettos, and general deterioration in Burgess's concentric zone model of urban form.",
+        "question_entity_names": [
+            "low-income slums",
+            "ethnic ghettos",
+            "general deterioration"
+        ],
+        "response_entity_names": [
+            "The zone of transition",
+            "low-income slums",
+            "ethnic ghettos",
+            "Burgess's concentric zone model",
+            "urban form"
+        ],
+        "extracted_triples": [
+            [
+                "Burgess's concentric zone model",
+                "contains",
+                "low-income slums"
+            ],
+            [
+                "Burgess's concentric zone model",
+                "contains",
+                "ethnic ghettos"
+            ],
+            [
+                "Burgess's concentric zone model",
+                "contains",
+                "general deterioration"
+            ],
+            [
+                "Burgess's concentric zone model",
+                "contains",
+                "The zone of transition"
+            ],
+            [
+                "Burgess's concentric zone model",
+                "describes",
+                "urban form"
+            ]
+        ],
+        "error": "'search'",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "4": {
+        "question": "Which of the following statements is TRUE concerning women in the labor force?",
+        "choices": [
+            "Most women work in agriculture",
+            "The percentage of women economically active in the labor force declined worldwide",
+            "The percentage of women in the total labor force declined",
+            "Women spend more hours per day working than men in all regions except Anglo America and Australia"
+        ],
+        "initial_response": "Women make up nearly half of the U.S. labor force.",
+        "question_entity_names": [
+            "women",
+            "labor force"
+        ],
+        "response_entity_names": [
+            "Women",
+            "U.S. labor force"
+        ],
+        "extracted_triples": [
+            [
+                "women",
+                "make",
+                "nearly half of the U.S. labor force"
+            ],
+            [
+                "Women",
+                "make",
+                "nearly half of the U.S. labor force"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q467",
+                "wdt:P2010",
+                "wd:Q29903668"
+            ],
+            [
+                "wd:Q467",
+                "wdt:P2010",
+                "wd:Q29903668"
+            ]
+        ],
+        "question_entities_uris": [
+            "wd:Q467",
+            "wd:Q13440398"
+        ],
+        "uri_name_map": {
+            "wd:Q467": "women",
+            "wdt:P2010": "make",
+            "wd:Q29903668": "nearly half of the U.S. labor force",
+            "wd:Q13440398": "labor force"
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q467",
+            "wd:Q29903668"
+        ],
+        "evaluation_score": 0.05,
+        "below_threshold": true,
+        "true_entities": [],
+        "top_predicates_labor force": [
+            "instance of",
+            "part of",
+            "subclass of"
+        ],
+        "error": "'search'",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "5": {
+        "question": "All the following factors can be considered pull factors of migration EXCEPT",
+        "choices": [
+            "safety.",
+            "better climate.",
+            "better schools.",
+            "overcrowding."
+        ],
+        "initial_response": "Push factors.",
+        "question_entity_names": [
+            "migration"
+        ],
+        "response_entity_names": [
+            "Push factors"
+        ],
+        "extracted_triples": [
+            [
+                "migration",
+                "considered",
+                "pull factors"
+            ],
+            [
+                "migration",
+                "considered",
+                "Push factors"
+            ]
+        ],
+        "error": "'search'",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "6": {
+        "question": "Which of the following countries does NOT have a well-known example of a relict boundary?",
+        "choices": [
+            "Vietnam",
+            "United Kingdom",
+            "Germany",
+            "Bolivia"
+        ],
+        "initial_response": "None of the above. All of the countries listed (Australia, Canada, India, and the United States) have well-known examples of relict boundaries.",
+        "question_entity_names": [
+            "countries"
+        ],
+        "response_entity_names": [
+            "Australia",
+            "Canada",
+            "India",
+            "United States"
+        ],
+        "extracted_triples": [
+            [
+                "countries",
+                "have",
+                "well-known example of a relict boundary"
+            ],
+            [
+                "Australia",
+                "have",
+                "well-known example of a relict boundary"
+            ],
+            [
+                "Canada",
+                "have",
+                "well-known example of a relict boundary"
+            ],
+            [
+                "India",
+                "have",
+                "well-known example of a relict boundary"
+            ],
+            [
+                "United States",
+                "have",
+                "well-known example of a relict boundary"
+            ]
+        ],
+        "error": "'search'",
+        "llm_answer": "E",
+        "llm_is_correct": false
+    },
+    "7": {
+        "question": "Which form of migration below are farm workers from another country most likely to be practicing during the year?",
+        "choices": [
+            "Chain migration",
+            "Cluster migration",
+            "Circular migration",
+            "International migration"
+        ],
+        "initial_response": "Seasonal migration.",
+        "question_entity_names": [
+            "migration",
+            "farm workers",
+            "another country"
+        ],
+        "response_entity_names": [
+            "Seasonal migration"
+        ],
+        "extracted_triples": [
+            [
+                "farm workers",
+                "practicing",
+                "Seasonal migration"
+            ],
+            [
+                "farm workers",
+                "from",
+                "another country"
+            ]
+        ],
+        "error": "'search'",
+        "llm_answer": "E",
+        "llm_is_correct": false
+    },
+    "8": {
+        "question": "Which of the following is a centrifugal force in a country?",
+        "choices": [
+            "Religious differences",
+            "A national holiday",
+            "An attack by another country",
+            "A charismatic national leader"
+        ],
+        "initial_response": "A centrifugal force in a country is a political or social force that works to pull the country apart, often along regional, ethnic, or religious lines. Examples of centrifugal forces in countries include separatist movements, regional autonomy demands, and religious or ethnic tensions.",
+        "question_entity_names": [
+            "centrifugal force",
+            "country"
+        ],
+        "response_entity_names": [
+            "centrifugal force",
+            "country",
+            "political force",
+            "social force",
+            "regional",
+            "ethnic",
+            "religious",
+            "separatist movements",
+            "autonomy demands",
+            "tensions"
+        ],
+        "extracted_triples": [
+            [
+                "centrifugal force",
+                "is",
+                "political or social force"
+            ],
+            [
+                "centrifugal force",
+                "works pull",
+                "country apart"
+            ],
+            [
+                "centrifugal force",
+                "works pull",
+                "country apart"
+            ],
+            [
+                "centrifugal force",
+                "works pull",
+                "country apart"
+            ],
+            [
+                "centrifugal force",
+                "works pull",
+                "country apart"
+            ],
+            [
+                "Examples of centrifugal forces",
+                "include",
+                "separatist movements"
+            ],
+            [
+                "Examples of centrifugal forces",
+                "include",
+                "regional autonomy demands"
+            ],
+            [
+                "Examples of centrifugal forces",
+                "include",
+                "religious or ethnic tensions"
+            ]
+        ],
+        "error": "'search'",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "9": {
+        "question": "Early settlements and high population density along coastlines and rivers are best attributed to which of the following?",
+        "choices": [
+            "Mediterranean climate",
+            "Limited forest cover",
+            "Growth of manufacturing",
+            "Access to trade routes"
+        ],
+        "initial_response": "Access to resources such as food, water, and transportation.",
+        "question_entity_names": [
+            "Early settlements",
+            "high population density",
+            "coastlines",
+            "rivers"
+        ],
+        "response_entity_names": [
+            "food",
+            "water",
+            "transportation"
+        ],
+        "extracted_triples": [],
+        "extracted_triples_uris": [],
+        "error": "'search'",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "10": {
+        "question": "The first stage of the demographic transition exhibits",
+        "choices": [
+            "high birth rates with high but fluctuating death rates.",
+            "declining birth rates with continuing high death rates.",
+            "low birth rates with continuing high death rates.",
+            "high birth rates with declining death rates."
+        ],
+        "initial_response": "a\n\ndecrease in both birth and death rates. This is usually caused by improved living conditions, better access to healthcare, and increased access to contraception. As a result, the population growth rate slows and the population size stabilizes.",
+        "question_entity_names": [
+            "demographic transition"
+        ],
+        "response_entity_names": [
+            "birth rates",
+            "death rates",
+            "living conditions",
+            "healthcare",
+            "contraception",
+            "population growth rate",
+            "population size"
+        ],
+        "extracted_triples": [
+            [
+                "demographic transition",
+                "exhibits",
+                "decrease in both birth and death rates"
+            ],
+            [
+                "improved living conditions",
+                "causes",
+                "decrease in both birth and death rates"
+            ],
+            [
+                "better access to healthcare",
+                "causes",
+                "decrease in both birth and death rates"
+            ],
+            [
+                "increased access to contraception",
+                "causes",
+                "decrease in both birth and death rates"
+            ],
+            [
+                "population growth rate",
+                "slows",
+                "result"
+            ],
+            [
+                "population size",
+                "stabilizes",
+                "result"
+            ]
+        ],
+        "error": "'search'",
+        "llm_answer": "B",
+        "llm_is_correct": false
+    },
+    "11": {
+        "question": "What is the population statistic that tells us the level of fertility at which a population will have just enough births to replace parents and compensate for early deaths?",
+        "choices": [
+            "Crude birth rate",
+            "Replacement level",
+            "Mortality rate",
+            "Total fertility rate"
+        ],
+        "initial_response": "The population statistic that tells us the level of fertility at which a population will have just enough births to replace parents and compensate for early deaths is the replacement fertility rate.",
+        "question_entity_names": [
+            "population statistic",
+            "level of fertility",
+            "population",
+            "births",
+            "parents",
+            "compensate",
+            "early deaths"
+        ],
+        "response_entity_names": [
+            "population",
+            "statistic",
+            "level of fertility",
+            "population",
+            "births",
+            "parents",
+            "compensate",
+            "early deaths",
+            "replacement fertility rate"
+        ],
+        "extracted_triples": [
+            [
+                "population statistic",
+                "tells us",
+                "level of fertility"
+            ],
+            [
+                "population",
+                "will have",
+                "just enough births"
+            ],
+            [
+                "population",
+                "compensate",
+                "early deaths"
+            ],
+            [
+                "population statistic",
+                "is",
+                "replacement fertility rate"
+            ]
+        ],
+        "error": "'search'",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "12": {
+        "question": "What is the most rapidly growing religion in the United States today?",
+        "choices": [
+            "Islam",
+            "Christianity",
+            "Hinduism",
+            "Buddhism"
+        ],
+        "initial_response": "The most rapidly growing religion in the United States today is Islam. According to a 2017 Pew Research Center study, the number of Muslims in the United States has grown from about 2.35 million in 2007 to an estimated 3.45 million in 2017, a growth rate of about 45%.",
+        "question_entity_names": [
+            "United States"
+        ],
+        "response_entity_names": [
+            "Islam",
+            "United States",
+            "Pew Research Center"
+        ],
+        "extracted_triples": [
+            [
+                "United States",
+                "rapidly growing religion",
+                "Islam"
+            ],
+            [
+                "Pew Research Center",
+                "conducted",
+                "study"
+            ],
+            [
+                "study",
+                "revealed",
+                "number of Muslims in the United States"
+            ],
+            [
+                "number of Muslims in the United States",
+                "grown",
+                "2.35 million in 2007"
+            ],
+            [
+                "number of Muslims in the United States",
+                "estimated",
+                "3.45 million in 2017"
+            ],
+            [
+                "growth rate",
+                "about",
+                "45%"
+            ]
+        ],
+        "error": "'search'",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "13": {
+        "question": "The outlying area serviced by a urban center is referred to as a",
+        "choices": [
+            "redline area.",
+            "threshold.",
+            "range.",
+            "hinterland."
+        ],
+        "initial_response": "metropolitan area. A metropolitan area is a region that includes a large population center, its surrounding suburbs, and other smaller towns and cities that are economically tied to the urban center.",
+        "question_entity_names": [
+            "outlying area",
+            "urban center"
+        ],
+        "response_entity_names": [
+            "metropolitan area",
+            "region",
+            "population center",
+            "suburbs",
+            "smaller towns",
+            "cities",
+            "urban center"
+        ],
+        "extracted_triples": [
+            [
+                "urban center",
+                "referred",
+                "metropolitan area"
+            ],
+            [
+                "metropolitan area",
+                "includes",
+                "large population center"
+            ],
+            [
+                "metropolitan area",
+                "includes",
+                "surrounding suburbs"
+            ],
+            [
+                "metropolitan area",
+                "includes",
+                "smaller towns"
+            ],
+            [
+                "metropolitan area",
+                "includes",
+                "cities"
+            ],
+            [
+                "region",
+                "includes",
+                "large population center"
+            ],
+            [
+                "region",
+                "includes",
+                "surrounding suburbs"
+            ],
+            [
+                "region",
+                "includes",
+                "smaller towns"
+            ],
+            [
+                "region",
+                "includes",
+                "cities"
+            ],
+            [
+                "metropolitan area",
+                "economically tied",
+                "urban center"
+            ]
+        ],
+        "error": "'search'",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    }
+}

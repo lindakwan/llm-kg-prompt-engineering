@@ -61,7 +61,7 @@ def condense_wikidata_results(data):
 
 def fetch_uri_wikidata(item_name, context, ent_type='item', limit=1):
     data = fetch_wikidata_from_query(item_name, ent_type=ent_type, limit=limit)
-    if len(data['search']) == 0:
+    if ('error' in data) or (len(data['search']) == 0):
         print('Sorry, no results for "' + item_name + '" from REST API')
         if ent_type == 'item':
             uri = llm_tasks.get_similar_identifier_given_context(item_name, context, item_type='item')

@@ -194,7 +194,7 @@ def get_similar_identifier_given_context(item_name, context, item_type="property
 
     opt = similar_identifier_json["choices"][0]["message"]["content"]
 
-    print("Id output:", opt)
+    # print("Id output:", opt)
 
     # Use regex to extract the identifier
     if item_type == "property":
@@ -262,7 +262,7 @@ def select_mc_response_based(question, response, choices):
     """
     mc_prompt = PromptTemplate(
         input_variables=["question", "response", "choices"],
-        template="Output the best one of the numbered options for the following question and response:\n \
+        template="Output the best one of the numbered options (1-4) for the following question and response:\n \
                             Question: {question}\nResponse: {response}\nOptions:\n{choices}"
     )
 
