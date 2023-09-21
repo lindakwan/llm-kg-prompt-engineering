@@ -338,6 +338,8 @@ for i, item in enumerate(data):  # 66:71  # 36:37
                 print(filtered_facts)
                 print()
 
+                # TODO: Split filtered facts into batches
+
                 qa_pairs[i]["filtered_facts_for_context"] = filtered_facts
 
                 context_string = ""

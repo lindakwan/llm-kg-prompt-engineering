@@ -50,7 +50,7 @@ def generate_response_using_context_with_elaboration(question, context_string):
             },
             {
                 "role": "user",
-                "content": f"Question: {question}\nContext: {context_string}"
+                "content": f"Context: {context_string}\nQuestion: {question}"
             }
         ],
         temperature=0,
