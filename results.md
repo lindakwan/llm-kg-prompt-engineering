@@ -8,6 +8,6 @@
 | GPT 3.5 + Wikidata (Evaluation using similarity measure) | 0.5707070707070707  | 0.7409326424870466              |
 
 ## Using the filtered datasets
-| Model   | EM (MMLU Geography) | EM (MMLU Government & Politics) |
-|---------|---------------------|---------------------------------|
-| GPT 3.5 | 0.7192982456140351  | 0.7888888888888889              |
+| Model   | EM (MMLU Geography) | EM (MMLU Government & Politics) | EM (MMLU Miscellaneous) |
+|---------|---------------------|---------------------------------|-------------------------|
+| GPT 3.5 | 0.7192982456140351  | 0.7888888888888889              | 0.884765625             |

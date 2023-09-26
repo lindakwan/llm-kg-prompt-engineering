@@ -4811,5 +4811,1339 @@
         "initial_response": "The traditional Reuben sandwich is made with corned beef.",
         "llm_answer": "C",
         "llm_is_correct": true
-    }
+    },
+    "401": {
+        "question": "What children's TV character is known as 'Da Niao' in China?",
+        "choices": [
+            "Barney",
+            "Big Bird",
+            "Mickey Mouse",
+            "Tinky Winky"
+        ],
+        "initial_response": "Pingu.",
+        "llm_answer": "D",
+        "llm_is_correct": false
+    },
+    "402": {
+        "question": "On Valentine's Day 2000 NASA's NEAR spacecraft began a yearlong orbit of what asteroid?",
+        "choices": [
+            "Eros",
+            "Cupid",
+            "Aphrodite",
+            "Venus"
+        ],
+        "initial_response": "Eros",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "403": {
+        "question": "What cartoon character traveled in a time machine with Mr Peabody?",
+        "choices": [
+            "Rocky",
+            "Jonny Quest",
+            "Underdog",
+            "Sherman"
+        ],
+        "initial_response": "Sherman.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "404": {
+        "question": "What term describes someone who does not believe in the existence of God?",
+        "choices": [
+            "hedonist",
+            "deist",
+            "agnostic",
+            "atheist"
+        ],
+        "initial_response": "Atheist.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "405": {
+        "question": "What animated character has a crush on the Little Red Haired Girl?",
+        "choices": [
+            "Richie Rich",
+            "Charlie Brown",
+            "Bugs Bunny",
+            "Jonny Quest"
+        ],
+        "initial_response": "The animated character with a crush on the Little Red Haired Girl is Charlie Brown from the Peanuts comic strip and animated specials.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "406": {
+        "question": "Water's high heat capacity allows it to",
+        "choices": [
+            "change density significantly as its temperature changes",
+            "gain and lose large amounts of heat without significantly changing the temperature of the water",
+            "conduct sound efficiently without significant loss of velocity as the sound waves travel long distances",
+            "cause the ocean's surface temperature to fluctuate rapidly as the seasons change"
+        ],
+        "initial_response": "absorb a lot of heat energy before its temperature rises. This means that it can absorb a lot of energy before it starts to boil. This is why water is often used as a coolant in engines and other machines. It can absorb a lot of heat energy before it starts to boil, which helps to keep the engine from overheating.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "407": {
+        "question": "How many ribs are there in the human body?",
+        "choices": [
+            "18",
+            "24",
+            "30",
+            "42"
+        ],
+        "initial_response": "There are 24 ribs in the human body, 12 on each side.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "408": {
+        "question": "What's unique about a skeleton key?",
+        "choices": [
+            "It opens many locks",
+            "It's made of bone",
+            "It's extremely old",
+            "It hangs in a closet"
+        ],
+        "initial_response": "A skeleton key is a type of key that is designed to open a wide variety of locks. It is unique because it has a very simple design, with a cylindrical shaft and a flat, rectangular end. The flat end is designed to fit into the keyhole of a variety of locks, allowing it to open many different locks.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "409": {
+        "question": "What color is a ruby?",
+        "choices": [
+            "red",
+            "black",
+            "yellow",
+            "blue"
+        ],
+        "initial_response": "A ruby is typically a deep red color.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "410": {
+        "question": "In the 1960s 'Batman' TV series who was not a guest villain?",
+        "choices": [
+            "The Minstrel",
+            "The Archer",
+            "The Bookworm",
+            "The Squeegee Guy"
+        ],
+        "initial_response": "The Riddler was the only villain to appear in every episode of the 1960s Batman TV series. Other guest villains included The Joker, The Penguin, Catwoman, Mr. Freeze, The Mad Hatter, Egghead, King Tut, and Louie the Lilac.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "411": {
+        "question": "How many ships did Columbus set sail with on his initial voyage to \"the New World\"?",
+        "choices": [
+            "Two",
+            "Three",
+            "Five",
+            "Ten"
+        ],
+        "initial_response": "Columbus set sail with three ships on his initial voyage to the New World: the Ni\u00f1a, the Pinta, and the Santa Maria.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "412": {
+        "question": "What does the acronym 'REM' stand for?",
+        "choices": [
+            "random energy module",
+            "rapid eye movement",
+            "red entertainment machine",
+            "really energetic music"
+        ],
+        "initial_response": "REM stands for Rapid Eye Movement.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "413": {
+        "question": "Where did the Exxon Valdez run aground in March of 1989?",
+        "choices": [
+            "Monterey Bay",
+            "Prince William Sound",
+            "Cape Cod",
+            "Gulf of Mexico"
+        ],
+        "initial_response": "The Exxon Valdez ran aground on Bligh Reef in Prince William Sound, Alaska in March of 1989.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "414": {
+        "question": "What is the name of the baby who appears in cartoons and comic strips with Popeye the Sailor?",
+        "choices": [
+            "Pun'kin",
+            "Lamikins",
+            "Suga'baby",
+            "Swee'pea"
+        ],
+        "initial_response": "The baby's name is Swee'Pea.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "415": {
+        "question": "Fragile works of sculpture can be displayed most securely by placing the works",
+        "choices": [
+            "in glass-paneled cases",
+            "on a series of pedestals",
+            "on wall-mounted shelves with sturdier works around them",
+            "in shadow boxes with signs that read \"Do Not Touch\""
+        ],
+        "initial_response": "in a secure, climate-controlled environment. This environment should be free from vibrations, dust, and other environmental factors that could damage the sculpture. The sculpture should also be placed on a secure, stable base that is designed to support the weight of the sculpture. Additionally, the sculpture should be placed in an area that is not exposed to direct sunlight or other sources of heat or light that could cause damage.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "416": {
+        "question": "In the Jimmy Buffet song 'Margaritaville' what is the singer searching for?",
+        "choices": [
+            "a lime",
+            "a shaker of salt",
+            "his car keys",
+            "the bartender"
+        ],
+        "initial_response": "The singer is searching for his lost shaker of salt.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "417": {
+        "question": "According to the title of a popular children's TV show what color is Bear's big house?",
+        "choices": [
+            "red",
+            "green",
+            "purple",
+            "blue"
+        ],
+        "initial_response": "The title of the popular children's TV show is \"Bear in the Big Blue House\", so Bear's big house is blue.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "418": {
+        "question": "Who is the twin sister of 'Dear Abby' columnist Abigail VanBuren?",
+        "choices": [
+            "Martha Stewart",
+            "Dr Ruth Westheimer",
+            "Ann Landers",
+            "Miss Manners"
+        ],
+        "initial_response": "The twin sister of 'Dear Abby' columnist Abigail VanBuren is Pauline Esther \"Popo\" Phillips, who wrote the advice column \"Dear Prudence\".",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "419": {
+        "question": "What is the normal playback speed of a 12'' long-playing record?",
+        "choices": [
+            "12 1/2 rpm",
+            "33 1/3 rpm",
+            "45 rpm",
+            "100 rpm"
+        ],
+        "initial_response": "The normal playback speed of a 12'' long-playing record is 33 1/3 revolutions per minute (RPM).",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "420": {
+        "question": "During what war did Francis Scott Key write the words to 'The Star-Spangled Banner'?",
+        "choices": [
+            "American Revolution",
+            "War of 1812",
+            "Civil War",
+            "World War I"
+        ],
+        "initial_response": "Francis Scott Key wrote the words to 'The Star-Spangled Banner' during the War of 1812.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "421": {
+        "question": "What are the names of Donald Duck's three nephews?",
+        "choices": [
+            "Quick Quack Quock",
+            "Alvin Simon Theodore",
+            "Robbie Chip Ernie",
+            "Huey Dewey Louie"
+        ],
+        "initial_response": "Donald Duck's three nephews are Huey, Dewey, and Louie.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "422": {
+        "question": "What company makes Oreo cookies?",
+        "choices": [
+            "General Mills",
+            "Nabisco",
+            "Keebler",
+            "Kraft"
+        ],
+        "initial_response": "Oreo cookies are made by Mondelez International, Inc.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "423": {
+        "question": "To make an international telephone call from within the US what are the first numbers you should dial?",
+        "choices": [
+            "11",
+            "101",
+            "888",
+            "911"
+        ],
+        "initial_response": "The first numbers you should dial for an international call from within the US are 011.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "424": {
+        "question": "The 'Arkansas toothpick' is better known by what name?",
+        "choices": [
+            "Scottie Pippen",
+            "spare rib",
+            "pinkie finger",
+            "Bowie knife"
+        ],
+        "initial_response": "The Arkansas toothpick is better known as a Bowie knife.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "425": {
+        "question": "What colors are the two circles in the MasterCard logo?",
+        "choices": [
+            "pink and orange",
+            "blue and green",
+            "black and white",
+            "red and yellow"
+        ],
+        "initial_response": "The two circles in the MasterCard logo are red and yellow.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "426": {
+        "question": "What is the name of the mountain where the mythological Greek gods live?",
+        "choices": [
+            "Jupiter",
+            "Olympus",
+            "Vesuvius",
+            "Valhalla"
+        ],
+        "initial_response": "Mount Olympus.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "427": {
+        "question": "The first sound recording to be made and reproduced was a recitation of what nursery rhyme?",
+        "choices": [
+            "Humpty Dumpty'",
+            "Mary Had a Little Lamb'",
+            "Jack Be Nimble'",
+            "Home Sweet Home'"
+        ],
+        "initial_response": "The first sound recording to be made and reproduced was a recitation of the nursery rhyme \"Mary Had a Little Lamb\".",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "428": {
+        "question": "Which actress played a pointy-eared Vulcan in the movie 'Star Trek II: The Wrath of Khan'?",
+        "choices": [
+            "Whoopi Goldberg",
+            "Jennifer Grey",
+            "Kirstie Alley",
+            "Helen Hunt"
+        ],
+        "initial_response": "The actress who played a pointy-eared Vulcan in the movie 'Star Trek II: The Wrath of Khan' was Kirstie Alley.",
+        "llm_answer": "C",
+        "llm_is_correct": false
+    },
+    "429": {
+        "question": "The process of drilling holes in the skull is called what?",
+        "choices": [
+            "bifurcation",
+            "trepanation",
+            "aeronomy",
+            "skullduggery"
+        ],
+        "initial_response": "The process of drilling holes in the skull is called trepanation.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "430": {
+        "question": "Who is the creator of the comic strip 'The Far Side'?",
+        "choices": [
+            "Jim Davis",
+            "Gary Larson",
+            "Garry Trudeau",
+            "Charles Schulz"
+        ],
+        "initial_response": "The Far Side was created by cartoonist Gary Larson.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "431": {
+        "question": "In the definition of a public good, the term \"nonrival\" means that",
+        "choices": [
+            "one person's use of the public good does not reduce the amount available to others",
+            "the public good is produced by the government without any competition",
+            "the public good is produced at zero marginal cost",
+            "the public good is mostly consumed by free riders"
+        ],
+        "initial_response": "the good can be consumed by one person without reducing the amount available for consumption by another person. This is in contrast to a private good, which is rivalrous, meaning that the consumption of the good by one person reduces the amount available for consumption by another person.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "432": {
+        "question": "What type of substance is 'terra-cotta'?",
+        "choices": [
+            "metal",
+            "ceramic",
+            "wood",
+            "glass"
+        ],
+        "initial_response": "Terra-cotta is a type of ceramic material.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "433": {
+        "question": "What disease causes a buildup of fluid pressure in the eyeball and damages the optic nerve at the back of the eye?",
+        "choices": [
+            "astigmatism",
+            "cataract",
+            "glaucoma",
+            "retinitis"
+        ],
+        "initial_response": "Glaucoma.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "434": {
+        "question": "What article of clothing best describes a 'pashmina'?",
+        "choices": [
+            "shoes",
+            "pants",
+            "scarf",
+            "underwear"
+        ],
+        "initial_response": "Pashmina is a type of shawl or wrap.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "435": {
+        "question": "Who was the first American in space?",
+        "choices": [
+            "John Glenn",
+            "Buzz Aldrin",
+            "Alan Shepard",
+            "Neil Armstrong"
+        ],
+        "initial_response": "The first American in space was Alan Shepard, who flew aboard the Freedom 7 mission on May 5, 1961.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "436": {
+        "question": "Stevie Wonder and Michael Jackson have both recorded duets with which former Beatle?",
+        "choices": [
+            "Paul McCartney",
+            "John Lennon",
+            "George Harrison",
+            "Ringo Starr"
+        ],
+        "initial_response": "Paul McCartney",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "437": {
+        "question": "In which layer of Earth is the geomagnetic field generated?",
+        "choices": [
+            "Outer core",
+            "Crust",
+            "Mantle",
+            "Inner core"
+        ],
+        "initial_response": "The geomagnetic field is generated in the Earth's outer core, which is composed of liquid iron and nickel.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "438": {
+        "question": "An accounts payable entry appears in the",
+        "choices": [
+            "asset section of the balance sheet",
+            "liability section of the balance sheet",
+            "cost of goods sold section of the income statement",
+            "operating expense section of the income statement"
+        ],
+        "initial_response": "general ledger as a debit to the accounts payable account and a credit to the expense account. This entry is used to record the amount owed to a vendor for goods or services purchased on credit.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "439": {
+        "question": "What is a balalaika?",
+        "choices": [
+            "musical instrument",
+            "Russian peasant",
+            "type of hat",
+            "breed of shark"
+        ],
+        "initial_response": "A balalaika is a Russian stringed musical instrument with a triangular body and three strings. It is typically played with a plectrum and is used in traditional Russian folk music.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "440": {
+        "question": "From what language does the term 'RSVP' originate?",
+        "choices": [
+            "Russian",
+            "Italian",
+            "Portuguese",
+            "French"
+        ],
+        "initial_response": "RSVP is an abbreviation of the French phrase \"R\u00e9pondez s'il vous pla\u00eet,\" which translates to \"Please respond.\"",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "441": {
+        "question": "Determining how a product can be useful, identifying the target price, finding a place to sell the product, and deciding how to promote it best exemplifies using",
+        "choices": [
+            "market research",
+            "positioning",
+            "marketing mix",
+            "segmenting"
+        ],
+        "initial_response": "a _____ approach to marketing.\n\nmarketing mix",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "442": {
+        "question": "In golf what is one stroke overpar called?",
+        "choices": [
+            "eagle",
+            "bogey",
+            "dormy",
+            "birdie"
+        ],
+        "initial_response": "In golf, one stroke overpar is called a bogey.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "443": {
+        "question": "What actress starred on 'Charlie's Angels' for the show's entire run?",
+        "choices": [
+            "Cheryl Ladd",
+            "Farrah Fawcett",
+            "Jaclyn Smith",
+            "Kate Jackson"
+        ],
+        "initial_response": "The actress who starred on 'Charlie's Angels' for the show's entire run was Jaclyn Smith.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "444": {
+        "question": "If you are watching a Shavian play who is the author?",
+        "choices": [
+            "Shakespeare",
+            "Aeschylus",
+            "George Bernard Shaw",
+            "Anton Chekhov"
+        ],
+        "initial_response": "George Bernard Shaw is the author of Shavian plays.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "445": {
+        "question": "In which of these sports do competitors use a 'funny car'?",
+        "choices": [
+            "supercross",
+            "dogsledding",
+            "gymnastics",
+            "drag racing"
+        ],
+        "initial_response": "Drag racing.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "446": {
+        "question": "The TV show 'House of Style' airs on what network?",
+        "choices": [
+            "E",
+            "WB",
+            "MTV",
+            "Home Shopping Network"
+        ],
+        "initial_response": "MTV",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "447": {
+        "question": "By what nickname is the Federal National Mortgage Association known?",
+        "choices": [
+            "Morty",
+            "FEMA",
+            "Freddie Mac",
+            "Fannie Mae"
+        ],
+        "initial_response": "The Federal National Mortgage Association is commonly known as Fannie Mae.",
+        "llm_answer": "D",
+        "llm_is_correct": false
+    },
+    "448": {
+        "question": "In computer terminology what does the acronym 'ISP' stand for?",
+        "choices": [
+            "Individual Site Privacy",
+            "Investment Stability Plan",
+            "Internal Security Position",
+            "Internet Service Provider"
+        ],
+        "initial_response": "ISP stands for Internet Service Provider.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "449": {
+        "question": "What day of the week is sometimes called 'hump day'?",
+        "choices": [
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+        ],
+        "initial_response": "Wednesday",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "450": {
+        "question": "According to Article III, Section 1, of the United States Constitution, judges \"shall hold their offices during good behavior...\" A consequence of this clause is that:",
+        "choices": [
+            "Congress cannot remove federal judges from office",
+            "federal judges have political independence to fulfill their duties",
+            "the president has no influence over the composition of the Supreme Court",
+            "federal judges lack opportunity for advancement or promotion"
+        ],
+        "initial_response": "Judges are appointed for life and can only be removed from office through impeachment. This ensures that judges are independent and can make decisions without fear of political retribution.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "451": {
+        "question": "How many cups of coffee were consumed in the United States in the past week (as of 2013)?",
+        "choices": [
+            "300 million cups per week",
+            "1 billion cups per week",
+            "3 billion cups per week",
+            "9 billion cups per week"
+        ],
+        "initial_response": "It is impossible to accurately answer this question as there is no reliable source of data that tracks the exact number of cups of coffee consumed in the United States in a given week.",
+        "llm_answer": "I",
+        "llm_is_correct": false
+    },
+    "452": {
+        "question": "In what city would you find people studying art and design at the Fashion Institute of Technology?",
+        "choices": [
+            "Paris",
+            "New York",
+            "Los Angeles",
+            "Melbourne"
+        ],
+        "initial_response": "The Fashion Institute of Technology is located in New York City, New York.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "453": {
+        "question": "What is the traditional 20th wedding anniversary gift?",
+        "choices": [
+            "paper",
+            "leather",
+            "china",
+            "silver"
+        ],
+        "initial_response": "The traditional 20th wedding anniversary gift is china.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "454": {
+        "question": "Many employers rely on temporary workers to provide flexibility in times of fluctuating need. However, an important consideration in hiring temporary workers is that they",
+        "choices": [
+            "are often less experienced and less committed to the job than full-time employees",
+            "are limited to 30 days on the job before they must be offered a permanent position",
+            "must be offered health care and other benefits like regular full-time employees",
+            "are required to receive pay equal to that of regular full-time employees doing the same job"
+        ],
+        "initial_response": "may not be as familiar with the company's policies and procedures as permanent employees. It is important for employers to provide temporary workers with clear instructions and expectations, as well as training on the company's policies and procedures. This will help ensure that temporary workers are able to perform their duties effectively and safely. Additionally, employers should ensure that temporary workers are provided with the same safety equipment and training as permanent employees. This will help to ensure that temporary workers are not put at risk of injury or illness due to lack of knowledge or experience.",
+        "llm_answer": "D",
+        "llm_is_correct": false
+    },
+    "455": {
+        "question": "Amps are a unit of measurement of what?",
+        "choices": [
+            "electric charge",
+            "electric current",
+            "electric field strength",
+            "electric potential"
+        ],
+        "initial_response": "Amps (or amperes) are a unit of measurement of electric current.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "456": {
+        "question": "The maximum depth that plant roots can readily penetrate without encountering a restrictive soil layer is referred to as the",
+        "choices": [
+            "effective depth",
+            "depth to the subsoil",
+            "depth to a parent material",
+            "O horizon"
+        ],
+        "initial_response": "root depth. This depth can vary depending on the type of plant, soil type, and environmental conditions. Generally, root depths can range from a few inches to several feet. In some cases, roots can penetrate deeper than this, but it is more difficult and requires more energy for the plant.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "457": {
+        "question": "How much more electrical energy will the United States need to generate if everyone drives electric cars?",
+        "choices": [
+            "2*10^19 J",
+            "2*10^21 J",
+            "2*10^23 J",
+            "2*10^25 J"
+        ],
+        "initial_response": "It is difficult to estimate how much more electrical energy the United States would need to generate if everyone drove electric cars, as this would depend on the number of electric cars on the road, the size of the cars, and the average distance driven. However, it is estimated that electric cars use about 50% less energy than gasoline-powered cars, so the increase in energy demand would likely be significant.",
+        "llm_answer": "D",
+        "llm_is_correct": false
+    },
+    "458": {
+        "question": "What is the largest moon in the Solar System?",
+        "choices": [
+            "Ganymede",
+            "The Earth's Moon",
+            "Pluto",
+            "Europa"
+        ],
+        "initial_response": "The largest moon in the Solar System is Ganymede, a moon of Jupiter. It has a diameter of 5,268 km, making it slightly larger than the planet Mercury.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "459": {
+        "question": "Islam first spread to Indonesia through",
+        "choices": [
+            "military conquest by the Mughal empire",
+            "mass migrations of African Muslims across the Indian Ocean",
+            "Dutch colonization in the 18th century",
+            "increased commercial contacts with Indian and Arab merchants"
+        ],
+        "initial_response": "traders and Sufi missionaries from India, Arabia, and Persia. These traders and missionaries brought with them the teachings of Islam, which were then adopted by the local population. The spread of Islam in Indonesia was further accelerated by the arrival of Muslim traders from Gujarat in the 13th century. These traders brought with them Islamic texts and teachings, which were then adopted by the local population. The spread of Islam in Indonesia was further accelerated by the arrival of Muslim rulers from the Middle East in the 15th century. These rulers brought with them Islamic laws and customs, which were then adopted by the local population. The spread of Islam in Indonesia was further accelerated by the arrival of Muslim scholars from the Middle East in the 16th century. These scholars brought with them Islamic teachings and texts, which were then adopted by the local population.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "460": {
+        "question": "In the original 'Get Smart' TV series what is agent Maxwell Smart's code name?",
+        "choices": [
+            "Agent 86",
+            "Agent 99",
+            "Larrabee",
+            "The Chief"
+        ],
+        "initial_response": "Agent 86.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "461": {
+        "question": "In horse racing what is the term for a wager on the 1st 2nd and 3rd place finishers in a specific race?",
+        "choices": [
+            "triple action",
+            "trifecta",
+            "exacta",
+            "triple crown"
+        ],
+        "initial_response": "A trifecta bet.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "462": {
+        "question": "What principle explains why cold food warms up and hot food cools off when stored at room temperature?",
+        "choices": [
+            "entropy",
+            "chemical equilibrium",
+            "momentum",
+            "relativity"
+        ],
+        "initial_response": "The principle that explains why cold food warms up and hot food cools off when stored at room temperature is the law of energy conservation. This law states that energy cannot be created or destroyed, only transferred from one form to another. In this case, the energy from the hot food is transferred to the surrounding environment, causing it to cool off, while the energy from the environment is transferred to the cold food, causing it to warm up.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "463": {
+        "question": "How much does our highway gas mileage decrease in a heavy rain?",
+        "choices": [
+            "About 0.1%",
+            "About 2%",
+            "About 10%",
+            "About 50%"
+        ],
+        "initial_response": "The exact amount of decrease in highway gas mileage in a heavy rain will depend on a variety of factors, such as the type of vehicle, the speed at which you are driving, and the amount of rain. Generally, however, you can expect to see a decrease in gas mileage of up to 10-15%.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "464": {
+        "question": "What quantity of oxygen, O_2 , contains very nearly the same number of molecules as 36.0 grams of water, H_2O ?",
+        "choices": [
+            "64.0 grams",
+            "32.0 grams",
+            "16.0 grams",
+            "8.0 grams"
+        ],
+        "initial_response": "36.0 grams of water, H_2O, contains approximately 6.022 x 10^23 molecules. The same number of molecules of oxygen, O_2, would be 36.0 grams.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "465": {
+        "question": "The loss of water in the form of vapor from plants is referred to as the",
+        "choices": [
+            "transpiration",
+            "respiration",
+            "oxidation",
+            "condensation"
+        ],
+        "initial_response": "process of transpiration. Transpiration is the process by which plants release water vapor into the atmosphere through their leaves. This process is essential for the plant to maintain its water balance and to cool itself. Transpiration also helps to move water and nutrients from the roots to the leaves.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "466": {
+        "question": "In a holistic evaluation of student essays, evaluations are made on the basis of the",
+        "choices": [
+            "number and variety of errors made by each student",
+            "average sentence length and the complexity demonstrated in each essay",
+            "ability of each student to communicate in a variety of discourse modes",
+            "overall quality of each student's essay in relation to the topic"
+        ],
+        "initial_response": "student's ability to communicate their ideas, the quality of their writing, and the accuracy of their research. The evaluator will also consider the student's ability to use proper grammar, spelling, and punctuation. Additionally, the evaluator will assess the student's ability to use evidence to support their claims, as well as their ability to make logical arguments. Finally, the evaluator will consider the overall organization of the essay, including the introduction, body, and conclusion.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "467": {
+        "question": "In soccer which player is allowed to use his or her hands in the field of play?",
+        "choices": [
+            "midfielder",
+            "center",
+            "sweeper",
+            "goalkeeper"
+        ],
+        "initial_response": "The only player allowed to use their hands in the field of play is the goalkeeper.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "468": {
+        "question": "As of 1999 which state has the most Girl Scouts?",
+        "choices": [
+            "California",
+            "Illinois",
+            "New York",
+            "Pennsylvania"
+        ],
+        "initial_response": "According to the Girl Scouts of the USA, the state with the most Girl Scouts in 1999 was California, with over 200,000 members.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "469": {
+        "question": "In the 1992 animated film 'Aladdin' what device does the hero use to travel from place to place?",
+        "choices": [
+            "talking car",
+            "winged horse",
+            "magic carpet",
+            "hot air balloon"
+        ],
+        "initial_response": "Aladdin uses a magic carpet to travel from place to place.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "470": {
+        "question": "What is the technical term for the offspring of a female donkey and a male horse?",
+        "choices": [
+            "burro",
+            "dorse",
+            "hinny",
+            "honker"
+        ],
+        "initial_response": "The technical term for the offspring of a female donkey and a male horse is a mule.",
+        "llm_answer": "D",
+        "llm_is_correct": false
+    },
+    "471": {
+        "question": "What is the final word of the Pledge of Allegiance?",
+        "choices": [
+            "America",
+            "stands",
+            "indivisible",
+            "all"
+        ],
+        "initial_response": "\"Allegiance.\"",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "472": {
+        "question": "What term is used to describe a group of fish?",
+        "choices": [
+            "Knot",
+            "Drape",
+            "School",
+            "Gaggle"
+        ],
+        "initial_response": "A group of fish is called a school.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "473": {
+        "question": "At the equator how fast is the earth's surface turning?",
+        "choices": [
+            "about 100 miles per hour",
+            "about 500 miles per hour",
+            "about 1000 miles per hour",
+            "about 2000 miles per hour"
+        ],
+        "initial_response": "At the equator, the Earth's surface is turning at a speed of about 1,037 mph (1,670 km/h).",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "474": {
+        "question": "The primary purpose of antitrust laws is to",
+        "choices": [
+            "help businesses that are in financial trouble",
+            "encourage business investment",
+            "prevent business behavior that hampers competition",
+            "establish trust between government and businesses"
+        ],
+        "initial_response": "protect consumers from anticompetitive practices by businesses, such as price-fixing, monopolies, and other forms of market manipulation. These laws are designed to promote competition and ensure that businesses are competing fairly in the marketplace. Antitrust laws also aim to protect small businesses from larger companies that may have an unfair advantage in the market. By preventing anticompetitive practices, antitrust laws help to ensure that consumers have access to a wide variety of products and services at competitive prices.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "475": {
+        "question": "How many pairs of chromosomes are in the genome of a typical person?",
+        "choices": [
+            "1",
+            "23",
+            "88",
+            "7921"
+        ],
+        "initial_response": "A typical person has 23 pairs of chromosomes, for a total of 46 chromosomes.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "476": {
+        "question": "What was the acronym for the first computer, made back in 1946?",
+        "choices": [
+            "ENIAC",
+            "CASD",
+            "CNAC",
+            "CSREN"
+        ],
+        "initial_response": "ENIAC (Electronic Numerical Integrator and Computer)",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "477": {
+        "question": "When a gas turns into a liquid, the process is called",
+        "choices": [
+            "condensation",
+            "evaporation",
+            "deposition",
+            "sublimation"
+        ],
+        "initial_response": "condensation. This occurs when the temperature of the gas drops below its boiling point, causing the molecules to slow down and become closer together. This causes the gas to become more dense and form a liquid.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "478": {
+        "question": "In what year did the Great Depression begin?",
+        "choices": [
+            "1884",
+            "1929",
+            "1953",
+            "1975"
+        ],
+        "initial_response": "The Great Depression began in 1929.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "479": {
+        "question": "Cheddar cheese got its name from a village in what country?",
+        "choices": [
+            "England",
+            "France",
+            "Switzerland",
+            "Denmark"
+        ],
+        "initial_response": "Cheddar cheese got its name from a village in England.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "480": {
+        "question": "Who is the mythological Roman goddess of flowers?",
+        "choices": [
+            "Diana",
+            "Echo",
+            "Flora",
+            "Niobe"
+        ],
+        "initial_response": "The mythological Roman goddess of flowers is Chloris.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "481": {
+        "question": "According to legend if you give someone the 'evil eye' what are you doing?",
+        "choices": [
+            "cursing them",
+            "blessing a child",
+            "counting money",
+            "passing time"
+        ],
+        "initial_response": "The evil eye is a superstitious belief that a person can cause harm or bad luck to another person by simply looking at them with envy or malice. It is believed that the person giving the evil eye can cause physical and psychological harm to the person they are looking at.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "482": {
+        "question": "What condition is caused by malfunctioning sebaceous glands?",
+        "choices": [
+            "bad breath",
+            "shingles",
+            "acne",
+            "carpal tunnel syndrome"
+        ],
+        "initial_response": "Seborrheic dermatitis is a condition caused by malfunctioning sebaceous glands. It is characterized by red, scaly, and itchy patches of skin.",
+        "llm_answer": "B",
+        "llm_is_correct": false
+    },
+    "483": {
+        "question": "What was the name of Huey Lewis band?",
+        "choices": [
+            "The News",
+            "The Attractions",
+            "The Silver Bullet Band",
+            "Louie and Dewey"
+        ],
+        "initial_response": "Huey Lewis and the News.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "484": {
+        "question": "What high school does the gang from the 'Archie' comic strip attend?",
+        "choices": [
+            "Ridgemont High",
+            "Riverdale High",
+            "Rumson High",
+            "Riker's Island High"
+        ],
+        "initial_response": "The gang from the 'Archie' comic strip attend Riverdale High School.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "485": {
+        "question": "Cheese is a necessary ingredient in which of these dishes?",
+        "choices": [
+            "sushi",
+            "french fries",
+            "veal parmigiano",
+            "chicken pot pie"
+        ],
+        "initial_response": "-Lasagna\n-Macaroni and Cheese\n-Grilled Cheese Sandwich\n-Pizza",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "486": {
+        "question": "What city's airport uses the code ORD?",
+        "choices": [
+            "Chicago",
+            "Orlando",
+            "New York City",
+            "Portland"
+        ],
+        "initial_response": "Chicago O'Hare International Airport in Chicago, Illinois.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "487": {
+        "question": "At what speed will a sedan flip over when it slides sideways into a curb?",
+        "choices": [
+            "10 mph",
+            "20 mph",
+            "40 mph",
+            "80 mpg"
+        ],
+        "initial_response": "It is impossible to answer this question without knowing the specific make and model of the sedan, as well as the size and shape of the curb. The speed at which a sedan flips over when sliding sideways into a curb will depend on a variety of factors, including the weight and center of gravity of the vehicle, the angle of the curb, and the coefficient of friction between the tires and the road surface.",
+        "llm_answer": "D",
+        "llm_is_correct": false
+    },
+    "488": {
+        "question": "The intention of making traditional, saleable art objects was abandoned by",
+        "choices": [
+            "Impressionists",
+            "Pop artists",
+            "Abstract Expressionists",
+            "Conceptual artists"
+        ],
+        "initial_response": "the Dadaists, who instead sought to create works that challenged the conventions of art and the values of society. Dadaists rejected the idea of creating art for sale and instead sought to create works that were provocative and subversive. They used a variety of techniques, such as collage, assemblage, and readymades, to create works that were often humorous and absurd. Dadaists also sought to challenge the traditional notion of what constituted art, and to question the values of the society in which they lived.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "489": {
+        "question": "What sport is featured in the 1996 movie 'Kingpin'?",
+        "choices": [
+            "wrestling",
+            "golf",
+            "chess",
+            "bowling"
+        ],
+        "initial_response": "Ten-pin bowling.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "490": {
+        "question": "With what would you use a\"wah-wah pedal?",
+        "choices": [
+            "bicycle",
+            "stock car",
+            "electric guitar",
+            "baby"
+        ],
+        "initial_response": "A wah-wah pedal is a type of guitar effects pedal used to create a \"wah\" sound, which is a type of sound that is created by sweeping the pedal back and forth. It is commonly used with electric guitars, but can also be used with other instruments such as keyboards and bass guitars.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "491": {
+        "question": "Who is the career hit leader among players never elected to Baseball's Hall of Fame?",
+        "choices": [
+            "Steve Garvey",
+            "Jim Rice",
+            "Pete Rose",
+            "Ken Griffey Jr"
+        ],
+        "initial_response": "Pete Rose is the career hit leader among players never elected to Baseball's Hall of Fame. He had 4,256 hits in his career.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "492": {
+        "question": "What people ruled the Andes Mountains until they were conquered by the Spanish in 1532?",
+        "choices": [
+            "Pueblo",
+            "Aztec",
+            "Inca",
+            "Apache"
+        ],
+        "initial_response": "The Inca Empire ruled the Andes Mountains until they were conquered by the Spanish in 1532.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "493": {
+        "question": "What do the initials 'E E' in poet E E Cummings' name stand for?",
+        "choices": [
+            "Edward Estlin",
+            "Edmund Earl",
+            "Ernest Eakins",
+            "Eugene Evan"
+        ],
+        "initial_response": "The initials \"E E\" in poet E E Cummings' name stand for Edward Estlin Cummings.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "494": {
+        "question": "What is the medical term for a doctor's identification of a disease?",
+        "choices": [
+            "Hypnosis",
+            "Prognosis",
+            "Trichinosis",
+            "Diagnosis"
+        ],
+        "initial_response": "Diagnosis.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "495": {
+        "question": "Gerry Adams is the president of what organization?",
+        "choices": [
+            "Greenpeace",
+            "NASCAR",
+            "Sinn Fein",
+            "PLO"
+        ],
+        "initial_response": "Sinn F\u00e9in, an Irish republican political party in Northern Ireland.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "496": {
+        "question": "What was the birth name of civil rights leader Malcolm?",
+        "choices": [
+            "Michael Brown",
+            "Malcolm Little",
+            "Malcolm Lincoln",
+            "Michael Lloyd"
+        ],
+        "initial_response": "Malcolm Little",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "497": {
+        "question": "What topic does Spin magazine primarily cover?",
+        "choices": [
+            "politics",
+            "washing machines",
+            "books",
+            "music"
+        ],
+        "initial_response": "Spin magazine primarily covers music and pop culture.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "498": {
+        "question": "What is the name of Raggedy Ann's doll brother?",
+        "choices": [
+            "Red",
+            "Freckles",
+            "Randy",
+            "Andy"
+        ],
+        "initial_response": "Raggedy Ann's doll brother is named Raggedy Andy.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "499": {
+        "question": "What exercise apparatus is used during a 'Spinning' class?",
+        "choices": [
+            "stationary bicycle",
+            "treadmill",
+            "rowing machine",
+            "barbells"
+        ],
+        "initial_response": "A Spinning class typically uses a stationary exercise bike with a weighted flywheel.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "500": {
+        "question": "In the 1976 remake of the classic film 'KingKong' what New York landmark does the giant ape climb?",
+        "choices": [
+            "Statue of Liberty",
+            "Empire State Building",
+            "World Trade Center",
+            "Chrysler Building"
+        ],
+        "initial_response": "The Empire State Building.",
+        "llm_answer": "B",
+        "llm_is_correct": false
+    },
+    "501": {
+        "question": "How much angular momentum did Hurricane Florence have when it hit land?",
+        "choices": [
+            "L = 10^16 kg * m^2 / s",
+            "L = 10^19 kg * m^2 / s",
+            "L = 10^22 kg * m^2 / s",
+            "L = 10^25 kg * m^2 / s"
+        ],
+        "initial_response": "It is not possible to accurately measure the angular momentum of Hurricane Florence when it hit land. The angular momentum of a hurricane is determined by its size, speed, and direction, all of which can vary significantly over time.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "502": {
+        "question": "What team has won the most World Series?",
+        "choices": [
+            "Chicago Cubs",
+            "Los Angeles Dodgers",
+            "New York Yankees",
+            "San Francisco Giants"
+        ],
+        "initial_response": "The New York Yankees have won the most World Series with 27 championships.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "503": {
+        "question": "What is the name of the Newtonian law that states 'An object in Motion tends to stay in motion'?",
+        "choices": [
+            "Law of Inertia",
+            "Law of Thermodynamics",
+            "Law of Relativity",
+            "Law of Gravitation"
+        ],
+        "initial_response": "The law is called Newton's First Law of Motion, also known as the Law of Inertia.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "504": {
+        "question": "Who was the WNBA's Most Valuable Player of 1999?",
+        "choices": [
+            "Rebecca Lobo",
+            "Sheryl Swoopes",
+            "Lisa Leslie",
+            "Yolanda Griffith"
+        ],
+        "initial_response": "The WNBA's Most Valuable Player of 1999 was Cynthia Cooper of the Houston Comets.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "505": {
+        "question": "Ada Lovelace is credited with being the first person to have made what?",
+        "choices": [
+            "a computer program",
+            "a souffle",
+            "a brassiere",
+            "a mystery novel"
+        ],
+        "initial_response": "Ada Lovelace is credited with being the first person to have written an algorithm for a machine, specifically Charles Babbage's Analytical Engine.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "506": {
+        "question": "From 1971 to 1997 the Democratic Republic of Congo was known as what?",
+        "choices": [
+            "Zaire",
+            "Angola",
+            "Rhodesia",
+            "Belgian Congo"
+        ],
+        "initial_response": "The Democratic Republic of Congo was known as Zaire from 1971 to 1997.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "507": {
+        "question": "What is New Mexico's nickname?",
+        "choices": [
+            "The Desert State'",
+            "Gateway to Paradise'",
+            "Land of Enchantment'",
+            "The Garden State'"
+        ],
+        "initial_response": "New Mexico's nickname is \"The Land of Enchantment.\"",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "508": {
+        "question": "What was the name of the first nuclear-powered submarine?",
+        "choices": [
+            "Nautilus",
+            "Neptune",
+            "Nordenfelt III",
+            "Nicholas"
+        ],
+        "initial_response": "The first nuclear-powered submarine was the USS Nautilus, which was launched in 1954.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "509": {
+        "question": "What is Andromeda?",
+        "choices": [
+            "The nearest major galaxy to the Milky Way",
+            "A bacteria that can cause death",
+            "An array of radio telescopes",
+            "An element of the Periodic Table"
+        ],
+        "initial_response": "Andromeda is a galaxy located approximately 2.5 million light-years from Earth in the constellation of Andromeda. It is the nearest major galaxy to the Milky Way and is the largest galaxy in the Local Group, which also includes the Milky Way, the Triangulum Galaxy, and several smaller galaxies. Andromeda is estimated to contain 1 trillion stars, more than twice the number estimated for the Milky Way.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "510": {
+        "question": "Which two planets are most similar in size diameter wise?",
+        "choices": [
+            "Mars and Mercury",
+            "Venus and Earth",
+            "Uranus and Neptune",
+            "Jupiter and Saturn"
+        ],
+        "initial_response": "Earth and Venus are the two planets most similar in size diameter wise.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "511": {
+        "question": "What is the largest city in Pennsylvania?",
+        "choices": [
+            "Philadelphia",
+            "Stewartsville",
+            "Harrisburg",
+            "Pittsburgh"
+        ],
+        "initial_response": "The largest city in Pennsylvania is Philadelphia, with a population of 1,584,138 as of 2019.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "finish_time": "2023-09-27 04:45:58.058169",
+    "EM": 0.884765625
 }
