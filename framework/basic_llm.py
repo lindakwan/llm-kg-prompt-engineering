@@ -24,10 +24,13 @@ args = parser.parse_args()
 
 if args.dataset == "geography":
     dataset_path = "../data/mmlu_test/high_school_geography_test_filtered.csv"
-    json_output_path = f"../output/qa_sets_basic_llm_geography{start_time.timestamp()}.json"
+    json_output_path = f"../output/qa_sets_basic_llm_geography_{start_time.timestamp()}.json"
 elif args.dataset == "government_and_politics":
     dataset_path = "../data/mmlu_test/high_school_government_and_politics_test_filtered.csv"
-    json_output_path = f"../output/qa_sets_basic_llm_government_and_politics{start_time.timestamp()}.json"
+    json_output_path = f"../output/qa_sets_basic_llm_government_and_politics_{start_time.timestamp()}.json"
+elif args.dataset == "miscellaneous":
+    dataset_path = "../data/mmlu_test/miscellaneous_test_filtered.csv"
+    json_output_path = f"../output/qa_sets_basic_llm_miscellaneous_{start_time.timestamp()}.json"
 else:
     print("Invalid dataset.")
     exit()
