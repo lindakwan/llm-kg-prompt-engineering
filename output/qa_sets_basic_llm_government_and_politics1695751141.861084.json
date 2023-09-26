@@ -1,0 +1,1085 @@
+{
+    "start_time": "2023-09-27 03:59:01.861084",
+    "0": {
+        "question": "What power was granted to the states by the Articles of Confederation but not by the Constitution?",
+        "choices": [
+            "Coining money",
+            "Authorizing constitutional amendments",
+            "Having representation in Congress",
+            "Appealing to the president to adjudicate disputes"
+        ],
+        "initial_response": "The Articles of Confederation granted the states the power to coin money, while the Constitution did not.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "1": {
+        "question": "The primary function of political action committees (PACs) is to",
+        "choices": [
+            "contribute money to candidates for election",
+            "coordinate local get-out-the-vote campaigns",
+            "promote the defeat of incumbents in the federal and state legislatures",
+            "organize protest demonstrations and other acts of civil disobedience"
+        ],
+        "initial_response": "raise money for political campaigns. PACs are organized by individuals, corporations, unions, and other organizations to raise money for political candidates and causes. PACs can donate money directly to candidates or they can use the money to fund independent expenditures, such as television ads, mailings, and other forms of political communication. PACs are also used to organize and coordinate political activities, such as voter registration drives and get-out-the-vote efforts.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "2": {
+        "question": "The amount of access cabinet secretaries have to the president is most likely to be controlled by the",
+        "choices": [
+            "vice president",
+            "president's chief of staff",
+            "national security advisor",
+            "chair of the Federal Reserve Board"
+        ],
+        "initial_response": "president's chief of staff. The chief of staff is responsible for managing the president's schedule and ensuring that the president's time is used efficiently. Cabinet secretaries may be able to meet with the president, but the chief of staff will likely determine the frequency and length of such meetings.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "3": {
+        "question": "Voters who rely exclusively on television network news coverage of national elections are most likely to be aware of",
+        "choices": [
+            "which special interest groups have endorsed which candidates",
+            "the relative strength of each candidate's support, as indicated by public opinion polls",
+            "candidates' positions on international issues",
+            "candidates' positions on domestic issues"
+        ],
+        "initial_response": "-the major candidates\n-the major issues\n-the major campaign events\n-the major polls",
+        "llm_answer": "D",
+        "llm_is_correct": false
+    },
+    "4": {
+        "question": "Which principle was established by the Supreme Court's decision in Marbury v. Madison?",
+        "choices": [
+            "One man, one vote",
+            "Separate but equal",
+            "Judicial review",
+            "Right to privacy"
+        ],
+        "initial_response": "The principle established by the Supreme Court's decision in Marbury v. Madison is the principle of judicial review, which holds that the Supreme Court has the power to declare laws and actions of the executive and legislative branches of government unconstitutional.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "5": {
+        "question": "The legal principle that instructs judges to follow established precedent when deciding cases is commonly referred to as",
+        "choices": [
+            "certiorari",
+            "de jure",
+            "ex post facto",
+            "stare decisis"
+        ],
+        "initial_response": "the doctrine of stare decisis. This Latin phrase translates to \u201clet the decision stand\u201d and is based on the idea that similar cases should be decided in the same way. This doctrine is an important part of the common law system, which relies on judicial decisions to create legal precedent. By following established precedent, judges can ensure that similar cases are treated fairly and consistently.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "6": {
+        "question": "While ratifying the Constitution, the primary point of disagreement between Federalists and Anti-Federalists was over",
+        "choices": [
+            "whether representation in Congress should be equal among states or proportional to population",
+            "the strength of the federal government relative to the states",
+            "the future of the slave trade",
+            "whether people had inalienable rights"
+        ],
+        "initial_response": "the power of the federal government. The Federalists argued that the federal government should have more power than the states, while the Anti-Federalists argued that the states should have more power than the federal government. The Federalists ultimately won out, and the Constitution was ratified with the federal government having more power than the states.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "7": {
+        "question": "The legislative successes of the National Rifle Association, antiabortion activists, and other powerful interest groups demonstrate that",
+        "choices": [
+            "United States domestic policy grew more conservative in the 1990s",
+            "the influence of political action committees has weakened in recent years",
+            "the power of interest groups depends on the degree of support for their positions in the White House",
+            "majority opinion on an issue can sometimes be overridden by the intensity of a minority's commitment to activism"
+        ],
+        "initial_response": "special interest groups can have a significant influence on the legislative process. These groups are often able to mobilize their members to contact their representatives and advocate for their causes, and they often have the financial resources to lobby lawmakers and fund political campaigns. As a result, they can be effective in pushing their agendas through the legislative process.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "8": {
+        "question": "The exclusionary rule was established to",
+        "choices": [
+            "create \"separate but equal\" facilities to facilitate racial segregation",
+            "allow private organizations to restrict their memberships",
+            "limit the government's ability to use illegally obtained evidence",
+            "deny control of interstate commerce to the states"
+        ],
+        "initial_response": "prevent the government from using illegally obtained evidence in criminal trials. The rule states that any evidence obtained in violation of a defendant's constitutional rights cannot be used against them in court. This rule is meant to deter law enforcement from violating a defendant's rights and to protect the integrity of the criminal justice system. The Supreme Court has held that the exclusionary rule applies to evidence obtained in violation of the Fourth Amendment, which protects against unreasonable searches and seizures.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "9": {
+        "question": "The opinions of congressional committees often fail to accurately mirror public opinion because",
+        "choices": [
+            "the membership of committees often overrepresents constituencies with the greatest stake in the committee's business",
+            "most committees are too small to include representatives of all popular opinions",
+            "the minority party controls nearly half of all committees",
+            "committee members often lose track of their constituents' priorities because of their frequent contact with special-interest lobbyists"
+        ],
+        "initial_response": "congressional committees are made up of elected officials who may have different opinions than the public. Additionally, congressional committees are often influenced by lobbyists and special interests, which can lead to decisions that are not in line with public opinion.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "10": {
+        "question": "Congress would be required to use the \"elastic clause\" of the Constitution to",
+        "choices": [
+            "change citizenship requirements",
+            "impose workplace safety standards",
+            "increase tax rates",
+            "authorize the treasury to print money"
+        ],
+        "initial_response": "pass a law that would require all citizens to vote in national elections. The elastic clause, also known as the \"Necessary and Proper Clause,\" gives Congress the power to pass laws that are \"necessary and proper\" for carrying out its enumerated powers. This means that Congress could pass a law requiring all citizens to vote in national elections if it determined that such a law was necessary and proper for carrying out its enumerated powers.",
+        "llm_answer": "D",
+        "llm_is_correct": false
+    },
+    "11": {
+        "question": "The House Rules Committee is considered among the most powerful in the House of Representatives because it has great power over the",
+        "choices": [
+            "ethical conduct of House members",
+            "selection of federal judges",
+            "number of subcommittees that a standing committee may establish at any given time",
+            "scheduling of votes and the conditions under which bills are debated and amended"
+        ],
+        "initial_response": "legislative process. The committee is responsible for determining the rules of debate for bills that come before the House. It also has the power to decide which bills will be considered on the House floor and which will not. The committee also has the power to amend bills and to refer them to other committees for further consideration. The committee is also responsible for deciding the order in which bills will be considered on the House floor.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "12": {
+        "question": "In the past decade many states have moved forward the date of their presidential primary elections in an effort to",
+        "choices": [
+            "minimize the cost of running the election",
+            "convince the national government to move forward the date of the general election",
+            "restrict the number of entrants in the presidential race",
+            "increase the significance of their election results"
+        ],
+        "initial_response": "increase their influence in the selection of the presidential nominees.\n\nThe trend of states moving up their primary dates began in the late 1990s, when states like California, New York, and Florida began to move their primaries earlier in the year. This trend has continued in the past decade, with more and more states moving their primaries up in an effort to gain more influence in the selection of the presidential nominees. This has resulted in a compressed primary season, with many states holding their primaries in the first few months of the year. This has allowed candidates to gain momentum early in the process, and has given smaller states more influence in the selection of the nominees.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "13": {
+        "question": "Ruled unconstitutional in 1983, the legislative veto had allowed",
+        "choices": [
+            "the executive branch to veto legislation approved by Congress",
+            "federal district courts to overturn legislation",
+            "the president to veto state laws",
+            "Congress to nullify resolutions approved by the executive branch"
+        ],
+        "initial_response": "Congress to overturn executive branch decisions without the president's approval.\n\nThe legislative veto was declared unconstitutional by the Supreme Court in 1983 in the case of INS v. Chadha. The Court ruled that the legislative veto violated the constitutional principle of separation of powers, as it allowed Congress to exercise executive power without the president's approval. The ruling effectively eliminated the legislative veto as a tool for Congress to use in overturning executive branch decisions.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "14": {
+        "question": "In \"Federalist No. 10,\" James Madison argues that a federal system of government reduces the danger of political factions by",
+        "choices": [
+            "creating insurmountable obstacles to the founding of factions",
+            "making it difficult for one faction to gain the power necessary to govern",
+            "requiring equal representation of all factions within the government",
+            "restricting factional political activity to the state level only"
+        ],
+        "initial_response": "1. increasing the number of interests and opinions represented in the government.\n2. allowing for the representation of minority interests.\n3. creating a larger and more diverse population.\n4. dispersing power among different branches of government.\n5. providing a system of checks and balances.",
+        "llm_answer": "D",
+        "llm_is_correct": false
+    },
+    "15": {
+        "question": "The boundary lines of congressional districts must be redrawn every 10 years to",
+        "choices": [
+            "reflect population shifts indicated by the national census",
+            "guarantee the turnover of the majority of congressional seats",
+            "make sure each state's congressional delegation exactly mirrors its residents' party affiliations",
+            "determine which party's leader will be named Speaker of the House"
+        ],
+        "initial_response": "reflect population changes. This process is known as redistricting. Redistricting is conducted by state legislatures, and in some states, by independent commissions. The process of redistricting is often controversial, as it can be used to give one political party an advantage over another.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "16": {
+        "question": "Each of the two main political parties of the United States is organized",
+        "choices": [
+            "as a single party with a presence at the national level only",
+            "into a federal structure in which state and local parties have no power",
+            "as a relatively independent organization that exists at all levels of government",
+            "in a top-down fashion, so that instructions are dispersed from the national level to the state and local levels"
+        ],
+        "initial_response": "around a set of core beliefs and values.\n\nThe Republican Party is generally conservative and believes in limited government, free markets, and individual responsibility. It supports lower taxes, strong national defense, and traditional values.\n\nThe Democratic Party is generally progressive and believes in a strong government that provides for the needs of its citizens. It supports higher taxes on the wealthy, a robust social safety net, and civil rights for all. It also believes in environmental protection and a strong international presence.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "17": {
+        "question": "The origination clause of the Constitution states that",
+        "choices": [
+            "the Bill of Rights must not be infringed upon by any state legislature",
+            "Congress and the president must jointly create the annual federal budget",
+            "revenue bills must be initiated in the House of Representatives",
+            "the Supreme Court has original jurisdiction over all constitutional matters"
+        ],
+        "initial_response": "\"All legislative Powers herein granted shall be vested in a Congress of the United States, which shall consist of a Senate and House of Representatives.\" This clause establishes the legislative branch of the federal government and outlines the structure of Congress. It also grants Congress the power to make laws and regulate commerce.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "18": {
+        "question": "What is the primary reason that the committees in the House of Representatives are more influential than they are in the Senate?",
+        "choices": [
+            "The difference in size between the two chambers means that more work is done on the floor in the Senate and more work is done in committees in the House.",
+            "The Senate as a whole has confirmation powers that the House does not have.",
+            "Members are appointed to the committee in the House but are elected to committees in the Senate.",
+            "A member of any party can serve a committee in the House, but only major party members can serve on committees in the Senate."
+        ],
+        "initial_response": "The primary reason that the committees in the House of Representatives are more influential than they are in the Senate is because the House has more members and therefore more committees. This allows the House to have more specialized committees and to have more influence over the legislative process. Additionally, the House has more power to set the legislative agenda and to shape the debate on important issues.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "19": {
+        "question": "The Commerce Clause of the Constitution has been used to",
+        "choices": [
+            "release detainees from prison following unlawful arrest",
+            "maintain the navy",
+            "increase the power of the national government",
+            "veto legislative bills of attainder"
+        ],
+        "initial_response": "regulate commerce between the states. It gives Congress the power to regulate commerce with foreign nations, among the several states, and with the Indian tribes. This power has been used to pass laws that regulate the flow of goods and services between states, such as the Interstate Commerce Commission, which regulates the transportation of goods and services between states. It has also been used to pass laws that regulate the economic activities of businesses, such as the Sherman Antitrust Act, which prohibits certain business practices that are deemed to be anti-competitive.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "20": {
+        "question": "Republican candidates for president who tend to be more successful in the primaries tend to be more conservative than rank-and-file Republicans because",
+        "choices": [
+            "moderate Republicans are less likely than conservative Republicans to gain widespread support in the general election",
+            "most moderate Republicans have approved of the Democratic presidential candidate",
+            "most rank-and-file Republicans do not care whether their party's nominee shares their political views",
+            "party activists, whose political participation is disproportionate to their numbers, tend to be very conservative"
+        ],
+        "initial_response": "they are able to appeal to the party's base. They often emphasize traditional values, such as limited government, fiscal responsibility, and a strong national defense. They also tend to be more vocal in their opposition to abortion and same-sex marriage. Additionally, they often emphasize their commitment to the Republican Party and its platform.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "21": {
+        "question": "A \"motion for cloture\" is used to",
+        "choices": [
+            "send a bill back to the House",
+            "override a presidential veto in the House",
+            "amend an appropriations bill in the House",
+            "end a filibuster and force a vote on a bill in the Senate"
+        ],
+        "initial_response": "end a debate and bring a vote on a particular issue. It is typically used in the United States Senate to end a filibuster and allow a vote on a bill or other issue. The motion requires a three-fifths majority vote to pass. If the motion passes, debate on the issue is limited to 30 additional hours.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "22": {
+        "question": "The relative stability of American public policy is achieved largely through",
+        "choices": [
+            "cooperation between the two major political parties",
+            "judicial activism",
+            "the constitutional fragmentation of power",
+            "affirmative action programs"
+        ],
+        "initial_response": "the checks and balances of the three branches of government. The three branches of government\u2014the executive, legislative, and judicial\u2014are designed to provide a system of checks and balances that prevents any one branch from becoming too powerful. The executive branch is responsible for carrying out the laws and policies of the government, while the legislative branch is responsible for making the laws. The judicial branch is responsible for interpreting the laws and ensuring that they are applied fairly. Each branch has the power to check the actions of the other two branches, ensuring that no one branch can become too powerful. This system of checks and balances helps to ensure that public policy remains stable and that the government is accountable to the people.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "23": {
+        "question": "A sound bite would most likely be used during a presidential election in order to",
+        "choices": [
+            "avoid \"horse race\" politics",
+            "provide the audience with a candidate's view in a limited amount of time",
+            "reduce the amount of negative advertising used",
+            "ensure a candidate is presented in the best light"
+        ],
+        "initial_response": "give the public a quick and memorable statement from the candidate. It could be used in a television advertisement, a radio advertisement, or even a speech. A sound bite is a short phrase or sentence that is memorable and conveys the candidate's message in a concise way.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "24": {
+        "question": "The Dred Scott decision of 1857 was overturned by the",
+        "choices": [
+            "Plessy v. Ferguson decision",
+            "Missouri Compromise",
+            "Jim Crow laws",
+            "Fourteenth Amendment"
+        ],
+        "initial_response": "passage of the Thirteenth Amendment to the United States Constitution in 1865. The Thirteenth Amendment abolished slavery in the United States, making the Dred Scott decision moot. The Dred Scott decision had declared that African Americans were not citizens of the United States and could not sue in federal court.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "25": {
+        "question": "An open primary is a primary election in which",
+        "choices": [
+            "voters registered as \"independents\" may not vote",
+            "candidates do not specify the office for which they are running",
+            "voters may register at their polling place on election day",
+            "voters may vote in the election of a party other than the one to which they are registered"
+        ],
+        "initial_response": "any registered voter can vote in any party's primary, regardless of their declared party affiliation. This type of primary is used in some U.S. states, such as California, Washington, and Louisiana. In an open primary, the top two vote-getters, regardless of party, advance to the general election. This system is designed to encourage more moderate candidates and discourage extreme partisanship.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "26": {
+        "question": "The Supreme Court has used the practice of selective incorporation to",
+        "choices": [
+            "limit the number of appeals filed by defendants in state courts",
+            "extend voting rights to racial minorities and women",
+            "apply most Bill of Rights protections to state law",
+            "hasten the integration of public schools"
+        ],
+        "initial_response": "incorporate certain provisions of the Bill of Rights into the Fourteenth Amendment's Due Process Clause. This process, known as selective incorporation, has been used to apply most of the protections of the Bill of Rights to the states. The Supreme Court has held that the First Amendment's protections of free speech, press, assembly, and religion, as well as the Fourth Amendment's protection against unreasonable searches and seizures, the Fifth Amendment's protection against self-incrimination, and the Sixth Amendment's right to a jury trial, are all applicable to the states through the Fourteenth Amendment.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "27": {
+        "question": "According to the Constitution, who determines voter eligibility requirements?",
+        "choices": [
+            "The president",
+            "Congress",
+            "State legislatures",
+            "Federal administrative agencies"
+        ],
+        "initial_response": "The individual states determine voter eligibility requirements according to the Constitution. The U.S. Constitution does not specify any particular requirements for voting, but it does give the states the power to set their own voter eligibility requirements.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "28": {
+        "question": "The difference between a pardon and a reprieve is",
+        "choices": [
+            "a pardon lasts 10 years, while a reprieve lasts one year",
+            "a reprieve grants a release from legal punishment, while a pardon postpones it",
+            "a pardon grants a release from legal punishment while a reprieve postpones it",
+            "only state governors can issue pardons"
+        ],
+        "initial_response": "that a pardon is an official forgiveness of a crime, while a reprieve is a temporary suspension of a sentence or punishment. A pardon is a permanent action that removes the legal consequences of a crime, while a reprieve is a temporary action that delays the punishment.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "29": {
+        "question": "Two related cases that focused on the right to privacy for all American citizens were",
+        "choices": [
+            "Near v. Minnesota and New York Times v. Sullivan",
+            "Texas v. Johnson and Morse v. Frederick",
+            "Thornhill v. Alabama and Cox v. New Hampshire",
+            "Griswold v. Connecticut and Roe v. Wade."
+        ],
+        "initial_response": "Griswold v. Connecticut and Roe v. Wade.\n\nGriswold v. Connecticut (1965) was a landmark Supreme Court case that established the right to privacy for all American citizens. The case centered around a Connecticut law that prohibited the use of contraceptives. The Supreme Court ruled that the law violated the right to privacy protected by the Due Process Clause of the Fourteenth Amendment.\n\nRoe v. Wade (1973) was another landmark Supreme Court case that established the right to privacy for all American citizens. The case centered around a Texas law that prohibited abortion. The Supreme Court ruled that the law violated the right to privacy protected by the Due Process Clause of the Fourteenth Amendment. The ruling established a woman's right to choose whether or not to have an abortion.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "30": {
+        "question": "The swift adoption of the Bill of Rights in the years following ratification of the Constitution demonstrates the",
+        "choices": [
+            "Framers' unqualified commitment to individual rights",
+            "small states' determination to receive equal representation in the legislature",
+            "Northern states' support for abolitionism",
+            "states' fears of an overpowerful national government"
+        ],
+        "initial_response": "importance of the document to the American people. The Bill of Rights was seen as a necessary addition to the Constitution in order to protect the rights of citizens and ensure that the government could not infringe upon them. The Bill of Rights was quickly adopted by the states, with the first ten amendments being ratified in 1791. This swift adoption of the Bill of Rights demonstrates the importance of the document to the American people, as they recognized the need for a document that would protect their rights and freedoms. The Bill of Rights has since become an integral part of the American legal system, and its importance to the American people is still evident today.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "31": {
+        "question": "A Supreme Court that demonstrates a willingness to change public policy and alter judicial precedent is said to be engaging in",
+        "choices": [
+            "judicial activism",
+            "due process",
+            "judicial restraint",
+            "ex post facto lawmaking"
+        ],
+        "initial_response": "judicial activism. Judicial activism is the practice of a court using its power to make decisions that go beyond the scope of the law and instead reflect the court's own values and beliefs. This type of decision-making is often controversial, as it can be seen as an attempt to impose the court's own views on the public.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "32": {
+        "question": "The opposition of the American Civil Liberties Union (ACLU), the National Association of Women Lawyers (NAWL), and the American Federation of Labor and Congress of Industrial Organizations (AFL-CIO) to Samuel Alito's 2006 nomination to the Supreme Court is an example of",
+        "choices": [
+            "realignment",
+            "coalition building",
+            "impeachment",
+            "a recall election"
+        ],
+        "initial_response": "organized opposition to a political appointment. The organizations opposed Alito's nomination due to his record on civil rights, labor rights, and women's rights. They argued that his record showed a lack of commitment to protecting the rights of marginalized groups and that his appointment would lead to a rollback of civil rights protections. The organizations also expressed concern about Alito's views on executive power and the potential for an erosion of the separation of powers.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "33": {
+        "question": "When the Founders met in 1787 to write the Constitution, their primary objective was to",
+        "choices": [
+            "establish a bill of rights that would protect citizens from the government",
+            "create a national court system for hearing disputes between citizens of different states",
+            "return to the states those powers that the Articles of Confederation had given to the central government",
+            "replace the weak central government created by the Articles of Confederation with a stronger one"
+        ],
+        "initial_response": "create a strong federal government that would be able to protect the rights of citizens and maintain order. They wanted to create a government that was powerful enough to protect the nation from foreign threats, but also limited enough to prevent it from becoming oppressive. The Constitution they wrote established a system of checks and balances between the three branches of government, as well as a system of federalism that divided power between the federal government and the states. The Constitution also established a system of separation of powers, which ensured that no one branch of government had too much power. Additionally, the Constitution outlined the rights of citizens, including the right to free speech, the right to bear arms, and the right to a fair trial.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "34": {
+        "question": "A constitutional amendment would be required to ban flag burning because that activity is currently protected by the right to",
+        "choices": [
+            "due process",
+            "assembly",
+            "free exercise of religion",
+            "free speech"
+        ],
+        "initial_response": "free speech as outlined in the First Amendment of the United States Constitution. The Supreme Court has ruled that flag burning is a form of symbolic speech and is therefore protected by the First Amendment. In order to ban flag burning, the Constitution would need to be amended to explicitly prohibit the activity.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "35": {
+        "question": "To which characteristic of American government does the term \"federalism\" refer?",
+        "choices": [
+            "The system of checks and balances within the national government",
+            "The power of the Supreme Court to review the constitutionality of laws",
+            "The Bill of Rights' protection of the rights of the accused",
+            "The division and sharing of power between the national and state governments"
+        ],
+        "initial_response": "Federalism refers to the division of power between the federal government and the state governments in the United States.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "36": {
+        "question": "Given the structure of the electoral college system, presidential candidates tend to",
+        "choices": [
+            "avoid battleground states and focus their campaigns on \"safe\" states",
+            "campaign more heavily in states with large populations",
+            "spend more television advertising money in the Plains States",
+            "campaign extensively in states that heavily favor one party over the other"
+        ],
+        "initial_response": "focus their campaigns on swing states. Swing states are states that are considered to be competitive in the electoral college, meaning that they could potentially swing either way in the election. Candidates will focus their campaigns on these states in order to try to win their electoral votes. This means that they will spend more time and resources campaigning in these states, as well as running more ads and holding more rallies. Additionally, candidates will often tailor their messages to the specific issues that are important to the voters in these states.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "37": {
+        "question": "Filibusters are less likely to occur in the House of Representatives than in the Senate because",
+        "choices": [
+            "Senate decorum forbids one senator from attempting to stop another's speech",
+            "the House meets for substantially fewer hours per day than does the Senate",
+            "Senate sessions, unlike House sessions, are open to the public",
+            "debate in the House is in most instances strictly regulated by the rules"
+        ],
+        "initial_response": "the House of Representatives has a majority-rule system, meaning that a bill can pass with a simple majority of votes. In the Senate, however, a bill can be blocked by a filibuster, which requires a supermajority of votes to pass. This means that a minority of senators can block a bill from passing, making it much harder for legislation to pass in the Senate.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "38": {
+        "question": "When the Democratic Party pursues liberal social policies, it is most likely to alienate which of its traditional bases?",
+        "choices": [
+            "People holding advanced academic degrees",
+            "Northeastern city dwellers",
+            "Southerners",
+            "Jewish Americans"
+        ],
+        "initial_response": "The Democratic Party's traditional base of working-class and rural voters, who tend to be more socially conservative, may be alienated by liberal social policies.",
+        "llm_answer": "D",
+        "llm_is_correct": false
+    },
+    "39": {
+        "question": "The practice of drawing congressional district lines in an attempt to give one party a benefit over another is referred to as",
+        "choices": [
+            "front-loading",
+            "prior restraint",
+            "reapportionment",
+            "gerrymandering"
+        ],
+        "initial_response": "gerrymandering. Gerrymandering is a form of redistricting in which electoral district boundaries are manipulated for political gain. It is named after Elbridge Gerry, who in 1812 signed a bill that created a partisan district in Massachusetts that was compared to the shape of a salamander.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "40": {
+        "question": "The line-item veto was found unconstitutional because",
+        "choices": [
+            "it gave executive powers to the legislature",
+            "it gave legislative powers to the bureaucracy",
+            "it gave legislative powers to the president",
+            "it delegated too many powers to the states"
+        ],
+        "initial_response": "it gave the president the power to unilaterally repeal parts of a law passed by Congress. This violated the separation of powers doctrine, which states that the legislative, executive, and judicial branches of government should be separate and distinct. The Supreme Court ruled that the line-item veto was unconstitutional in the 1998 case Clinton v. City of New York.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "41": {
+        "question": "Why do political scientists identify the presidential elections of Franklin Roosevelt in 1932 and Richard Nixon in 1968 as well as the midterm election of 1994 as \"critical elections\"?",
+        "choices": [
+            "The issues at stake in those elections were more important than in most elections.",
+            "Those elections saw major shifts in party alignment that would last for decades.",
+            "Minority voters played a key role in deciding the winners of those elections.",
+            "Those elections took place during wartime."
+        ],
+        "initial_response": "The presidential elections of Franklin Roosevelt in 1932, Richard Nixon in 1968, and the midterm election of 1994 are identified as \"critical elections\" because they marked major shifts in the political landscape. In 1932, Roosevelt's election marked the beginning of the New Deal and the end of the Republican dominance of the White House that had lasted since the Civil War. In 1968, Nixon's election marked the beginning of the Republican resurgence that would last until the election of Barack Obama in 2008. In 1994, the Republican Party gained control of both houses of Congress for the first time in 40 years, ushering in a period of divided government and a shift in the balance of power in Washington.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "42": {
+        "question": "House members are more concerned about their committee assignments than are senators because",
+        "choices": [
+            "House members may serve on only one committee at a time",
+            "Senate committees have relatively little power to alter legislation",
+            "bills in the Senate must pass through all committees before reaching the floor",
+            "the rules make it extremely difficult for representatives to influence legislation on the House floor"
+        ],
+        "initial_response": "House members are more limited in their ability to influence legislation. House members are limited to the committees they are assigned to, while senators can choose to be involved in any committee they wish. This means that House members must be more strategic in their committee assignments in order to have the most influence on legislation.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "43": {
+        "question": "The primary goal of the Gramm-Rudman Acts of 1985 and 1987 was to",
+        "choices": [
+            "strengthen the military",
+            "increase funding for social programs",
+            "reduce the federal deficit",
+            "limit the president's ability to conduct foreign policy"
+        ],
+        "initial_response": "reduce the federal budget deficit. The Acts mandated that Congress and the President set annual deficit targets and that if those targets were not met, automatic spending cuts would be triggered. The Acts also created the Congressional Budget Office to provide Congress with independent budget analysis.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "44": {
+        "question": "The Voting Rights Act of 1965",
+        "choices": [
+            "granted women the right to vote",
+            "banned race-based discrimination",
+            "granted African-Americans the right to vote",
+            "suspended the use of literacy tests at voting centers"
+        ],
+        "initial_response": "The Voting Rights Act of 1965 is a landmark piece of federal legislation in the United States that prohibits racial discrimination in voting. It was signed into law by President Lyndon B. Johnson during the height of the civil rights movement. The Act prohibits states from imposing any voting qualification or pre-condition that results in the denial or abridgement of the right of any citizen of the United States to vote on account of race or color. It also requires certain jurisdictions with a history of discrimination in voting to obtain pre-clearance from the U.S. Department of Justice before implementing any changes to their voting laws or practices. The Act has been amended several times since its passage, most recently in 2006.",
+        "llm_answer": "B",
+        "llm_is_correct": false
+    },
+    "45": {
+        "question": "In the House of Representatives, the Rules Committee",
+        "choices": [
+            "determines both the rules of the House and conditions for legislative process",
+            "plays a pivotal role in the management of the Library of Congress",
+            "has jurisdiction over fisheries and wildlife",
+            "determines what behavior is deemed ethical in the House"
+        ],
+        "initial_response": "is a committee of the United States House of Representatives responsible for determining under what rule other Committee's bills will come to the floor. The committee is also responsible for the rules of debate in the House. The committee is one of the most powerful committees in the House, as it determines the amount of debate and amendments that can be offered on the House floor. The committee is chaired by the Majority Leader and is composed of the majority party's members.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "46": {
+        "question": "When an appeal is made to the Supreme Court, the court usually",
+        "choices": [
+            "refuses to hear the appeal",
+            "declares a mistrial",
+            "orders the lower court to retry the case",
+            "rules in favor of the defendant"
+        ],
+        "initial_response": "reviews the case to determine if it meets the criteria for review. The court may then decide to hear the case or deny the appeal. If the court decides to hear the case, it will review the lower court's decision and the legal arguments presented by both sides. The court may then issue a ruling on the case, which may either affirm or reverse the lower court's decision.",
+        "llm_answer": "D",
+        "llm_is_correct": false
+    },
+    "47": {
+        "question": "Members of Congress are allowed to mail letters to their constituents at the government's expense because of",
+        "choices": [
+            "gerrymandering",
+            "pork-barrel legislation",
+            "the Sixteenth Amendment",
+            "the franking privilege"
+        ],
+        "initial_response": "the franking privilege. This privilege was established in 1775 by the Continental Congress and allows members of Congress to send mail to their constituents without paying postage. The franking privilege is intended to help members of Congress communicate with their constituents and keep them informed about their work in Congress. The franking privilege is regulated by the House of Representatives and the Senate, and members of Congress must follow certain rules when using it. For example, members of Congress must include their name and the words \"Official Business\" on the envelope. They are also prohibited from using the franking privilege for political or personal purposes.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "48": {
+        "question": "The idea that the Bill of Rights applies to both federal and state governments by means of the Fourteenth Amendment is called",
+        "choices": [
+            "mandamus",
+            "habeas corpus",
+            "strict constructionism",
+            "the doctrine of incorporation"
+        ],
+        "initial_response": "the incorporation doctrine. This doctrine was established by the Supreme Court in the case of Gitlow v. New York (1925). In this case, the Court held that the Fourteenth Amendment's Due Process Clause incorporated the First Amendment's freedom of speech and press protections, making them applicable to the states. Since then, the Court has used the incorporation doctrine to apply most of the protections of the Bill of Rights to the states.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "49": {
+        "question": "If no presidential candidate receives a majority of the electoral college vote, then who becomes the president?",
+        "choices": [
+            "The candidate who wins the popular national vote",
+            "The incumbent vice president of the United States",
+            "Whomever is selected by the United States Supreme Court",
+            "The candidate who wins the majority of votes in the House"
+        ],
+        "initial_response": "If no presidential candidate receives a majority of the electoral college vote, then the House of Representatives will choose the President from the top three candidates. Each state delegation will cast one vote, and the candidate who receives the majority of the votes will become the President.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "50": {
+        "question": "Unlike in a closed primary election, in an open primary election",
+        "choices": [
+            "voters select the winner by caucus instead of by individual ballots",
+            "the election results are not binding",
+            "any registered voter may participate, regardless of party affiliation",
+            "voters may register to vote on the day of the election"
+        ],
+        "initial_response": ", any registered voter can participate regardless of their party affiliation. This means that voters can choose to vote in either the Democratic or Republican primary, regardless of their own party affiliation.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "51": {
+        "question": "Every ten years, the majority of state legislatures are responsible for",
+        "choices": [
+            "redrawing congressional district boundaries",
+            "electing a new state governor",
+            "evaluating the physical accessibility of polling venues",
+            "deciding where to construct new elementary schools"
+        ],
+        "initial_response": "redrawing congressional district boundaries. This process is known as redistricting. Redistricting is necessary to ensure that each congressional district contains roughly the same number of people, as required by the U.S. Constitution. The process of redistricting is often controversial, as it can be used to give one political party an advantage over another.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "52": {
+        "question": "The spoils system of awarding civil service jobs was replaced by the merit system as a result of the",
+        "choices": [
+            "Truman Doctrine",
+            "Fair Labor Standards Act of 1961",
+            "National Industrial Recovery Act",
+            "Pendleton Act of 1883"
+        ],
+        "initial_response": "Pendleton Act of 1883. The Pendleton Act was passed in response to the rampant corruption and patronage that had become commonplace in the American civil service system. The Act established a Civil Service Commission to oversee the hiring and promotion of federal employees based on merit and qualifications rather than political connections. The Act also prohibited federal employees from engaging in political activities while on the job. The Pendleton Act was the first major piece of legislation to reform the civil service system and is considered to be the foundation of the modern civil service system.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "53": {
+        "question": "The term \"iron triangle\" refers to the interrelationship of the",
+        "choices": [
+            "president, Congress, and the Supreme Court",
+            "electorate, Congress, and political action committees",
+            "local, state, and federal governments",
+            "federal bureaucracy, congressional committees, and lobbyists"
+        ],
+        "initial_response": "bureaucracy, Congress, and interest groups in the United States. This relationship is characterized by mutual support and cooperation between the three entities, which often results in the passage of legislation that benefits the interest groups. The term is derived from the idea that the three entities form a triangle, with each side representing one of the entities. The bureaucracy provides the expertise and resources to develop and implement policy, Congress provides the legislative authority to pass laws, and interest groups provide the political support to ensure the passage of the legislation. This relationship is often seen as a way for the interest groups to gain influence over the government and to ensure that their interests are represented in the policymaking process.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "54": {
+        "question": "An inherent power of the president is the power to",
+        "choices": [
+            "appoint a nominee for the U.S. Supreme Court",
+            "negotiate a treaty with another country",
+            "declare a state of emergency following a natural disaster",
+            "veto a bill passed by the U.S. Congress"
+        ],
+        "initial_response": "grant pardons. This power is granted to the president by Article II, Section 2 of the United States Constitution. This power allows the president to pardon individuals who have been convicted of federal crimes. The president may also grant clemency, which is a lesser form of relief than a pardon. Clemency may include a reduction in sentence, a commutation of sentence, or a reprieve.",
+        "llm_answer": "D",
+        "llm_is_correct": false
+    },
+    "55": {
+        "question": "The Supreme Court has used the Fourteenth Amendment to apply portions of the Bill of Rights to state law by citing the amendment's",
+        "choices": [
+            "prohibition on unreasonable search and seizures",
+            "due process clause",
+            "guarantee of privacy rights",
+            "abolition of slavery"
+        ],
+        "initial_response": "due process clause. This clause states that no state shall \"deprive any person of life, liberty, or property, without due process of law.\" The Supreme Court has used this clause to apply the First, Fourth, Fifth, Sixth, and Eighth Amendments to state law.\n\nFor example, the Supreme Court has used the Fourteenth Amendment to apply the Fourth Amendment's protection against unreasonable searches and seizures to state law. In the case of Mapp v. Ohio (1961), the Supreme Court held that the exclusionary rule, which prevents illegally obtained evidence from being used in court, applies to state law. The Court reasoned that the Fourteenth Amendment's due process clause requires states to provide the same level of protection against unreasonable searches and seizures as the Fourth Amendment does.\n\nThe Supreme Court has also used the Fourteenth Amendment to apply the Fifth Amendment's protection against self-incrimination to state law. In the case of Malloy v. Hogan (1964), the Supreme Court held that the Fifth Amendment's protection against self-incrimination applies to state law. The Court reasoned that the Fourteenth Amendment's due process clause requires states to provide the same level of protection against self-incrimination as the Fifth Amendment does.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "56": {
+        "question": "Political efficacy refers to the idea that",
+        "choices": [
+            "political parties can provide a check to the political influence wielded by corporations",
+            "individuals believe that they can influence the government through participation in the democratic process",
+            "the system of checks and balances ensures that the government is both efficient and productive",
+            "politicians have a duty to inform their constituents about the democratic process"
+        ],
+        "initial_response": "individuals have the ability to influence the political process and the outcomes of political decisions. It is the belief that citizens can make a difference in the political process and that their actions can have an impact on the government and its policies. Political efficacy is closely related to political participation, as those who feel they can make a difference are more likely to take part in the political process.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "57": {
+        "question": "A member of the president's cabinet is said to have \"gone native\" when that cabinet member",
+        "choices": [
+            "resigns to take a position as a consultant to lobbying groups",
+            "cedes control of his or her department to lifelong bureaucrats within the department",
+            "places his or her department's priorities above the president's",
+            "accepts bribes or expensive favors from businesses regulated by his or her department"
+        ],
+        "initial_response": "begins to identify more with the interests of the people he or she is serving than with the interests of the president or the government. This can happen when a cabinet member begins to sympathize with the people he or she is serving and takes their side in disputes or disagreements with the president or the government. This can also happen when a cabinet member begins to take on the values and beliefs of the people he or she is serving, rather than the values and beliefs of the president or the government.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "58": {
+        "question": "While best known for protecting freedom of speech and religion, the First Amendment also protects Americans' right to",
+        "choices": [
+            "due process of the law in any criminal case",
+            "retain personal property unless justly compensated by the government",
+            "not be subjected to excessive fines or unusual punishment",
+            "petition the government for a redress of grievances"
+        ],
+        "initial_response": "peaceably assemble. This means that people have the right to gather in public places to protest, demonstrate, or otherwise express their views. This right is essential to a functioning democracy, as it allows citizens to express their opinions and hold their government accountable.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "59": {
+        "question": "Considered as a single group, the Small Business Administration, the Small Business committees in the House and Senate, and small business advocacy groups are an example of",
+        "choices": [
+            "an iron triangle",
+            "a conference committee",
+            "a regulatory agency",
+            "dual federalism"
+        ],
+        "initial_response": "a \n\nlobbying coalition.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "60": {
+        "question": "A writ of certiorari from the Supreme Court indicates that the Court",
+        "choices": [
+            "will review a lower court decision",
+            "has rendered a decision on a case",
+            "has decided not to hear an appeal",
+            "will recess until the end of the calendar year"
+        ],
+        "initial_response": "has agreed to review a lower court's decision. A writ of certiorari is a formal request from the Supreme Court to a lower court to send up the records of a case for review. The Supreme Court does not have to accept every case that is presented to it, and the writ of certiorari is the Court's way of indicating that it has accepted the case and will review the lower court's decision.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "61": {
+        "question": "An example of a categorical grant would be",
+        "choices": [
+            "money loaned by the federal government to cities to fund school maintenance",
+            "money given by the federal government to states without conditions",
+            "money loaned by the federal government to a private company to prevent it from failing",
+            "money given by the federal government to states to fund Head Start early education programs"
+        ],
+        "initial_response": "a grant to fund a program that provides free meals to low-income families.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "62": {
+        "question": "When the Supreme Court decides to take a case on appeal it",
+        "choices": [
+            "issues a writ of habeas corpus",
+            "issues a writ of certiorari",
+            "issues amicus curiae briefs",
+            "engages in judicial review"
+        ],
+        "initial_response": "is usually because the justices believe that the lower court's decision was incorrect or that the case involves an important legal issue that needs to be addressed. The Supreme Court will also take a case if there is a conflict between the decisions of different lower courts. The Supreme Court will also take a case if the lower court's decision conflicts with a previous Supreme Court decision.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "63": {
+        "question": "Congress has attempted to protect independent regulatory agencies from political influence by requiring that each agency",
+        "choices": [
+            "be led by a group of commissioners representing both major political parties",
+            "plan policy cooperatively with the appropriate congressional committees",
+            "reapply for funding at the end of each fiscal year",
+            "submit all planned policy changes to the president for approval"
+        ],
+        "initial_response": "have a board of directors or commissioners. This board is typically composed of members from both political parties, and the president must appoint members from both parties. This ensures that the agency is not dominated by one political party. Additionally, Congress has passed laws that limit the president's ability to remove members of the board, ensuring that the agency remains independent.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "64": {
+        "question": "The line-item veto was ruled unconstitutional because it",
+        "choices": [
+            "violated the legislative process by which bills become laws",
+            "allowed Congress to eliminate sections of legislation without a two-thirds majority",
+            "gave states the ability to override federal legislation",
+            "empowered Congress to nullify executive actions"
+        ],
+        "initial_response": "violated the Presentment Clause of the United States Constitution. The Presentment Clause states that any bill passed by Congress must be presented to the President for approval or veto in its entirety, and the President cannot pick and choose which parts of the bill to approve or veto. The Supreme Court ruled that the line-item veto violated this clause, and thus was unconstitutional.",
+        "llm_answer": "B",
+        "llm_is_correct": false
+    },
+    "65": {
+        "question": "The Reorganization Plan 1 of 1939 and Executive Order 8248 allow the president to select the staff for the",
+        "choices": [
+            "Peace Corps",
+            "White House Office",
+            "Senate Committee on Appropriations",
+            "Cabinet"
+        ],
+        "initial_response": "executive branch. The plan and order allow the president to appoint the heads of executive departments, independent agencies, and other government entities. The president can also appoint members of the White House staff, such as the Chief of Staff, and other advisors. The plan and order also allow the president to reorganize the executive branch by creating new departments, merging existing departments, and transferring functions from one department to another. The president can also create new agencies and reorganize existing ones. The plan and order also allow the president to appoint members of the Civil Service Commission, which is responsible for overseeing the hiring and promotion of federal employees.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "66": {
+        "question": "Failed felony prosecutions at the state level are sometimes retried at the federal level",
+        "choices": [
+            "on appeal by state prosecutors",
+            "under the \"double jeopardy\" provision of the Constitution",
+            "because new evidence has voided the state-level verdict",
+            "as civil liberties violations"
+        ],
+        "initial_response": ". This is possible because the federal government and state governments have different jurisdictions and different laws. The federal government has the power to prosecute crimes that violate federal laws, while state governments have the power to prosecute crimes that violate state laws. Therefore, if a state fails to convict a person of a crime that violates federal law, the federal government may choose to retry the case.",
+        "llm_answer": "B",
+        "llm_is_correct": false
+    },
+    "67": {
+        "question": "Compared with political parties in countries such as England and Israel, both of which have multiparty systems, American political parties are",
+        "choices": [
+            "less interested in influencing the outcome of elections",
+            "less clearly identified with consistent political ideologies",
+            "less effective at raising money from political supporters",
+            "better able to reflect the goals of their entire constituencies"
+        ],
+        "initial_response": "much less organized. In the United States, political parties are not as structured and do not have as much influence over the government as they do in other countries. In the United States, political parties are more loosely organized and do not have as much control over the government.\n\nIn the United States, political parties are not as powerful as they are in other countries. In the United States, political parties are not as organized and do not have as much influence over the government. Political parties in the United States are more decentralized and lack the same level of organization and control as those in other countries. Additionally, the United States does not have a parliamentary system, which means that the government is not as closely tied to the political parties as it is in other countries. This means that the political parties in the United States are not as influential in the government as they are in other countries.",
+        "llm_answer": "C",
+        "llm_is_correct": false
+    },
+    "68": {
+        "question": "Why has network news coverage become less diverse in recent years?",
+        "choices": [
+            "Decreasing liberal bias in the news media",
+            "Increasing visibility for individual candidates on TV",
+            "Increasing concentration of ownership in the news media",
+            "Decreasing cost of political ads on TV"
+        ],
+        "initial_response": "Network news coverage has become less diverse in recent years due to a number of factors. One of the main reasons is the consolidation of media ownership, which has resulted in fewer independent news outlets and a decrease in the number of voices represented in the media. Additionally, the rise of digital media has led to a decrease in the number of journalists employed by traditional news outlets, resulting in fewer diverse perspectives being represented in the news. Finally, the increasing cost of producing news content has led to a decrease in the amount of resources available to cover stories from a variety of perspectives.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "69": {
+        "question": "Politicians and political reporters are natural adversaries; the adversarial nature of their relationship, however, is tempered by the fact that",
+        "choices": [
+            "younger politicians who are more comfortable with the media are gradually displacing older politicians",
+            "government regulations on interaction between the two groups are very strict",
+            "each group is dependent on the other to perform its job effectively",
+            "very few media outlets will cover a story that is embarrassing to a political leader"
+        ],
+        "initial_response": "they need each other. Politicians need the media to get their message out to the public, while political reporters need politicians to provide them with newsworthy stories. This symbiotic relationship is beneficial to both parties, as it allows politicians to reach a wider audience and reporters to stay informed about the latest political developments.\n\nAt the same time, the adversarial nature of the relationship between politicians and political reporters can lead to tension and mistrust. Politicians may be reluctant to share information with reporters, while reporters may be suspicious of politicians' motives. This can lead to a lack of transparency and accountability, which can have a negative impact on the public's trust in both politicians and the media.\n\nIn order to ensure a healthy relationship between politicians and political reporters, both parties must strive to maintain a level of mutual respect and understanding. Politicians should be open and honest with reporters, while reporters should be fair and impartial in their coverage. By working together, politicians and political reporters can ensure that the public is informed and engaged in the political process.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "70": {
+        "question": "Both the War Powers Act of 1974 and the Budget and Impoundment Control Act of 1974 represent efforts by Congress to limit the powers of the",
+        "choices": [
+            "Joint Chiefs of Staff",
+            "House Ways and Means Committee",
+            "Central Intelligence Agency",
+            "president"
+        ],
+        "initial_response": "President. The War Powers Act of 1974 was passed in response to the Vietnam War and limits the President's ability to deploy troops without Congressional approval. The Budget and Impoundment Control Act of 1974 was passed in response to President Nixon's refusal to spend money appropriated by Congress. The Act requires the President to submit a budget to Congress and limits the President's ability to impound funds.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "71": {
+        "question": "Under the Articles of Confederation, the national government had the power to",
+        "choices": [
+            "negotiate treaties",
+            "collect taxes",
+            "establish a federal judiciary",
+            "enforce its laws"
+        ],
+        "initial_response": ":\n\n1. Declare war\n2. Make treaties\n3. Settle disputes between states\n4. Establish a postal system\n5. Appoint officers of the armed forces\n6. Borrow money\n7. Issue money\n8. Establish a national court system\n9. Request funds from the states\n10. Negotiate with foreign governments",
+        "llm_answer": "B",
+        "llm_is_correct": false
+    },
+    "72": {
+        "question": "The Framers of the Constitution sought to insulate the Senate from public opinion by",
+        "choices": [
+            "restricting Senate membership to those who previously served in the House of Representatives",
+            "delegating the responsibility for electing senators to the state legislatures",
+            "requiring all spending bills to originate in the House of Representatives",
+            "empowering the Senate to provide advice and consent to the executive branch"
+        ],
+        "initial_response": "making it a body of longer terms and smaller size than the House of Representatives. The Framers also gave the Senate the power to approve presidential appointments and treaties, and the power to try impeachments. This was intended to ensure that the Senate would be a deliberative body, not swayed by public opinion, and that it would act as a check on the power of the executive branch.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "73": {
+        "question": "The majority of Supreme Court justices",
+        "choices": [
+            "are appointed by presidents of the same political party",
+            "have no prior judicial experience",
+            "switch party affiliation during their term",
+            "stay on the court for only a decade"
+        ],
+        "initial_response": "have been male.\n\nAs of 2021, there have been a total of 112 Supreme Court justices in the United States. Of those, 103 have been male and 9 have been female.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "74": {
+        "question": "A presidential plurality victory occurs when",
+        "choices": [
+            "the winning candidate receives less than 50 percent of the popular vote",
+            "candidates receive an equal number of electoral votes and the popular vote determines the winner",
+            "the Senate declares the formal winner",
+            "the winning candidate receives more than 50% of the popular vote"
+        ],
+        "initial_response": "a candidate wins the most votes in a presidential election, but does not win a majority of the votes. This means that the candidate has won more votes than any other candidate, but not enough to win an outright majority. In this case, the candidate is declared the winner of the election, but does not necessarily have the support of the majority of voters.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "75": {
+        "question": "In Gideon v. Wainwright, the Supreme Court ruled that criminal defendants in state cases have the right",
+        "choices": [
+            "to representation by an attorney",
+            "not to incriminate themselves",
+            "to a speedy trial",
+            "not to be punished excessively"
+        ],
+        "initial_response": "to an attorney, even if they cannot afford one. This ruling was based on the Sixth Amendment of the United States Constitution, which guarantees the right to counsel in criminal cases. The ruling was a landmark decision that has had a lasting impact on the criminal justice system in the United States. It has ensured that all criminal defendants, regardless of their financial situation, have access to legal representation.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "76": {
+        "question": "People who join a political party other than the one to which their parents belong most often do so because of",
+        "choices": [
+            "peer pressure",
+            "economic issues",
+            "religious beliefs",
+            "pressure from their employers"
+        ],
+        "initial_response": "a difference in political beliefs. They may disagree with the policies of their parents' party, or they may have different views on certain issues. They may also be attracted to the values and platforms of the other party. Additionally, they may have been exposed to different ideas and perspectives through their education, friends, or other sources, which may have led them to join a different party.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "77": {
+        "question": "The right of American citizens to petition the government for a redress of grievances is protected under the",
+        "choices": [
+            "First Amendment",
+            "Second Amendment",
+            "Third Amendment",
+            "Eighth Amendment"
+        ],
+        "initial_response": "First Amendment of the United States Constitution. This amendment states that \"Congress shall make no law...abridging...the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.\" This right allows citizens to express their grievances to the government and to seek a resolution. This right is also protected by the Freedom of Speech clause of the First Amendment, which states that citizens have the right to express their opinions and beliefs without fear of government censorship or punishment.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "78": {
+        "question": "In the majority of cases, federal programs are implemented by",
+        "choices": [
+            "private businesses working as subcontractors to the government",
+            "state and local governments, by means of federal funding",
+            "Congress, through the local offices of its elected representatives",
+            "the federal courts, by means of criminal prosecutions"
+        ],
+        "initial_response": "the executive branch of the government. This includes the President, the Vice President, and the Cabinet. The executive branch is responsible for carrying out the laws and policies of the federal government.\n\nThe executive branch is also responsible for creating and implementing federal programs. This includes creating regulations, issuing executive orders, and allocating funds for the programs. The executive branch works with other branches of the government, such as the legislative and judicial branches, to ensure that federal programs are implemented properly.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "79": {
+        "question": "How many votes in the Senate must a presidential nominee to the Supreme Court receive in order to be confirmed?",
+        "choices": [
+            "Forty percent",
+            "Fifty-one percent",
+            "Fifty-five percent",
+            "Sixty percent"
+        ],
+        "initial_response": "In order to be confirmed, a presidential nominee to the Supreme Court must receive a majority vote of 51 votes in the Senate.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "80": {
+        "question": "Which committee in the House of Representatives determines the procedure by which bills are debated and amended?",
+        "choices": [
+            "Ways and Means",
+            "Judiciary",
+            "Ethics",
+            "Rules"
+        ],
+        "initial_response": "The Rules Committee in the House of Representatives determines the procedure by which bills are debated and amended. The Rules Committee is responsible for setting the terms of debate for legislation on the House floor. It also determines which amendments can be offered and the time limits for debate.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "81": {
+        "question": "The government promotes preferential treatment for members of groups that have historically suffered from discrimination by means of",
+        "choices": [
+            "the New Federalism",
+            "affirmative action programs",
+            "Social Security benefits",
+            "bills of attainder"
+        ],
+        "initial_response": "affirmative action. Affirmative action is a set of policies and practices that are designed to eliminate discrimination and provide equal opportunity for members of historically disadvantaged groups. These policies may include preferential hiring, recruitment, and promotion of members of certain groups, as well as the implementation of diversity initiatives and the provision of resources to help members of these groups succeed. Affirmative action is intended to help level the playing field and ensure that everyone has an equal chance to succeed.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "82": {
+        "question": "The rules governing the electoral college make it especially important for presidential candidates to",
+        "choices": [
+            "win as many states as possible, regardless of the size of the states",
+            "spend most of their time campaigning in the South",
+            "campaign most aggressively among those who will be chosen as electors",
+            "concentrate their campaign efforts on \"battleground\" states"
+        ],
+        "initial_response": "focus their campaigns on the states with the most electoral votes. This is because the electoral college is a system in which each state is allocated a certain number of electoral votes based on its population. The candidate who wins the most electoral votes in a state is awarded all of that state's electoral votes. This means that the candidate who wins the most electoral votes overall will win the election. As such, it is important for presidential candidates to focus their campaigns on the states with the most electoral votes, as these states will have the most impact on the outcome of the election.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "83": {
+        "question": "Among the executive branch's checks on the legislative branch is the president's power to",
+        "choices": [
+            "call special sessions of Congress",
+            "introduce bills to the floor of Congress",
+            "address Congress during its debate on bills",
+            "vote on acts of Congress"
+        ],
+        "initial_response": "veto legislation passed by Congress. The president can also use the bully pulpit to influence public opinion and sway Congress to pass or reject certain legislation. The president can also use executive orders to bypass Congress and enact certain policies. The Supreme Court also has the power to review and strike down laws passed by Congress if they are deemed unconstitutional.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "84": {
+        "question": "The principles of freedom-\"we hold these truths to be self-evident, that all men are created equal\"- stated in the Declaration of Independence were influenced by the beliefs of political philosopher",
+        "choices": [
+            "Thomas Hobbes",
+            "Niccolo Macchiavelli",
+            "Jonathan Edwards",
+            "John Locke"
+        ],
+        "initial_response": "John Locke.\n\n1. All people have the right to life, liberty, and property.\n2. People have the right to revolt against a government that does not protect their natural rights.\n3. Governments are created to protect the rights of the people.\n4. People have the right to choose their own form of government.\n5. Governments should be based on the consent of the governed.\n6. People have the right to freedom of speech, religion, and assembly.\n7. People have the right to due process of law.\n8. People have the right to equal protection under the law.\n9. People have the right to privacy.\n10. People have the right to a fair and impartial trial.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "85": {
+        "question": "Divided government frequently results in",
+        "choices": [
+            "reapportionment of voting districts",
+            "amendments to the Constitution",
+            "conflict between states and the federal government",
+            "delays in the confirmation of those nominated to be ambassadors"
+        ],
+        "initial_response": "gridlock, or a situation in which the two branches of government are unable to pass legislation or make progress on important issues. This is because the two branches are controlled by different parties, and each party has different priorities and agendas. As a result, they are often unable to come to an agreement on important issues, leading to a stalemate.",
+        "llm_answer": "B",
+        "llm_is_correct": false
+    },
+    "86": {
+        "question": "Federal election laws require that, in",
+        "choices": [
+            "an area that has a substantial community of non-English speakers, voters be provided with ballots in their native language",
+            "an electoral district that has historically low voter turnout, polling places be open for longer than the typical work day",
+            "a state with a budget deficit, a tax be collected from each voter to pay for the cost of the election",
+            "a region with racial diversity, congressional district lines be drawn to guarantee that at least one elected congressperson be of a racial minority"
+        ],
+        "initial_response": "order to make a contribution to a political campaign, the donor must be a U.S. citizen or a permanent resident. Additionally, the donor must provide their name, address, occupation, and employer. The donor must also not exceed the maximum contribution limit set by the Federal Election Commission.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "87": {
+        "question": "The absence of a political party solely dedicated to labor and working class issues in the United States",
+        "choices": [
+            "proves U.S. politicians are not concerned about serving working-class constituencies",
+            "is the result of government restrictions placed on the political activities of labor unions",
+            "reflects the difficulty of unifying a party around a single issue in a \"winner-take-all\" format",
+            "demonstrates that, in the United States, most political issues regarding workers have been decided in the workers' favor"
+        ],
+        "initial_response": "is due to a variety of factors. One of the main reasons is the lack of a unified labor movement. The labor movement in the United States is highly fragmented, with different unions representing different industries and workers. This fragmentation has made it difficult to create a unified labor party that could represent the interests of all workers.\n\nAnother factor is the lack of a unified political ideology among labor unions. While some labor unions may be more progressive and support more left-leaning policies, others may be more conservative and support more right-leaning policies. This ideological divide has made it difficult to create a unified labor party that could represent the interests of all workers.\n\nFinally, the United States has a two-party system, which makes it difficult for a third party to gain traction. The two major parties have a strong hold on the political system, and it is difficult for a third party to gain enough support to become a viable political force. This has made it difficult for a labor party to gain enough support to become a viable political force.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "88": {
+        "question": "The Civil Rights Act of 1964 was passed to reinforce the",
+        "choices": [
+            "presidential veto",
+            "system of checks and balances",
+            "states' power to challenge federal regulation",
+            "Fourteenth Amendment"
+        ],
+        "initial_response": "civil rights of African Americans and other minorities in the United States. It outlawed discrimination based on race, color, religion, sex, or national origin in public places, provided for the integration of schools and other public facilities, and made employment discrimination illegal. The act also created the Equal Employment Opportunity Commission (EEOC) to investigate and enforce civil rights laws.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "89": {
+        "question": "The Supreme Court's decision in Miranda v. Arizona was based mainly on the",
+        "choices": [
+            "Constitutional prohibition of ex post facto laws",
+            "incorporation of the Fifth Amendment through the due process clause of the Fourteenth Amendment",
+            "Eighth Amendment restriction against cruel and unusual punishment",
+            "abolition of slavery by the Thirteenth Amendment"
+        ],
+        "initial_response": "Fifth Amendment of the United States Constitution. The Court held that the Fifth Amendment's Self-Incrimination Clause requires that criminal suspects be informed of their right to remain silent and their right to an attorney before any custodial interrogation by law enforcement. The Court also held that any statements made by the suspect during such interrogation must be voluntary and that any evidence obtained as a result of such interrogation must be excluded from trial unless the suspect was informed of their rights.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "finish_time": "2023-09-27 04:03:28.011895",
+    "EM": 0.7888888888888889
+}

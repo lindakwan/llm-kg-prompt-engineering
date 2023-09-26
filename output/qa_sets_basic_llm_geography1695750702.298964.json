@@ -1,0 +1,1373 @@
+{
+    "start_time": "2023-09-27 03:51:42.298964",
+    "0": {
+        "question": "The main factor preventing subsistence economies from advancing economically is the lack of",
+        "choices": [
+            "a currency.",
+            "a well-connected transportation infrastructure.",
+            "government activity.",
+            "a banking service."
+        ],
+        "initial_response": "capital. Subsistence economies are typically characterized by low levels of capital, which limits their ability to invest in new technologies, infrastructure, and other resources that are necessary for economic growth. Without access to capital, subsistence economies are unable to take advantage of the opportunities that come with economic growth. Additionally, subsistence economies often lack the necessary resources and infrastructure to support economic growth, such as access to markets, transportation networks, and educational institutions. Without these resources, subsistence economies are unable to take advantage of the opportunities that come with economic growth.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "1": {
+        "question": "The tendency for a population to continue to grow long after replacement fertility has been achieved is called",
+        "choices": [
+            "zero population growth.",
+            "rapid growth rate.",
+            "homeostatic plateau.",
+            "demographic momentum."
+        ],
+        "initial_response": "population momentum. This occurs because the population is still growing due to the large number of people in the reproductive age group, even though the fertility rate has dropped. This means that the population will continue to grow for some time before it stabilizes.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "2": {
+        "question": "The tendency for migration to decrease with distance is called",
+        "choices": [
+            "push factors.",
+            "pull factors.",
+            "distance decay.",
+            "migration selectivity."
+        ],
+        "initial_response": "the distance-decay effect. This effect is based on the idea that the further away a person is from their home, the less likely they are to migrate. This is because the costs associated with long-distance migration, such as transportation and the cost of living, increase with distance. Additionally, the social and cultural ties that people have to their home region tend to decrease with distance, making them less likely to migrate.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "3": {
+        "question": "Which zone contains low-income slums, ethnic ghettos, and general deterioration in Burgess's concentric zone model of urban form?",
+        "choices": [
+            "First",
+            "Second",
+            "Third",
+            "Fourth"
+        ],
+        "initial_response": "The zone of transition contains low-income slums, ethnic ghettos, and general deterioration in Burgess's concentric zone model of urban form.",
+        "llm_answer": "C",
+        "llm_is_correct": false
+    },
+    "4": {
+        "question": "Which form of migration below are farm workers from another country most likely to be practicing during the year?",
+        "choices": [
+            "Chain migration",
+            "Cluster migration",
+            "Circular migration",
+            "International migration"
+        ],
+        "initial_response": "Seasonal migration.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "5": {
+        "question": "The first stage of the demographic transition exhibits",
+        "choices": [
+            "high birth rates with high but fluctuating death rates.",
+            "declining birth rates with continuing high death rates.",
+            "low birth rates with continuing high death rates.",
+            "high birth rates with declining death rates."
+        ],
+        "initial_response": "a\n\ndecrease in both birth and death rates. This is usually caused by improved living conditions, better access to healthcare, and increased access to contraception. As a result, the population growth rate slows and the population size stabilizes.",
+        "llm_answer": "B",
+        "llm_is_correct": false
+    },
+    "6": {
+        "question": "What is the population statistic that tells us the level of fertility at which a population will have just enough births to replace parents and compensate for early deaths?",
+        "choices": [
+            "Crude birth rate",
+            "Replacement level",
+            "Mortality rate",
+            "Total fertility rate"
+        ],
+        "initial_response": "The population statistic that tells us the level of fertility at which a population will have just enough births to replace parents and compensate for early deaths is the replacement fertility rate.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "7": {
+        "question": "What is the most rapidly growing religion in the United States today?",
+        "choices": [
+            "Islam",
+            "Christianity",
+            "Hinduism",
+            "Buddhism"
+        ],
+        "initial_response": "The most rapidly growing religion in the United States today is Islam. According to a 2017 Pew Research Center study, the number of Muslims in the United States has grown from 2.35 million in 2007 to 3.45 million in 2017, an increase of nearly 50%.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "8": {
+        "question": "The outlying area serviced by a urban center is referred to as a",
+        "choices": [
+            "redline area.",
+            "threshold.",
+            "range.",
+            "hinterland."
+        ],
+        "initial_response": "metropolitan area. A metropolitan area is a region that includes a large population center, its surrounding suburbs, and other smaller towns and cities that are economically tied to the urban center.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "9": {
+        "question": "The best definition of an urban area is",
+        "choices": [
+            "the central city and its developed areas.",
+            "the central city and its surrounding suburbs.",
+            "the central city and its hinterlands.",
+            "the central city and the adjacent counties."
+        ],
+        "initial_response": "an area that is densely populated and has a high concentration of buildings, businesses, and people. Urban areas are typically characterized by a high level of economic activity, a diverse population, and a variety of cultural and recreational activities.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "10": {
+        "question": "Which type of transportation system created the star-shaped city pattern?",
+        "choices": [
+            "Highways to airports that link cities",
+            "Interstate highways that link cities",
+            "Beltways around cities",
+            "Streetcar and trolley lines extending from the CBD"
+        ],
+        "initial_response": "The radial railway system is the type of transportation system that created the star-shaped city pattern. This system was developed in the late 19th century and was used to connect cities and towns to the central hub. The radial railway system allowed for efficient transportation of goods and people, and it also allowed for the development of suburbs and satellite towns around the central hub.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "11": {
+        "question": "In which urban US setting below would you expect to find planned communities?",
+        "choices": [
+            "Ghettos",
+            "Suburbs",
+            "CBDs",
+            "Transition zones"
+        ],
+        "initial_response": "The urban US setting most likely to have planned communities is a metropolitan area. Planned communities are typically found in suburban areas of large cities, such as the suburbs of Los Angeles, Chicago, New York City, and other major metropolitan areas.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "12": {
+        "question": "The latitude and longitude coordinates of a place are an example of",
+        "choices": [
+            "a formal region.",
+            "a functional region.",
+            "an absolute location.",
+            "a relative location."
+        ],
+        "initial_response": "geographic coordinates. These coordinates are used to pinpoint a specific location on the Earth's surface.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "13": {
+        "question": "The voluntary association of three or more countries willing to give up some measure of sovereignty is called",
+        "choices": [
+            "nationalism.",
+            "devolution.",
+            "supranationalism.",
+            "complementarity."
+        ],
+        "initial_response": "a confederation. A confederation is a type of political union in which the member states agree to surrender some of their sovereignty to a central government. The central government is usually given the power to make decisions on behalf of the member states, but the member states retain the right to make their own decisions in certain areas. Examples of confederations include the United States of America, the European Union, and the African Union.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "14": {
+        "question": "The key factor Thomas Malthus failed to recognize in his population theory was",
+        "choices": [
+            "population is limited by their means of subsistence.",
+            "all populations have the potential to increase more than the actual rate of increase.",
+            "wars and famine inhibit population's reproductive capacity.",
+            "technology's ability to raise the Earth's carrying capacity."
+        ],
+        "initial_response": "the potential for technological advances to increase the food supply. Malthus believed that population growth would eventually outpace the food supply, leading to famine and poverty. However, he did not consider the potential for technological advances to increase the food supply, such as the development of new agricultural techniques, the use of fertilizers, and the introduction of new crops. These advances have allowed the world's population to continue to grow without the fear of famine.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "15": {
+        "question": "Which pair of religions are both universalizing religions?",
+        "choices": [
+            "Islam and Judaism",
+            "Judaism and Buddhism",
+            "Hinduism and Buddhism",
+            "Christianity and Buddhism"
+        ],
+        "initial_response": "Christianity and Islam.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "16": {
+        "question": "Which urban model theorizes that high-rent residential areas grow outward from the center of the city along major highways with lower-rent inhabitants taking over sequentially?",
+        "choices": [
+            "Concentric zone model",
+            "Central place model",
+            "Urban realms model",
+            "Sector model"
+        ],
+        "initial_response": "The concentric zone model theorizes that high-rent residential areas grow outward from the center of the city along major highways with lower-rent inhabitants taking over sequentially. This model was developed by American sociologist Ernest Burgess in 1925.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "17": {
+        "question": "When a country combines its religion with its government, it is called a",
+        "choices": [
+            "dictatorship.",
+            "theocracy.",
+            "democracy.",
+            "autocracy."
+        ],
+        "initial_response": "theocracy. A theocracy is a form of government in which a deity is recognized as the supreme civil ruler, or in which a state is governed by immediate divine guidance or by officials who are regarded as divinely guided.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "18": {
+        "question": "What is the chief religion practiced in Europe?",
+        "choices": [
+            "Christianity",
+            "Islam",
+            "Hinduism",
+            "Animism"
+        ],
+        "initial_response": "The chief religion practiced in Europe is Christianity, with the majority of Europeans identifying as Christian.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "19": {
+        "question": "Which group enacted the first effective settlement in the eastern United States?",
+        "choices": [
+            "French",
+            "British (English, Scotch-Irish, Welsh, Scottish)",
+            "Russian",
+            "Chinese"
+        ],
+        "initial_response": "The first effective settlement in the eastern United States was established by the English colonists in Jamestown, Virginia in 1607.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "20": {
+        "question": "The Rhine River is an example of which type of boundary?",
+        "choices": [
+            "Geometric",
+            "Artificial",
+            "Natural",
+            "Relict"
+        ],
+        "initial_response": "The Rhine River is an example of a political boundary.",
+        "llm_answer": "B",
+        "llm_is_correct": false
+    },
+    "21": {
+        "question": "Which type of economic activity is most closely tied to the physical environment?",
+        "choices": [
+            "Primary",
+            "Secondary",
+            "Tertiary",
+            "Quaternary"
+        ],
+        "initial_response": "Agriculture is the type of economic activity most closely tied to the physical environment. Agriculture relies on the availability of land, water, and other natural resources to produce crops and livestock.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "22": {
+        "question": "The majority of workers in periphery countries are probably employed in which type of activities?",
+        "choices": [
+            "Primary",
+            "Secondary",
+            "Tertiary",
+            "Quaternary"
+        ],
+        "initial_response": "The majority of workers in periphery countries are likely employed in low-skilled labor activities such as agriculture, manufacturing, and construction.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "23": {
+        "question": "Transnational corporations distribute their operations",
+        "choices": [
+            "manufacturing goods where production costs are the highest.",
+            "conducting accounting and research services where economical.",
+            "based on comparative advantage.",
+            "with headquarters located in LDCs."
+        ],
+        "initial_response": "across multiple countries\n\nTransnational corporations are companies that operate in multiple countries. They may have headquarters in one country, but they may have production facilities, research and development centers, and sales offices in other countries. They may also have subsidiaries in other countries. Transnational corporations are able to take advantage of different markets, different labor costs, and different tax laws in different countries. They are also able to access resources and materials from different countries.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "24": {
+        "question": "One of the effects of the east\u2013west orientation of the Alpine mountain system and the northern plains of western and central Europe is that it",
+        "choices": [
+            "limits the marine climate of Europe to coastal areas",
+            "provides a corridor for communication between southern and northern Europe",
+            "enables marine-like climatic conditions to extend eastward into Germany and Poland",
+            "effectively prevents population movement between parts of the Mediterranean region"
+        ],
+        "initial_response": "has created a barrier between the two regions. This barrier has prevented the spread of certain plants, animals, and diseases between the two regions, as well as the spread of cultural and linguistic influences. Additionally, the mountain system has created a variety of different climates and ecosystems, which has allowed for the development of unique flora and fauna in each region. The barrier has also had an effect on the development of trade routes, as the mountains have made it difficult to travel between the two regions.",
+        "llm_answer": "D",
+        "llm_is_correct": false
+    },
+    "25": {
+        "question": "The largest Hindu temple complex ever constructed is found in",
+        "choices": [
+            "Calcutta.",
+            "Bombay.",
+            "Cambodia.",
+            "Bali."
+        ],
+        "initial_response": "Angkor Wat, Cambodia. The temple complex covers an area of over 400 acres and is the largest religious monument in the world. It was built in the 12th century by the Khmer King Suryavarman II as a Hindu temple dedicated to the god Vishnu. The temple is a symbol of Cambodia's national pride and is a UNESCO World Heritage Site.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "26": {
+        "question": "Which term describes the forces that unify and strengthen a country?",
+        "choices": [
+            "Diffusion",
+            "Centrifugal",
+            "Centripetal",
+            "Ethnocentric"
+        ],
+        "initial_response": "Nationalism",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "27": {
+        "question": "National sports teams, flags, national anthems, and national holidays all promote",
+        "choices": [
+            "nationalism.",
+            "sectarianism.",
+            "political unrest.",
+            "functional disputes."
+        ],
+        "initial_response": "national pride and unity. National sports teams represent a country in international competitions, and their success can bring a sense of pride and unity to a nation. Flags are symbols of a nation's identity, and they are often flown during national holidays and other important events. National anthems are songs that are sung to honor a nation and its people, and they are often played during national holidays and other important events. National holidays are days that are set aside to celebrate a nation's history, culture, and achievements, and they are often celebrated with parades, fireworks, and other festivities.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "28": {
+        "question": "The process whereby immigrants learn the values, language, and customs of their new country is called",
+        "choices": [
+            "assimilation.",
+            "acculturation.",
+            "adaptation.",
+            "amalgamation."
+        ],
+        "initial_response": "acculturation. Acculturation is a process of cultural exchange that occurs when two or more cultures come into contact with each other. It involves the adoption of new cultural traits, such as language, customs, beliefs, and values, by members of one culture as a result of contact with another culture.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "29": {
+        "question": "Which geographer viewed the US urban community of the 1920s as a set of concentric rings radiating outward from a central core?",
+        "choices": [
+            "Rostow",
+            "Ravenstein",
+            "Von Th\u00fcnen",
+            "Burgess"
+        ],
+        "initial_response": "The geographer who viewed the US urban community of the 1920s as a set of concentric rings radiating outward from a central core was Ernest Burgess.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "30": {
+        "question": "To get to school in the morning, we ALL use this as our guide:",
+        "choices": [
+            "Rand-McNally Road Atlas.",
+            "world globe.",
+            "road map.",
+            "mental map."
+        ],
+        "initial_response": "1. Wake up early enough to get ready for school.\n2. Eat a healthy breakfast.\n3. Pack your school supplies and lunch.\n4. Put on your school uniform or clothes.\n5. Take public transportation or drive to school.\n6. Arrive at school on time.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "31": {
+        "question": "Of these, the map using the smallest map scale would be the map of",
+        "choices": [
+            "the world.",
+            "Atlanta, Georgia.",
+            "Main Street, Small Town, Ohio.",
+            "Pennsylvania."
+        ],
+        "initial_response": "the world. This map typically has a scale of 1:50,000,000 or smaller.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "32": {
+        "question": "An earlier boundary formed before meticulous geographic knowledge and mapping was available is known as",
+        "choices": [
+            "an antecedent boundary.",
+            "a geometric boundary.",
+            "a relict boundary.",
+            "a subsequent boundary."
+        ],
+        "initial_response": "a traditional boundary. Traditional boundaries were often based on physical features such as rivers, mountains, or other natural features. They were also based on cultural or political factors, such as tribal or clan territories. These boundaries were often not precise and could be subject to change over time.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "33": {
+        "question": "A strong movement away from all religions is called",
+        "choices": [
+            "secularism.",
+            "heathenism.",
+            "sacrilege.",
+            "nationalism."
+        ],
+        "initial_response": "secularism. Secularism is the belief that religion should not be involved in government, education, or other public aspects of society. It is based on the idea that religion is a personal matter and should not be imposed on others.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "34": {
+        "question": "Which country faces a serious trade disadvantage due to its location?",
+        "choices": [
+            "Singapore",
+            "Italy",
+            "Spain",
+            "Mongolia"
+        ],
+        "initial_response": "Venezuela faces a serious trade disadvantage due to its location. Venezuela is located in South America, which is far from major markets and trading partners. This makes it difficult for the country to access global markets and to compete with other countries in terms of trade. Additionally, the country's political and economic instability has made it difficult for foreign companies to invest in the country, further limiting its ability to engage in international trade.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "35": {
+        "question": "In which zone of Burgess's concentric zone model would one find better houses, single-family homes, and higher-rent apartments?",
+        "choices": [
+            "First",
+            "Second",
+            "Third",
+            "Fourth"
+        ],
+        "initial_response": "In Burgess's concentric zone model, one would find better houses, single-family homes, and higher-rent apartments in the Zone of Better Residence. This zone is located in the outermost ring of the model and is characterized by higher-income households and more expensive housing.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "36": {
+        "question": "The theory that every society develops economically according to a five-stage pattern of growth is attributed to",
+        "choices": [
+            "Rostow.",
+            "Ravenstein.",
+            "von Th\u00fcnen.",
+            "Burgess."
+        ],
+        "initial_response": "the American sociologist W.W. Rostow. This theory, known as the Rostow Model, suggests that all societies progress through five distinct stages of economic development: traditional society, preconditions for take-off, take-off, drive to maturity, and age of high mass consumption. In the traditional society stage, the economy is largely based on subsistence agriculture and is characterized by low levels of productivity and economic growth. In the preconditions for take-off stage, the economy begins to diversify and modernize, with increased investment in infrastructure and technology. The take-off stage is marked by rapid economic growth and industrialization. The drive to maturity stage is characterized by further economic diversification and increased productivity. Finally, in the age of high mass consumption, the economy is characterized by high levels of consumption and a mature industrial sector.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "37": {
+        "question": "The process of invasion and succession is a process involving migration and is best described as when",
+        "choices": [
+            "new residents tear down and rebuild housing units.",
+            "new residents live peacefully with old residents.",
+            "new residents assimilate with old residents completely.",
+            "new residents move into areas occupied by older resident groups."
+        ],
+        "initial_response": "a species moves into an area and gradually replaces the existing species. This process can occur naturally or be caused by human activities. The invading species can be native or non-native, and the succession process can take place over a long period of time. During the process, the invading species will outcompete the existing species for resources, leading to the displacement of the existing species. This process can lead to changes in the environment, such as changes in the soil, vegetation, and animal populations.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "38": {
+        "question": "New stores opening around a large shopping mall reflect which concept?",
+        "choices": [
+            "Gravity concept",
+            "Distance decay",
+            "Complementarity",
+            "Movement bias"
+        ],
+        "initial_response": "The concept of a shopping mall is to provide a variety of stores and services in one convenient location. The opening of new stores around a large shopping mall reflects the concept of creating a shopping destination that offers a wide range of products and services to meet the needs of customers.",
+        "llm_answer": "C",
+        "llm_is_correct": false
+    },
+    "39": {
+        "question": "The birth of an urban industrial workforce in Europe contributed to the start of the",
+        "choices": [
+            "First Agricultural Revolution.",
+            "Second Agricultural Revolution.",
+            "Third Agricultural Revolution.",
+            "Fourth Agricultural Revolution."
+        ],
+        "initial_response": "Industrial Revolution. This new workforce was made up of people who had moved from rural areas to cities in search of work. The growth of cities and the availability of jobs in factories and other industries created a large pool of workers who could be employed in the production of goods. This new workforce was essential to the development of the Industrial Revolution, as it provided the labor needed to produce the goods that were in high demand. The increased production of goods also led to the development of new technologies, which further fueled the Industrial Revolution.",
+        "llm_answer": "C",
+        "llm_is_correct": false
+    },
+    "40": {
+        "question": "The concentration of production activities and people spatially to benefit everyone is called",
+        "choices": [
+            "the substitution principle.",
+            "deglomeration.",
+            "agglomeration.",
+            "infrastructure."
+        ],
+        "initial_response": "Agglomeration.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "41": {
+        "question": "Which language family contains Italian, Spanish, Portuguese, and Romanian?",
+        "choices": [
+            "European",
+            "Slavic",
+            "Germanic",
+            "Romance"
+        ],
+        "initial_response": "Romance languages.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "42": {
+        "question": "Ankara, Turkey and Islamabad, Pakistan are both examples of",
+        "choices": [
+            "desert cities.",
+            "forward-thrust capitals.",
+            "old colonial capitals.",
+            "rival cities."
+        ],
+        "initial_response": "capital cities. Ankara is the capital of Turkey and Islamabad is the capital of Pakistan.",
+        "llm_answer": "C",
+        "llm_is_correct": false
+    },
+    "43": {
+        "question": "The theory that whoever controlled the landmass of Europe would rule the world is called the",
+        "choices": [
+            "devolution theory.",
+            "domino theory.",
+            "heartland theory.",
+            "rimland theory."
+        ],
+        "initial_response": "Heartland Theory. This theory was developed by British geographer Halford Mackinder in 1904. The theory states that the country that controls the \"Heartland\" of Europe, which is the area between the Baltic and Black Seas, would be able to control the world. Mackinder argued that whoever controlled this area would be able to dominate the world's resources and military power. He believed that the Heartland was the key to world domination and that whoever controlled it would be able to control the world. The Heartland Theory has been used to explain the rise of the Soviet Union and its subsequent fall. It has also been used to explain the rise of the United States as a superpower.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "44": {
+        "question": "Which group represents the Persian (Iranian) variation of Islam and believes in the infallibility and divine right to authority of the Imams descended from Ali?",
+        "choices": [
+            "Sunni",
+            "Shiite",
+            "Imam",
+            "Untouchables"
+        ],
+        "initial_response": "Shi'a Islam",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "45": {
+        "question": "The multiplier effect is",
+        "choices": [
+            "the addition of non-basic workers to an urban economy that has added more basic workers.",
+            "a ratio of urban to rural workers in an economy.",
+            "the ratio of city workers to farm workers in an economy.",
+            "the addition of rural jobs created by the urban economy."
+        ],
+        "initial_response": "an economic concept that describes how an increase in spending can lead to a much larger increase in overall economic activity. It suggests that a small change in spending can have a much larger impact on the economy. The multiplier effect is based on the idea that when a person or business spends money, that money is then re-spent multiple times, creating a \u201cmultiplier\u201d effect. For example, if a business spends $1,000 on new equipment, that money is then used to pay the supplier, who in turn pays its employees, who then spend their wages on goods and services, and so on. Each time the money is spent, it creates a ripple effect throughout the economy.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "46": {
+        "question": "The sacred book of the Hindu is called the",
+        "choices": [
+            "Talmud.",
+            "Bible.",
+            "Torah.",
+            "Veda."
+        ],
+        "initial_response": "Vedas. The Vedas are a collection of ancient Sanskrit texts that are considered to be the most sacred scriptures of Hinduism. They contain hymns, prayers, and rituals that are used in Hindu worship and religious ceremonies. The Vedas are divided into four parts: the Rigveda, Yajurveda, Samaveda, and Atharvaveda.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "47": {
+        "question": "You are planning to move from your hometown to Pittsburgh. Along the way, you stop in Columbus, Ohio to visit a relative and fall in love with the city! You decide to stay and make Columbus your new home. This is an example of",
+        "choices": [
+            "intervening opportunity.",
+            "distance decay.",
+            "involuntary migration.",
+            "push-pull factors."
+        ],
+        "initial_response": "a  spontaneous relocation.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "48": {
+        "question": "A large node of office and commercial land use outside the central city with more jobs than residents is a(n)",
+        "choices": [
+            "suburb.",
+            "primate city.",
+            "town.",
+            "edge city."
+        ],
+        "initial_response": "edge city.\n\nEdge cities are large nodes of office and commercial land use outside the central city, typically with more jobs than residents. They are often characterized by large concentrations of corporate offices, shopping malls, and entertainment venues.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "49": {
+        "question": "Which crop began the Third Agricultural Revolution?",
+        "choices": [
+            "Rice",
+            "Wheat",
+            "Barley",
+            "Millet"
+        ],
+        "initial_response": "The crop that began the Third Agricultural Revolution was soybeans.",
+        "llm_answer": "C",
+        "llm_is_correct": false
+    },
+    "50": {
+        "question": "Which factor in the last quarter century greatly destabilized Eastern Europe and led to ethnic conflict?",
+        "choices": [
+            "The introduction of new languages",
+            "The end of the Cold War",
+            "The invasion by the Soviets",
+            "The acceptance of many Eastern European countries into the EU"
+        ],
+        "initial_response": "The collapse of the Soviet Union in 1991 was the major factor that destabilized Eastern Europe and led to ethnic conflict. The dissolution of the Soviet Union resulted in the independence of many former Soviet republics, including those in Eastern Europe. This led to a power vacuum in the region, which allowed for the emergence of nationalist and separatist movements, as well as ethnic tensions and conflicts.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "51": {
+        "question": "If I wanted to ship a small piece of very valuable jewelry to my aunt who lives in Poughkeepsie, which mode of transportation makes the most sense?",
+        "choices": [
+            "Truck",
+            "Air",
+            "Ship",
+            "Railroad"
+        ],
+        "initial_response": "The most secure and reliable mode of transportation for shipping a small piece of valuable jewelry to your aunt in Poughkeepsie would be to use a courier service such as FedEx or UPS. These services offer tracking and insurance, so you can be sure that your package will arrive safely and on time.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "52": {
+        "question": "Which type of city model contains a distinct residential spine proceeding outward from center city along the main boulevard?",
+        "choices": [
+            "European",
+            "Muslim",
+            "Sub-Saharan African",
+            "Latin American"
+        ],
+        "initial_response": "The Radial City Model. This model features a distinct residential spine that radiates outward from the center city along the main boulevard. This model is often used in cities with a strong central core, such as Paris, Rome, and Washington, D.C.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "53": {
+        "question": "What family do most European languages belong to?",
+        "choices": [
+            "Ural-Altaic",
+            "Basque",
+            "Indo-European",
+            "Phoenician"
+        ],
+        "initial_response": "Most European languages belong to the Indo-European language family.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "54": {
+        "question": "What do the terms apartheid, ethnic cleansing, and integration all have in common?",
+        "choices": [
+            "They all occurred in Nazi Germany during World War I.",
+            "They are all forms of residential segregation.",
+            "They are all ways to integrate different ethnic populations in neighborhoods.",
+            "They are different expressions for the same concept."
+        ],
+        "initial_response": "All three terms refer to policies or practices related to race and ethnicity. Apartheid was a system of racial segregation and discrimination enforced by the South African government from 1948 to 1994. Ethnic cleansing is the systematic removal of an ethnic or religious group from a certain area by force. Integration is the process of bringing different racial or ethnic groups together in a society.",
+        "llm_answer": "D",
+        "llm_is_correct": false
+    },
+    "55": {
+        "question": "Johnny and Susie are moving to Scotland to renovate and live in the family castle. What makes their move a migration?",
+        "choices": [
+            "They are crossing another country's borders.",
+            "They are not taking anything with them.",
+            "They are moving permanently.",
+            "They will be gone more than one year."
+        ],
+        "initial_response": "Migration is defined as the movement of people from one place to another, usually over a long distance and for a long period of time. Johnny and Susie's move to Scotland to renovate and live in the family castle is a migration because they are moving from one place to another over a long distance and for a long period of time.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "56": {
+        "question": "What is the most abundant fossil fuel?",
+        "choices": [
+            "Phosphate",
+            "Oil",
+            "Petroleum",
+            "Coal"
+        ],
+        "initial_response": "The most abundant fossil fuel is coal.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "57": {
+        "question": "A rejection of or indifference to religion in a country is called",
+        "choices": [
+            "polytheism.",
+            "animism.",
+            "secularism.",
+            "monotheism."
+        ],
+        "initial_response": "secularism. Secularism is the principle of separation of government institutions and persons mandated to represent the state from religious institutions and religious dignitaries. It is the principle of the rejection of religious interference in government affairs and the exclusion of religious considerations from governmental decisions.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "58": {
+        "question": "A city that is more than twice as large as the next largest city in a country is called a",
+        "choices": [
+            "global city.",
+            "world leader city.",
+            "megalopolis.",
+            "primate city."
+        ],
+        "initial_response": "megacity. Megacities are typically defined as having a population of more than 10 million people. Examples of megacities include Tokyo, Shanghai, Mexico City, and New York City.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "59": {
+        "question": "Part of the boundary between the United States and Mexico is the Rio Grande, an example of",
+        "choices": [
+            "a water divider.",
+            "a watercourse.",
+            "an artificial boundary.",
+            "a natural boundary."
+        ],
+        "initial_response": "a natural boundary. The Rio Grande is a river that forms part of the border between the two countries. It begins in the San Juan Mountains of Colorado and flows south through New Mexico and Texas before emptying into the Gulf of Mexico. The river is 1,896 miles long and serves as a natural barrier between the two countries.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "60": {
+        "question": "When we talk about diffusion of a cultural trait, what do we mean by \"hearth\"?",
+        "choices": [
+            "Destination",
+            "Origin point",
+            "All locations along the diffusion path",
+            "Axis point"
+        ],
+        "initial_response": "A hearth is a term used to refer to the place where a cultural trait originated. It is the source from which the trait spread to other areas. The term is often used to refer to the geographical area where a particular cultural trait first emerged and then spread to other parts of the world.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "61": {
+        "question": "The distance north and south of the equator is the",
+        "choices": [
+            "global grid system.",
+            "Prime Meridian",
+            "latitude.",
+            "longitude."
+        ],
+        "initial_response": "same. The equator is an imaginary line that divides the Earth into the Northern and Southern Hemispheres. It is located at 0 degrees latitude and is exactly halfway between the North and South Poles. The distance north and south of the equator is the same, as it is an imaginary line and not a physical one.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "62": {
+        "question": "Why are perceptual or vernacular regions so difficult to identify?",
+        "choices": [
+            "Boundaries are constantly being redrawn.",
+            "Physical features, such as rivers, are constantly shifting.",
+            "Defining criteria are subjective and differ among researchers.",
+            "Antecedent boundaries were drawn before humans were located in the regions."
+        ],
+        "initial_response": "Perceptual or vernacular regions are difficult to identify because they are based on subjective criteria, such as cultural identity, language, and shared experiences. These criteria are often difficult to measure and quantify, making it difficult to draw clear boundaries between regions. Additionally, people's perceptions of regions can change over time, making it difficult to accurately identify and map them.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "63": {
+        "question": "Which structure(s) traditionally occupies the center of a historic Asian city?",
+        "choices": [
+            "A central market",
+            "High-density housing",
+            "A religious building",
+            "Government office buildings"
+        ],
+        "initial_response": "The most common structure found in the center of a historic Asian city is a palace or temple complex. Other structures that may be found in the center of a historic Asian city include a market, a city wall, a citadel, a fort, a palace garden, and a public square.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "64": {
+        "question": "Which description best describes the urban hierarchy model in which the population of a city is inversely proportional to its rank in the hierarchy?",
+        "choices": [
+            "Multiplier effect",
+            "Rank-size rule",
+            "Central place theory",
+            "Burgess's sector model"
+        ],
+        "initial_response": "The urban hierarchy model states that the population of a city decreases as its rank in the hierarchy increases. This means that the largest city in the hierarchy will have the highest population, while the smallest city in the hierarchy will have the lowest population.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "65": {
+        "question": "The purpose for the creation of NATO was to",
+        "choices": [
+            "defend North America and Western Europe against the threat of communism.",
+            "form an economic alliance for trade between Europe and North America.",
+            "defend Europe against a second Nazi invasion.",
+            "defend northern Europe against Chinese missiles."
+        ],
+        "initial_response": "create a military alliance between the United States, Canada, and several Western European countries in order to provide collective security against the Soviet Union and its allies during the Cold War. The alliance was also intended to promote economic and political cooperation between its members.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "66": {
+        "question": "The use and spread of English in nineteenth-century India is an example of what type of diffusion?",
+        "choices": [
+            "Stimulus",
+            "Contagious",
+            "Hierarchal",
+            "Relocation"
+        ],
+        "initial_response": "Cultural diffusion.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "67": {
+        "question": "The theory that most migration occurs over a short distance and in steps is attributed to",
+        "choices": [
+            "Rostow.",
+            "Ravenstein.",
+            "von Th\u00fcnen.",
+            "Burgess."
+        ],
+        "initial_response": "the stepping stone theory. This theory suggests that migrants move from one area to another in a series of small steps, rather than making a single large move. This theory is based on the idea that migrants are more likely to move to an area that is close to their current location, as it is easier to access resources and support networks in a familiar area. This theory is often used to explain the patterns of human migration, particularly in the context of population movements over long distances.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "68": {
+        "question": "The way of life based on breeding and herding of animals that are used as a source of food, shelter, and clothing is called",
+        "choices": [
+            "swidden.",
+            "subsistence farming.",
+            "pastorialism.",
+            "hunting and gathering."
+        ],
+        "initial_response": "pastoralism. Pastoralism is a type of subsistence agriculture that involves the herding of animals, such as sheep, goats, cattle, and horses, in order to obtain food, clothing, and shelter. Pastoralists often move their herds from one area to another in search of fresh pasture and water. This type of subsistence agriculture is common in arid and semi-arid regions, where the land is not suitable for growing crops.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "69": {
+        "question": "The attempt by core countries to stimulate increased agricultural production in the periphery through use of technology, hybrid seed, and fertilizers is called the",
+        "choices": [
+            "First Agricultural Revolution.",
+            "Second Agricultural Revolution.",
+            "Third Agricultural Revolution.",
+            "Green Revolution."
+        ],
+        "initial_response": "Green Revolution. The Green Revolution was a period of increased agricultural production in the developing world that began in the 1940s and continued into the 1970s. It was characterized by the introduction of new technologies, such as hybrid seed, fertilizers, and pesticides, as well as improved irrigation and mechanization. The goal of the Green Revolution was to increase agricultural production in the periphery and reduce poverty and hunger. The Green Revolution was largely successful in achieving its goals, as agricultural production in the developing world increased significantly during this period.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "70": {
+        "question": "Shifting cultivation is most often practiced in",
+        "choices": [
+            "alpine tundra.",
+            "tropical forests.",
+            "flood plains.",
+            "deserts."
+        ],
+        "initial_response": "tropical and subtropical regions. It is a type of subsistence agriculture in which a plot of land is cleared, usually by burning, and farmed for a few years before being abandoned and allowed to revert to its natural vegetation. The plot is then cleared and farmed again after a period of time, usually several years. This type of agriculture is often used in areas with poor soil fertility or where other agricultural practices are not feasible. It is also used to supplement other forms of subsistence agriculture.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "71": {
+        "question": "Olives, grapes, and chickpeas are staple crops of which type of farming?",
+        "choices": [
+            "Pastoral nomadism",
+            "Subsistence",
+            "Plantation",
+            "Mediterranean"
+        ],
+        "initial_response": "Mediterranean farming.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "72": {
+        "question": "A person who practices the Hindu religion would be most likely to",
+        "choices": [
+            "visit a shrine built on the shore of a lake.",
+            "pray five times a day.",
+            "bathe in the Ganges River.",
+            "make a pilgrimage to Jerusalem."
+        ],
+        "initial_response": "practice yoga, meditation, and other spiritual practices. They may also observe certain dietary restrictions, such as avoiding meat, and participate in festivals and rituals. They may also visit temples and shrines to pay homage to their gods and goddesses.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "73": {
+        "question": "The language with the largest number of \"speakers\" is",
+        "choices": [
+            "English.",
+            "Russian.",
+            "Spanish.",
+            "Mandarin Chinese."
+        ],
+        "initial_response": "Mandarin Chinese, with over 1.1 billion native speakers. It is the most widely spoken language in the world.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "74": {
+        "question": "A primate city is",
+        "choices": [
+            "a large city located on the periphery of the country.",
+            "the most important city in a country.",
+            "when the largest city in a country is more than twice the size of the next largest city.",
+            "the largest city in a country."
+        ],
+        "initial_response": "a city that is significantly larger than any other city in its country. It is usually the capital or the largest city in the country, and it has a disproportionate amount of the country's population, economic activity, and political power. Primate cities are common in many countries, particularly in developing countries. Examples of primate cities include Mexico City in Mexico, Tokyo in Japan, and Cairo in Egypt.",
+        "llm_answer": "D",
+        "llm_is_correct": false
+    },
+    "75": {
+        "question": "Which language family is most widely spoken in North America and Europe and includes Baltic, Celtic, Germanic, and Greek?",
+        "choices": [
+            "Dravidian",
+            "Uralic-Altaic",
+            "Sino-Tibetan",
+            "Indo-European"
+        ],
+        "initial_response": "The Indo-European language family is most widely spoken in North America and Europe and includes Baltic, Celtic, Germanic, and Greek.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "76": {
+        "question": "Which theorist(s) tried to explain the prices of farm products as they relate to patterns of land use?",
+        "choices": [
+            "Rostow",
+            "Ravenstein",
+            "Von Th\u00fcnen",
+            "Burgess"
+        ],
+        "initial_response": "The most prominent theorist to explain the prices of farm products as they relate to patterns of land use is the American economist and sociologist Thorstein Veblen. Veblen's theory of land use, known as the \"land-use cycle,\" argued that land prices and farm product prices are inextricably linked. He argued that when land prices rise, farmers are incentivized to increase production, which in turn drives down the price of farm products. Conversely, when land prices fall, farmers are incentivized to reduce production, which in turn drives up the price of farm products. Veblen's theory of land use has been widely accepted and is still used today to explain the prices of farm products.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "77": {
+        "question": "If you wanted to find the global distribution of coal, you would use a",
+        "choices": [
+            "reference map.",
+            "topographic map.",
+            "thematic map.",
+            "location map."
+        ],
+        "initial_response": "variety of sources, such as the World Coal Association, the US Energy Information Administration, the International Energy Agency, and other government and industry sources. You could also use online mapping tools, such as Google Earth, to visualize the global distribution of coal. Additionally, you could use data from the Global Coal Production and Consumption Database to get a more detailed look at the global distribution of coal.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "78": {
+        "question": "The cities of Varanasi (Benares) in India and Mecca in Saudi Arabia are alike because both are",
+        "choices": [
+            "capitals of countries formerly colonized by the English",
+            "destinations for vast numbers of pilgrims",
+            "financial centers for a large fraction of the world's economy",
+            "examples of modern urban planning"
+        ],
+        "initial_response": "considered to be holy cities by their respective religions. Varanasi is a major Hindu pilgrimage site, while Mecca is the holiest city in Islam and the birthplace of the Prophet Muhammad. Both cities are also important centers of trade and commerce, and attract millions of visitors each year.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "79": {
+        "question": "China and Vietnam's dispute over the Spratley Islands is",
+        "choices": [
+            "a positional dispute.",
+            "a territorial dispute.",
+            "a resource dispute.",
+            "a functional dispute."
+        ],
+        "initial_response": "a territorial dispute over the Spratley Islands, which are located in the South China Sea. The islands are claimed by both China and Vietnam, as well as other countries in the region. The dispute has been ongoing since the 1970s, and has become increasingly tense in recent years. China has built artificial islands in the area, and has been accused of militarizing the islands. Vietnam has also increased its presence in the area, and has accused China of violating its sovereignty. The dispute has become a major source of tension in the region, and has been a major focus of international diplomacy.",
+        "llm_answer": "B",
+        "llm_is_correct": false
+    },
+    "80": {
+        "question": "Mary lives in a neighborhood with stores, offices, and restaurants so close that she does not need to own a car; however, she feels she has very little privacy. This is an example of a(n)",
+        "choices": [
+            "win-win.",
+            "trade-off.",
+            "infill.",
+            "leapfrog development."
+        ],
+        "initial_response": "urban environment.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "81": {
+        "question": "The Basques, Bretons, Kashmiris, and Tamils are all examples of",
+        "choices": [
+            "regionalist groups.",
+            "separatist groups.",
+            "terrorist groups.",
+            "interventionist groups."
+        ],
+        "initial_response": "ethnic groups. The Basques are an indigenous ethnic group located in the Basque Country, which spans parts of northern Spain and southwestern France. The Bretons are an ethnic group located in Brittany, a region in northwestern France. The Kashmiris are an ethnic group located in the Kashmir region, which is divided between India, Pakistan, and China. The Tamils are an ethnic group located in the Indian state of Tamil Nadu and in Sri Lanka.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "82": {
+        "question": "The intensive agricultural practice of planting and harvesting the same crop more than once a year is called",
+        "choices": [
+            "swidden.",
+            "double cropping.",
+            "pastorialism.",
+            "intertillage."
+        ],
+        "initial_response": "double cropping. Double cropping is a common practice in many parts of the world, especially in areas with a long growing season. It involves planting two different crops in the same field during the same growing season. This allows farmers to maximize their land use and increase their yields. Double cropping can also help reduce the risk of crop failure due to weather or pests.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "83": {
+        "question": "When a new fashion design is introduced globally, the information initially travels through a process known as",
+        "choices": [
+            "contagious diffusion",
+            "relocation diffusion",
+            "innovative diffusion",
+            "hierarchical diffusion"
+        ],
+        "initial_response": "the fashion cycle. This cycle begins with the introduction of the design, which is typically done through a fashion show or other event. This is followed by the promotion of the design, which is done through advertising, social media, and other marketing strategies. After the design has been promoted, it is then available for purchase in stores and online. As the design is purchased and worn, it begins to gain popularity and is seen on the streets and in magazines. This is followed by the design being copied and adapted by other designers, which leads to the design becoming a trend. Finally, the trend fades away and the cycle begins again with a new design.",
+        "llm_answer": "C",
+        "llm_is_correct": false
+    },
+    "84": {
+        "question": "Opponents of genetically modified organisms (GMOs) in food are afraid that the GMOs",
+        "choices": [
+            "will hinder global trade.",
+            "make plants more resistant to disease.",
+            "may cause irreversible changes in humans.",
+            "make plants more resistant to drought."
+        ],
+        "initial_response": "may have long-term health effects that are not yet known. They are also concerned about the potential for GMOs to contaminate non-GMO crops, leading to a decrease in biodiversity. Additionally, opponents of GMOs are worried about the potential for large corporations to control the food supply, leading to a lack of choice and higher prices for consumers. Finally, some opponents of GMOs are concerned about the potential for GMOs to harm the environment, such as by reducing the number of beneficial insects or by creating herbicide-resistant weeds.",
+        "llm_answer": "B",
+        "llm_is_correct": false
+    },
+    "85": {
+        "question": "The world systems theory divides the world into",
+        "choices": [
+            "core, periphery, and semi-periphery.",
+            "rich and poor.",
+            "developed and undeveloped.",
+            "haves and have-nots."
+        ],
+        "initial_response": "three parts\n\n1. Core countries: These are the most powerful and industrialized countries in the world, such as the United States, Japan, Germany, and the United Kingdom.\n\n2. Periphery countries: These are the less developed countries that are dependent on the core countries for resources and labor. Examples include Mexico, India, and Brazil.\n\n3. Semi-periphery countries: These are countries that are in between the core and periphery countries. They are more developed than the periphery countries, but not as powerful as the core countries. Examples include China, South Africa, and Russia.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "86": {
+        "question": "The majority of Kurds are found in which country?",
+        "choices": [
+            "Iran",
+            "Iraq",
+            "Turkey",
+            "Egypt"
+        ],
+        "initial_response": "The majority of Kurds are found in Turkey.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "87": {
+        "question": "In what country are the most Basque speakers found?",
+        "choices": [
+            "Denmark",
+            "Finland",
+            "Luxembourg",
+            "Spain"
+        ],
+        "initial_response": "The most Basque speakers are found in Spain.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "88": {
+        "question": "The most rapidly urbanizing area of the world is:",
+        "choices": [
+            "Europe",
+            "East Asia",
+            "Sub-Saharan Africa",
+            "South Asia"
+        ],
+        "initial_response": "East Asia. This region has seen a dramatic increase in urbanization over the past few decades, with cities like Shanghai, Beijing, and Hong Kong becoming some of the most populous cities in the world.",
+        "llm_answer": "B",
+        "llm_is_correct": false
+    },
+    "89": {
+        "question": "The influence of neo-Malthusianism can be seen in",
+        "choices": [
+            "government programs for birth control and planning.",
+            "famine relief.",
+            "increased spending in social welfare programs.",
+            "increased total fertility rates."
+        ],
+        "initial_response": "a number of areas, including population control, environmentalism, and public health. Neo-Malthusianism is based on the idea that population growth must be managed in order to prevent overpopulation and its associated problems. This has led to the development of policies and programs aimed at reducing population growth, such as family planning, contraception, and sex education. Neo-Malthusianism has also been used to support environmentalism, as it argues that population growth is a major contributor to environmental degradation. Finally, neo-Malthusianism has been used to support public health initiatives, as it argues that population growth can lead to increased disease and poverty.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "90": {
+        "question": "The process of devolution involves",
+        "choices": [
+            "the change of government from a democracy to a communist dictatorship.",
+            "the movement of power from the central government to regional governments in the country.",
+            "the movement of power from a monarchy to a military dictatorship.",
+            "the movement of power from regional governments to central governments."
+        ],
+        "initial_response": "the transfer of power from a central government to regional or local governments. This transfer of power can be done through a variety of methods, such as constitutional amendments, legislation, or executive orders. Devolution is often used to decentralize power and give more autonomy to local governments. It can also be used to reduce the burden of the central government and allow local governments to better address the needs of their citizens. Devolution can also be used to increase the efficiency of government services and reduce the cost of providing them.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "91": {
+        "question": "The theory that cities grow outward from a core utilizing several nodes of growth was proposed by",
+        "choices": [
+            "Rostow.",
+            "Ravenstein.",
+            "von Th\u00fcnen.",
+            "Harris and Ullmann."
+        ],
+        "initial_response": "Ernest Burgess in 1925. Burgess proposed the concentric zone theory, which states that cities grow outward from a central core in a series of concentric circles. The core is the oldest and most densely populated area, while the outer circles are newer and less densely populated. Burgess identified five concentric zones: the central business district, the transition zone, the working-class zone, the middle-class zone, and the commuter zone. The central business district is the commercial and financial center of the city, while the transition zone is a mix of residential and commercial areas. The working-class zone is the area closest to the central business district and is populated by lower-income residents. The middle-class zone is further out and is populated by middle-class residents. The commuter zone is the outermost zone and is populated by those who commute to the city for work.\n\nBurgess' theory has been widely accepted and has been used to explain the growth and development of cities. It has been used to explain the segregation of different social classes in cities, as well as the development of suburbs. The theory has also been used to explain the emergence of gentrification in cities, as well as the development of transportation networks.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "92": {
+        "question": "The theory that the main purpose of a settlement or market town is to furnish goods and services to the surrounding market area is called the",
+        "choices": [
+            "urban hierarchy theory.",
+            "central place theory.",
+            "concentric zone model.",
+            "multiplier effect."
+        ],
+        "initial_response": "market town theory. This theory states that the primary purpose of a settlement or market town is to provide goods and services to the people living in the surrounding area. This includes providing food, clothing, tools, and other necessities. The market town also serves as a center of trade and commerce, allowing people to buy and sell goods and services. Additionally, the market town may also provide services such as banking, education, and entertainment.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "93": {
+        "question": "The \"melting pot\" theory of combining several immigrant groups into one mainstream culture is called",
+        "choices": [
+            "amalgamation theory.",
+            "acculturation.",
+            "ethnic islands.",
+            "ethnic clustering."
+        ],
+        "initial_response": "assimilation. This theory suggests that immigrants should adopt the language, customs, and values of the dominant culture in order to become part of the mainstream. Assimilation is often seen as a way to promote social cohesion and integration, but it can also lead to the loss of cultural identity and the erasure of minority cultures.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "94": {
+        "question": "Which theory below was used as justification for US involvement in Vietnam in the 1960s and 1970s?",
+        "choices": [
+            "Devolution",
+            "Colonialism",
+            "Heartland theory",
+            "Containment theory"
+        ],
+        "initial_response": "The Domino Theory.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "95": {
+        "question": "An isobar map shows lines connecting all points of equal",
+        "choices": [
+            "atmospheric pressure",
+            "surface temperature",
+            "elevation",
+            "precipitation"
+        ],
+        "initial_response": "atmospheric pressure. These maps are used to show the distribution of pressure across a region, and are often used to track the movement of weather systems.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "96": {
+        "question": "Ralph purchases garden fertilizer at the nearby garden shop rather than drive 50 miles to the neighboring town for the same product. This reflects which type of spatial interaction?",
+        "choices": [
+            "Transferability",
+            "Complementarity",
+            "Intervening opportunity",
+            "Territoriality"
+        ],
+        "initial_response": "Local spatial interaction.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "97": {
+        "question": "What type of countries generally possesses a greater variety of climates and resources than other countries?",
+        "choices": [
+            "Perforated states",
+            "Fragmented states",
+            "Elongated states",
+            "Prorupt states"
+        ],
+        "initial_response": "Countries located in the tropics generally possess a greater variety of climates and resources than other countries. This is due to the fact that the tropics are located near the equator, which allows for a wide range of temperatures and precipitation levels. Additionally, the tropics are home to a wide variety of ecosystems, which provide a greater variety of resources than other regions.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "98": {
+        "question": "The idea that you identify with, and give allegiance, to a nation-state is",
+        "choices": [
+            "regionalism.",
+            "diffusion.",
+            "iconography.",
+            "nationalism."
+        ],
+        "initial_response": "a relatively modern concept. Before the rise of nation-states, people identified with their local communities, tribes, or empires. In many cases, people were loyal to their local rulers, rather than to a larger nation-state. In some cases, people were loyal to their religion or culture, rather than to a nation-state. In some cases, people were loyal to their family or clan, rather than to a nation-state. In some cases, people were loyal to their profession or trade, rather than to a nation-state. In some cases, people were loyal to their language or ethnicity, rather than to a nation-state. In some cases, people were loyal to their region or geography, rather than to a nation-state. In some cases, people were loyal to their political ideology, rather than to a nation-state. In some cases, people were loyal to their economic interests, rather than to a nation-state. In some cases, people were loyal to their social class, rather than to a nation-state.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "99": {
+        "question": "What condition occurs when the people of one state want to annex a territory whose population is ethnically related to that state's population but now under the rule of another state?",
+        "choices": [
+            "Nationalism",
+            "Resource dispute",
+            "Irredentism",
+            "Positional dispute"
+        ],
+        "initial_response": "This condition is known as irredentism. Irredentism is a political movement that seeks to reclaim and reintegrate a region that is seen as historically related to a particular nation, but is currently under the control of another state.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "100": {
+        "question": "Variations in vocabulary, pronunciation, and rhythm in a spoken language are called",
+        "choices": [
+            "syntax.",
+            "isoglosses.",
+            "lingua francas.",
+            "dialects."
+        ],
+        "initial_response": "dialects. Dialects are the different ways of speaking a language that are used by different groups of people. They can vary in terms of vocabulary, pronunciation, and rhythm. Dialects can be regional, social, or occupational. Regional dialects are spoken in different parts of a country or region, while social dialects are spoken by different social classes or ethnic groups. Occupational dialects are used by people in certain occupations, such as fishermen or farmers.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "101": {
+        "question": "Boundary problems along the United States\u2013Mexico border are caused by which type of issue below?",
+        "choices": [
+            "Ownership of fertile ground",
+            "Land use",
+            "Irredentism",
+            "Immigration"
+        ],
+        "initial_response": "Migration.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "102": {
+        "question": "In which country does language pose a centrifugal force?",
+        "choices": [
+            "Canada",
+            "United States",
+            "Brazil",
+            "Norway"
+        ],
+        "initial_response": "Language can pose a centrifugal force in any country where there are multiple languages spoken. This is especially true in countries with a history of colonization, where the language of the colonizers is often imposed on the native population. Examples of countries where language can pose a centrifugal force include India, Canada, Belgium, and South Africa.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "103": {
+        "question": "A chief factor that contributed to the Second Agricultural Revolution was",
+        "choices": [
+            "the Industrial Revolution.",
+            "World War I.",
+            "World War II.",
+            "the discovery of the plow."
+        ],
+        "initial_response": "the invention of the mechanical reaper. The mechanical reaper was invented by Cyrus McCormick in 1831 and revolutionized the way farmers harvested their crops. It allowed farmers to harvest their crops much faster and more efficiently than before, which increased crop yields and allowed for larger-scale farming operations. The mechanical reaper also allowed for the development of other agricultural technologies, such as the threshing machine, which further increased crop yields and efficiency.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "104": {
+        "question": "Zero population growth (ZPG) is achieved when",
+        "choices": [
+            "CBR \u2013 CDR 5 2.",
+            "Births 1 immigration 5 deaths 1 emigration.",
+            "Total fertility 5 3.",
+            "Replacement fertility is achieved."
+        ],
+        "initial_response": "the number of births in a population is equal to the number of deaths, resulting in a net population growth of zero. This can be achieved through a variety of methods, including reducing fertility rates, increasing mortality rates, or a combination of both. ZPG is an important concept in population ecology and is often used as a goal for population management. It is also used to describe a population that is not growing, but is stable.",
+        "llm_answer": "D",
+        "llm_is_correct": false
+    },
+    "105": {
+        "question": "A map that presents a single class of statistics is called a",
+        "choices": [
+            "general purpose map.",
+            "thematic map.",
+            "reference map.",
+            "mental map."
+        ],
+        "initial_response": "choropleth map. This type of map is used to display data that is divided into different geographic regions, such as states, counties, or countries. The data is usually represented by different colors or shades, with darker colors representing higher values. Choropleth maps are often used to display population density, election results, or economic indicators.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "106": {
+        "question": "Which continent has the highest total fertility rates?",
+        "choices": [
+            "Africa",
+            "Asia",
+            "South America",
+            "Europe"
+        ],
+        "initial_response": "Africa has the highest total fertility rates, with an average of 4.7 children per woman.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "107": {
+        "question": "What monotheistic religion is based on the life and teachings of Jesus Christ of Nazareth?",
+        "choices": [
+            "Islam",
+            "Christianity",
+            "Hinduism",
+            "Buddhism"
+        ],
+        "initial_response": "Christianity.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "108": {
+        "question": "The global lingua franca is",
+        "choices": [
+            "Chinese.",
+            "English.",
+            "French.",
+            "Arabic."
+        ],
+        "initial_response": "English. English is the most widely spoken language in the world, with over 1.5 billion speakers. It is the official language of over 60 countries, and is used as a second language in many more. English is the language of international business, science, technology, and diplomacy, and is the language of choice for communication between people from different countries.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "109": {
+        "question": "What are the two major branches of Islam?",
+        "choices": [
+            "Sunni and Shinto",
+            "Shinto and Shiite",
+            "Sunni and Shiite",
+            "Shamanism and Shiite"
+        ],
+        "initial_response": "The two major branches of Islam are Sunni and Shia.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "110": {
+        "question": "What was the primary reason the Green Revolution did NOT help Africa much?",
+        "choices": [
+            "It targeted crops Africans don't grow and eat.",
+            "It required sophisticated machinery.",
+            "Population growth has fallen so drastically that Africans don't need the increased food production.",
+            "African agricultural production went up without its help."
+        ],
+        "initial_response": "The primary reason the Green Revolution did not help Africa much was because it was largely focused on increasing the production of grains, such as wheat and rice, which are not staple crops in many African countries. Additionally, the Green Revolution was largely funded by Western countries, which meant that African countries did not have access to the same resources and technology as other countries.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "111": {
+        "question": "The largest exporter of agricultural goods in the world is",
+        "choices": [
+            "China.",
+            "Mexico.",
+            "Chile.",
+            "the United States."
+        ],
+        "initial_response": "the United States. The US exported $139.3 billion worth of agricultural goods in 2019, accounting for 14.3% of the world\u2019s total agricultural exports. The US is followed by the European Union, which exported $111.2 billion worth of agricultural goods in 2019. Other major exporters include Brazil ($30.2 billion), China ($29.2 billion), and Canada ($21.2 billion).",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "112": {
+        "question": "Which pair of religions below share a long-held tradition of cremating their dead?",
+        "choices": [
+            "Hindu and Buddhist",
+            "Hindu and Muslim",
+            "Muslim and Jewish",
+            "Christian and Buddhist"
+        ],
+        "initial_response": "Hinduism and Buddhism",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "113": {
+        "question": "The official languages of Guyana, Suriname, and French Guiana are English, Dutch, and French, respectively. On what continent are those countries located?",
+        "choices": [
+            "North America",
+            "South America",
+            "Africa",
+            "Asia"
+        ],
+        "initial_response": "South America",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "finish_time": "2023-09-27 03:55:52.513891",
+    "EM": 0.7192982456140351
+}

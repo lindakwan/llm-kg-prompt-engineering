@@ -2,20 +2,38 @@ import os
 import json
 import csv
 import re
+import datetime
+import argparse
+
 from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
 
-# OpenAI API key
-openai_api_key_file = open("../openai_api_key.txt", "r")
-os.environ["OPENAI_API_KEY"] = openai_api_key_file.read().strip()
-openai_api_key_file.close()
+import utilities.llm_tasks_prompts as llm_tasks
+import utilities.data_io as dio
+
+# Create a list of QA pairs
+qa_pairs = dict()
+
+start_time = datetime.datetime.now()
+qa_pairs['start_time'] = str(start_time)
+
+# Add arguments to the command line
+parser = argparse.ArgumentParser(description='Run the basic LLM on a dataset.')
+parser.add_argument('-d', '--dataset', help='The dataset to run the LLM-KG on.', required=True)
+args = parser.parse_args()
+
+if args.dataset == "geography":
+    dataset_path = "../data/mmlu_test/high_school_geography_test_filtered.csv"
+    json_output_path = f"../output/qa_sets_basic_llm_geography{start_time.timestamp()}.json"
+elif args.dataset == "government_and_politics":
+    dataset_path = "../data/mmlu_test/high_school_government_and_politics_test_filtered.csv"
+    json_output_path = f"../output/qa_sets_basic_llm_government_and_politics{start_time.timestamp()}.json"
+else:
+    print("Invalid dataset.")
+    exit()
 
 # Load the data
-file = open("../data/mmlu_test/high_school_government_and_politics_test.csv", "r")
-csv_reader = csv.reader(file, delimiter=',')
-data = []
-for row in csv_reader:
-    data.append({"question_text": row[0], "choices": row[1:-1], "correct_answer": row[-1]})
+data = dio.read_data(dataset_path)
 
 # Create the language model
 llm = OpenAI(temperature=0)
@@ -25,32 +43,25 @@ num_correct = 0
 # Generate a response for each question
 for i, item in enumerate(data):
     question = item['question_text']
+    response = llm.predict(question)
+
     print("Q:", question)
+    print("A:", response.strip(), "\n")
 
     # Convert the list of choices to a string
-    choices_text = "\n".join([str(i+1) + ". " + choice for i, choice in enumerate(item['choices'])])
+    choices_text = "\n".join([str(i + 1) + ". " + choice for i, choice in enumerate(item['choices'])])
     print("Options:")
     print(choices_text)
 
-    # Create the prompt template which structures the llm input
-    prompt = PromptTemplate(
-        input_variables=["question", "choices"],
-        template="Output the numbered option for the following question: {question}\nOptions:\n{choices}"
-    )
-
-    # Generate the response
-    response = llm(prompt.format(question=question, choices=choices_text))
-    print("Response:", response.strip())
-
-    # Convert the response to the numbered choice
-    numbers = [int(num) for num in re.findall(r'\d+', response.strip().split(".")[0])]
-    if len(numbers) == 0:
-        numbered_output = 1
-    else:
-        numbered_output = numbers[-1]
-    letter_output = chr(ord('A') + int(numbered_output) - 1)
+    # Generate the letter output based on the response
+    letter_output = llm_tasks.select_mc_response_based(question, response.strip(), item['choices'])
 
     print("Generated answer:", letter_output)
+
+    qa_pairs[i] = dict()
+    qa_pairs[i]["question"] = question
+    qa_pairs[i]["choices"] = item['choices']
+    qa_pairs[i]["initial_response"] = response.strip()
 
     # Evaluate the response
     is_correct = letter_output == item['correct_answer']
@@ -61,11 +72,18 @@ for i, item in enumerate(data):
     if letter_output == item['correct_answer']:
         num_correct += 1
 
-    item["llm_answer"] = letter_output
-    item["llm_is_correct"] = is_correct
+    qa_pairs[i]["llm_answer"] = letter_output
+    qa_pairs[i]["llm_is_correct"] = is_correct
 
-print("EM:", num_correct / len(data))
+    with open(json_output_path, "w") as f:
+        json.dump(qa_pairs, f, indent=4)
+
+em = num_correct / len(data)
+print("EM:", em)
+
+qa_pairs['finish_time'] = str(datetime.datetime.now())
+qa_pairs['EM'] = em
 
 # Save the QA sets in a JSON file
-with open("../output/qa_sets_government.json", "w") as f:
-    json.dump(data, f, indent=4)
+with open(json_output_path, "w") as f:
+    json.dump(qa_pairs, f, indent=4)
