@@ -283,5 +283,5 @@ for i in range(50):  # len(data) - 3):
         new_response = response.strip()
         qa_pairs[i]["error"] = str(exc)
 
-    with open(json_output_path, "w") as f:
-        json.dump(qa_pairs, f, indent=4)
+    # with open(json_output_path, "w") as f:
+    #     json.dump(qa_pairs, f, indent=4)

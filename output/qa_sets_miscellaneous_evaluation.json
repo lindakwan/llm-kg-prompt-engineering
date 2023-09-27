@@ -1,0 +1,5188 @@
+{
+    "start_time": "2023-09-28 00:04:15.642306",
+    "0": {
+        "question": "An important source of information on the credit rating of retail businesses is",
+        "choices": [
+            "the Retail Merchants Association",
+            "the local chamber of commerce",
+            "Dun & Bradstreet, Inc.",
+            "the United States Retail Credit Association"
+        ],
+        "initial_response": "the business credit report. This report provides detailed information on the creditworthiness of a business, including its payment history, credit utilization, and other financial data. The report also includes information on the business's credit score, which is a numerical representation of its creditworthiness. The report can be used to assess the risk of extending credit to a business, as well as to identify potential areas of improvement.",
+        "question_entity_names": [
+            "credit rating",
+            "retail businesses"
+        ],
+        "response_entity_names": [
+            "business credit report",
+            "business",
+            "creditworthiness",
+            "payment history",
+            "credit utilization",
+            "financial data",
+            "credit score",
+            "numerical representation",
+            "risk",
+            "extending credit",
+            "potential areas of improvement"
+        ],
+        "extracted_triples": [
+            [
+                "business credit report",
+                "is",
+                "important source of information"
+            ],
+            [
+                "business credit report",
+                "provides",
+                "detailed information"
+            ],
+            [
+                "business credit report",
+                "includes",
+                "information"
+            ],
+            [
+                "business credit report",
+                "used",
+                "assess risk"
+            ],
+            [
+                "business credit report",
+                "used",
+                "identify potential areas"
+            ],
+            [
+                "business",
+                "has",
+                "creditworthiness"
+            ],
+            [
+                "business",
+                "has",
+                "payment history"
+            ],
+            [
+                "business",
+                "has",
+                "credit utilization"
+            ],
+            [
+                "business",
+                "has",
+                "financial data"
+            ],
+            [
+                "business",
+                "has",
+                "credit score"
+            ],
+            [
+                "credit score",
+                "is",
+                "numerical representation"
+            ],
+            [
+                "credit score",
+                "represents",
+                "creditworthiness"
+            ],
+            [
+                "business",
+                "assessed",
+                "risk"
+            ],
+            [
+                "business",
+                "identified",
+                "potential areas"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q5001862",
+                "wdt:P433",
+                "wd:Q18616576"
+            ],
+            [
+                "wd:Q5001862",
+                "wdt:P1056",
+                "wd:Q77790394"
+            ],
+            [
+                "wd:Q5001862",
+                "wdt:P3781",
+                "wd:Q11028"
+            ],
+            [
+                "wd:Q5001862",
+                "wdt:P2283",
+                "wd:Q105800"
+            ],
+            [
+                "wd:Q5001862",
+                "wdt:P2283",
+                "wd:Q18616576"
+            ],
+            [
+                "wd:Q4830453",
+                "wdt:P921",
+                "wd:Q91854780"
+            ],
+            [
+                "wd:Q4830453",
+                "wdt:P921",
+                "wd:Q186475"
+            ],
+            [
+                "wd:Q4830453",
+                "wdt:P921",
+                "wd:Q108879428"
+            ],
+            [
+                "wd:Q4830453",
+                "wdt:P921",
+                "wd:Q103890060"
+            ],
+            [
+                "wd:Q4830453",
+                "wdt:P921",
+                "wd:Q5183787"
+            ],
+            [
+                "wd:Q5183787",
+                "wdt:P433",
+                "wd:Q3244670"
+            ],
+            [
+                "wd:Q5183787",
+                "wdt:P1268",
+                "wd:Q91854780"
+            ],
+            [
+                "wd:Q4830453",
+                "wdt:P31",
+                "wd:Q104493"
+            ],
+            [
+                "wd:Q4830453",
+                "wdt:P7380",
+                "wd:Q120281444"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q5001862": "business credit report",
+            "wdt:P433": "is",
+            "wd:Q18616576": "identify potential areas",
+            "wdt:P1056": "provides",
+            "wd:Q77790394": "detailed information",
+            "wdt:P3781": "includes",
+            "wd:Q11028": "information",
+            "wdt:P2283": "used",
+            "wd:Q105800": "assess risk",
+            "wd:Q4830453": "business",
+            "wdt:P921": "has",
+            "wd:Q91854780": "creditworthiness",
+            "wd:Q186475": "payment history",
+            "wd:Q108879428": "credit utilization",
+            "wd:Q103890060": "financial data",
+            "wd:Q5183787": "credit score",
+            "wd:Q3244670": "numerical representation",
+            "wdt:P1268": "represents",
+            "wdt:P31": "assessed",
+            "wd:Q104493": "risk",
+            "wdt:P7380": "identified",
+            "wd:Q120281444": "potential areas",
+            "wd:Q765517": "credit rating",
+            "wd:Q109363562": "retail businesses"
+        },
+        "uri_label_desc_map": {
+            "wd:Q5001862": [
+                "Business credit reports",
+                null
+            ],
+            "wdt:P433": [
+                "issue",
+                "issue of a newspaper, a scientific journal or magazine for reference purpose"
+            ],
+            "wd:Q18616576": [
+                "identify potential areas",
+                null
+            ],
+            "wdt:P1056": [
+                "product or material produced or service provided",
+                "material or product produced by a government agency, business, industry, facility, or process"
+            ],
+            "wd:Q77790394": [
+                "Detailed information of the role of authors and that of their sponsors in scientific research",
+                "scientific article published on 01 February 2002"
+            ],
+            "wdt:P3781": [
+                "has active ingredient",
+                "has part biologically active component; inverse of \"active ingredient in\" (P3780)"
+            ],
+            "wd:Q11028": [
+                "information",
+                "that which informs; the answer to a question; that from which data and knowledge can be derived"
+            ],
+            "wdt:P2283": [
+                "uses",
+                "item or concept used by the subject or in the operation (see also instrument [P1303] and armament [P520])"
+            ],
+            "wd:Q105800": [
+                "assess risk",
+                null
+            ],
+            "wd:Q4830453": [
+                "business",
+                "organization undertaking commercial, industrial, or professional activity"
+            ],
+            "wdt:P921": [
+                "main subject",
+                "primary topic of a work (see also P180: depicts)"
+            ],
+            "wd:Q91854780": [
+                "creditworthiness",
+                "economic ability to repay and willingness to pay"
+            ],
+            "wd:Q186475": [
+                "payment history",
+                null
+            ],
+            "wd:Q108879428": [
+                "Credit utilization pattern of Kisan Credit Card in South Gujarat",
+                "scientific article"
+            ],
+            "wd:Q103890060": [
+                "financial data",
+                null
+            ],
+            "wd:Q5183787": [
+                "Credit scorecards",
+                "tool used to assess customers for creditworthiness"
+            ],
+            "wd:Q3244670": [
+                "computer numbering format",
+                "internal representation of numeric values in a digital computer"
+            ],
+            "wdt:P1268": [
+                "represents",
+                "organization, individual, or concept that an entity represents"
+            ],
+            "wdt:P31": [
+                "assessed",
+                null
+            ],
+            "wd:Q104493": [
+                "risk",
+                "potential for uncontrolled loss due to underlying vulnerability or uncertainties"
+            ],
+            "wdt:P7380": [
+                "identified in image by",
+                "qualifier for the identification of a value/object with a number, letter or sign inscribed in the image"
+            ],
+            "wd:Q120281444": [
+                "Potential areas of deciduous forests in Spain (Castile and Leon) according to future climate change",
+                "scientific article published in 2005"
+            ],
+            "wd:Q765517": [
+                "credit rating agency",
+                "company that assigns credit ratings"
+            ],
+            "wd:Q109363562": [
+                "Retail Businesses",
+                "Series consists of photographs taken of retail businesses in London, Ontario."
+            ]
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q4830453",
+            "wd:Q11028",
+            "wd:Q105800",
+            "wd:Q108879428",
+            "wd:Q103890060",
+            "wd:Q3244670",
+            "wd:Q77790394",
+            "wd:Q5183787",
+            "wd:Q18616576",
+            "wd:Q104493",
+            "wd:Q186475",
+            "wd:Q5001862",
+            "wd:Q91854780",
+            "wd:Q120281444"
+        ],
+        "evaluation_score": 0.1
+    },
+    "1": {
+        "question": "Paper will burn at approximately what temperature in Fahrenheit?",
+        "choices": [
+            "986 degrees",
+            "2125 degrees",
+            "3985 degrees",
+            "451 degrees"
+        ],
+        "initial_response": "451\u00b0F",
+        "question_entity_names": [
+            "Paper"
+        ],
+        "response_entity_names": [
+            "451\u00b0F"
+        ],
+        "timeout": true
+    },
+    "2": {
+        "question": "What were the first names of the early American explorers Lewisand Clark?",
+        "choices": [
+            "Morgan and Mason",
+            "Meriwether and William",
+            "Cabot and Joseph",
+            "Meredith and George"
+        ],
+        "initial_response": "Meriwether Lewis and William Clark.",
+        "question_entity_names": [
+            "Lewis",
+            "Clark"
+        ],
+        "response_entity_names": [
+            "Meriwether Lewis",
+            "William Clark"
+        ],
+        "extracted_triples": [
+            [
+                "early American explorers",
+                "first names",
+                "Lewis and Clark"
+            ],
+            [
+                "Lewis and Clark",
+                "first names",
+                "Meriwether Lewis and William Clark"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q133466",
+                "wdt:P735",
+                "wd:Q19863994"
+            ],
+            [
+                "wd:Q19863994",
+                "wdt:P735",
+                "wd:Q15253129"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q133466": "early American explorers",
+            "wdt:P735": "first names",
+            "wd:Q19863994": "Lewis and Clark",
+            "wd:Q15253129": "Meriwether Lewis and William Clark",
+            "wd:Q426463": "Lewis",
+            "wd:Q1119151": "Clark"
+        },
+        "uri_label_desc_map": {
+            "wd:Q133466": [
+                "early American explorers",
+                null
+            ],
+            "wdt:P735": [
+                "first names",
+                null
+            ],
+            "wd:Q19863994": [
+                "Lewis and Clark",
+                "sculpture"
+            ],
+            "wd:Q15253129": [
+                "Meriwether Lewis and William Clark Sculpture",
+                null
+            ],
+            "wd:Q426463": [
+                "Lewis",
+                "family name"
+            ],
+            "wd:Q1119151": [
+                "Clark",
+                "family name"
+            ]
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q15253129",
+            "wd:Q133466",
+            "wd:Q19863994"
+        ],
+        "evaluation_score": 0.07500000000000001
+    },
+    "3": {
+        "question": "What is varicella?",
+        "choices": [
+            "a fancy pasta",
+            "a type of opera",
+            "the chicken pox virus",
+            "ancient Roman poetry"
+        ],
+        "initial_response": "Varicella is a highly contagious viral infection that is commonly known as chickenpox. It is caused by the varicella-zoster virus and is characterized by an itchy rash with blisters.",
+        "question_entity_names": [
+            "varicella"
+        ],
+        "response_entity_names": [
+            "Varicella",
+            "viral infection",
+            "chickenpox",
+            "varicella-zoster virus",
+            "itchy rash",
+            "blisters"
+        ],
+        "extracted_triples": [
+            [
+                "varicella",
+                "is",
+                "viral infection"
+            ],
+            [
+                "varicella",
+                "caused",
+                "varicella-zoster virus"
+            ],
+            [
+                "varicella",
+                "known",
+                "chickenpox"
+            ],
+            [
+                "varicella",
+                "characterized",
+                "itchy rash with blisters"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q41220583",
+                "wdt:P433",
+                "wd:Q1928978"
+            ],
+            [
+                "wd:Q41220583",
+                "wdt:P828",
+                "wd:Q62580096"
+            ],
+            [
+                "wd:Q41220583",
+                "wdt:P2561",
+                "wd:Q44727"
+            ],
+            [
+                "wd:Q41220583",
+                "wdt:P1552",
+                "wd:Q12136"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q41220583": "varicella",
+            "wdt:P433": "is",
+            "wd:Q1928978": "viral infection",
+            "wdt:P828": "caused",
+            "wd:Q62580096": "varicella-zoster virus",
+            "wdt:P2561": "known",
+            "wd:Q44727": "chickenpox",
+            "wdt:P1552": "characterized",
+            "wd:Q12136": "itchy rash with blisters"
+        },
+        "uri_label_desc_map": {
+            "wd:Q41220583": [
+                "Varicella",
+                "genus of molluscs"
+            ],
+            "wdt:P433": [
+                "issue",
+                "issue of a newspaper, a scientific journal or magazine for reference purpose"
+            ],
+            "wd:Q1928978": [
+                "viral infectious disease",
+                "human, animal or plant disease resulting from a viral infection"
+            ],
+            "wdt:P828": [
+                "has cause",
+                "underlying cause, thing that ultimately resulted in this effect"
+            ],
+            "wd:Q62580096": [
+                "Varicella-zoster virus",
+                null
+            ],
+            "wdt:P2561": [
+                "name",
+                "name the subject is known by. If a more specific property is available, use that"
+            ],
+            "wd:Q44727": [
+                "chickenpox",
+                "human disease"
+            ],
+            "wdt:P1552": [
+                "has quality",
+                "the entity has an inherent or distinguishing non-material characteristic. use a more-specific property when possible"
+            ],
+            "wd:Q12136": [
+                "itchy rash with blisters",
+                null
+            ]
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q12136",
+            "wd:Q44727",
+            "wd:Q62580096",
+            "wd:Q1928978",
+            "wd:Q41220583"
+        ],
+        "evaluation_score": 0.07142857142857144
+    },
+    "4": {
+        "question": "A second-year college student is usually called a what?",
+        "choices": [
+            "sophomore",
+            "senior",
+            "freshman",
+            "junior"
+        ],
+        "initial_response": "Sophomore.",
+        "question_entity_names": [
+            "second-year college student"
+        ],
+        "response_entity_names": [
+            "Sophomore"
+        ],
+        "extracted_triples": [
+            [
+                "second-year college student",
+                "called",
+                "Sophomore"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q8054",
+                "wdt:P2825",
+                "wd:Q97360440"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q8054": "second-year college student",
+            "wdt:P2825": "called",
+            "wd:Q97360440": "Sophomore"
+        },
+        "uri_label_desc_map": {
+            "wd:Q8054": [
+                "second-year college student",
+                null
+            ],
+            "wdt:P2825": [
+                "via",
+                "intermediate point on a journey - stopover location, waystation or routing point"
+            ],
+            "wd:Q97360440": [
+                "sophomore",
+                "person in their second year at an educational institution"
+            ]
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q97360440",
+            "wd:Q8054"
+        ],
+        "evaluation_score": 0.1
+    },
+    "5": {
+        "question": "In the film 'The Talented Mr Ripley' who plays Mr Ripley?",
+        "choices": [
+            "Jude Law",
+            "Matt Damon",
+            "Dustin Hoffman",
+            "Ben Affleck"
+        ],
+        "initial_response": "Matt Damon",
+        "question_entity_names": [
+            "The Talented Mr Ripley"
+        ],
+        "response_entity_names": [
+            "Matt Damon"
+        ],
+        "extracted_triples": [
+            [
+                "'The Talented Mr Ripley'",
+                "'film '",
+                "'The Talented Mr Ripley'"
+            ],
+            [
+                "'The Talented Mr Ripley'",
+                "'plays '",
+                "'Mr Ripley'"
+            ],
+            [
+                "'Matt Damon'",
+                "'plays '",
+                "'Mr Ripley'"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q11424",
+                "wdt:P31",
+                "wd:Q11424"
+            ],
+            [
+                "wd:Q11424",
+                "wdt:P161",
+                "wd:Q131513"
+            ],
+            [
+                "wd:Q1283",
+                "wdt:P161",
+                "wd:Q131513"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q11424": "'The Talented Mr Ripley'",
+            "wdt:P31": "'film '",
+            "wdt:P161": "'plays '",
+            "wd:Q131513": "'Mr Ripley'",
+            "wd:Q1283": "'Matt Damon'",
+            "wd:Q390052": "The Talented Mr Ripley"
+        },
+        "uri_label_desc_map": {
+            "wd:Q11424": [
+                "'The Talented Mr Ripley'",
+                null
+            ],
+            "wdt:P31": [
+                "'film '",
+                null
+            ],
+            "wdt:P161": [
+                "'plays '",
+                null
+            ],
+            "wd:Q131513": [
+                "'Mr Ripley'",
+                null
+            ],
+            "wd:Q1283": [
+                "'Matt Damon'",
+                null
+            ],
+            "wd:Q390052": [
+                "The Talented Mr. Ripley",
+                "1999 film by Anthony Minghella"
+            ]
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q1283",
+            "wd:Q11424",
+            "wd:Q131513"
+        ],
+        "evaluation_score": 0.1
+    },
+    "6": {
+        "question": "A hard-edge painting is most likely to be characterized by",
+        "choices": [
+            "an even, solid paint application",
+            "blurry color mixed on the painting's surface",
+            "scratchy brush marks clearly separated",
+            "translucent multiple layers of paint"
+        ],
+        "initial_response": "Hard-edge painting is characterized by sharp, precise edges between areas of color, flat planes of color, and a lack of visible brushstrokes. It is often associated with geometric abstraction and minimalism.",
+        "question_entity_names": [
+            "hard-edge painting"
+        ],
+        "response_entity_names": [
+            "Hard-edge painting",
+            "sharp",
+            "precise edges",
+            "areas of color",
+            "flat planes of color",
+            "visible brushstrokes",
+            "geometric abstraction",
+            "minimalism"
+        ],
+        "extracted_triples": [
+            [
+                "hard-edge painting",
+                "characterized",
+                "flat planes of color"
+            ],
+            [
+                "hard-edge painting",
+                "characterized",
+                "a lack of visible brushstrokes"
+            ],
+            [
+                "hard-edge painting",
+                "often associated",
+                "geometric abstraction"
+            ],
+            [
+                "hard-edge painting",
+                "often associated",
+                "minimalism"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q369418",
+                "wdt:P1552",
+                "wd:Q186747"
+            ],
+            [
+                "wd:Q369418",
+                "wdt:P1552",
+                "wd:Q1077150"
+            ],
+            [
+                "wd:Q369418",
+                "wdt:P1871",
+                "wd:Q2316866"
+            ],
+            [
+                "wd:Q369418",
+                "wdt:P1871",
+                "wd:Q6865348"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q369418": "hard-edge painting",
+            "wdt:P1552": "characterized",
+            "wd:Q186747": "flat planes of color",
+            "wd:Q1077150": "a lack of visible brushstrokes",
+            "wdt:P1871": "often associated",
+            "wd:Q2316866": "geometric abstraction",
+            "wd:Q6865348": "minimalism"
+        },
+        "uri_label_desc_map": {
+            "wd:Q369418": [
+                "hard-edge painting",
+                "movement in painting"
+            ],
+            "wdt:P1552": [
+                "has quality",
+                "the entity has an inherent or distinguishing non-material characteristic. use a more-specific property when possible"
+            ],
+            "wd:Q186747": [
+                "flat planes of color",
+                null
+            ],
+            "wd:Q1077150": [
+                "a lack of visible brushstrokes",
+                null
+            ],
+            "wdt:P1871": [
+                "often associated",
+                null
+            ],
+            "wd:Q2316866": [
+                "geometric abstraction",
+                "form of abstract art involving geometry"
+            ],
+            "wd:Q6865348": [
+                "minimalism",
+                "visual arts movement"
+            ]
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q2316866",
+            "wd:Q1077150",
+            "wd:Q6865348",
+            "wd:Q186747",
+            "wd:Q369418"
+        ],
+        "evaluation_score": 0.05555555555555556
+    },
+    "7": {
+        "question": "Who was president of the United States when Bill Clinton was born?",
+        "choices": [
+            "Herbert Hoover",
+            "Harry S Truman",
+            "Franklin Roosevelt",
+            "Dwight Eisenhower"
+        ],
+        "initial_response": "Harry S. Truman was president of the United States when Bill Clinton was born on August 19, 1946.",
+        "question_entity_names": [
+            "president",
+            "United States",
+            "Bill Clinton"
+        ],
+        "response_entity_names": [
+            "Harry S. Truman",
+            "United States",
+            "Bill Clinton"
+        ],
+        "extracted_triples": [
+            [
+                "Harry S. Truman",
+                "president",
+                "United States"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q11613",
+                "wdt:P488",
+                "wd:Q30"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q11613": "Harry S. Truman",
+            "wdt:P488": "president",
+            "wd:Q30": "United States",
+            "wd:Q30461": "president",
+            "wd:Q1124": "Bill Clinton"
+        },
+        "uri_label_desc_map": {
+            "wd:Q11613": [
+                "Harry S. Truman",
+                "president of the United States from 1945 to 1953"
+            ],
+            "wdt:P488": [
+                "chairperson",
+                "presiding member of an organization, group or body"
+            ],
+            "wd:Q30": [
+                "United States of America",
+                "country in North America"
+            ],
+            "wd:Q30461": [
+                "president",
+                "leader of a country or part of a country, usually in republics"
+            ],
+            "wd:Q1124": [
+                "Bill Clinton",
+                "42nd President of the United States"
+            ]
+        },
+        "error": "HTTP Error 429: Too Many Requests"
+    },
+    "8": {
+        "question": "Which movie popularized the phrase \"You talkin' to me?\"",
+        "choices": [
+            "Ghost Busters",
+            "Taxi Driver",
+            "Joker",
+            "Groundhog Day"
+        ],
+        "initial_response": "The 1976 film Taxi Driver, directed by Martin Scorsese and starring Robert De Niro, popularized the phrase \"You talkin' to me?\".",
+        "question_entity_names": [
+            "movie",
+            "phrase",
+            "You talkin' to me?"
+        ],
+        "response_entity_names": [
+            "1976 film Taxi Driver",
+            "Martin Scorsese",
+            "Robert De Niro"
+        ],
+        "extracted_triples": [
+            [
+                "movie",
+                "popularized",
+                "phrase"
+            ],
+            [
+                "1976 film Taxi Driver",
+                "directed",
+                "Martin Scorsese"
+            ],
+            [
+                "1976 film Taxi Driver",
+                "starring",
+                "Robert De Niro"
+            ],
+            [
+                "1976 film Taxi Driver",
+                "popularized",
+                "\"You talkin' to me?\""
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q41253",
+                "wdt:P725",
+                "wd:Q3026787"
+            ],
+            [
+                "wd:Q104883",
+                "wdt:P57",
+                "wd:Q41148"
+            ],
+            [
+                "wd:Q104883",
+                "wdt:P161",
+                "wd:Q951321"
+            ],
+            [
+                "wd:Q104883",
+                "wdt:P725",
+                "wd:Q50435827"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q41253": "movie",
+            "wdt:P725": "popularized",
+            "wd:Q3026787": "phrase",
+            "wd:Q104883": "1976 film Taxi Driver",
+            "wdt:P57": "directed",
+            "wd:Q41148": "Martin Scorsese",
+            "wdt:P161": "starring",
+            "wd:Q951321": "Robert De Niro",
+            "wd:Q50435827": "\"You talkin' to me?\"",
+            "wd:Q3052275": "You talkin' to me?"
+        },
+        "uri_label_desc_map": {
+            "wd:Q41253": [
+                "movie theater",
+                "venue, usually a building, for viewing films"
+            ],
+            "wdt:P725": [
+                "popularized",
+                null
+            ],
+            "wd:Q3026787": [
+                "saying",
+                "short, usually meaningful phrase, such as a maxim, proverb, motto, or adage"
+            ],
+            "wd:Q104883": [
+                "1976 film Taxi Driver",
+                null
+            ],
+            "wdt:P57": [
+                "director",
+                "director(s) of film, TV-series, stageplay, video game or similar"
+            ],
+            "wd:Q41148": [
+                "Martin Scorsese",
+                "American film director, screenwriter and producer"
+            ],
+            "wdt:P161": [
+                "cast member",
+                "actor in the subject production [use \"character role\" (P453) and/or \"name of the character role\" (P4633) as qualifiers] [use \"voice actor\" (P725) for voice-only role]"
+            ],
+            "wd:Q951321": [
+                "Robert De Niro Sr.",
+                "American artist (1922-1993)"
+            ],
+            "wd:Q50435827": [
+                "\"You talkin' to me?\" Self-relevant auditory signals influence perception of gaze direction.",
+                "scientific article published on 15 November 2010"
+            ],
+            "wd:Q3052275": [
+                "You talkin' to me?",
+                null
+            ]
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q104883",
+            "wd:Q3026787",
+            "wd:Q50435827",
+            "wd:Q951321",
+            "wd:Q41253",
+            "wd:Q41148"
+        ],
+        "evaluation_score": 0.1
+    },
+    "9": {
+        "question": "What animal represents the year 2000 on the Chinese calendar?",
+        "choices": [
+            "dragon",
+            "rabbit",
+            "tiger",
+            "monkey"
+        ],
+        "initial_response": "The year 2000 on the Chinese calendar is represented by the Dragon.",
+        "question_entity_names": [
+            "animal",
+            "year 2000",
+            "Chinese calendar"
+        ],
+        "response_entity_names": [
+            "2000",
+            "Chinese calendar",
+            "Dragon"
+        ],
+        "extracted_triples": [
+            [
+                "year 2000",
+                "represents",
+                "animal"
+            ],
+            [
+                "year 2000",
+                "represented",
+                "Dragon"
+            ],
+            [
+                "Chinese calendar",
+                "represents",
+                "year 2000"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q115029566",
+                "wdt:P1268",
+                "wd:Q2757752"
+            ],
+            [
+                "wd:Q115029566",
+                "wdt:P1875",
+                "wd:Q7559"
+            ],
+            [
+                "wd:Q134032",
+                "wdt:P1268",
+                "wd:Q115029566"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q115029566": "year 2000",
+            "wdt:P1268": "represents",
+            "wd:Q2757752": "animal",
+            "wdt:P1875": "represented",
+            "wd:Q7559": "Dragon",
+            "wd:Q134032": "Chinese calendar"
+        },
+        "uri_label_desc_map": {
+            "wd:Q115029566": [
+                "Year 2000",
+                "scientific article published in 1997"
+            ],
+            "wdt:P1268": [
+                "represents",
+                "organization, individual, or concept that an entity represents"
+            ],
+            "wd:Q2757752": [
+                "Animal",
+                "journal"
+            ],
+            "wdt:P1875": [
+                "represented by",
+                "person or agency that represents or manages the subject"
+            ],
+            "wd:Q7559": [
+                "dragon",
+                "legendary creature"
+            ],
+            "wd:Q134032": [
+                "Chinese calendar",
+                "lunisolar calendar"
+            ]
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q115029566",
+            "wd:Q134032",
+            "wd:Q7559",
+            "wd:Q2757752"
+        ],
+        "evaluation_score": 0.08000000000000002
+    },
+    "10": {
+        "question": "According to legend in what country are you most likely to meet a leprechaun?",
+        "choices": [
+            "Ireland",
+            "Poland",
+            "Greenland",
+            "Scotland"
+        ],
+        "initial_response": "Ireland is the country most associated with leprechauns in legend and folklore.",
+        "question_entity_names": [
+            "legend",
+            "country",
+            "leprechaun"
+        ],
+        "response_entity_names": [
+            " and ",
+            "leprechauns"
+        ],
+        "extracted_triples": [
+            [
+                "legend",
+                "associated",
+                "leprechauns"
+            ],
+            [
+                "country",
+                "associated",
+                "leprechauns"
+            ],
+            [
+                "Ireland",
+                "associated",
+                "leprechauns"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q13002315",
+                "wdt:P3342",
+                "wd:Q244392"
+            ],
+            [
+                "wd:Q6256",
+                "wdt:P3342",
+                "wd:Q244392"
+            ],
+            [
+                "wd:Q27",
+                "wdt:P3342",
+                "wd:Q244392"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q13002315": "legend",
+            "wdt:P3342": "associated",
+            "wd:Q244392": "leprechaun",
+            "wd:Q6256": "country",
+            "wd:Q27": "Ireland"
+        },
+        "uri_label_desc_map": {
+            "wd:Q13002315": [
+                "legendary figure",
+                "named person or animal that appears in legends that have some claim to be historical"
+            ],
+            "wdt:P3342": [
+                "significant person",
+                "person linked to the item in any possible way"
+            ],
+            "wd:Q244392": [
+                "leprechaun",
+                "Irish legendary creature"
+            ],
+            "wd:Q6256": [
+                "country",
+                "distinct territorial body or political entity"
+            ],
+            "wd:Q27": [
+                "Republic of Ireland",
+                "country in Northwestern Europe"
+            ]
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q27",
+            "wd:Q6256",
+            "wd:Q13002315",
+            "wd:Q244392"
+        ],
+        "evaluation_score": 0.08000000000000002
+    },
+    "11": {
+        "question": "What French city is home to a famous international film festival each spring?",
+        "choices": [
+            "Cannes",
+            "Marseille",
+            "Dijon",
+            "Lyon"
+        ],
+        "initial_response": "Cannes.",
+        "question_entity_names": [
+            "French city",
+            "international film festival",
+            "spring"
+        ],
+        "response_entity_names": [
+            "Cannes"
+        ],
+        "extracted_triples": [
+            [
+                "French city",
+                "home",
+                "Cannes"
+            ],
+            [
+                "international film festival",
+                "held spring",
+                "Cannes"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q58991571",
+                "wdt:P263",
+                "wd:Q39984"
+            ],
+            [
+                "wd:Q65255256",
+                "wdt:P1268",
+                "wd:Q39984"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q58991571": "French city",
+            "wdt:P263": "home",
+            "wd:Q39984": "Cannes",
+            "wd:Q65255256": "international film festival",
+            "wdt:P1268": "held spring",
+            "wd:Q124714": "spring"
+        },
+        "uri_label_desc_map": {
+            "wd:Q58991571": [
+                "French city heading towards Technopolis",
+                "scientific article published in Nature"
+            ],
+            "wdt:P263": [
+                "official residence",
+                "the residence at which heads of government and other senior figures officially reside"
+            ],
+            "wd:Q39984": [
+                "Cannes",
+                "commune in Alpes-Maritimes, France"
+            ],
+            "wd:Q65255256": [
+                "International Film Festival",
+                null
+            ],
+            "wdt:P1268": [
+                "held spring",
+                null
+            ],
+            "wd:Q124714": [
+                "spring",
+                "water source"
+            ]
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q65255256",
+            "wd:Q58991571",
+            "wd:Q39984"
+        ],
+        "evaluation_score": 0.07500000000000001
+    },
+    "12": {
+        "question": "What do you call three consecutive strikes in bowling?",
+        "choices": [
+            "yahtzee",
+            "mulligan",
+            "turkey",
+            "ace"
+        ],
+        "initial_response": "Three consecutive strikes in bowling is called a \"turkey.\"",
+        "question_entity_names": [
+            "three consecutive strikes",
+            "bowling"
+        ],
+        "response_entity_names": [
+            "bowling",
+            "turkey"
+        ],
+        "extracted_triples": [
+            [
+                "three consecutive strikes",
+                "called",
+                "turkey"
+            ],
+            [
+                "bowling",
+                "called",
+                "turkey"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q11410",
+                "wdt:P2825",
+                "wd:Q848706"
+            ],
+            [
+                "wd:Q172809",
+                "wdt:P2825",
+                "wd:Q848706"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q11410": "three consecutive strikes",
+            "wdt:P2825": "called",
+            "wd:Q848706": "turkey",
+            "wd:Q172809": "bowling"
+        },
+        "uri_label_desc_map": {
+            "wd:Q11410": [
+                "three consecutive strikes",
+                null
+            ],
+            "wdt:P2825": [
+                "via",
+                "intermediate point on a journey - stopover location, waystation or routing point"
+            ],
+            "wd:Q848706": [
+                "domesticated turkey",
+                "common name"
+            ],
+            "wd:Q172809": [
+                "ten-pin bowling",
+                "common form of bowling"
+            ]
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q172809",
+            "wd:Q848706",
+            "wd:Q11410"
+        ],
+        "evaluation_score": 0.1
+    },
+    "13": {
+        "question": "Which of the boys on the TV show 'My Three Sons' is adopted?",
+        "choices": [
+            "Mike",
+            "Ernie",
+            "Chip",
+            "Robbie"
+        ],
+        "initial_response": "The adopted son on the show is Ernie Douglas, played by Barry Livingston.",
+        "question_entity_names": [
+            "My Three Sons"
+        ],
+        "response_entity_names": [
+            "Ernie Douglas",
+            "Barry Livingston"
+        ],
+        "extracted_triples": [
+            [
+                "'My Three Sons'",
+                "'is '",
+                "'TV show'"
+            ],
+            [
+                "'Ernie Douglas'",
+                "'played '",
+                "'Barry Livingston'"
+            ],
+            [
+                "'Ernie Douglas'",
+                "'is '",
+                "'adopted'"
+            ]
+        ],
+        "timeout": true
+    },
+    "14": {
+        "question": "What is the name of the female character played by comedian Flip Wilson on his 1970s TV show?",
+        "choices": [
+            "Miss Jackie",
+            "Elizabeth Sanford",
+            "Geraldine Jones",
+            "Gladys Knight"
+        ],
+        "initial_response": "The female character played by Flip Wilson on his 1970s TV show was Geraldine Jones.",
+        "question_entity_names": [
+            "Flip Wilson"
+        ],
+        "response_entity_names": [
+            "Flip Wilson",
+            "Geraldine Jones"
+        ],
+        "extracted_triples": [
+            [
+                "Flip Wilson",
+                "played",
+                "Geraldine Jones"
+            ],
+            [
+                "Geraldine Jones",
+                "played",
+                "1970s TV show"
+            ]
+        ],
+        "timeout": true
+    },
+    "15": {
+        "question": "What kind of animal is a peregrine?",
+        "choices": [
+            "moose",
+            "cat",
+            "bird",
+            "fish"
+        ],
+        "initial_response": "A peregrine is a type of bird of prey.",
+        "question_entity_names": [
+            "peregrine"
+        ],
+        "response_entity_names": [
+            "peregrine"
+        ],
+        "extracted_triples": [
+            [
+                "peregrine",
+                "type",
+                "bird of prey"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q30535",
+                "wdt:P427",
+                "wd:Q48428"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q30535": "peregrine",
+            "wdt:P427": "type",
+            "wd:Q48428": "bird of prey"
+        },
+        "uri_label_desc_map": {
+            "wd:Q30535": [
+                "Peregrine Falcon",
+                "species of bird"
+            ],
+            "wdt:P427": [
+                "taxonomic type",
+                "name-bearing genus or species of this nominal family or genus (or subfamily or subgenus)"
+            ],
+            "wd:Q48428": [
+                "bird of prey",
+                "any species of bird that primarily hunt and feed on relatively large vertebrates"
+            ]
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q30535",
+            "wd:Q48428"
+        ],
+        "evaluation_score": 0.1
+    },
+    "16": {
+        "question": "What part of the human body does a gastroenterologist examine?",
+        "choices": [
+            "Brain",
+            "Skeleton",
+            "Stomach",
+            "Nose"
+        ],
+        "initial_response": "A gastroenterologist examines the digestive system, which includes the esophagus, stomach, small intestine, large intestine, rectum, and anus.",
+        "question_entity_names": [
+            "human body",
+            "gastroenterologist"
+        ],
+        "response_entity_names": [
+            "gastroenterologist",
+            "digestive system",
+            "esophagus",
+            "stomach",
+            "small intestine",
+            "large intestine",
+            "rectum",
+            "anus"
+        ],
+        "extracted_triples": [
+            [
+                "gastroenterologist",
+                "examine",
+                "digestive system"
+            ],
+            [
+                "digestive system",
+                "include",
+                "esophagus"
+            ],
+            [
+                "digestive system",
+                "include",
+                "stomach"
+            ],
+            [
+                "digestive system",
+                "include",
+                "small intestine"
+            ],
+            [
+                "digestive system",
+                "include",
+                "large intestine"
+            ],
+            [
+                "digestive system",
+                "include",
+                "rectum"
+            ],
+            [
+                "digestive system",
+                "include",
+                "anus"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q19280221",
+                "wdt:P4032",
+                "wd:Q12883359"
+            ],
+            [
+                "wd:Q12883359",
+                "wdt:P150",
+                "wd:Q173710"
+            ],
+            [
+                "wd:Q12883359",
+                "wdt:P150",
+                "wd:Q1029907"
+            ],
+            [
+                "wd:Q12883359",
+                "wdt:P150",
+                "wd:Q11090"
+            ],
+            [
+                "wd:Q12883359",
+                "wdt:P150",
+                "wd:Q11083"
+            ],
+            [
+                "wd:Q12883359",
+                "wdt:P150",
+                "wd:Q158716"
+            ],
+            [
+                "wd:Q12883359",
+                "wdt:P150",
+                "wd:Q497"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q19280221": "gastroenterologist",
+            "wdt:P4032": "examine",
+            "wd:Q12883359": "digestive system",
+            "wdt:P150": "include",
+            "wd:Q173710": "esophagus",
+            "wd:Q1029907": "stomach",
+            "wd:Q11090": "small intestine",
+            "wd:Q11083": "large intestine",
+            "wd:Q158716": "rectum",
+            "wd:Q497": "anus",
+            "wd:Q23852": "human body"
+        },
+        "uri_label_desc_map": {
+            "wd:Q19280221": [
+                "gastroenterologist",
+                "physician, specialised for gastroenterology"
+            ],
+            "wdt:P4032": [
+                "reviewed by",
+                "person who reviewed/refereed the work, e.g., scientific peer-reviewer"
+            ],
+            "wd:Q12883359": [
+                "digestive system",
+                null
+            ],
+            "wdt:P150": [
+                "contains the administrative territorial entity",
+                "(list of) direct subdivisions of an administrative territorial entity"
+            ],
+            "wd:Q173710": [
+                "esophagus",
+                "vertebrate organ through which food passes to the stomach"
+            ],
+            "wd:Q1029907": [
+                "stomach",
+                "digestive organ"
+            ],
+            "wd:Q11090": [
+                "small intestine",
+                "part of the digestive tract, following the stomach and followed by the large intestine fake"
+            ],
+            "wd:Q11083": [
+                "large intestine",
+                "last part of the digestive system in vertebrate animals, including the cecum, colon, rectum, and anal canal"
+            ],
+            "wd:Q158716": [
+                "rectum",
+                "final section of intestines"
+            ],
+            "wd:Q497": [
+                "anus",
+                "digestive track waste expulsion opening"
+            ],
+            "wd:Q23852": [
+                "human body",
+                "entire structure of a human organism"
+            ]
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q12883359",
+            "wd:Q173710",
+            "wd:Q11083",
+            "wd:Q158716",
+            "wd:Q19280221",
+            "wd:Q497",
+            "wd:Q1029907",
+            "wd:Q11090"
+        ],
+        "evaluation_score": 0.08888888888888889
+    },
+    "17": {
+        "question": "A piece of paper that appears blue in sunlight is illuminated solely by a red light that is passed through a green filter. What color does the paper appear under this illumination?",
+        "choices": [
+            "Blue",
+            "Green",
+            "Red",
+            "Black"
+        ],
+        "initial_response": "The paper would appear black under this illumination.",
+        "question_entity_names": [
+            "paper",
+            "blue",
+            "sunlight",
+            "red light",
+            "green filter",
+            "color"
+        ],
+        "response_entity_names": [
+            "paper"
+        ],
+        "extracted_triples": [
+            [
+                "paper",
+                "appears",
+                "blue"
+            ],
+            [
+                "paper",
+                "illuminated",
+                "red light"
+            ],
+            [
+                "red light",
+                "passed",
+                "green filter"
+            ],
+            [
+                "paper",
+                "appears",
+                "black"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q11472",
+                "wdt:P1441",
+                "wd:Q17122834"
+            ],
+            [
+                "wd:Q11472",
+                "wdt:P1552",
+                "wd:Q20266704"
+            ],
+            [
+                "wd:Q20266704",
+                "wdt:P467",
+                "wd:Q16506"
+            ],
+            [
+                "wd:Q11472",
+                "wdt:P1441",
+                "wd:Q23445"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q11472": "paper",
+            "wdt:P1441": "appears",
+            "wd:Q17122834": "blue",
+            "wdt:P1552": "illuminated",
+            "wd:Q20266704": "red light",
+            "wdt:P467": "passed",
+            "wd:Q16506": "green filter",
+            "wd:Q23445": "black",
+            "wd:Q193788": "sunlight",
+            "wd:Q1075": "color",
+            "http://www.wikidata.org/entity/Q910035": "flammability"
+        },
+        "uri_label_desc_map": {
+            "wd:Q11472": [
+                "paper",
+                "thin, flexible material mainly used for writing upon, printing upon, drawing or for packaging"
+            ],
+            "wdt:P1441": [
+                "present in work",
+                "this (fictional or fictionalized) entity, place, or person appears in that work as part of the narration (use P2860 for works citing other works, P361/P1433 for works being part of other works, P1343 for entities described in non-fictional accounts)"
+            ],
+            "wd:Q17122834": [
+                "blue",
+                "eye color"
+            ],
+            "wdt:P1552": [
+                "illuminated",
+                null
+            ],
+            "wd:Q20266704": [
+                "Red Light",
+                "painting by Francis Piatek"
+            ],
+            "wdt:P467": [
+                "legislated by",
+                "indicates that an act or bill was passed by a legislature.  The value can be a particular session of the legislature"
+            ],
+            "wd:Q16506": [
+                "green filter",
+                null
+            ],
+            "wd:Q23445": [
+                "black",
+                "darkest color"
+            ],
+            "wd:Q193788": [
+                "sunlight",
+                "electromagnetic radiation given off by the Sun"
+            ],
+            "wd:Q1075": [
+                "color",
+                "characteristic of visual perception"
+            ]
+        },
+        "truth_score": 0.49043956824952856,
+        "% true": 0.12260989206238214,
+        "true_facts_names": [
+            [
+                "paper",
+                "illuminated",
+                "flammability"
+            ]
+        ],
+        "true_facts_uris": [
+            [
+                "wd:Q11472",
+                "wdt:P1552",
+                "http://www.wikidata.org/entity/Q910035"
+            ]
+        ],
+        "linked_entities": [
+            "wd:Q17122834",
+            "wd:Q11472",
+            "wd:Q20266704",
+            "wd:Q16506",
+            "wd:Q23445"
+        ],
+        "evaluation_score": 0.19368223618947727
+    },
+    "18": {
+        "question": "Meat should be kept frozen at what temperature in degrees Fahrenheit?",
+        "choices": [
+            "0 degrees or below",
+            "between 10 and 20 degrees",
+            "between 20 and 30 degrees",
+            "just below 32 degrees"
+        ],
+        "initial_response": "0\u00b0F",
+        "question_entity_names": [
+            "Meat"
+        ],
+        "response_entity_names": [
+            "0\u00b0F"
+        ],
+        "extracted_triples": [
+            [
+                "Meat",
+                "kept frozen",
+                "what temperature"
+            ],
+            [
+                "what temperature",
+                "degrees Fahrenheit",
+                "0\u00b0F"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q10990",
+                "wdt:P6187",
+                "wd:Q39671897"
+            ],
+            [
+                "wd:Q39671897",
+                "wdt:P2102",
+                "wd:Q198959"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q10990": "Meat",
+            "wdt:P6187": "kept frozen",
+            "wd:Q39671897": "what temperature",
+            "wdt:P2102": "degrees Fahrenheit",
+            "wd:Q198959": "0\u00b0F"
+        },
+        "uri_label_desc_map": {
+            "wd:Q10990": [
+                "meat",
+                "animal flesh eaten as food"
+            ],
+            "wdt:P6187": [
+                "kept frozen",
+                null
+            ],
+            "wd:Q39671897": [
+                "What temperature is lethal for cells?",
+                "scientific article published on June 1, 1979"
+            ],
+            "wdt:P2102": [
+                "degrees Fahrenheit",
+                null
+            ],
+            "wd:Q198959": [
+                "0\u00b0F",
+                null
+            ]
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q39671897",
+            "wd:Q10990",
+            "wd:Q198959"
+        ],
+        "evaluation_score": 0.1
+    },
+    "19": {
+        "question": "What kind of animal is cartoon character Tennessee Tuxedo?",
+        "choices": [
+            "cat",
+            "skunk",
+            "walrus",
+            "penguin"
+        ],
+        "initial_response": "Tennessee Tuxedo is a cartoon penguin.",
+        "question_entity_names": [
+            "Tennessee Tuxedo"
+        ],
+        "response_entity_names": [
+            "Tennessee Tuxedo"
+        ],
+        "extracted_triples": [
+            [
+                "Tennessee Tuxedo",
+                "is",
+                "cartoon character"
+            ],
+            [
+                "Tennessee Tuxedo",
+                "is",
+                "animal"
+            ],
+            [
+                "Tennessee Tuxedo",
+                "is",
+                "penguin"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q31033",
+                "wdt:P921",
+                "wd:Q15711870"
+            ],
+            [
+                "wd:Q31033",
+                "wdt:P921",
+                "wd:Q2757752"
+            ],
+            [
+                "wd:Q31033",
+                "wdt:P921",
+                "wd:Q9147"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q31033": "Tennessee Tuxedo",
+            "wdt:P921": "is",
+            "wd:Q15711870": "cartoon character",
+            "wd:Q2757752": "animal",
+            "wd:Q9147": "penguin"
+        },
+        "uri_label_desc_map": {
+            "wd:Q31033": [
+                "Tennessee Tuxedo and His Tales",
+                "American cartoon TV series"
+            ],
+            "wdt:P921": [
+                "main subject",
+                "primary topic of a work (see also P180: depicts)"
+            ],
+            "wd:Q15711870": [
+                "animated character",
+                "fictional character who appears in animated films, television, and other animated works"
+            ],
+            "wd:Q2757752": [
+                "Animal",
+                "journal"
+            ],
+            "wd:Q9147": [
+                "penguin",
+                "family of birds"
+            ]
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q15711870",
+            "wd:Q9147",
+            "wd:Q31033",
+            "wd:Q2757752"
+        ],
+        "evaluation_score": 0.1
+    },
+    "20": {
+        "question": "What US president is mentioned by name in the opening theme song of TV's 'All in the Family'?",
+        "choices": [
+            "Calvin Coolidge",
+            "Harry Truman",
+            "Herbert Hoover",
+            "Richard Nixon"
+        ],
+        "initial_response": "The opening theme song of TV's 'All in the Family' mentions Richard Nixon, the 37th President of the United States.",
+        "question_entity_names": [
+            "US president"
+        ],
+        "response_entity_names": [
+            "All in the Family",
+            "Richard Nixon",
+            "37th President of the United States"
+        ],
+        "extracted_triples": [
+            [
+                "'opening theme song of TV's All in the Family'",
+                "'mentions '",
+                "'Richard Nixon'"
+            ],
+            [
+                "'Richard Nixon'",
+                "'is '",
+                "'37th President of the United States'"
+            ]
+        ],
+        "timeout": true
+    },
+    "21": {
+        "question": "What is the heaviest confirmed noble gas?",
+        "choices": [
+            "Xenon",
+            "Argon",
+            "Radon",
+            "Krypton"
+        ],
+        "initial_response": "The heaviest confirmed noble gas is Radon (atomic number 86).",
+        "timeout": true
+    },
+    "22": {
+        "question": "How many moles of HCl must be added to sufficient water to form 3 liters of a 2 M HCI solution?",
+        "choices": [
+            "1 mol",
+            "2 mol",
+            "3 mol",
+            "6 mol"
+        ],
+        "initial_response": "6 moles",
+        "question_entity_names": [
+            "moles",
+            "HCl",
+            "water",
+            "liters",
+            "M HCI solution"
+        ],
+        "response_entity_names": [
+            "6 moles"
+        ],
+        "extracted_triples": [
+            [
+                "moles",
+                "must added",
+                "water"
+            ],
+            [
+                "HCl",
+                "must added",
+                "water"
+            ],
+            [
+                "3 liters",
+                "of",
+                "a 2 M HCI solution"
+            ],
+            [
+                "6 moles",
+                "of",
+                "HCl"
+            ]
+        ],
+        "error": "list index out of range"
+    },
+    "23": {
+        "question": "Who led the 1831 slave insurrection in SouthamptonVirginia?",
+        "choices": [
+            "John Brown",
+            "Dred Scott",
+            "Nat Turner",
+            "Harriet Tubman"
+        ],
+        "initial_response": "Nat Turner led the 1831 slave insurrection in Southampton, Virginia.",
+        "question_entity_names": [
+            "1831 slave insurrection",
+            "SouthamptonVirginia"
+        ],
+        "response_entity_names": [
+            "Nat Turner",
+            "1831",
+            "slave insurrection",
+            "Southampton",
+            "Virginia"
+        ],
+        "extracted_triples": [
+            [
+                "Nat Turner",
+                "led",
+                "1831 slave insurrection"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q329730",
+                "wdt:P286",
+                "wd:Q133492"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q329730": "Nat Turner",
+            "wdt:P286": "led",
+            "wd:Q133492": "1831 slave insurrection",
+            "wd:Q486876": "SouthamptonVirginia"
+        },
+        "uri_label_desc_map": {
+            "wd:Q329730": [
+                "Nat Turner",
+                "American slave rebellion leader (1800-1831)"
+            ],
+            "wdt:P286": [
+                "head coach",
+                "on-field manager or head coach of a sports club (not to be confused with a general manager P505, which is not a coaching position) or person"
+            ],
+            "wd:Q133492": [
+                "1831 slave insurrection",
+                null
+            ],
+            "wd:Q486876": [
+                "SouthamptonVirginia",
+                null
+            ]
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q133492",
+            "wd:Q329730"
+        ],
+        "evaluation_score": 0.02857142857142857
+    },
+    "24": {
+        "question": "For what purpose would you use an awl?",
+        "choices": [
+            "to shoot ducks",
+            "to polish floors",
+            "to make holes",
+            "to weigh fruit"
+        ],
+        "initial_response": "An awl is a tool used for making holes in leather, wood, or other materials. It is also used for marking lines on materials, such as when making a pattern for sewing.",
+        "question_entity_names": [
+            "awl"
+        ],
+        "response_entity_names": [
+            "awl",
+            "tool",
+            "holes",
+            "leather",
+            "wood",
+            "materials",
+            "lines",
+            "pattern",
+            "sewing"
+        ],
+        "extracted_triples": [
+            [
+                "awl",
+                "used",
+                "marking lines on materials"
+            ],
+            [
+                "awl",
+                "used",
+                "making a pattern for sewing"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q400406",
+                "wdt:P2283",
+                "wd:Q1140241"
+            ],
+            [
+                "wd:Q400406",
+                "wdt:P2283",
+                "wd:Q1057170"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q400406": "awl",
+            "wdt:P2283": "used",
+            "wd:Q1140241": "marking lines on materials",
+            "wd:Q1057170": "making a pattern for sewing"
+        },
+        "uri_label_desc_map": {
+            "wd:Q400406": [
+                "awl",
+                "tool for making or enlarging holes in fabric or leather"
+            ],
+            "wdt:P2283": [
+                "uses",
+                "item or concept used by the subject or in the operation (see also instrument [P1303] and armament [P520])"
+            ],
+            "wd:Q1140241": [
+                "marking lines on materials",
+                null
+            ],
+            "wd:Q1057170": [
+                "making a pattern for sewing",
+                null
+            ]
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q1057170",
+            "wd:Q1140241",
+            "wd:Q400406"
+        ],
+        "evaluation_score": 0.03333333333333333
+    },
+    "25": {
+        "question": "What do you call a young cow?",
+        "choices": [
+            "mare",
+            "lamb",
+            "kid",
+            "calf"
+        ],
+        "initial_response": "A young cow is called a calf.",
+        "question_entity_names": [
+            "young cow"
+        ],
+        "response_entity_names": [
+            "cow",
+            "calf"
+        ],
+        "extracted_triples": [
+            [
+                "young cow",
+                "called",
+                "calf"
+            ],
+            [
+                "cow",
+                "called",
+                "calf"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q830079",
+                "wdt:P511",
+                "wd:Q2935"
+            ],
+            [
+                "wd:Q11748378",
+                "wdt:P511",
+                "wd:Q2935"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q830079": "young cow",
+            "wdt:P511": "called",
+            "wd:Q2935": "calf",
+            "wd:Q11748378": "cow"
+        },
+        "uri_label_desc_map": {
+            "wd:Q830079": [
+                "young cow",
+                null
+            ],
+            "wdt:P511": [
+                "honorific prefix",
+                "word or expression used before a name, in addressing or referring to a person"
+            ],
+            "wd:Q2935": [
+                "calf",
+                "young of domestic cattle"
+            ],
+            "wd:Q11748378": [
+                "cow",
+                "adult female cattle"
+            ]
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q11748378",
+            "wd:Q2935",
+            "wd:Q830079"
+        ],
+        "evaluation_score": 0.1
+    },
+    "26": {
+        "question": "Operant conditioning would be most useful for",
+        "choices": [
+            "determining whether a toddler is securely attached",
+            "increasing on-task behavior in the classroom",
+            "measuring a dependent variable",
+            "preventing anterograde amnesia"
+        ],
+        "initial_response": "Operant conditioning is most useful for teaching animals and humans new behaviors. It is a type of learning in which an individual's behavior is modified by its consequences, such as reward or punishment. It is commonly used in animal training, but can also be used to modify human behavior.",
+        "question_entity_names": [
+            "Operant conditioning"
+        ],
+        "response_entity_names": [
+            "Operant conditioning",
+            "animals",
+            "humans",
+            "learning",
+            "individual",
+            "behavior",
+            "consequences",
+            "reward",
+            "punishment",
+            "animal training"
+        ],
+        "extracted_triples": [
+            [
+                "Operant conditioning",
+                "useful",
+                "teaching animals and humans new behaviors"
+            ],
+            [
+                "Operant conditioning",
+                "type learning",
+                "in which an individual's behavior is modified by its consequences"
+            ],
+            [
+                "individual's behavior",
+                "modified",
+                "consequences"
+            ],
+            [
+                "consequences",
+                "such as",
+                "reward or punishment"
+            ],
+            [
+                "Operant conditioning",
+                "commonly used",
+                "animal training"
+            ],
+            [
+                "Operant conditioning",
+                "also used",
+                "modify human behavior"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q847079",
+                "wdt:P189",
+                "wd:Q105821441"
+            ],
+            [
+                "wd:Q847079",
+                "wdt:P279",
+                "wd:Q107715"
+            ],
+            [
+                "wd:Q29897294",
+                "wdt:P5017",
+                "wd:Q926230"
+            ],
+            [
+                "wd:Q926230",
+                "wdt:P1696",
+                "wd:Q1860"
+            ],
+            [
+                "wd:Q847079",
+                "wdt:P1889",
+                "wd:Q1193939"
+            ],
+            [
+                "wd:Q847079",
+                "wdt:P1659",
+                "wd:Q185075"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q847079": "operant conditioning",
+            "wdt:P189": "useful",
+            "wd:Q105821441": "teaching animals and humans new behaviors",
+            "wdt:P279": "type learning",
+            "wd:Q107715": "in which an individual's behavior is modified by its consequences",
+            "wd:Q29897294": "individual's behavior",
+            "wdt:P5017": "modified",
+            "wd:Q926230": "consequences",
+            "wdt:P1696": "such as",
+            "wd:Q1860": "reward or punishment",
+            "wdt:P1889": "commonly used",
+            "wd:Q1193939": "animal training",
+            "wdt:P1659": "also used",
+            "wd:Q185075": "modify human behavior",
+            "http://www.wikidata.org/entity/Q133500": "learning",
+            "http://www.wikidata.org/entity/Q212737": "classical conditioning"
+        },
+        "uri_label_desc_map": {
+            "wd:Q847079": [
+                "operant conditioning",
+                "learning to anticipate future events on the basis of past experience with the consequences of one's own behavior; behaviors are modified by the effect they produce (i.e., reward or punishment)"
+            ],
+            "wdt:P189": [
+                "useful",
+                null
+            ],
+            "wd:Q105821441": [
+                "teaching animals and humans new behaviors",
+                null
+            ],
+            "wdt:P279": [
+                "type learning",
+                null
+            ],
+            "wd:Q107715": [
+                "in which an individual's behavior is modified by its consequences",
+                null
+            ],
+            "wd:Q29897294": [
+                "individual's behavior",
+                null
+            ],
+            "wdt:P5017": [
+                "last update",
+                "date a reference was modified, revised, or updated"
+            ],
+            "wd:Q926230": [
+                "effect",
+                "phenomenon which results from a cause"
+            ],
+            "wdt:P1696": [
+                "such as",
+                null
+            ],
+            "wd:Q1860": [
+                "reward or punishment",
+                null
+            ],
+            "wdt:P1889": [
+                "commonly used",
+                null
+            ],
+            "wd:Q1193939": [
+                "animal training",
+                "teaching animals specific responses to specific conditions or stimuli"
+            ],
+            "wdt:P1659": [
+                "also used",
+                null
+            ],
+            "wd:Q185075": [
+                "modify human behavior",
+                null
+            ]
+        },
+        "truth_score": 1.3832426261926623,
+        "% true": 0.23054043769877705,
+        "true_facts_names": [
+            [
+                "operant conditioning",
+                "type learning",
+                "learning"
+            ],
+            [
+                "operant conditioning",
+                "commonly used",
+                "classical conditioning"
+            ]
+        ],
+        "true_facts_uris": [
+            [
+                "wd:Q847079",
+                "wdt:P279",
+                "http://www.wikidata.org/entity/Q133500"
+            ],
+            [
+                "wd:Q847079",
+                "wdt:P1889",
+                "http://www.wikidata.org/entity/Q212737"
+            ]
+        ],
+        "linked_entities": [
+            "wd:Q107715",
+            "wd:Q1860",
+            "wd:Q1193939",
+            "wd:Q847079",
+            "wd:Q29897294",
+            "wd:Q926230",
+            "wd:Q185075",
+            "wd:Q105821441"
+        ],
+        "evaluation_score": 0.28748639392889935
+    },
+    "27": {
+        "question": "The demand for labor is called derived demand because it is",
+        "choices": [
+            "dependent on the demand for the final product that the labor is used to produce",
+            "inversely related to the wage rate",
+            "dependent on the availability of capital goods",
+            "directly related to the marginal utility of working"
+        ],
+        "initial_response": "derived from the demand for the goods and services that labor produces. The demand for labor is determined by the demand for the goods and services that labor produces. If the demand for a good or service increases, then the demand for labor to produce that good or service will also increase. Conversely, if the demand for a good or service decreases, then the demand for labor to produce that good or service will also decrease.",
+        "question_entity_names": [
+            "labor"
+        ],
+        "response_entity_names": [
+            "goods",
+            "services",
+            "labor"
+        ],
+        "extracted_triples": [
+            [
+                "demand for labor",
+                "called",
+                "derived demand"
+            ],
+            [
+                "demand for labor",
+                "determined",
+                "demand for goods and services"
+            ],
+            [
+                "demand for a good or service",
+                "increases",
+                "demand for labor to produce that good or service"
+            ],
+            [
+                "demand for a good or service",
+                "decreases",
+                "demand for labor to produce that good or service"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q121578967",
+                "wdt:P2825",
+                "wd:Q3305667"
+            ],
+            [
+                "wd:Q121578967",
+                "wdt:P459",
+                "wd:Q7689729"
+            ],
+            [
+                "wd:Q18616576",
+                "wdt:P31",
+                "wd:Q209945"
+            ],
+            [
+                "wd:Q18616576",
+                "wdt:P31",
+                "wd:Q209945"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q121578967": "demand for labor",
+            "wdt:P2825": "called",
+            "wd:Q3305667": "derived demand",
+            "wdt:P459": "determined",
+            "wd:Q7689729": "demand for goods and services",
+            "wd:Q18616576": "demand for a good or service",
+            "wdt:P31": "decreases",
+            "wd:Q209945": "demand for labor to produce that good or service",
+            "wd:Q67300631": "labor"
+        },
+        "uri_label_desc_map": {
+            "wd:Q121578967": [
+                "Demand for labor and population growth in colonial Java",
+                "scientific article published in 1973"
+            ],
+            "wdt:P2825": [
+                "via",
+                "intermediate point on a journey - stopover location, waystation or routing point"
+            ],
+            "wd:Q3305667": [
+                "derived demand",
+                "demand for a factor of production that occurs as a result of the demand for another (e.g. final) good"
+            ],
+            "wdt:P459": [
+                "determination method",
+                "how a value is determined, or the standard by which it is declared"
+            ],
+            "wd:Q7689729": [
+                "demand for goods and services",
+                null
+            ],
+            "wd:Q18616576": [
+                "demand for a good or service",
+                null
+            ],
+            "wdt:P31": [
+                "decreases",
+                null
+            ],
+            "wd:Q209945": [
+                "demand for labor to produce that good or service",
+                null
+            ],
+            "wd:Q67300631": [
+                "obstetric labor",
+                "repetitive uterine contraction during childbirth associated with the dilation of the uterine cervix"
+            ]
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q209945",
+            "wd:Q18616576",
+            "wd:Q3305667",
+            "wd:Q7689729",
+            "wd:Q121578967"
+        ],
+        "evaluation_score": 0.1
+    },
+    "28": {
+        "question": "The labor force primarily consists of all",
+        "choices": [
+            "employed workers under the age of 16",
+            "persons classified as unemployed or employed",
+            "persons who are employed as full-time workers",
+            "unemployed, employed, and discouraged workers"
+        ],
+        "initial_response": "people who are of working age and are either employed or actively seeking employment. This includes both full-time and part-time workers, as well as those who are unemployed but actively looking for work. It does not include people who are retired, students, stay-at-home parents, or those who are not actively seeking employment.",
+        "question_entity_names": [
+            "labor force"
+        ],
+        "response_entity_names": [
+            "people",
+            "working age",
+            "employed",
+            "actively seeking employment",
+            "full-time workers",
+            "part-time workers",
+            "unemployed",
+            "actively looking for work",
+            "retired",
+            "students",
+            "stay-at-home parents"
+        ],
+        "extracted_triples": [
+            [
+                "labor force",
+                "consists",
+                "people"
+            ],
+            [
+                "people",
+                "are of",
+                "working age"
+            ],
+            [
+                "people",
+                "either",
+                "employed"
+            ],
+            [
+                "people",
+                "either",
+                "actively seeking employment"
+            ],
+            [
+                "people",
+                "includes",
+                "full-time workers"
+            ],
+            [
+                "people",
+                "includes",
+                "part-time workers"
+            ],
+            [
+                "people",
+                "includes",
+                "unemployed"
+            ],
+            [
+                "unemployed",
+                "are",
+                "actively looking for work"
+            ],
+            [
+                "people",
+                "include",
+                "retired"
+            ],
+            [
+                "people",
+                "include",
+                "students"
+            ],
+            [
+                "people",
+                "include",
+                "stay-at-home parents"
+            ],
+            [
+                "people",
+                "include",
+                "those who are not actively seeking employment"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q13440398",
+                "wdt:P2635",
+                "wd:Q2472587"
+            ],
+            [
+                "wd:Q2472587",
+                "wdt:P1012",
+                "wd:Q17994745"
+            ],
+            [
+                "wd:Q2472587",
+                "wdt:P1534",
+                "wd:Q8031587"
+            ],
+            [
+                "wd:Q2472587",
+                "wdt:P1534",
+                "wd:Q10876391"
+            ],
+            [
+                "wd:Q2472587",
+                "wdt:P527",
+                "wd:Q52967509"
+            ],
+            [
+                "wd:Q2472587",
+                "wdt:P527",
+                "wd:Q7140093"
+            ],
+            [
+                "wd:Q2472587",
+                "wdt:P527",
+                "wd:Q28790169"
+            ],
+            [
+                "wd:Q28790169",
+                "wdt:P101",
+                "wd:Q1066891"
+            ],
+            [
+                "wd:Q2472587",
+                "wdt:P527",
+                "wd:Q64825398"
+            ],
+            [
+                "wd:Q2472587",
+                "wdt:P527",
+                "wd:Q48282"
+            ],
+            [
+                "wd:Q2472587",
+                "wdt:P527",
+                "wd:Q305479"
+            ],
+            [
+                "wd:Q2472587",
+                "wdt:P527",
+                "wd:Q106986613"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q13440398": "labor force",
+            "wdt:P2635": "consists",
+            "wd:Q2472587": "people",
+            "wdt:P1012": "are of",
+            "wd:Q17994745": "working age",
+            "wdt:P1534": "either",
+            "wd:Q8031587": "employed",
+            "wd:Q10876391": "actively seeking employment",
+            "wdt:P527": "has part(s)",
+            "wd:Q52967509": "full-time workers",
+            "wd:Q7140093": "part-time workers",
+            "wd:Q28790169": "unemployed",
+            "wdt:P101": "are",
+            "wd:Q1066891": "actively looking for work",
+            "wd:Q64825398": "retired",
+            "wd:Q48282": "students",
+            "wd:Q305479": "stay-at-home parents",
+            "wd:Q106986613": "those who are not actively seeking employment",
+            "http://www.wikidata.org/entity/Q5": "human"
+        },
+        "uri_label_desc_map": {
+            "wd:Q13440398": [
+                "workforce",
+                "members of a particular organization or population who are able or eligible to work; labour pool in employment; it may also mean all those who are available for work"
+            ],
+            "wdt:P2635": [
+                "number of parts of this work",
+                "the number of parts that a work comprises"
+            ],
+            "wd:Q2472587": [
+                "people",
+                "plurality of persons considered as a whole, from a government perspective"
+            ],
+            "wdt:P1012": [
+                "are of",
+                null
+            ],
+            "wd:Q17994745": [
+                "working age population",
+                "a range of ages typically between 18 to 64) considered able and presumably to work"
+            ],
+            "wdt:P1534": [
+                "either",
+                null
+            ],
+            "wd:Q8031587": [
+                "women in the workforce",
+                "women who perform some kind of job"
+            ],
+            "wd:Q10876391": [
+                "actively seeking employment",
+                null
+            ],
+            "wdt:P527": [
+                "has part(s)",
+                "part of this subject; inverse property of \"part of\" (P361). See also \"has parts of the class\" (P2670)."
+            ],
+            "wd:Q52967509": [
+                "Full-time workers reach out to the villages.",
+                "scientific article published in June 1977"
+            ],
+            "wd:Q7140093": [
+                "The Part-time Workers (Prevention of Less Favourable Treatment) Regulations 2000",
+                "UK Statutory Instrument 2000\u00a0No. 1551"
+            ],
+            "wd:Q28790169": [
+                "unemployed",
+                "person who doesn't work, but usually has no limitations to get employed"
+            ],
+            "wdt:P101": [
+                "field of work",
+                "specialization of a person or organization; see P106 for the occupation"
+            ],
+            "wd:Q1066891": [
+                "actively looking for work",
+                null
+            ],
+            "wd:Q64825398": [
+                "retired",
+                "status of a person who has retired permanently from employment"
+            ],
+            "wd:Q48282": [
+                "student",
+                "learner, or someone who attends an educational institution"
+            ],
+            "wd:Q305479": [
+                "stay-at-home parents",
+                null
+            ],
+            "wd:Q106986613": [
+                "those who are not actively seeking employment",
+                null
+            ]
+        },
+        "truth_score": 3.8031057915086595,
+        "% true": 0.3169254826257216,
+        "true_facts_names": [
+            [
+                "people",
+                "has part(s)",
+                "human"
+            ],
+            [
+                "people",
+                "has part(s)",
+                "human"
+            ],
+            [
+                "people",
+                "has part(s)",
+                "human"
+            ],
+            [
+                "people",
+                "has part(s)",
+                "human"
+            ],
+            [
+                "people",
+                "has part(s)",
+                "human"
+            ],
+            [
+                "people",
+                "has part(s)",
+                "human"
+            ],
+            [
+                "people",
+                "has part(s)",
+                "human"
+            ]
+        ],
+        "true_facts_uris": [
+            [
+                "wd:Q2472587",
+                "wdt:P527",
+                "http://www.wikidata.org/entity/Q5"
+            ],
+            [
+                "wd:Q2472587",
+                "wdt:P527",
+                "http://www.wikidata.org/entity/Q5"
+            ],
+            [
+                "wd:Q2472587",
+                "wdt:P527",
+                "http://www.wikidata.org/entity/Q5"
+            ],
+            [
+                "wd:Q2472587",
+                "wdt:P527",
+                "http://www.wikidata.org/entity/Q5"
+            ],
+            [
+                "wd:Q2472587",
+                "wdt:P527",
+                "http://www.wikidata.org/entity/Q5"
+            ],
+            [
+                "wd:Q2472587",
+                "wdt:P527",
+                "http://www.wikidata.org/entity/Q5"
+            ],
+            [
+                "wd:Q2472587",
+                "wdt:P527",
+                "http://www.wikidata.org/entity/Q5"
+            ]
+        ],
+        "linked_entities": [
+            "wd:Q48282",
+            "wd:Q17994745",
+            "wd:Q10876391",
+            "wd:Q8031587",
+            "wd:Q106986613",
+            "wd:Q64825398",
+            "wd:Q2472587",
+            "wd:Q28790169",
+            "wd:Q13440398",
+            "wd:Q52967509",
+            "wd:Q1066891",
+            "wd:Q7140093",
+            "wd:Q305479"
+        ],
+        "evaluation_score": 0.3852329343631494
+    },
+    "29": {
+        "question": "What is the name of the POW camp where 'Hogan's Heroes' are held?",
+        "choices": [
+            "Stalag 13",
+            "Alcatraz 17",
+            "Devil's Island",
+            "Leavenworth"
+        ],
+        "initial_response": "Stalag 13.",
+        "question_entity_names": [
+            "Hogan's Heroes"
+        ],
+        "response_entity_names": [
+            "Stalag 13"
+        ],
+        "extracted_triples": [
+            [
+                "'Hogan's Heroes'",
+                "'are held '",
+                "'Stalag 13'"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q112064",
+                "wdt:P4738",
+                "wd:Q106775"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q112064": "'Hogan's Heroes'",
+            "wdt:P4738": "'are held '",
+            "wd:Q106775": "'Stalag 13'",
+            "wd:Q431917": "Hogan's Heroes"
+        },
+        "uri_label_desc_map": {
+            "wd:Q112064": [
+                "'Hogan's Heroes'",
+                null
+            ],
+            "wdt:P4738": [
+                "'are held '",
+                null
+            ],
+            "wd:Q106775": [
+                "'Stalag 13'",
+                null
+            ],
+            "wd:Q431917": [
+                "Hogan's Heroes",
+                "1965-1971 Television Sitcom"
+            ]
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q106775",
+            "wd:Q112064"
+        ],
+        "evaluation_score": 0.1
+    },
+    "30": {
+        "question": "Which value is the most reasonable estimate of the volume of air an adult breathes in one day?",
+        "choices": [
+            "100 liters",
+            "1,000 liters",
+            "10,000 liters",
+            "100,000 liters"
+        ],
+        "initial_response": "Approximately 11,000 liters.",
+        "question_entity_names": [
+            "volume",
+            "air",
+            "adult",
+            "breathes",
+            "one day"
+        ],
+        "response_entity_names": [
+            "11,000 liters"
+        ],
+        "extracted_triples": [
+            [
+                "adult",
+                "breathes",
+                "volume of air"
+            ],
+            [
+                "adult",
+                "breathes",
+                "one day"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q9584157",
+                "wdt:P206",
+                "wd:Q73435892"
+            ],
+            [
+                "wd:Q9584157",
+                "wdt:P206",
+                "wd:Q232153"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q9584157": "adult",
+            "wdt:P206": "breathes",
+            "wd:Q73435892": "volume of air",
+            "wd:Q232153": "one day",
+            "wd:Q39297": "volume",
+            "wd:Q318452": "air",
+            "wd:Q16686448": "breathes"
+        },
+        "uri_label_desc_map": {
+            "wd:Q9584157": [
+                "adult human",
+                "adult member of the human species"
+            ],
+            "wdt:P206": [
+                "breathes",
+                null
+            ],
+            "wd:Q73435892": [
+                "Volume of air in a lethal venous air embolism",
+                "scientific article published on 01 February 2001"
+            ],
+            "wd:Q232153": [
+                "One Day",
+                "2009 novel by David Nicholls"
+            ],
+            "wd:Q39297": [
+                "volume",
+                "quantity of three-dimensional space"
+            ],
+            "wd:Q318452": [
+                "Air",
+                "French electronica duo"
+            ],
+            "wd:Q16686448": [
+                "breathes",
+                null
+            ]
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q73435892",
+            "wd:Q9584157",
+            "wd:Q232153"
+        ],
+        "evaluation_score": 0.05
+    },
+    "31": {
+        "question": "What is a Dutch oven?",
+        "choices": [
+            "a toaster oven",
+            "a microwave",
+            "a kettle pot",
+            "a sauna"
+        ],
+        "initial_response": "A Dutch oven is a large, heavy cooking pot with a tight-fitting lid. It is typically made of cast iron and is used for slow-cooking stews, soups, roasts, and other dishes.",
+        "question_entity_names": [
+            "Dutch oven"
+        ],
+        "response_entity_names": [
+            "Dutch oven",
+            "cooking pot",
+            "lid",
+            "cast iron",
+            "stews",
+            "soups",
+            "roasts",
+            "dishes"
+        ],
+        "extracted_triples": [
+            [
+                "Dutch oven",
+                "is",
+                "cooking pot"
+            ],
+            [
+                "Dutch oven",
+                "has",
+                "lid"
+            ],
+            [
+                "Dutch oven",
+                "made",
+                "cast iron"
+            ],
+            [
+                "Dutch oven",
+                "used",
+                "slow-cooking stews"
+            ],
+            [
+                "Dutch oven",
+                "used",
+                "slow-cooking soups"
+            ],
+            [
+                "Dutch oven",
+                "used",
+                "slow-cooking roasts"
+            ],
+            [
+                "Dutch oven",
+                "used",
+                "slow-cooking dishes"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q49335968",
+                "wdt:P921",
+                "wd:Q2366864"
+            ],
+            [
+                "wd:Q49335968",
+                "wdt:P921",
+                "wd:Q2488579"
+            ],
+            [
+                "wd:Q49335968",
+                "wdt:P170",
+                "wd:Q483269"
+            ],
+            [
+                "wd:Q49335968",
+                "wdt:P2283",
+                "wd:Q47069"
+            ],
+            [
+                "wd:Q49335968",
+                "wdt:P2283",
+                "wd:Q47067"
+            ],
+            [
+                "wd:Q49335968",
+                "wdt:P2283",
+                "wd:Q214609"
+            ],
+            [
+                "wd:Q49335968",
+                "wdt:P2283",
+                "wd:Q214609"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q49335968": "Dutch oven",
+            "wdt:P921": "has",
+            "wd:Q2366864": "cooking pot",
+            "wd:Q2488579": "lid",
+            "wdt:P170": "made",
+            "wd:Q483269": "cast iron",
+            "wdt:P2283": "used",
+            "wd:Q47069": "slow-cooking stews",
+            "wd:Q47067": "slow-cooking soups",
+            "wd:Q214609": "slow-cooking dishes"
+        },
+        "uri_label_desc_map": {
+            "wd:Q49335968": [
+                "Dutch Oven",
+                null
+            ],
+            "wdt:P921": [
+                "main subject",
+                "primary topic of a work (see also P180: depicts)"
+            ],
+            "wd:Q2366864": [
+                "cooking pot",
+                "container used for cooking"
+            ],
+            "wd:Q2488579": [
+                "lid",
+                "part of a container that closes or seals it by fitting over and around the opening"
+            ],
+            "wdt:P170": [
+                "creator",
+                "maker of this creative work or other object (where no more specific property exists)"
+            ],
+            "wd:Q483269": [
+                "cast iron",
+                "group of iron-carbon alloys"
+            ],
+            "wdt:P2283": [
+                "uses",
+                "item or concept used by the subject or in the operation (see also instrument [P1303] and armament [P520])"
+            ],
+            "wd:Q47069": [
+                "slow-cooking stews",
+                null
+            ],
+            "wd:Q47067": [
+                "slow-cooking soups",
+                null
+            ],
+            "wd:Q214609": [
+                "slow-cooking dishes",
+                null
+            ]
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q47069",
+            "wd:Q49335968",
+            "wd:Q214609",
+            "wd:Q2488579",
+            "wd:Q47067",
+            "wd:Q483269",
+            "wd:Q2366864"
+        ],
+        "evaluation_score": 0.08750000000000001
+    },
+    "32": {
+        "question": "What does it mean to work 'probono'?",
+        "choices": [
+            "work overtime",
+            "work without pay",
+            "work as your own boss",
+            "not work at all"
+        ],
+        "initial_response": "Pro bono is a Latin phrase meaning \u201cfor the public good.\u201d It is used to describe professional services that are provided free of charge or at a reduced rate to those who cannot afford them. Pro bono work is typically done by lawyers, doctors, and other professionals who volunteer their time and expertise to help those in need.",
+        "question_entity_names": [
+            "probono"
+        ],
+        "response_entity_names": [
+            "Pro bono",
+            "Latin",
+            "public good",
+            "professional services",
+            "lawyers",
+            "doctors",
+            "professionals"
+        ],
+        "extracted_triples": [
+            [
+                "probono",
+                "mean",
+                "to work"
+            ],
+            [
+                "probono",
+                "describe",
+                "professional services"
+            ],
+            [
+                "probono",
+                "provide",
+                "free of charge"
+            ],
+            [
+                "probono",
+                "provide",
+                "at a reduced rate"
+            ],
+            [
+                "probono",
+                "help",
+                "those who cannot afford them"
+            ],
+            [
+                "probono",
+                "done",
+                "lawyers"
+            ],
+            [
+                "probono",
+                "done",
+                "doctors"
+            ],
+            [
+                "probono",
+                "done",
+                "professionals"
+            ],
+            [
+                "pro bono",
+                "mean",
+                "a Latin phrase"
+            ],
+            [
+                "pro bono",
+                "used describe",
+                "professional services"
+            ],
+            [
+                "pro bono",
+                "used describe",
+                "services provided free of charge"
+            ],
+            [
+                "pro bono",
+                "used describe",
+                "services provided at a reduced rate"
+            ],
+            [
+                "pro bono",
+                "used describe",
+                "services provided for the public good"
+            ],
+            [
+                "pro bono",
+                "used describe",
+                "services provided by lawyers"
+            ],
+            [
+                "pro bono",
+                "used describe",
+                "services provided by doctors"
+            ],
+            [
+                "pro bono",
+                "used describe",
+                "services provided by professionals"
+            ],
+            [
+                "Latin",
+                "mean",
+                "for the public good"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q59348846",
+                "wdt:P10738",
+                "wd:Q104637423"
+            ],
+            [
+                "wd:Q59348846",
+                "wdt:P921",
+                "wd:Q2029911"
+            ],
+            [
+                "wd:Q59348846",
+                "wdt:P1056",
+                "wd:Q1543615"
+            ],
+            [
+                "wd:Q59348846",
+                "wdt:P1056",
+                "wd:Q131737"
+            ],
+            [
+                "wd:Q59348846",
+                "wdt:P5401",
+                "wd:Q10857055"
+            ],
+            [
+                "wd:Q59348846",
+                "wdt:P3095",
+                "wd:Q6802429"
+            ],
+            [
+                "wd:Q59348846",
+                "wdt:P3095",
+                "wd:Q1233919"
+            ],
+            [
+                "wd:Q59348846",
+                "wdt:P3095",
+                "wd:Q29590383"
+            ],
+            [
+                "wd:Q127537",
+                "wdt:P10738",
+                "wd:Q15630531"
+            ],
+            [
+                "wd:Q127537",
+                "wdt:P1162",
+                "wd:Q2029911"
+            ],
+            [
+                "wd:Q127537",
+                "wdt:P1162",
+                "wd:Q18616576"
+            ],
+            [
+                "wd:Q127537",
+                "wdt:P1162",
+                "wd:Q105737"
+            ],
+            [
+                "wd:Q127537",
+                "wdt:P1162",
+                "wd:Q18616576"
+            ],
+            [
+                "wd:Q127537",
+                "wdt:P1162",
+                "wd:Q131271"
+            ],
+            [
+                "wd:Q127537",
+                "wdt:P1162",
+                "wd:Q185075"
+            ],
+            [
+                "wd:Q127537",
+                "wdt:P1162",
+                "wd:Q28917446"
+            ],
+            [
+                "wd:Q397",
+                "wdt:P10738",
+                "wd:Q91494386"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q59348846": "probono",
+            "wdt:P10738": "mean",
+            "wd:Q104637423": "to work",
+            "wdt:P921": "describe",
+            "wd:Q2029911": "professional services",
+            "wdt:P1056": "provide",
+            "wd:Q1543615": "free of charge",
+            "wd:Q131737": "at a reduced rate",
+            "wdt:P5401": "help",
+            "wd:Q10857055": "those who cannot afford them",
+            "wdt:P3095": "done",
+            "wd:Q6802429": "lawyers",
+            "wd:Q1233919": "doctors",
+            "wd:Q29590383": "professionals",
+            "wd:Q127537": "pro bono",
+            "wd:Q15630531": "a Latin phrase",
+            "wdt:P1162": "used describe",
+            "wd:Q18616576": "services provided for the public good",
+            "wd:Q105737": "services provided at a reduced rate",
+            "wd:Q131271": "services provided by lawyers",
+            "wd:Q185075": "services provided by doctors",
+            "wd:Q28917446": "services provided by professionals",
+            "wd:Q397": "Latin",
+            "wd:Q91494386": "for the public good"
+        },
+        "uri_label_desc_map": {
+            "wd:Q59348846": [
+                "probono",
+                null
+            ],
+            "wdt:P10738": [
+                "mean of a probability distribution",
+                "long-run average value of repetitions of the experiment it represents"
+            ],
+            "wd:Q104637423": [
+                "To work",
+                "painting by Rafa\u0142 Pomorski"
+            ],
+            "wdt:P921": [
+                "main subject",
+                "primary topic of a work (see also P180: depicts)"
+            ],
+            "wd:Q2029911": [
+                "professional services",
+                "services created by applying specialized abilities attained through experience and tertiary education"
+            ],
+            "wdt:P1056": [
+                "product or material produced or service provided",
+                "material or product produced by a government agency, business, industry, facility, or process"
+            ],
+            "wd:Q1543615": [
+                "gratis",
+                "obtainable without payment"
+            ],
+            "wd:Q131737": [
+                "at a reduced rate",
+                null
+            ],
+            "wdt:P5401": [
+                "auxiliary verb",
+                "auxiliary verb to be used with this verb"
+            ],
+            "wd:Q10857055": [
+                "those who cannot afford them",
+                null
+            ],
+            "wdt:P3095": [
+                "practiced by",
+                "type of agents that study this subject or work in this field"
+            ],
+            "wd:Q6802429": [
+                "Lawyers",
+                "television series"
+            ],
+            "wd:Q1233919": [
+                "Doctors",
+                "British soap opera"
+            ],
+            "wd:Q29590383": [
+                "Professionals",
+                "episode of Casualty"
+            ],
+            "wd:Q127537": [
+                "pro bono",
+                "professional work undertaken voluntarily and without payment"
+            ],
+            "wd:Q15630531": [
+                "a Latin phrase",
+                null
+            ],
+            "wdt:P1162": [
+                "used describe",
+                null
+            ],
+            "wd:Q18616576": [
+                "services provided for the public good",
+                null
+            ],
+            "wd:Q105737": [
+                "services provided at a reduced rate",
+                null
+            ],
+            "wd:Q131271": [
+                "services provided by lawyers",
+                null
+            ],
+            "wd:Q185075": [
+                "services provided by doctors",
+                null
+            ],
+            "wd:Q28917446": [
+                "services provided by professionals",
+                null
+            ],
+            "wd:Q397": [
+                "Latin",
+                "Indo-European language of the Italic branch"
+            ],
+            "wd:Q91494386": [
+                "For the Public Good",
+                "scientific article published on 01 May 1907"
+            ]
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q2029911",
+            "wd:Q127537",
+            "wd:Q131271",
+            "wd:Q29590383",
+            "wd:Q131737",
+            "wd:Q15630531",
+            "wd:Q18616576",
+            "wd:Q105737",
+            "wd:Q1543615",
+            "wd:Q104637423",
+            "wd:Q185075",
+            "wd:Q6802429",
+            "wd:Q28917446",
+            "wd:Q59348846",
+            "wd:Q10857055",
+            "wd:Q397",
+            "wd:Q1233919",
+            "wd:Q91494386"
+        ],
+        "evaluation_score": 0.1
+    },
+    "33": {
+        "question": "What is the largest animal ever to live on Earth?",
+        "choices": [
+            "blue whale",
+            "giant squid",
+            "woolly mammoth",
+            "Tyrannosaurus"
+        ],
+        "initial_response": "The largest animal ever to live on Earth is the blue whale. It can grow up to 30 meters (98 feet) long and weigh up to 173 tonnes (190 tons).",
+        "question_entity_names": [
+            "largest animal",
+            "Earth"
+        ],
+        "response_entity_names": [
+            "blue whale"
+        ],
+        "extracted_triples": [
+            [
+                "largest animal",
+                "is",
+                "blue whale"
+            ],
+            [
+                "blue whale",
+                "grow",
+                "30 meters long"
+            ],
+            [
+                "blue whale",
+                "weigh",
+                "173 tonnes"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q324104",
+                "wdt:P433",
+                "wd:Q42196"
+            ],
+            [
+                "wd:Q42196",
+                "wdt:P31",
+                "wd:Q35852"
+            ],
+            [
+                "wd:Q42196",
+                "wdt:P2067",
+                "wd:Q28390"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q324104": "largest animal",
+            "wdt:P433": "is",
+            "wd:Q42196": "Balaenoptera musculus",
+            "wdt:P31": "grow",
+            "wd:Q35852": "30 meters long",
+            "wdt:P2067": "weigh",
+            "wd:Q28390": "173 tonnes",
+            "wd:Q2": "Earth",
+            "http://www.wikidata.org/entity/Q16521": "taxon"
+        },
+        "uri_label_desc_map": {
+            "wd:Q324104": [
+                "largest animal",
+                null
+            ],
+            "wdt:P433": [
+                "issue",
+                "issue of a newspaper, a scientific journal or magazine for reference purpose"
+            ],
+            "wd:Q42196": [
+                "Balaenoptera musculus",
+                "species of marine mammal, largest known animal in the world"
+            ],
+            "wdt:P31": [
+                "grow",
+                null
+            ],
+            "wd:Q35852": [
+                "30 meters long",
+                null
+            ],
+            "wdt:P2067": [
+                "mass",
+                "mass (in colloquial usage also known as weight) of the item"
+            ],
+            "wd:Q28390": [
+                "173 tonnes",
+                null
+            ],
+            "wd:Q2": [
+                "Earth",
+                "third planet from the Sun in the Solar System"
+            ]
+        },
+        "truth_score": 0.5041833810251234,
+        "% true": 0.16806112700837447,
+        "true_facts_names": [
+            [
+                "Balaenoptera musculus",
+                "grow",
+                "taxon"
+            ]
+        ],
+        "true_facts_uris": [
+            [
+                "wd:Q42196",
+                "wdt:P31",
+                "http://www.wikidata.org/entity/Q16521"
+            ]
+        ],
+        "linked_entities": [
+            "wd:Q35852",
+            "wd:Q42196",
+            "wd:Q28390",
+            "wd:Q324104"
+        ],
+        "evaluation_score": 0.25125501430753705
+    },
+    "34": {
+        "question": "What kind of angle is formed where two perpendicular lines meet?",
+        "choices": [
+            "obtuse",
+            "acute",
+            "right",
+            "invisible"
+        ],
+        "initial_response": "A right angle.",
+        "timeout": true
+    },
+    "35": {
+        "question": "The nineteenth-century photographic process used to create a daguerreotype was notable for its",
+        "choices": [
+            "quick exposure time",
+            "ability to capture sharp detail",
+            "capacity to be reproduced multiple times",
+            "use of paper negatives"
+        ],
+        "initial_response": "use of a silver-coated copper plate. The plate was exposed to iodine fumes, which created a light-sensitive surface. The plate was then exposed to light in a camera, which created an image on the plate. The plate was then developed using a solution of mercury and heated to fix the image. Finally, the plate was varnished to protect the image.",
+        "question_entity_names": [
+            "nineteenth-century",
+            "photographic process",
+            "daguerreotype"
+        ],
+        "response_entity_names": [
+            "silver-coated copper plate",
+            "iodine fumes",
+            "light-sensitive surface",
+            "camera",
+            "image",
+            "solution of mercury",
+            "plate",
+            "varnished"
+        ],
+        "timeout": true
+    },
+    "36": {
+        "question": "A business teacher has students analyze a scenario in which a few firms in the gas industry produce a homogeneous product and dominate the market. This situation would primarily produce a market structure representative of",
+        "choices": [
+            "an oligopoly",
+            "a pure monopoly",
+            "monopolistic competition",
+            "pure competition"
+        ],
+        "initial_response": "a \n\nMonopoly.",
+        "question_entity_names": [
+            "business teacher",
+            "students",
+            "scenario",
+            "firms",
+            "gas industry",
+            "homogeneous product",
+            "market"
+        ],
+        "response_entity_names": [
+            "Monopoly"
+        ],
+        "extracted_triples": [
+            [
+                "business teacher",
+                "has",
+                "students"
+            ],
+            [
+                "students",
+                "analyze",
+                "scenario"
+            ],
+            [
+                "firms",
+                "produce",
+                "homogeneous product"
+            ],
+            [
+                "firms",
+                "dominate",
+                "market"
+            ],
+            [
+                "situation",
+                "produce",
+                "market structure"
+            ],
+            [
+                "market structure",
+                "representative",
+                "Monopoly"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q114784730",
+                "wdt:P921",
+                "wd:Q48282"
+            ],
+            [
+                "wd:Q48282",
+                "wdt:P3176",
+                "wd:Q1090839"
+            ],
+            [
+                "wd:Q108286833",
+                "wdt:P176",
+                "wd:Q2320585"
+            ],
+            [
+                "wd:Q108286833",
+                "wdt:P138",
+                "wd:Q330284"
+            ],
+            [
+                "wd:Q2141565",
+                "wdt:P176",
+                "wd:Q877707"
+            ],
+            [
+                "wd:Q877707",
+                "wdt:P1875",
+                "wd:Q43637"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q114784730": "business teacher",
+            "wdt:P921": "has",
+            "wd:Q48282": "students",
+            "wdt:P3176": "analyze",
+            "wd:Q1090839": "scenario",
+            "wd:Q108286833": "firms",
+            "wdt:P176": "produce",
+            "wd:Q2320585": "homogeneous product",
+            "wdt:P138": "dominate",
+            "wd:Q330284": "market",
+            "wd:Q2141565": "situation",
+            "wd:Q877707": "market structure",
+            "wdt:P1875": "representative",
+            "wd:Q43637": "monopoly",
+            "wd:Q21328659": "gas industry",
+            "http://www.wikidata.org/prop/direct/P279": "subclass of"
+        },
+        "uri_label_desc_map": {
+            "wd:Q114784730": [
+                "business teacher",
+                "teacher of business at any level"
+            ],
+            "wdt:P921": [
+                "main subject",
+                "primary topic of a work (see also P180: depicts)"
+            ],
+            "wd:Q48282": [
+                "student",
+                "learner, or someone who attends an educational institution"
+            ],
+            "wdt:P3176": [
+                "uses property",
+                "Wikidata property used, discussed, or otherwise analyzed in this work (not the meaning of the property itself)"
+            ],
+            "wd:Q1090839": [
+                "scenario",
+                "in context with theatre and movies a scenario is a description of an event or series of actions and events"
+            ],
+            "wd:Q108286833": [
+                "Firms, names, and the organization of financial markets",
+                "doctoral thesis by Tianxi Wang"
+            ],
+            "wdt:P176": [
+                "manufacturer",
+                "(main or final) manufacturer or producer of this product"
+            ],
+            "wd:Q2320585": [
+                "homogeneous product",
+                null
+            ],
+            "wdt:P138": [
+                "dominate",
+                null
+            ],
+            "wd:Q330284": [
+                "marketplace",
+                "space in which a market operates"
+            ],
+            "wd:Q2141565": [
+                "situation",
+                "position with respect to conditions, circumstances and contexts"
+            ],
+            "wd:Q877707": [
+                "market structure",
+                "meeting point of supply and demand for a product"
+            ],
+            "wdt:P1875": [
+                "represented by",
+                "person or agency that represents or manages the subject"
+            ],
+            "wd:Q43637": [
+                "monopoly",
+                "market structure with a single firm dominating the market"
+            ],
+            "wd:Q21328659": [
+                "gas industry",
+                "industry sector concerned with the supply of gas"
+            ]
+        },
+        "truth_score": 0.5644320219654125,
+        "% true": 0.09407200366090208,
+        "true_facts_names": [
+            [
+                "monopoly",
+                "subclass of",
+                "market structure"
+            ]
+        ],
+        "true_facts_uris": [
+            [
+                "wd:Q43637",
+                "http://www.wikidata.org/prop/direct/P279",
+                "wd:Q877707"
+            ]
+        ],
+        "linked_entities": [
+            "wd:Q48282",
+            "wd:Q330284",
+            "wd:Q43637",
+            "wd:Q108286833",
+            "wd:Q2320585",
+            "wd:Q114784730",
+            "wd:Q877707",
+            "wd:Q2141565",
+            "wd:Q1090839"
+        ],
+        "evaluation_score": 0.18466480329481189
+    },
+    "37": {
+        "question": "In traditional English puppet shows who is married to the character Punch?",
+        "choices": [
+            "Debbie",
+            "Victoria",
+            "Judy",
+            "Barbara"
+        ],
+        "initial_response": "Punch is usually married to Judy.",
+        "question_entity_names": [
+            "Punch"
+        ],
+        "response_entity_names": [
+            "Punch",
+            "Judy"
+        ],
+        "extracted_triples": [
+            [
+                "English puppet shows",
+                "have",
+                "character Punch"
+            ],
+            [
+                "character Punch",
+                "married",
+                "Judy"
+            ],
+            [
+                "Punch",
+                "usually married",
+                "Judy"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q1056822",
+                "wdt:P527",
+                "wd:Q131831"
+            ],
+            [
+                "wd:Q131831",
+                "wdt:P2842",
+                "wd:Q55615419"
+            ],
+            [
+                "wd:Q849759",
+                "wdt:P31",
+                "wd:Q55615419"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q1056822": "English puppet shows",
+            "wdt:P527": "have",
+            "wd:Q131831": "character Punch",
+            "wdt:P2842": "married",
+            "wd:Q55615419": "Judy",
+            "wd:Q849759": "Punch",
+            "wdt:P31": "usually married",
+            "http://www.wikidata.org/entity/Q111914189": "satirical magazine"
+        },
+        "uri_label_desc_map": {
+            "wd:Q1056822": [
+                "English puppet shows",
+                null
+            ],
+            "wdt:P527": [
+                "has part(s)",
+                "part of this subject; inverse property of \"part of\" (P361). See also \"has parts of the class\" (P2670)."
+            ],
+            "wd:Q131831": [
+                "character Punch",
+                null
+            ],
+            "wdt:P2842": [
+                "place of marriage",
+                "location where the marriage was celebrated. Use as qualifier for property \"spouse\" (P26)"
+            ],
+            "wd:Q55615419": [
+                "Judy",
+                "2019 film directed by Rupert Goold"
+            ],
+            "wd:Q849759": [
+                "Punch",
+                "British weekly magazine of humour and satire"
+            ],
+            "wdt:P31": [
+                "usually married",
+                null
+            ]
+        },
+        "truth_score": 0.5972295126951404,
+        "% true": 0.19907650423171344,
+        "true_facts_names": [
+            [
+                "Punch",
+                "usually married",
+                "satirical magazine"
+            ]
+        ],
+        "true_facts_uris": [
+            [
+                "wd:Q849759",
+                "wdt:P31",
+                "http://www.wikidata.org/entity/Q111914189"
+            ]
+        ],
+        "linked_entities": [
+            "wd:Q131831",
+            "wd:Q849759",
+            "wd:Q55615419",
+            "wd:Q1056822"
+        ],
+        "evaluation_score": 0.2791688538085421
+    },
+    "38": {
+        "question": "In what sport do athletes compete for the Walker Cup?",
+        "choices": [
+            "cricket",
+            "tennis",
+            "squash",
+            "golf"
+        ],
+        "initial_response": "Golf",
+        "question_entity_names": [
+            "Walker Cup"
+        ],
+        "response_entity_names": [
+            "Golf"
+        ],
+        "extracted_triples": [
+            [
+                "athletes",
+                "compete",
+                "Walker Cup"
+            ],
+            [
+                "athletes",
+                "compete",
+                "Golf"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q2066131",
+                "wdt:P54",
+                "wd:Q1457589"
+            ],
+            [
+                "wd:Q2066131",
+                "wdt:P54",
+                "wd:Q5377"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q2066131": "athletes",
+            "wdt:P54": "compete",
+            "wd:Q1457589": "Walker Cup",
+            "wd:Q5377": "Golf"
+        },
+        "uri_label_desc_map": {
+            "wd:Q2066131": [
+                "athlete",
+                "person who participates regularly in a sport"
+            ],
+            "wdt:P54": [
+                "member of sports team",
+                "sports teams or clubs that the subject represents or represented"
+            ],
+            "wd:Q1457589": [
+                "Walker Cup",
+                "golf trophy"
+            ],
+            "wd:Q5377": [
+                "golf",
+                "club-and-ball sport"
+            ]
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q2066131",
+            "wd:Q5377",
+            "wd:Q1457589"
+        ],
+        "evaluation_score": 0.1
+    },
+    "39": {
+        "question": "A pita is a type of what?",
+        "choices": [
+            "Fresh Fruit",
+            "flat bread",
+            "French tart",
+            "fried bean dip"
+        ],
+        "initial_response": "Pita is a type of flatbread.",
+        "question_entity_names": [
+            "pita"
+        ],
+        "response_entity_names": [
+            "Pita"
+        ],
+        "extracted_triples": [
+            [
+                "pita",
+                "type",
+                "flatbread"
+            ],
+            [
+                "Pita",
+                "type",
+                "flatbread"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q211340",
+                "wdt:P427",
+                "wd:Q666242"
+            ],
+            [
+                "wd:Q211340",
+                "wdt:P427",
+                "wd:Q666242"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q211340": "pita",
+            "wdt:P427": "type",
+            "wd:Q666242": "flatbread",
+            "http://www.wikidata.org/prop/direct/P279": "subclass of"
+        },
+        "uri_label_desc_map": {
+            "wd:Q211340": [
+                "pita",
+                "soft, slightly leavened flatbread baked from wheat flour"
+            ],
+            "wdt:P427": [
+                "taxonomic type",
+                "name-bearing genus or species of this nominal family or genus (or subfamily or subgenus)"
+            ],
+            "wd:Q666242": [
+                "flatbread",
+                "type of bread"
+            ]
+        },
+        "truth_score": 1.2447195145345338,
+        "% true": 0.6223597572672669,
+        "true_facts_names": [
+            [
+                "pita",
+                "subclass of",
+                "flatbread"
+            ],
+            [
+                "pita",
+                "subclass of",
+                "flatbread"
+            ]
+        ],
+        "true_facts_uris": [
+            [
+                "wd:Q211340",
+                "http://www.wikidata.org/prop/direct/P279",
+                "wd:Q666242"
+            ],
+            [
+                "wd:Q211340",
+                "http://www.wikidata.org/prop/direct/P279",
+                "wd:Q666242"
+            ]
+        ],
+        "linked_entities": [
+            "wd:Q211340",
+            "wd:Q666242"
+        ],
+        "evaluation_score": 0.6601237815405402
+    },
+    "40": {
+        "question": "What is the oldest permanent European settlement in the United States?",
+        "choices": [
+            "St Augustine Florida",
+            "Plymouth Massachusetts",
+            "Newport News Virginia",
+            "Charlotte North Carolina"
+        ],
+        "initial_response": "The oldest permanent European settlement in the United States is St. Augustine, Florida, founded in 1565 by Spanish explorer Pedro Men\u00e9ndez de Avil\u00e9s.",
+        "question_entity_names": [
+            "oldest permanent European settlement",
+            "United States"
+        ],
+        "response_entity_names": [
+            "St. Augustine",
+            "Florida",
+            "United States",
+            "Pedro Men\u00e9ndez de Avil\u00e9s"
+        ],
+        "extracted_triples": [
+            [
+                "oldest permanent European settlement",
+                "is",
+                "St. Augustine"
+            ],
+            [
+                "oldest permanent European settlement",
+                "in",
+                "United States"
+            ],
+            [
+                "St. Augustine",
+                "founded",
+                "1565"
+            ],
+            [
+                "St. Augustine",
+                "founded",
+                "Pedro Men\u00e9ndez de Avil\u00e9s"
+            ],
+            [
+                "St. Augustine",
+                "located",
+                "Florida"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q126425",
+                "wdt:P433",
+                "wd:Q2132165"
+            ],
+            [
+                "wd:Q126425",
+                "wdt:P131",
+                "wd:Q30"
+            ],
+            [
+                "wd:Q2132165",
+                "wdt:P112",
+                "wd:Q6634"
+            ],
+            [
+                "wd:Q2132165",
+                "wdt:P112",
+                "wd:Q553152"
+            ],
+            [
+                "wd:Q2132165",
+                "wdt:P421",
+                "wd:Q812"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q126425": "oldest permanent European settlement",
+            "wdt:P433": "is",
+            "wd:Q2132165": "St. Augustine",
+            "wdt:P131": "located in the administrative territorial entity",
+            "wd:Q30": "United States",
+            "wdt:P112": "founded",
+            "wd:Q6634": "1565",
+            "wd:Q553152": "Pedro Men\u00e9ndez de Avil\u00e9s",
+            "wdt:P421": "located",
+            "wd:Q812": "Florida",
+            "http://www.wikidata.org/entity/Q1749": "Kaliningrad Oblast"
+        },
+        "uri_label_desc_map": {
+            "wd:Q126425": [
+                "oldest permanent European settlement",
+                null
+            ],
+            "wdt:P433": [
+                "issue",
+                "issue of a newspaper, a scientific journal or magazine for reference purpose"
+            ],
+            "wd:Q2132165": [
+                "St. Augustine",
+                "human settlement in Illinois, United States of America"
+            ],
+            "wdt:P131": [
+                "located in the administrative territorial entity",
+                "the item is located on the territory of the following administrative entity. Use P276 for specifying locations that are non-administrative places and for items about events. Use P1382 if the item falls only partially into the administrative entity."
+            ],
+            "wd:Q30": [
+                "United States of America",
+                "country in North America"
+            ],
+            "wdt:P112": [
+                "founded by",
+                "founder or co-founder of this organization, religion or place"
+            ],
+            "wd:Q6634": [
+                "1565",
+                "year"
+            ],
+            "wd:Q553152": [
+                "Pedro Men\u00e9ndez de Avil\u00e9s",
+                "Spanish explorer (1519-1574)"
+            ],
+            "wdt:P421": [
+                "located in time zone",
+                "time zone for this item"
+            ],
+            "wd:Q812": [
+                "Florida",
+                "state in the United States of America"
+            ]
+        },
+        "truth_score": 0.5979968470184563,
+        "% true": 0.11959936940369127,
+        "true_facts_names": [
+            [
+                "oldest permanent European settlement",
+                "located in the administrative territorial entity",
+                "Kaliningrad Oblast"
+            ]
+        ],
+        "true_facts_uris": [
+            [
+                "wd:Q126425",
+                "wdt:P131",
+                "http://www.wikidata.org/entity/Q1749"
+            ]
+        ],
+        "linked_entities": [
+            "wd:Q812",
+            "wd:Q2132165",
+            "wd:Q30",
+            "wd:Q126425",
+            "wd:Q553152",
+            "wd:Q6634"
+        ],
+        "evaluation_score": 0.20763943246332217
+    },
+    "41": {
+        "question": "How much energy do Americans waste each year by throwing out the unused ice in their drinks?",
+        "choices": [
+            "6*10^8 J",
+            "6*10^11 J",
+            "6*10^14 J",
+            "6*10^17 J"
+        ],
+        "initial_response": "It is difficult to estimate the exact amount of energy wasted each year by throwing out unused ice in drinks. However, it is estimated that Americans waste approximately 5 billion kilowatt-hours of energy each year by throwing out unused ice in their drinks.",
+        "question_entity_names": [
+            "Americans"
+        ],
+        "response_entity_names": [
+            "Americans"
+        ],
+        "extracted_triples": [],
+        "extracted_triples_uris": [],
+        "uri_name_map": {
+            "wd:Q846570": "Americans"
+        },
+        "uri_label_desc_map": {
+            "wd:Q846570": [
+                "Americans",
+                "citizens or residents of the United States of America"
+            ]
+        },
+        "truth_score": 0,
+        "% true": 0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [],
+        "evaluation_score": 0.0
+    },
+    "42": {
+        "question": "Who wrote 'A Tale of Two Cities'?",
+        "choices": [
+            "Charles Dickens",
+            "Nathaniel Hawthorne",
+            "Washington Irving",
+            "Mark Twain"
+        ],
+        "initial_response": "Charles Dickens",
+        "question_entity_names": [
+            "A Tale of Two Cities"
+        ],
+        "response_entity_names": [
+            "Charles Dickens"
+        ],
+        "extracted_triples": [
+            [
+                "'A Tale of Two Cities'",
+                "'written '",
+                "'Charles Dickens'"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q79922",
+                "wdt:P1104",
+                "wd:Q7243"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q79922": "'A Tale of Two Cities'",
+            "wdt:P1104": "'written '",
+            "wd:Q7243": "'Charles Dickens'",
+            "wd:Q308918": "A Tale of Two Cities"
+        },
+        "uri_label_desc_map": {
+            "wd:Q79922": [
+                "'A Tale of Two Cities'",
+                null
+            ],
+            "wdt:P1104": [
+                "'written '",
+                null
+            ],
+            "wd:Q7243": [
+                "'Charles Dickens'",
+                null
+            ],
+            "wd:Q308918": [
+                "A Tale of Two Cities",
+                "1859 novel by Charles Dickens"
+            ]
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q7243",
+            "wd:Q79922"
+        ],
+        "evaluation_score": 0.1
+    },
+    "43": {
+        "question": "What is your astrological sign if you were born on Halloween?",
+        "choices": [
+            "Scorpio",
+            "Capricorn",
+            "Libra",
+            "Cancer"
+        ],
+        "initial_response": "If you were born on Halloween, your astrological sign is Scorpio.",
+        "question_entity_names": [
+            "astrological sign",
+            "Halloween"
+        ],
+        "response_entity_names": [
+            "Halloween",
+            "Scorpio"
+        ],
+        "extracted_triples": [
+            [
+                "you",
+                "have",
+                "astrological sign"
+            ],
+            [
+                "you",
+                "born",
+                "Halloween"
+            ],
+            [
+                "your astrological sign",
+                "is",
+                "Scorpio"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q15914492",
+                "wdt:P366",
+                "wd:Q3408364"
+            ],
+            [
+                "wd:Q15914492",
+                "wdt:P569",
+                "wd:Q251868"
+            ],
+            [
+                "wd:Q28390",
+                "wdt:P433",
+                "wd:Q134398"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q15914492": "you",
+            "wdt:P366": "have",
+            "wd:Q3408364": "astrological sign",
+            "wdt:P569": "born",
+            "wd:Q251868": "Halloween",
+            "wd:Q28390": "your astrological sign",
+            "wdt:P433": "is",
+            "wd:Q134398": "Scorpio"
+        },
+        "uri_label_desc_map": {
+            "wd:Q15914492": [
+                "You",
+                "Chinese family name \u6e38"
+            ],
+            "wdt:P366": [
+                "has use",
+                "main use of the subject (includes current and former usage)"
+            ],
+            "wd:Q3408364": [
+                "astrological signs governed by fire",
+                null
+            ],
+            "wdt:P569": [
+                "date of birth",
+                "date on which the subject was born"
+            ],
+            "wd:Q251868": [
+                "Halloween",
+                "a celebration observed in many countries on 31 October"
+            ],
+            "wd:Q28390": [
+                "your astrological sign",
+                null
+            ],
+            "wdt:P433": [
+                "issue",
+                "issue of a newspaper, a scientific journal or magazine for reference purpose"
+            ],
+            "wd:Q134398": [
+                "Scorpio",
+                "eighth astrological sign of the zodiac"
+            ]
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q251868",
+            "wd:Q28390",
+            "wd:Q134398",
+            "wd:Q3408364",
+            "wd:Q15914492"
+        ],
+        "evaluation_score": 0.1
+    },
+    "44": {
+        "question": "In an adult human how long is the large intestine?",
+        "choices": [
+            "one foot",
+            "five feet",
+            "twelve feet",
+            "twenty feet"
+        ],
+        "initial_response": "The large intestine, also known as the colon, is typically about 5 feet long in an adult human.",
+        "question_entity_names": [
+            "adult human",
+            "large intestine"
+        ],
+        "response_entity_names": [
+            "large intestine",
+            "colon"
+        ],
+        "extracted_triples": [
+            [
+                "adult human",
+                "is",
+                "how long"
+            ],
+            [
+                "large intestine",
+                "is",
+                "typically about 5 feet long"
+            ],
+            [
+                "large intestine",
+                "also known",
+                "colon"
+            ],
+            [
+                "colon",
+                "is",
+                "typically about 5 feet long"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q9584157",
+                "wdt:P433",
+                "wd:Q41794410"
+            ],
+            [
+                "wd:Q6489153",
+                "wdt:P433",
+                "wd:Q3576112"
+            ],
+            [
+                "wd:Q6489153",
+                "wdt:P2561",
+                "wd:Q5982337"
+            ],
+            [
+                "wd:Q5982337",
+                "wdt:P433",
+                "wd:Q3576112"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q9584157": "adult human",
+            "wdt:P433": "is",
+            "wd:Q41794410": "how long",
+            "wd:Q6489153": "large intestine",
+            "wd:Q3576112": "typically about 5 feet long",
+            "wdt:P2561": "also known",
+            "wd:Q5982337": "colon"
+        },
+        "uri_label_desc_map": {
+            "wd:Q9584157": [
+                "adult human",
+                "adult member of the human species"
+            ],
+            "wdt:P433": [
+                "issue",
+                "issue of a newspaper, a scientific journal or magazine for reference purpose"
+            ],
+            "wd:Q41794410": [
+                "How Long",
+                "single by Charlie Puth"
+            ],
+            "wd:Q6489153": [
+                "Large intestine",
+                null
+            ],
+            "wd:Q3576112": [
+                "typically about 5 feet long",
+                null
+            ],
+            "wdt:P2561": [
+                "name",
+                "name the subject is known by. If a more specific property is available, use that"
+            ],
+            "wd:Q5982337": [
+                "colon",
+                "part of large intestine"
+            ]
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q6489153",
+            "wd:Q9584157",
+            "wd:Q3576112",
+            "wd:Q5982337",
+            "wd:Q41794410"
+        ],
+        "evaluation_score": 0.1
+    },
+    "45": {
+        "question": "The purpose of an amicus curiae brief is to",
+        "choices": [
+            "influence the outcome of a Supreme Court case",
+            "explain the reasoning of a Supreme Court decision",
+            "request a writ of habeas corpus from the Supreme Court",
+            "order a party to comply with a Supreme Court decision"
+        ],
+        "initial_response": "provide an impartial, unbiased opinion on a legal matter to the court. It is typically filed by a third party who is not directly involved in the case, such as an organization, an individual, or a group of individuals. The brief is intended to provide the court with additional information or arguments that may not have been presented by the parties involved in the case. The brief can also provide the court with a different perspective on the legal issue at hand.",
+        "question_entity_names": [
+            "amicus curiae brief"
+        ],
+        "response_entity_names": [
+            "court",
+            "third party",
+            "organization",
+            "individual",
+            "group of individuals",
+            "brief",
+            "information",
+            "arguments",
+            "parties",
+            "legal issue"
+        ],
+        "extracted_triples": [
+            [
+                "amicus curiae brief",
+                "typically filed",
+                "a third party"
+            ],
+            [
+                "third party",
+                "is",
+                "not directly involved in the case"
+            ],
+            [
+                "third party",
+                "can be",
+                "an organization"
+            ],
+            [
+                "third party",
+                "can be",
+                "an individual"
+            ],
+            [
+                "third party",
+                "can be",
+                "a group of individuals"
+            ],
+            [
+                "brief",
+                "intended provide",
+                "the court with additional information or arguments"
+            ],
+            [
+                "brief",
+                "may presented",
+                "the parties involved in the case"
+            ],
+            [
+                "brief",
+                "also provide",
+                "the court with a different perspective on the legal issue at hand"
+            ]
+        ],
+        "error": "list index out of range"
+    },
+    "46": {
+        "question": "What are the names of the two primary M&M's spokes-candies?",
+        "choices": [
+            "Peanut and Plain",
+            "Red and Yellow",
+            "Mort and Marty",
+            "They don't have names"
+        ],
+        "initial_response": "The two primary M&M's spokes-candies are Red and Yellow.",
+        "question_entity_names": [
+            "M&M's"
+        ],
+        "response_entity_names": [
+            "M&M's",
+            "Red",
+            "Yellow"
+        ],
+        "extracted_triples": [
+            [
+                "M&M's",
+                "spokes-candies",
+                "Red"
+            ],
+            [
+                "M&M's",
+                "spokes-candies",
+                "Yellow"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q739550",
+                "wdt:P674",
+                "wd:Q3142"
+            ],
+            [
+                "wd:Q739550",
+                "wdt:P674",
+                "wd:Q943"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q739550": "M&M's",
+            "wdt:P674": "spokes-candies",
+            "wd:Q3142": "Red",
+            "wd:Q943": "Yellow"
+        },
+        "uri_label_desc_map": {
+            "wd:Q739550": [
+                "M&M's",
+                "brand of chocolate candy pieces"
+            ],
+            "wdt:P674": [
+                "spokes-candies",
+                null
+            ],
+            "wd:Q3142": [
+                "red",
+                "color"
+            ],
+            "wd:Q943": [
+                "yellow",
+                "color"
+            ]
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q739550",
+            "wd:Q943",
+            "wd:Q3142"
+        ],
+        "evaluation_score": 0.1
+    },
+    "47": {
+        "question": "In bowling how many pins must you knock down to get a strike?",
+        "choices": [
+            "zero",
+            "8",
+            "10",
+            "12"
+        ],
+        "initial_response": "In bowling, you must knock down all 10 pins to get a strike.",
+        "question_entity_names": [
+            "bowling",
+            "pins",
+            "strike"
+        ],
+        "response_entity_names": [
+            "bowling",
+            "10 pins",
+            "strike"
+        ],
+        "extracted_triples": [
+            [
+                "bowling",
+                "knock",
+                "pins"
+            ],
+            [
+                "you",
+                "get",
+                "strike"
+            ],
+            [
+                "bowling",
+                "knock",
+                "all 10 pins"
+            ],
+            [
+                "you",
+                "get",
+                "strike"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q172809",
+                "wdt:P1559",
+                "wd:Q37560107"
+            ],
+            [
+                "wd:Q39082126",
+                "wdt:P245",
+                "wd:Q3242199"
+            ],
+            [
+                "wd:Q172809",
+                "wdt:P1559",
+                "wd:Q13406554"
+            ],
+            [
+                "wd:Q39082126",
+                "wdt:P245",
+                "wd:Q3242199"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q172809": "bowling",
+            "wdt:P1559": "knock",
+            "wd:Q37560107": "pins",
+            "wd:Q39082126": "you",
+            "wdt:P245": "get",
+            "wd:Q3242199": "strike",
+            "wd:Q13406554": "all 10 pins"
+        },
+        "uri_label_desc_map": {
+            "wd:Q172809": [
+                "ten-pin bowling",
+                "common form of bowling"
+            ],
+            "wdt:P1559": [
+                "knock",
+                null
+            ],
+            "wd:Q37560107": [
+                "Pins",
+                "family name"
+            ],
+            "wd:Q39082126": [
+                "You",
+                "2018 American psychological thriller television series"
+            ],
+            "wdt:P245": [
+                "Union List of Artist Names ID",
+                "identifier from the Getty Union List of Artist Names"
+            ],
+            "wd:Q3242199": [
+                "strike",
+                "directed physical attack"
+            ],
+            "wd:Q13406554": [
+                "all 10 pins",
+                null
+            ]
+        },
+        "truth_score": 0,
+        "% true": 0.0,
+        "true_facts_names": [],
+        "true_facts_uris": [],
+        "linked_entities": [
+            "wd:Q39082126",
+            "wd:Q3242199",
+            "wd:Q13406554",
+            "wd:Q37560107",
+            "wd:Q172809"
+        ],
+        "evaluation_score": 0.1
+    },
+    "48": {
+        "question": "What kind of item is a ginsu?",
+        "choices": [
+            "radio",
+            "knife",
+            "toothbrush",
+            "martial arts weapon"
+        ],
+        "initial_response": "A Ginsu is a type of knife.",
+        "question_entity_names": [
+            "ginsu"
+        ],
+        "response_entity_names": [
+            "Ginsu"
+        ],
+        "extracted_triples": [
+            [
+                "ginsu",
+                "kind",
+                "item"
+            ],
+            [
+                "Ginsu",
+                "type",
+                "knife"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q3046824",
+                "wdt:P279",
+                "wd:Q11723795"
+            ],
+            [
+                "wd:Q3046824",
+                "wdt:P427",
+                "wd:Q32489"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q3046824": "Ginsu",
+            "wdt:P279": "subclass of",
+            "wd:Q11723795": "item",
+            "wdt:P427": "type",
+            "wd:Q32489": "knife",
+            "http://www.wikidata.org/entity/Q32489": "knife",
+            "http://www.wikidata.org/prop/direct/P279": "subclass of"
+        },
+        "uri_label_desc_map": {
+            "wd:Q3046824": [
+                "Ginsu",
+                "brand of knives"
+            ],
+            "wdt:P279": [
+                "subclass of",
+                "this item is a subclass (subset) of that item; all instances of this item are instances of that item; different from P31 (instance of), e.g.: K2 is an instance of mountain; volcano is a subclass of mountain (and an instance of volcanic landform)"
+            ],
+            "wd:Q11723795": [
+                "item",
+                "unit of measure in archival science"
+            ],
+            "wdt:P427": [
+                "taxonomic type",
+                "name-bearing genus or species of this nominal family or genus (or subfamily or subgenus)"
+            ],
+            "wd:Q32489": [
+                "knife",
+                "tool with a cutting edge or blade"
+            ]
+        },
+        "truth_score": 1.1708577979703056,
+        "% true": 0.5854288989851528,
+        "true_facts_names": [
+            [
+                "Ginsu",
+                "subclass of",
+                "knife"
+            ],
+            [
+                "Ginsu",
+                "subclass of",
+                "knife"
+            ]
+        ],
+        "true_facts_uris": [
+            [
+                "wd:Q3046824",
+                "wdt:P279",
+                "http://www.wikidata.org/entity/Q32489"
+            ],
+            [
+                "wd:Q3046824",
+                "http://www.wikidata.org/prop/direct/P279",
+                "wd:Q32489"
+            ]
+        ],
+        "linked_entities": [
+            "wd:Q11723795",
+            "wd:Q32489",
+            "wd:Q3046824"
+        ],
+        "evaluation_score": 0.6268860090866375
+    },
+    "49": {
+        "question": "What's the third letter of the Greek alphabet?",
+        "choices": [
+            "delta",
+            "gamma",
+            "phi",
+            "theta"
+        ],
+        "initial_response": "The third letter of the Greek alphabet is \u0393 (Gamma).",
+        "question_entity_names": [
+            "Greek alphabet"
+        ],
+        "response_entity_names": [
+            "Greek alphabet",
+            "\u0393",
+            "Gamma"
+        ],
+        "extracted_triples": [
+            [
+                "Greek alphabet",
+                "letter",
+                "\u0393"
+            ],
+            [
+                "\u0393",
+                "third letter",
+                "Greek alphabet"
+            ],
+            [
+                "\u0393",
+                "also known",
+                "Gamma"
+            ]
+        ],
+        "extracted_triples_uris": [
+            [
+                "wd:Q8216",
+                "wdt:P9556",
+                "wd:Q14387"
+            ],
+            [
+                "wd:Q14387",
+                "wdt:P1813",
+                "wd:Q8216"
+            ],
+            [
+                "wd:Q14387",
+                "wdt:P2561",
+                "wd:Q14387"
+            ]
+        ],
+        "uri_name_map": {
+            "wd:Q8216": "Greek alphabet",
+            "wdt:P9556": "letter",
+            "wd:Q14387": "\u0393",
+            "wdt:P1813": "third letter",
+            "wdt:P2561": "also known",
+            "http://www.wikidata.org/prop/direct/P361": "part of"
+        },
+        "uri_label_desc_map": {
+            "wd:Q8216": [
+                "Greek alphabet",
+                "script used to write the Greek language"
+            ],
+            "wdt:P9556": [
+                "LTit person ID",
+                "identifier for a person (authors, translators, intermediaries) in the Italian database Letteratura tradotta in Italia"
+            ],
+            "wd:Q14387": [
+                "\u0393",
+                "third letter of the Greek alphabet"
+            ],
+            "wdt:P1813": [
+                "third letter",
+                null
+            ],
+            "wdt:P2561": [
+                "name",
+                "name the subject is known by. If a more specific property is available, use that"
+            ]
+        },
+        "truth_score": 1.0582902564300567,
+        "% true": 0.3527634188100189,
+        "true_facts_names": [
+            [
+                "\u0393",
+                "part of",
+                "Greek alphabet"
+            ],
+            [
+                "\u0393",
+                "part of",
+                "Greek alphabet"
+            ]
+        ],
+        "true_facts_uris": [
+            [
+                "wd:Q14387",
+                "http://www.wikidata.org/prop/direct/P361",
+                "wd:Q8216"
+            ],
+            [
+                "wd:Q14387",
+                "http://www.wikidata.org/prop/direct/P361",
+                "wd:Q8216"
+            ]
+        ],
+        "linked_entities": [
+            "wd:Q14387",
+            "wd:Q8216"
+        ],
+        "evaluation_score": 0.38415374359568366
+    }
+}

@@ -58,7 +58,7 @@ llm = OpenAI(temperature=0)
 num_correct = 0
 
 # Generate a response for each question
-for i, item in enumerate(data[67:68]):  # 41:42
+for i, item in enumerate(data[41:42]):  # 41:42
     question = item['question_text']
     # response = llm_tasks.generate_response_with_elaboration(question)
     response = llm.predict(question)
