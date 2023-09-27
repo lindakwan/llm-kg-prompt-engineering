@@ -60,6 +60,33 @@ def generate_response_using_context_with_elaboration(question, context_string):
     return elaboration_json["choices"][0]["message"]["content"]
 
 
+def generate_response_using_context(question, context_string):
+    """
+    Generate a response to a question with context provided.
+    :param question: The question to generate a response to.
+    :param context_string: The context represented as a string.
+    :return: The response to the question with elaboration.
+    """
+    response_json = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=[
+            {
+                "role": "system",
+                "content": "You will be provided with a question and some context. Your task is to generate a \
+                response to answer the question."
+            },
+            {
+                "role": "user",
+                "content": f"For context: {context_string}\nThe question is: {question}"
+            }
+        ],
+        temperature=0,
+        max_tokens=1000
+    )
+
+    return response_json["choices"][0]["message"]["content"]
+
+
 def extract_entities(text):
     """
     Extract the entity names from the text.
@@ -243,7 +270,8 @@ def extract_relevant_predicates(text, predicates, k=3):
             {
                 "role": "system",
                 "content": f"You will be provided with question text and a list of predicates. \
-                Your task is to order the {k} most relevant predicates by most relevant to text. \
+                Your task is to order the {k} most relevant predicates to the question by most relevant to question \
+                which would be the most helpful in answering the question. \
                 No documentation, no explanation, only valid python3 list code, escape all apostrophes with backslash."
             },
             {
@@ -257,10 +285,13 @@ def extract_relevant_predicates(text, predicates, k=3):
 
     relevant_preds_opt = relevant_preds_json["choices"][-1]["message"]["content"]
 
-    print("Relevant predicates output:", relevant_preds_opt)
+    # print("Relevant predicates output:", relevant_preds_opt)
 
     # Escape apostrophes
     escaped_list = re.sub(r"(?<=')([^',\[\]]*)(?<!\\)'([^',\[\]]*)(?=')", r"\1\\'\2", relevant_preds_opt)
+
+    # Replace newlines with spaces
+    escaped_list = re.sub(r"\n", " ", escaped_list)
 
     print("Escaped relevant predicates output:", escaped_list)
 
@@ -271,6 +302,45 @@ def extract_relevant_predicates(text, predicates, k=3):
 
     return top_preds
 
+
+def extract_relevant_facts(text, facts, k=5):
+    relevant_facts_json = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=[
+            {
+                "role": "system",
+                "content": f"You will be provided with question text and a list of triples. \
+                Your task is to order the {k} most relevant triples to the question by most relevant to question \
+                which would be the most helpful in answering the question. \
+                No documentation, no explanation, only valid python3 list code, escape all apostrophes with backslash."
+            },
+            {
+                "role": "user",
+                "content": f"Question Text: {text}\nFacts: {facts}"
+            }
+        ],
+        temperature=0,
+        max_tokens=2000
+    )
+
+    relevant_facts_opt = relevant_facts_json["choices"][-1]["message"]["content"]
+
+    print("Relevant facts output:", relevant_facts_opt)
+
+    # Escape apostrophes
+    escaped_list = re.sub(r"(?<=')([^',\[\]]*)(?<!\\)'([^',\[\]]*)(?=')", r"\1\\'\2", relevant_facts_opt)
+
+    # Replace newlines with spaces
+    escaped_list = re.sub(r"\n", " ", escaped_list)
+
+    print("Escaped relevant facts output:", escaped_list)
+
+    relevant_facts = ast.literal_eval(re.findall(r'\[.*?\]', escaped_list)[0])
+
+    # Get the top k most relevant facts
+    top_facts = relevant_facts[:k]
+
+    return top_facts
 
 def select_mc_response_based(question, response, choices):
     """

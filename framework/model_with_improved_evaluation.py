@@ -36,12 +36,12 @@ json_output_path = ""
 
 if args.dataset == "geography":
     dataset_path = "../data/mmlu_test/high_school_geography_test_filtered.csv"
-    # json_output_path = f"../output/qa_sets_llm_kg_geography_wd_{start_time.timestamp()}.json"
-    json_output_path = f"../output/qa_sets_llm_kg_geography01.json"
+    json_output_path = f"../output/qa_sets_llm_kg_geography_wd_{start_time.timestamp()}.json"
+    # json_output_path = f"../output/qa_sets_llm_kg_geography01.json"
 elif args.dataset == "government_and_politics":
     dataset_path = "../data/mmlu_test/high_school_government_and_politics_test_filtered.csv"
-    # json_output_path = f"../output/qa_sets_llm_kg_government_and_politics_wd_{start_time.timestamp()}.json"
-    json_output_path = f"../output/qa_sets_llm_kg_government_and_politics01.json"
+    json_output_path = f"../output/qa_sets_llm_kg_government_and_politics_wd_{start_time.timestamp()}.json"
+    # json_output_path = f"../output/qa_sets_llm_kg_government_and_politics01.json"
 elif args.dataset == "miscellaneous":
     dataset_path = "../data/mmlu_test/miscellaneous_test_filtered.csv"
     json_output_path = f"../output/qa_sets_llm_kg_miscellaneous_wd_{start_time.timestamp()}.json"
@@ -58,7 +58,7 @@ llm = OpenAI(temperature=0)
 num_correct = 0
 
 # Generate a response for each question
-for i, item in enumerate(data[41:42]):  # 41:42
+for i, item in enumerate(data):  # 41:42
     question = item['question_text']
     # response = llm_tasks.generate_response_with_elaboration(question)
     response = llm.predict(question)
@@ -169,7 +169,7 @@ for i, item in enumerate(data[41:42]):  # 41:42
 
                 for p_uri, p_label in p_uri_label_pairs:
                     print("Predicate URI-label pair:", p_uri, p_label)
-                    sim_score = emb_tasks.calculate_cos_sim(uri_name_map[p], p_label)
+                    sim_score = emb_tasks.calculate_squared_cos_sim(uri_name_map[p], p_label)
                     print("Predicate similarity score:", sim_score)
                     if sim_score > best_sim_score:
                         best_sim_score = sim_score
@@ -178,7 +178,7 @@ for i, item in enumerate(data[41:42]):  # 41:42
 
                 for o_uri, o_label in o_uri_label_pairs:
                     print("Object URI-label pair:", o_uri, o_label)
-                    sim_score = emb_tasks.calculate_cos_sim(uri_name_map[o], o_label)
+                    sim_score = emb_tasks.calculate_squared_cos_sim(uri_name_map[o], o_label)
                     print("Object similarity score:", sim_score)
                     if sim_score > best_sim_score:
                         best_sim_score = sim_score
@@ -295,7 +295,7 @@ for i, item in enumerate(data[41:42]):  # 41:42
 
                         while start_idx < len(unique_pred_names):
                             end_idx = min(start_idx + 80, len(unique_pred_names))
-                            top_preds += llm_tasks.extract_relevant_predicates(question, unique_pred_names[start_idx:end_idx], k=3)
+                            top_preds.extend(llm_tasks.extract_relevant_predicates(question, unique_pred_names[start_idx:end_idx], k=3))
                             start_idx += 80
 
                         if len(top_preds) > 3:
@@ -308,7 +308,6 @@ for i, item in enumerate(data[41:42]):  # 41:42
 
                         # Execute SPARQL query for each of the top 3 predicates
                         for top_pred in top_preds:
-                            # pred_uri = unique_predicates[top_pred][0]
                             pred_uri = el.fetch_uri_wikidata_simple(top_pred, top_pred, ent_type='property')
                             top_p_format = sparql_f.uri_to_sparql_format_wikidata(pred_uri)
                             # TODO: Use the existing SPARQL binding instead of executing a new SPARQL query
@@ -330,27 +329,31 @@ for i, item in enumerate(data[41:42]):  # 41:42
                 print(filtered_facts)
                 print()
 
-                # TODO: Split filtered facts into batches
+                # Split filtered facts into batches
+                top_filt_facts = []
+                start_idx = 0
 
-                qa_pairs[i]["filtered_facts_for_context"] = filtered_facts
+                while start_idx < len(filtered_facts):
+                    end_idx = min(start_idx + 20, len(filtered_facts))
+                    top_filt_facts.extend(llm_tasks.extract_relevant_facts(question, filtered_facts[start_idx:end_idx], k=6))
+                    start_idx += 20
+
+                if len(top_filt_facts) > 5:
+                    top_filt_facts = llm_tasks.extract_relevant_facts(question, top_filt_facts, k=6)
+
+                print("Top filtered facts:", top_filt_facts)
+
+                qa_pairs[i]["filtered_facts_for_context"] = top_filt_facts
 
                 context_string = ""
-                for s_name, p_name, o_name in filtered_facts:
+                for s_name, p_name, o_name in top_filt_facts:
                     context_string += f"{s_name} {p_name} {o_name}. "
 
                 print("Context String:", context_string)
 
                 qa_pairs[i]["context_string"] = context_string
 
-                new_prompt = PromptTemplate(
-                    input_variables=["question", "context"],
-                    template="Question: {question}\nContext: {context}",
-                )
-
-                chain = LLMChain(llm=llm, prompt=new_prompt)
-                new_response = chain.run({"question": question, "context": context_string})
-
-                # new_response = llm_tasks.generate_response_using_context_with_elaboration(question, context_string)
+                new_response = llm_tasks.generate_response_using_context(question, context_string)
 
                 print("New Response:", new_response.strip())
 
