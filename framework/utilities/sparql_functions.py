@@ -122,7 +122,8 @@ def get_sparql_results_wikidata_described(s_uri, p_uri, o_uri):
 
     # Create a list of tuples containing the predicate URI, label, and description
     pred_uri_label_trips_forw = [(result_bind["predicate"]["value"], result_bind["propLabel"]["value"],
-                                  result_bind["propDescription"]["value"]) for result_bind in results_bindings_p1]
+                                  result_bind["propDescription"]["value"] if "propDescription" in result_bind else None
+                                  ) for result_bind in results_bindings_p1]
 
     # Perform the SPARQL query
     sparql_result_p2 = execute_sparql_query(sparql_query_p2, sparql_wd)
@@ -130,7 +131,8 @@ def get_sparql_results_wikidata_described(s_uri, p_uri, o_uri):
     print(sparql_query_p2)
 
     pred_uri_label_trips_back = [(result_bind["predicate"]["value"], result_bind["propLabel"]["value"],
-                                  result_bind["propDescription"]["value"]) for result_bind in results_bindings_p2]
+                                  result_bind["propDescription"]["value"] if "propDescription" in result_bind else None
+                                  ) for result_bind in results_bindings_p2]
 
     sparql_result_o = execute_sparql_query(sparql_query_o, sparql_wd)
     results_bindings_o = sparql_result_o["results"]["bindings"]
@@ -138,6 +140,7 @@ def get_sparql_results_wikidata_described(s_uri, p_uri, o_uri):
 
     # Create a list of tuples containing the object URI, label, and description
     obj_uri_label_trips = [(result_bind["object"]["value"], result_bind["objectLabel"]["value"],
-                            result_bind["objectDescription"]["value"]) for result_bind in results_bindings_o]
+                            result_bind["objectDescription"]["value"] if "objectDescription" in result_bind else None
+                            ) for result_bind in results_bindings_o]
 
     return pred_uri_label_trips_forw, pred_uri_label_trips_back, obj_uri_label_trips

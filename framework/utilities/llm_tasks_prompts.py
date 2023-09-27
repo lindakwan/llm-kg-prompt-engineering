@@ -205,17 +205,26 @@ def get_similar_identifier_given_context(item_name, context, item_type="property
 
     opt = similar_identifier_json["choices"][0]["message"]["content"]
 
-    # print("Id output:", opt)
+    print("Id output:", opt)
 
-    # Use regex to extract the identifier
-    if item_type == "property":
+    if "P" in opt:
         ids = re.findall(r'P\d+', opt)
         if len(ids) == 0:
-            identifier = "wd:" + re.findall(r'Q\d+', opt)[0]
+            ids2 = re.findall(r'\d+', opt)
+            identifier = "wdt:P" + re.findall(r'\d+', opt)[0]
         else:
             identifier = "wdt:" + ids[0]
+    elif "Q" in opt:
+        ids = re.findall(r'Q\d+', opt)
+        if len(ids) == 0:
+            ids2 = re.findall(r'\d+', opt)
+            identifier = "wd:Q" + re.findall(r'\d+', opt)[0]
+        else:
+            identifier = "wd:" + ids[0]
+    elif item_type == "item":
+        identifier = "wd:Q" + re.findall(r'\d+', opt)[0]
     else:
-        identifier = "wd:" + re.findall(r'Q\d+', opt)[0]
+        identifier = "wdt:P" + re.findall(r'\d+', opt)[0]
 
     return identifier
 

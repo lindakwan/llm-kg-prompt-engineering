@@ -60,7 +60,7 @@ llm = OpenAI(temperature=0)
 num_correct = 0
 
 # Generate a response for each question
-for i in range(50):  # len(data) - 3):
+for i in range(len(data) - 3):
     item = data[str(i)]
     question = item['question']
     response = item['initial_response']
@@ -283,5 +283,5 @@ for i in range(50):  # len(data) - 3):
         new_response = response.strip()
         qa_pairs[i]["error"] = str(exc)
 
-    # with open(json_output_path, "w") as f:
-    #     json.dump(qa_pairs, f, indent=4)
+    with open(json_output_path, "w") as f:
+        json.dump(qa_pairs, f, indent=4)
