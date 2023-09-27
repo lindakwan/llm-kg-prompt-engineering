@@ -35,13 +35,16 @@ dataset_path = ""
 json_output_path = ""
 
 if args.dataset == "geography":
-    dataset_path = "../data/mmlu_test/high_school_geography_test.csv"
-    json_output_path = f"../output/qa_sets_llm_kg_geography_wd_{start_time.timestamp()}.json"
-    # json_output_path = f"../output/qa_sets_llm_kg_geography01.json"
+    dataset_path = "../data/mmlu_test/high_school_geography_test_filtered.csv"
+    # json_output_path = f"../output/qa_sets_llm_kg_geography_wd_{start_time.timestamp()}.json"
+    json_output_path = f"../output/qa_sets_llm_kg_geography01.json"
 elif args.dataset == "government_and_politics":
-    dataset_path = "../data/mmlu_test/high_school_government_and_politics_test.csv"
-    json_output_path = f"../output/qa_sets_llm_kg_government_and_politics_wd_{start_time.timestamp()}.json"
-    # json_output_path = f"../output/qa_sets_llm_kg_government_and_politics01.json"
+    dataset_path = "../data/mmlu_test/high_school_government_and_politics_test_filtered.csv"
+    # json_output_path = f"../output/qa_sets_llm_kg_government_and_politics_wd_{start_time.timestamp()}.json"
+    json_output_path = f"../output/qa_sets_llm_kg_government_and_politics01.json"
+elif args.dataset == "miscellaneous":
+    dataset_path = "../data/mmlu_test/miscellaneous_test_filtered.csv"
+    json_output_path = f"../output/qa_sets_llm_kg_miscellaneous_wd_{start_time.timestamp()}.json"
 else:
     print("Invalid dataset.")
     exit()
@@ -55,7 +58,7 @@ llm = OpenAI(temperature=0)
 num_correct = 0
 
 # Generate a response for each question
-for i, item in enumerate(data):  # 66:71  # 36:37
+for i, item in enumerate(data[67:68]):  # 41:42
     question = item['question_text']
     # response = llm_tasks.generate_response_with_elaboration(question)
     response = llm.predict(question)
@@ -71,43 +74,30 @@ for i, item in enumerate(data):  # 66:71  # 36:37
     new_response = ""
     try:
         with time_limit(180):
-            question_escaped = question.replace('"', '\\\"')
-            response_escaped = response.strip().replace('"', '\\\"')
-
-            # Use the LLM to extract entities from the response
+            # Use the LLM to extract entities from the question
             question_entities = llm_tasks.extract_entities(question)
             print("Q entities:", question_entities)
 
+            # Use the LLM to extract entities from the response
             response_entities = llm_tasks.extract_entities(response.strip())
             print("A entities:", response_entities)
 
+            # Combine the entities from the question and response
             entity_names = list(dict.fromkeys(question_entities + response_entities))
             print("All entities:", entity_names)
-
-            num_of_identified_ents = len(entity_names)
-            print("Number of entities identified:", num_of_identified_ents)
-            print()
 
             qa_pairs[i]["question_entity_names"] = question_entities
             qa_pairs[i]["response_entity_names"] = response_entities
 
-            # Feed question, LLM response, and entities and relations into LLM
-            # Extract knowledge graph facts from the response
-            triples_names_long = llm_tasks.extract_kg_facts_given_entities(f"{question} {response.strip()}", entity_names)
-            print("Triples:", triples_names_long)
+            # Feed question, LLM response, and entities into LLM and extract knowledge graph facts from the response
+            triples_names = llm_tasks.extract_kg_facts_given_entities(f"{question} {response.strip()}", entity_names)
+            triples_names = nlp_tasks.remove_stopwords_from_triples(triples_names)
+            print("Triples:", triples_names)
             print()
-
-            triples_names = []
-
-            for s, p, o in triples_names_long:
-                short_p = nlp_tasks.remove_stopwords(p)
-                triples_names.append((s, short_p, o))
 
             qa_pairs[i]["extracted_triples"] = triples_names
 
-            entities_name_uri_map = dict()
-            relations_name_uri_map = dict()
-
+            name_uri_map = dict()
             uri_name_map = dict()
 
             extr_triples_uris = []
@@ -119,38 +109,40 @@ for i, item in enumerate(data):  # 66:71  # 36:37
 
                 uris = []  # Used to construct the triple as a tuple of URIs
 
+                # Get the URI for each component of the triple
                 for j, component in enumerate(triple):
                     # Use REST API to retrieve the URI of the entity/property
                     if j == 1:
-                        if component not in relations_name_uri_map:
-                            relations_name_uri_map[component] = el.fetch_uri_wikidata(
-                                component, context_str, ent_type='property')
-                        uri = relations_name_uri_map[component]
+                        if (component, 'rel') not in name_uri_map:
+                            uri = el.fetch_uri_wikidata_simple(component, context_str, ent_type='property')
+                            name_uri_map[(component, 'rel')] = uri
+                            uri_name_map[uri] = component
+                        else:
+                            uri = name_uri_map[(component, 'rel')]
                     else:
-                        if component not in entities_name_uri_map:
-                            entities_name_uri_map[component] = el.fetch_uri_wikidata(component, context_str)
-                        uri = entities_name_uri_map[component]
-
+                        if (component, 'ent') not in name_uri_map:
+                            uri = el.fetch_uri_wikidata_simple(component, context_str)
+                            name_uri_map[(component, 'ent')] = uri
+                            uri_name_map[uri] = component
+                        else:
+                            uri = name_uri_map[(component, 'ent')]
                     uris.append(uri)
-                    uri_name_map[uri] = component
-
                 print()
 
                 extr_triples_uris.append(tuple(uris))
 
             # Print triples as tuple of URIs
-            print("Extracted triples URIs:", extr_triples_uris)
-            print()
-
+            print("Extracted triples URIs:", extr_triples_uris, '\n')
             qa_pairs[i]["extracted_triples_uris"] = extr_triples_uris
 
+            # Get the URIs for the entities in the question
             question_ent_uris = []
             for ent_name in question_entities:
-                ent_uri = el.fetch_uri_wikidata(ent_name, ent_name)
-                question_ent_uris.append(ent_uri)
-                uri_name_map[ent_uri] = ent_name
-
-            qa_pairs[i]["question_entities_uris"] = question_ent_uris
+                if (ent_name, 'ent') not in name_uri_map:
+                    ent_uri = el.fetch_uri_wikidata_simple(ent_name, ent_name)
+                    name_uri_map[(ent_name, 'ent')] = ent_uri
+                    uri_name_map[ent_uri] = ent_name
+                question_ent_uris.append(name_uri_map[(ent_name, 'ent')])
 
             print("Question entities URIs:", question_ent_uris)
             print()
@@ -317,7 +309,7 @@ for i, item in enumerate(data):  # 66:71  # 36:37
                         # Execute SPARQL query for each of the top 3 predicates
                         for top_pred in top_preds:
                             # pred_uri = unique_predicates[top_pred][0]
-                            pred_uri = el.fetch_uri_wikidata(top_pred, top_pred, ent_type='property')
+                            pred_uri = el.fetch_uri_wikidata_simple(top_pred, top_pred, ent_type='property')
                             top_p_format = sparql_f.uri_to_sparql_format_wikidata(pred_uri)
                             # TODO: Use the existing SPARQL binding instead of executing a new SPARQL query
                             sparql_query = f'''
@@ -412,9 +404,11 @@ for i, item in enumerate(data):  # 66:71  # 36:37
     }
     '''
 
-print("EM:", num_correct / len(data))
+em = num_correct / len(data)
+print("EM:", em)
 
 qa_pairs['finish_time'] = str(datetime.datetime.now())
+qa_pairs['EM'] = em
 
 # Save the QA pairs in a JSON file
 with open(json_output_path, "w") as f:
@@ -433,4 +427,13 @@ with open(json_output_path, "w") as f:
 #   ?prop wikibase:directClaim ?predicate .
 #   ?prop rdfs:label ?propLabel.  filter(lang(?propLabel) = "en").
 #   FILTER(!isLiteral(?object) || lang(?object) = "" || langMatches(lang(?object), "EN"))
+# }
+
+# Get description
+# SELECT ?p ?pLabel ?pDescription ?w ?wLabel ?wDescription WHERE {
+#    wd:Q30 p:P6/ps:P6 ?p .
+#    ?p wdt:P26 ?w .
+#    SERVICE wikibase:label {
+#     bd:serviceParam wikibase:language "en" .
+#    }
 # }

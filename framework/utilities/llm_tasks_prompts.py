@@ -84,7 +84,18 @@ def extract_entities(text):
         max_tokens=256
     )
     extracted_entities = entities_json["choices"][0]["message"]["content"]
-    entity_names = ast.literal_eval(extracted_entities)
+    init_entity_names = ast.literal_eval(extracted_entities)
+
+    entity_names = []
+
+    # Split entities with "and" into two parts
+    for ent_name in init_entity_names:
+        if "and" in ent_name:
+            split_names = " and ".split(ent_name)
+            entity_names.extend(split_names)
+        else:
+            entity_names.append(ent_name)
+
     return entity_names
 
 

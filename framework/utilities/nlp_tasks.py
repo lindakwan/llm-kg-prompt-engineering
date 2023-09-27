@@ -19,3 +19,16 @@ def remove_stopwords(text):
         return text
     else:
         return joint_sent
+
+
+def remove_stopwords_from_triples(triples_with_names):
+    """
+    Removes stopwords from predicates in a list of triples.
+    :param triples_with_names:
+    :return:
+    """
+    shorter_triples = []
+    for s, p, o in triples_with_names:
+        short_p = remove_stopwords(p)
+        shorter_triples.append((s, short_p, o))
+    return shorter_triples
