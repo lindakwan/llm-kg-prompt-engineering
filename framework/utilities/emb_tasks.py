@@ -28,7 +28,7 @@ def calculate_squared_cos_sim(text1, text2):
     return np.square(calculate_cos_sim(text1, text2))
 
 
-def calculate_squared_cos_sim_multiple(text1, texts_list):
+def calculate_cos_sim_multiple(text1, texts_list):
     text1_emb_opt = openai.Embedding.create(
         input=text1,
         model="text-embedding-ada-002"
@@ -50,7 +50,11 @@ def calculate_squared_cos_sim_multiple(text1, texts_list):
     # Calculate the cosine similarity between the LLM response and the predicate
     cos_sims = cosine_similarity([text1_embeddings], embs_list)
 
-    return np.square(np.array(cos_sims[0]))
+    return np.array(cos_sims[0])
+
+
+def calculate_squared_cos_sim_multiple(text1, texts_list):
+    return np.square(calculate_cos_sim_multiple(text1, texts_list))
 
 
 # print(calculate_squared_cos_sim_multiple("Paris", ["France", "London", "Berlin", "Bordeaux"]))

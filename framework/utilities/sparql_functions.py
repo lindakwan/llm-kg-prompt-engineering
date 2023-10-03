@@ -144,3 +144,40 @@ def get_sparql_results_wikidata_described(s_uri, p_uri, o_uri):
                             ) for result_bind in results_bindings_o]
 
     return pred_uri_label_trips_forw, pred_uri_label_trips_back, obj_uri_label_trips
+
+
+def perform_sparql_query_multiple_entities(uris):
+    """
+    Perform a SPARQL query on multiple entities
+    :param uris:
+    :return: the result of the query
+    """
+    sparql_query = f"""
+    SELECT ?s ?sLabel ?p ?prop ?propLabel ?o ?oLabel WHERE {{
+      VALUES ?s {{ {' '.join(['<' + uri + '>' for uri in uris])} }}.
+      SERVICE <https://query.wikidata.org/sparql> {{
+        ?s ?p ?o .
+        ?prop wikibase:directClaim ?p .
+        ?prop rdfs:label ?propLabel.  FILTER(lang(?propLabel) = "en").
+      }}.
+      SERVICE wikibase:label {{
+        bd:serviceParam wikibase:language "en" .
+      }}.
+      FILTER(!isLiteral(?o) || lang(?o) = "" || langMatches(lang(?o), "EN")) .
+      FILTER(!regex(str(?propLabel), "ID")) .
+    }}"""
+
+    print(sparql_query)
+
+    sparql_wd = SPARQLWrapper("https://query.wikidata.org/sparql")
+    sparql_result = execute_sparql_query(sparql_query, sparql_wd)
+    results_bindings = sparql_result["results"]["bindings"]
+    return results_bindings
+
+# {'s': {'type': 'uri', 'value': 'http://www.wikidata.org/entity/Q43'},
+# 'p': {'type': 'uri', 'value': 'http://www.wikidata.org/prop/direct/P463'},
+# 'propLabel': {'xml:lang': 'en', 'type': 'literal', 'value': 'member of'},
+# 'prop': {'type': 'uri', 'value': 'http://www.wikidata.org/entity/P463'},
+# 'o': {'type': 'uri', 'value': 'http://www.wikidata.org/entity/Q1480793'},
+# 'sLabel': {'xml:lang': 'en', 'type': 'literal', 'value': 'Turkey'},
+# 'oLabel': {'xml:lang': 'en', 'type': 'literal', 'value': 'Nuclear Suppliers Group'}}

@@ -7,6 +7,31 @@ from langchain.llms import OpenAI
 llm = OpenAI(temperature=0)
 
 
+def generate_response(question):
+    """
+    Generate a response to a question with elaboration.
+    :param question: The question to generate a response to.
+    :return: The response to the question with elaboration.
+    """
+    response_json = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=[
+            {
+                "role": "system",
+                "content": "You will be provided with a question. Your task is to generate a response to the question."
+            },
+            {
+                "role": "user",
+                "content": question
+            }
+        ],
+        temperature=0,
+        max_tokens=1000
+    )
+
+    return response_json["choices"][0]["message"]["content"]
+
+
 def generate_response_with_elaboration(question):
     """
     Generate a response to a question with elaboration.
@@ -99,7 +124,7 @@ def extract_entities(text):
             {
                 "role": "system",
                 "content": "You will be provided with text. \
-                    Your task is to identify a list of entities mentioned in the text. No documentation, \
+                    Your task is to identify a list of entity names mentioned in the text. No documentation, \
                     no explanation, only python3 list code, escape all apostrophes with backslash."
             },
             {
@@ -304,15 +329,19 @@ def extract_relevant_predicates(text, predicates, k=3):
 
 
 def extract_relevant_facts(text, facts, k=5):
+    if k == 0:
+        return []
+
     relevant_facts_json = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=[
             {
                 "role": "system",
-                "content": f"You will be provided with question text and a list of triples. \
-                Your task is to order the {k} most relevant triples to the question by most relevant to question \
-                which would be the most helpful in answering the question. \
-                No documentation, no explanation, only valid python3 list code, escape all apostrophes with backslash."
+                "content": f"You will be provided with question text and a list of triples, each triple in the form \
+                (subject, predicate, object). \
+                Your task is to order the {k} most relevant triples to the question by most relevant to question. \
+                No documentation, no explanation, only a single syntactically valid python3 list as code, \
+                escape all apostrophes with backslash, no ellipsis at all, no '...' at all."
             },
             {
                 "role": "user",
@@ -325,7 +354,7 @@ def extract_relevant_facts(text, facts, k=5):
 
     relevant_facts_opt = relevant_facts_json["choices"][-1]["message"]["content"]
 
-    print("Relevant facts output:", relevant_facts_opt)
+    # print("Relevant facts output:", relevant_facts_opt)
 
     # Escape apostrophes
     escaped_list = re.sub(r"(?<=')([^',\[\]]*)(?<!\\)'([^',\[\]]*)(?=')", r"\1\\'\2", relevant_facts_opt)
@@ -333,14 +362,21 @@ def extract_relevant_facts(text, facts, k=5):
     # Replace newlines with spaces
     escaped_list = re.sub(r"\n", " ", escaped_list)
 
-    print("Escaped relevant facts output:", escaped_list)
+    # Escape square brackets
+    escaped_list = '[' + escaped_list[1:-1].replace('[', r'\[').replace(']', r'\]') + ']'
 
-    relevant_facts = ast.literal_eval(re.findall(r'\[.*?\]', escaped_list)[0])
+    # print("Escaped relevant facts output:", escaped_list)
 
-    # Get the top k most relevant facts
-    top_facts = relevant_facts[:k]
+    try:
+        relevant_facts = ast.literal_eval(re.findall(r'\[.*?\]', escaped_list)[0])
+        # Get the top k most relevant facts
+        top_facts = relevant_facts[:k]
+        top_facts = list(filter(lambda x: len(x) == 3, top_facts))
+        return top_facts
+    except:
+        # print("Error in extracting relevant facts.")
+        return extract_relevant_facts(text, facts, k-1)
 
-    return top_facts
 
 def select_mc_response_based(question, response, choices):
     """

@@ -32,3 +32,12 @@ def remove_stopwords_from_triples(triples_with_names):
         short_p = remove_stopwords(p)
         shorter_triples.append((s, short_p, o))
     return shorter_triples
+
+
+def count_number_of_tokens(text):
+    """
+    Counts the number of tokens in a string.
+    :param text: The string to count the number of tokens in.
+    :return: The number of tokens in the string.
+    """
+    return len(word_tokenize(text))
