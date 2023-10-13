@@ -46,7 +46,7 @@ num_correct = 0
 # Generate a response for each question
 for i, item in enumerate(data):
     question = item['question_text']
-    response = llm_tasks.generate_response_davinci(question)  # TODO: Replace with either babbage or davinci
+    response = llm_tasks.generate_response_weaker(question)  # TODO: Replace with either babbage or davinci
 
     print("Q:", question)
     print("A:", response.strip(), "\n")

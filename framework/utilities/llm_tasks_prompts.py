@@ -32,14 +32,14 @@ def generate_response(question):
     return response_json["choices"][0]["message"]["content"]
 
 
-def generate_response_davinci(question):
+def generate_response_weaker(question):
     """
     Generate a response to a question using the davinci model.
     :param question: The question to generate a response to.
     :return: The response to the question with elaboration.
     """
     response_json = openai.Completion.create(
-        engine="text-davinci-002",
+        engine="text-babbage-001",
         prompt=question,
         temperature=0,
         max_tokens=1024
