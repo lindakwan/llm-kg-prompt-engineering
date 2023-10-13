@@ -1,0 +1,1374 @@
+{
+    "start_time": "2023-10-13 14:28:45.017199",
+    "0": {
+        "question": "The main factor preventing subsistence economies from advancing economically is the lack of",
+        "choices": [
+            "a currency.",
+            "a well-connected transportation infrastructure.",
+            "government activity.",
+            "a banking service."
+        ],
+        "initial_response": "a market for their goods and services. Subsistence economies are largely self-sufficient, meaning that they produce only what they need to survive and do not engage in trade. This lack of interaction with the outside world means that there is little incentive for innovation or for adopting new technologies. Additionally, subsistence economies are often located in remote areas, making transportation and communication difficult and expensive.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "1": {
+        "question": "The tendency for a population to continue to grow long after replacement fertility has been achieved is called",
+        "choices": [
+            "zero population growth.",
+            "rapid growth rate.",
+            "homeostatic plateau.",
+            "demographic momentum."
+        ],
+        "initial_response": "the population momentum.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "2": {
+        "question": "The tendency for migration to decrease with distance is called",
+        "choices": [
+            "push factors.",
+            "pull factors.",
+            "distance decay.",
+            "migration selectivity."
+        ],
+        "initial_response": "the distance decay effect.\n\nThe distance decay effect is the tendency for migration to decrease with distance. This is because people are more likely to migrate to places that are closer to them, since it is easier and cheaper to travel to these places. Additionally, people are more likely to have social ties and networks in places that are closer to them, which makes it easier to find a job and housing in these places.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "3": {
+        "question": "Which zone contains low-income slums, ethnic ghettos, and general deterioration in Burgess's concentric zone model of urban form?",
+        "choices": [
+            "First",
+            "Second",
+            "Third",
+            "Fourth"
+        ],
+        "initial_response": "The inner city",
+        "llm_answer": "C",
+        "llm_is_correct": false
+    },
+    "4": {
+        "question": "Which form of migration below are farm workers from another country most likely to be practicing during the year?",
+        "choices": [
+            "Chain migration",
+            "Cluster migration",
+            "Circular migration",
+            "International migration"
+        ],
+        "initial_response": "Seasonal migration",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "5": {
+        "question": "The first stage of the demographic transition exhibits",
+        "choices": [
+            "high birth rates with high but fluctuating death rates.",
+            "declining birth rates with continuing high death rates.",
+            "low birth rates with continuing high death rates.",
+            "high birth rates with declining death rates."
+        ],
+        "initial_response": "a decrease in the death rate, but no change in the birth rate.\n\nThe second stage of the demographic transition exhibits a decrease in the birth rate, but no change in the death rate.\n\nThe third stage of the demographic transition exhibits a decrease in both the birth rate and the death rate.",
+        "llm_answer": "D",
+        "llm_is_correct": false
+    },
+    "6": {
+        "question": "What is the population statistic that tells us the level of fertility at which a population will have just enough births to replace parents and compensate for early deaths?",
+        "choices": [
+            "Crude birth rate",
+            "Replacement level",
+            "Mortality rate",
+            "Total fertility rate"
+        ],
+        "initial_response": "The population statistic that tells us the level of fertility at which a population will have just enough births to replace parents and compensate for early deaths is the replacement level fertility.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "7": {
+        "question": "What is the most rapidly growing religion in the United States today?",
+        "choices": [
+            "Islam",
+            "Christianity",
+            "Hinduism",
+            "Buddhism"
+        ],
+        "initial_response": "The most rapidly growing religion in the United States today is Islam.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "8": {
+        "question": "The outlying area serviced by a urban center is referred to as a",
+        "choices": [
+            "redline area.",
+            "threshold.",
+            "range.",
+            "hinterland."
+        ],
+        "initial_response": "(n)\n\nurban fringe",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "9": {
+        "question": "The best definition of an urban area is",
+        "choices": [
+            "the central city and its developed areas.",
+            "the central city and its surrounding suburbs.",
+            "the central city and its hinterlands.",
+            "the central city and the adjacent counties."
+        ],
+        "initial_response": "An urban area is a densely populated area, typically with a mix of residential, commercial, and industrial land uses.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "10": {
+        "question": "Which type of transportation system created the star-shaped city pattern?",
+        "choices": [
+            "Highways to airports that link cities",
+            "Interstate highways that link cities",
+            "Beltways around cities",
+            "Streetcar and trolley lines extending from the CBD"
+        ],
+        "initial_response": "The star-shaped city pattern was created by a transportation system that used canals.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "11": {
+        "question": "In which urban US setting below would you expect to find planned communities?",
+        "choices": [
+            "Ghettos",
+            "Suburbs",
+            "CBDs",
+            "Transition zones"
+        ],
+        "initial_response": "a. New York City\n\nb. Chicago\n\nc. Houston\n\nd. Los Angeles\n\ne. Atlanta\n\nf. San Francisco\n\ng. Seattle\n\nh. Miami\n\ni. Boston\n\nj. Detroit\n\ne. Atlanta\nf. San Francisco\ng. Seattle\nh. Miami\ni. Boston",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "12": {
+        "question": "The latitude and longitude coordinates of a place are an example of",
+        "choices": [
+            "a formal region.",
+            "a functional region.",
+            "an absolute location.",
+            "a relative location."
+        ],
+        "initial_response": "a(n) \n\nGeographic coordinate system",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "13": {
+        "question": "The voluntary association of three or more countries willing to give up some measure of sovereignty is called",
+        "choices": [
+            "nationalism.",
+            "devolution.",
+            "supranationalism.",
+            "complementarity."
+        ],
+        "initial_response": "a supranational organization.\n\nThe European Union is an example of a supranational organization.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "14": {
+        "question": "The key factor Thomas Malthus failed to recognize in his population theory was",
+        "choices": [
+            "population is limited by their means of subsistence.",
+            "all populations have the potential to increase more than the actual rate of increase.",
+            "wars and famine inhibit population's reproductive capacity.",
+            "technology's ability to raise the Earth's carrying capacity."
+        ],
+        "initial_response": "that\n\npopulation growth is not always exponential.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "15": {
+        "question": "Which pair of religions are both universalizing religions?",
+        "choices": [
+            "Islam and Judaism",
+            "Judaism and Buddhism",
+            "Hinduism and Buddhism",
+            "Christianity and Buddhism"
+        ],
+        "initial_response": "Christianity and Islam",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "16": {
+        "question": "Which urban model theorizes that high-rent residential areas grow outward from the center of the city along major highways with lower-rent inhabitants taking over sequentially?",
+        "choices": [
+            "Concentric zone model",
+            "Central place model",
+            "Urban realms model",
+            "Sector model"
+        ],
+        "initial_response": "The concentric zone model.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "17": {
+        "question": "When a country combines its religion with its government, it is called a",
+        "choices": [
+            "dictatorship.",
+            "theocracy.",
+            "democracy.",
+            "autocracy."
+        ],
+        "initial_response": "theocracy.\n\nA theocracy is a country that is governed by religious leaders.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "18": {
+        "question": "What is the chief religion practiced in Europe?",
+        "choices": [
+            "Christianity",
+            "Islam",
+            "Hinduism",
+            "Animism"
+        ],
+        "initial_response": "The chief religion practiced in Europe is Christianity.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "19": {
+        "question": "Which group enacted the first effective settlement in the eastern United States?",
+        "choices": [
+            "French",
+            "British (English, Scotch-Irish, Welsh, Scottish)",
+            "Russian",
+            "Chinese"
+        ],
+        "initial_response": "The first effective settlement in the eastern United States was enacted by the Pilgrims.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "20": {
+        "question": "The Rhine River is an example of which type of boundary?",
+        "choices": [
+            "Geometric",
+            "Artificial",
+            "Natural",
+            "Relict"
+        ],
+        "initial_response": "The Rhine River is an example of a physical boundary.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "21": {
+        "question": "Which type of economic activity is most closely tied to the physical environment?",
+        "choices": [
+            "Primary",
+            "Secondary",
+            "Tertiary",
+            "Quaternary"
+        ],
+        "initial_response": "Farming",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "22": {
+        "question": "The majority of workers in periphery countries are probably employed in which type of activities?",
+        "choices": [
+            "Primary",
+            "Secondary",
+            "Tertiary",
+            "Quaternary"
+        ],
+        "initial_response": "The majority of workers in periphery countries are probably employed in agriculture.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "23": {
+        "question": "Transnational corporations distribute their operations",
+        "choices": [
+            "manufacturing goods where production costs are the highest.",
+            "conducting accounting and research services where economical.",
+            "based on comparative advantage.",
+            "with headquarters located in LDCs."
+        ],
+        "initial_response": "across countries to exploit the benefits of globalisation.\n\nTransnational corporations are companies that operate in more than one country. They often have their headquarters in one country and their operations in another. Transnational corporations exploit the benefits of globalisation by operating in multiple countries. This allows them to take advantage of lower labour costs, weaker environmental regulations, and other benefits. Transnational corporations often have a significant impact on the countries in which they operate. They can bring new technologies and jobs to a country, but they can also cause environmental damage and exploit workers.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "24": {
+        "question": "One of the effects of the east\u2013west orientation of the Alpine mountain system and the northern plains of western and central Europe is that it",
+        "choices": [
+            "limits the marine climate of Europe to coastal areas",
+            "provides a corridor for communication between southern and northern Europe",
+            "enables marine-like climatic conditions to extend eastward into Germany and Poland",
+            "effectively prevents population movement between parts of the Mediterranean region"
+        ],
+        "initial_response": "A. inhibits the formation of cyclones.\n\nB. inhibits the formation of anticyclones.\n\nC. inhibits the formation of mid-latitude cyclones.\n\nD. inhibits the formation of mid-latitude anticyclones.\n\nE. inhibits the formation of tropical cyclones.\n\nOne of the effects of the east\u2013west orientation of the Alpine mountain system and the northern plains of western and central Europe is that it inhibits the formation of mid-latitude cyclones.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "25": {
+        "question": "The largest Hindu temple complex ever constructed is found in",
+        "choices": [
+            "Calcutta.",
+            "Bombay.",
+            "Cambodia.",
+            "Bali."
+        ],
+        "initial_response": "Angkor Wat, Cambodia.\n\nAngkor Wat is a temple complex in Cambodia and the largest religious monument in the world, with the site measuring 162.6 hectares. It was originally constructed as a Hindu temple dedicated to the god Vishnu, but was later converted into a Buddhist temple in the 12th century.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "26": {
+        "question": "Which term describes the forces that unify and strengthen a country?",
+        "choices": [
+            "Diffusion",
+            "Centrifugal",
+            "Centripetal",
+            "Ethnocentric"
+        ],
+        "initial_response": "Patriotism",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "27": {
+        "question": "National sports teams, flags, national anthems, and national holidays all promote",
+        "choices": [
+            "nationalism.",
+            "sectarianism.",
+            "political unrest.",
+            "functional disputes."
+        ],
+        "initial_response": "national pride.\n\nNational pride is the feeling of love, loyalty, and admiration for one's country. This can be seen in the way people wave their country's flag, sing their national anthem, or celebrate their national holidays. National pride is often instilled in people from a young age, as children are often taught to be proud of their country and to show respect for its symbols.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "28": {
+        "question": "The process whereby immigrants learn the values, language, and customs of their new country is called",
+        "choices": [
+            "assimilation.",
+            "acculturation.",
+            "adaptation.",
+            "amalgamation."
+        ],
+        "initial_response": "acculturation.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "29": {
+        "question": "Which geographer viewed the US urban community of the 1920s as a set of concentric rings radiating outward from a central core?",
+        "choices": [
+            "Rostow",
+            "Ravenstein",
+            "Von Th\u00fcnen",
+            "Burgess"
+        ],
+        "initial_response": "Ebenezer Howard",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "30": {
+        "question": "To get to school in the morning, we ALL use this as our guide:",
+        "choices": [
+            "Rand-McNally Road Atlas.",
+            "world globe.",
+            "road map.",
+            "mental map."
+        ],
+        "initial_response": "The school day begins at 8:00 a.m.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "31": {
+        "question": "Of these, the map using the smallest map scale would be the map of",
+        "choices": [
+            "the world.",
+            "Atlanta, Georgia.",
+            "Main Street, Small Town, Ohio.",
+            "Pennsylvania."
+        ],
+        "initial_response": "the United States.",
+        "llm_answer": "B",
+        "llm_is_correct": false
+    },
+    "32": {
+        "question": "An earlier boundary formed before meticulous geographic knowledge and mapping was available is known as",
+        "choices": [
+            "an antecedent boundary.",
+            "a geometric boundary.",
+            "a relict boundary.",
+            "a subsequent boundary."
+        ],
+        "initial_response": "the Salween-Irrawaddy Divide.\n\nThe Salween-Irrawaddy Divide is a boundary that was formed before meticulous geographic knowledge and mapping was available. It is believed to separate the Salween and Irrawaddy river basins.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "33": {
+        "question": "A strong movement away from all religions is called",
+        "choices": [
+            "secularism.",
+            "heathenism.",
+            "sacrilege.",
+            "nationalism."
+        ],
+        "initial_response": "atheism.\n\nAtheism is a lack of belief in any gods.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "34": {
+        "question": "Which country faces a serious trade disadvantage due to its location?",
+        "choices": [
+            "Singapore",
+            "Italy",
+            "Spain",
+            "Mongolia"
+        ],
+        "initial_response": "The country that faces the most serious trade disadvantage due to its location is probably Bolivia. Bolivia is landlocked, which means that it does not have any direct access to the sea. This makes it difficult for Bolivia to trade with other countries, since it must go through other countries in order to get its goods to the sea.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "35": {
+        "question": "In which zone of Burgess's concentric zone model would one find better houses, single-family homes, and higher-rent apartments?",
+        "choices": [
+            "First",
+            "Second",
+            "Third",
+            "Fourth"
+        ],
+        "initial_response": "The innermost zone of Burgess's concentric zone model would contain better houses, single-family homes, and higher-rent apartments.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "36": {
+        "question": "The theory that every society develops economically according to a five-stage pattern of growth is attributed to",
+        "choices": [
+            "Rostow.",
+            "Ravenstein.",
+            "von Th\u00fcnen.",
+            "Burgess."
+        ],
+        "initial_response": "W.W. Rostow.\n\nThe five stages of Rostow's theory are:\n\n1. Traditional society\n2. Pre-conditions for take-off\n3. Take-off\n4. Drive to maturity\n5. Age of high mass consumption",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "37": {
+        "question": "The process of invasion and succession is a process involving migration and is best described as when",
+        "choices": [
+            "new residents tear down and rebuild housing units.",
+            "new residents live peacefully with old residents.",
+            "new residents assimilate with old residents completely.",
+            "new residents move into areas occupied by older resident groups."
+        ],
+        "initial_response": "a species moves into a new area and begins to displace the species that were already there. The new species may be better adapted to the new environment or may simply outcompete the other species for resources. The process of succession can be gradual, as in the case of a species slowly adapting to a new environment, or it can be sudden, as in the case of a species that is introduced to an environment and quickly displaces the other species.\n\nThe process of succession is an important concept in ecology, as it helps to explain how ecosystems change over time. Succession can be used to restore an ecosystem that has been damaged, such as after a fire. It can also be used to create new ecosystems, such as when a new species is introduced to an area.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "38": {
+        "question": "New stores opening around a large shopping mall reflect which concept?",
+        "choices": [
+            "Gravity concept",
+            "Distance decay",
+            "Complementarity",
+            "Movement bias"
+        ],
+        "initial_response": "The stores opening around a large shopping mall reflect the concept of a shopping center.",
+        "llm_answer": "B",
+        "llm_is_correct": false
+    },
+    "39": {
+        "question": "The birth of an urban industrial workforce in Europe contributed to the start of the",
+        "choices": [
+            "First Agricultural Revolution.",
+            "Second Agricultural Revolution.",
+            "Third Agricultural Revolution.",
+            "Fourth Agricultural Revolution."
+        ],
+        "initial_response": "Industrial Revolution.\n\nThe rise of the urban industrial workforce in Europe was a major factor in the start of the Industrial Revolution. The availability of cheap labor in the cities allowed for the development of new manufacturing techniques and the growth of industry. The industrialization of Europe led to a dramatic increase in the standard of living for the average person, as well as a significant increase in the size and power of the European economy.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "40": {
+        "question": "The concentration of production activities and people spatially to benefit everyone is called",
+        "choices": [
+            "the substitution principle.",
+            "deglomeration.",
+            "agglomeration.",
+            "infrastructure."
+        ],
+        "initial_response": "agglomeration.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "41": {
+        "question": "Which language family contains Italian, Spanish, Portuguese, and Romanian?",
+        "choices": [
+            "European",
+            "Slavic",
+            "Germanic",
+            "Romance"
+        ],
+        "initial_response": "The Romance language family contains Italian, Spanish, Portuguese, and Romanian.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "42": {
+        "question": "Ankara, Turkey and Islamabad, Pakistan are both examples of",
+        "choices": [
+            "desert cities.",
+            "forward-thrust capitals.",
+            "old colonial capitals.",
+            "rival cities."
+        ],
+        "initial_response": "capital cities.",
+        "llm_answer": "C",
+        "llm_is_correct": false
+    },
+    "43": {
+        "question": "The theory that whoever controlled the landmass of Europe would rule the world is called the",
+        "choices": [
+            "devolution theory.",
+            "domino theory.",
+            "heartland theory.",
+            "rimland theory."
+        ],
+        "initial_response": "Heartland Theory.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "44": {
+        "question": "Which group represents the Persian (Iranian) variation of Islam and believes in the infallibility and divine right to authority of the Imams descended from Ali?",
+        "choices": [
+            "Sunni",
+            "Shiite",
+            "Imam",
+            "Untouchables"
+        ],
+        "initial_response": "The group that represents the Persian (Iranian) variation of Islam and believes in the infallibility and divine right to authority of the Imams descended from Ali is the Shia.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "45": {
+        "question": "The multiplier effect is",
+        "choices": [
+            "the addition of non-basic workers to an urban economy that has added more basic workers.",
+            "a ratio of urban to rural workers in an economy.",
+            "the ratio of city workers to farm workers in an economy.",
+            "the addition of rural jobs created by the urban economy."
+        ],
+        "initial_response": "the expansion of a country's money supply that results from the country's commercial banks making loans. When a commercial bank makes a loan, it creates new money by crediting the borrower's checking account. This new money enters the economy and expands the money supply. The money supply is the total amount of money in circulation in an economy.\n\nThe multiplier effect is the expansion of a country's money supply that results from the country's commercial banks making loans. When a commercial bank makes a loan, it creates new money by crediting the borrower's checking account. This new money enters the economy and expands the money supply. The money supply is the total amount of money in circulation in an economy.\n\nThe multiplier effect occurs because the new money created by the loan is not held by the borrower; it is deposited in another bank. This bank can then lend out the money, creating even more new money. The process continues until the new money has been deposited in banks many times over and the money supply has been greatly expanded.\n\nThe multiplier effect is an important tool for central banks to use in order to expand the money supply and stimulate economic growth.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "46": {
+        "question": "The sacred book of the Hindu is called the",
+        "choices": [
+            "Talmud.",
+            "Bible.",
+            "Torah.",
+            "Veda."
+        ],
+        "initial_response": "Vedas.\n\nThe Vedas are a collection of sacred texts that are the foundation of Hinduism. They include the four Vedas: the Rigveda, the Yajurveda, the Samaveda, and the Atharvaveda. The Vedas are considered to be the oldest sacred texts in the world.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "47": {
+        "question": "You are planning to move from your hometown to Pittsburgh. Along the way, you stop in Columbus, Ohio to visit a relative and fall in love with the city! You decide to stay and make Columbus your new home. This is an example of",
+        "choices": [
+            "intervening opportunity.",
+            "distance decay.",
+            "involuntary migration.",
+            "push-pull factors."
+        ],
+        "initial_response": "an \n\nunplanned event.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "48": {
+        "question": "A large node of office and commercial land use outside the central city with more jobs than residents is a(n)",
+        "choices": [
+            "suburb.",
+            "primate city.",
+            "town.",
+            "edge city."
+        ],
+        "initial_response": "edge city",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "49": {
+        "question": "Which crop began the Third Agricultural Revolution?",
+        "choices": [
+            "Rice",
+            "Wheat",
+            "Barley",
+            "Millet"
+        ],
+        "initial_response": "The Third Agricultural Revolution began with the introduction of synthetic nitrogen fertilizer.",
+        "llm_answer": "D",
+        "llm_is_correct": false
+    },
+    "50": {
+        "question": "Which factor in the last quarter century greatly destabilized Eastern Europe and led to ethnic conflict?",
+        "choices": [
+            "The introduction of new languages",
+            "The end of the Cold War",
+            "The invasion by the Soviets",
+            "The acceptance of many Eastern European countries into the EU"
+        ],
+        "initial_response": "The fall of the Soviet Union",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "51": {
+        "question": "If I wanted to ship a small piece of very valuable jewelry to my aunt who lives in Poughkeepsie, which mode of transportation makes the most sense?",
+        "choices": [
+            "Truck",
+            "Air",
+            "Ship",
+            "Railroad"
+        ],
+        "initial_response": "The most secure mode of transportation for a small piece of very valuable jewelry would be to ship it via a courier service.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "52": {
+        "question": "Which type of city model contains a distinct residential spine proceeding outward from center city along the main boulevard?",
+        "choices": [
+            "European",
+            "Muslim",
+            "Sub-Saharan African",
+            "Latin American"
+        ],
+        "initial_response": "The concentric zone model contains a distinct residential spine proceeding outward from center city along the main boulevard.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "53": {
+        "question": "What family do most European languages belong to?",
+        "choices": [
+            "Ural-Altaic",
+            "Basque",
+            "Indo-European",
+            "Phoenician"
+        ],
+        "initial_response": "Most European languages belong to the Indo-European family.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "54": {
+        "question": "What do the terms apartheid, ethnic cleansing, and integration all have in common?",
+        "choices": [
+            "They all occurred in Nazi Germany during World War I.",
+            "They are all forms of residential segregation.",
+            "They are all ways to integrate different ethnic populations in neighborhoods.",
+            "They are different expressions for the same concept."
+        ],
+        "initial_response": "All three terms refer to ways in which different groups of people are treated by society.",
+        "llm_answer": "D",
+        "llm_is_correct": false
+    },
+    "55": {
+        "question": "Johnny and Susie are moving to Scotland to renovate and live in the family castle. What makes their move a migration?",
+        "choices": [
+            "They are crossing another country's borders.",
+            "They are not taking anything with them.",
+            "They are moving permanently.",
+            "They will be gone more than one year."
+        ],
+        "initial_response": "The move to Scotland is a migration because it involves a permanent move to a new location.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "56": {
+        "question": "What is the most abundant fossil fuel?",
+        "choices": [
+            "Phosphate",
+            "Oil",
+            "Petroleum",
+            "Coal"
+        ],
+        "initial_response": "The most abundant fossil fuel is coal.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "57": {
+        "question": "A rejection of or indifference to religion in a country is called",
+        "choices": [
+            "polytheism.",
+            "animism.",
+            "secularism.",
+            "monotheism."
+        ],
+        "initial_response": "secularism.\n\nIn the United States, the First Amendment to the Constitution protects the right to freedom of religion, and the Supreme Court has interpreted this to mean that the government cannot favor one religion over another or promote religion in general. This separation of church and state is often called secularism.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "58": {
+        "question": "A city that is more than twice as large as the next largest city in a country is called a",
+        "choices": [
+            "global city.",
+            "world leader city.",
+            "megalopolis.",
+            "primate city."
+        ],
+        "initial_response": "(n)\n\nmegacity.",
+        "llm_answer": "C",
+        "llm_is_correct": false
+    },
+    "59": {
+        "question": "Part of the boundary between the United States and Mexico is the Rio Grande, an example of",
+        "choices": [
+            "a water divider.",
+            "a watercourse.",
+            "an artificial boundary.",
+            "a natural boundary."
+        ],
+        "initial_response": "a river that forms a political boundary.\n\nThe Rio Grande is a river that forms a political boundary between the United States and Mexico.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "60": {
+        "question": "When we talk about diffusion of a cultural trait, what do we mean by \"hearth\"?",
+        "choices": [
+            "Destination",
+            "Origin point",
+            "All locations along the diffusion path",
+            "Axis point"
+        ],
+        "initial_response": "A hearth is a place where a fire is lit. In the context of cultural diffusion, a hearth is a place where a new cultural trait originates.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "61": {
+        "question": "The distance north and south of the equator is the",
+        "choices": [
+            "global grid system.",
+            "Prime Meridian",
+            "latitude.",
+            "longitude."
+        ],
+        "initial_response": "same, about 6,700 miles. The distance east and west of the equator is about 10,000 miles.",
+        "llm_answer": "D",
+        "llm_is_correct": false
+    },
+    "62": {
+        "question": "Why are perceptual or vernacular regions so difficult to identify?",
+        "choices": [
+            "Boundaries are constantly being redrawn.",
+            "Physical features, such as rivers, are constantly shifting.",
+            "Defining criteria are subjective and differ among researchers.",
+            "Antecedent boundaries were drawn before humans were located in the regions."
+        ],
+        "initial_response": "There are a few reasons why perceptual or vernacular regions are difficult to identify. First, people's perceptions of regions are often based on subjective factors, such as their personal experiences and biases. Second, vernacular regions are often not well-defined, making it difficult to identify their boundaries. Finally, vernacular regions often overlap with other regions, making it difficult to determine where one region ends and another begins.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "63": {
+        "question": "Which structure(s) traditionally occupies the center of a historic Asian city?",
+        "choices": [
+            "A central market",
+            "High-density housing",
+            "A religious building",
+            "Government office buildings"
+        ],
+        "initial_response": "The center of a historic Asian city is traditionally occupied by a palace, a temple, or both.",
+        "llm_answer": "B",
+        "llm_is_correct": false
+    },
+    "64": {
+        "question": "Which description best describes the urban hierarchy model in which the population of a city is inversely proportional to its rank in the hierarchy?",
+        "choices": [
+            "Multiplier effect",
+            "Rank-size rule",
+            "Central place theory",
+            "Burgess's sector model"
+        ],
+        "initial_response": "The urban hierarchy model in which the population of a city is inversely proportional to its rank in the hierarchy is known as the \"primate city\" model.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "65": {
+        "question": "The purpose for the creation of NATO was to",
+        "choices": [
+            "defend North America and Western Europe against the threat of communism.",
+            "form an economic alliance for trade between Europe and North America.",
+            "defend Europe against a second Nazi invasion.",
+            "defend northern Europe against Chinese missiles."
+        ],
+        "initial_response": "protect the countries of Western Europe from the Soviet Union.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "66": {
+        "question": "The use and spread of English in nineteenth-century India is an example of what type of diffusion?",
+        "choices": [
+            "Stimulus",
+            "Contagious",
+            "Hierarchal",
+            "Relocation"
+        ],
+        "initial_response": "The use and spread of English in nineteenth-century India is an example of linguistic diffusion.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "67": {
+        "question": "The theory that most migration occurs over a short distance and in steps is attributed to",
+        "choices": [
+            "Rostow.",
+            "Ravenstein.",
+            "von Th\u00fcnen.",
+            "Burgess."
+        ],
+        "initial_response": "A. Darwin.\n\nB. Wallace.\n\nC. Huxley.\n\nD. Mayr.\n\nE. Simpson.\n\nThe theory that most migration occurs over a short distance and in steps is attributed to\n\nD. Mayr.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "68": {
+        "question": "The way of life based on breeding and herding of animals that are used as a source of food, shelter, and clothing is called",
+        "choices": [
+            "swidden.",
+            "subsistence farming.",
+            "pastorialism.",
+            "hunting and gathering."
+        ],
+        "initial_response": "pastoralism.\n\nPastoralism is a way of life based on breeding and herding of animals that are used as a source of food, shelter, and clothing.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "69": {
+        "question": "The attempt by core countries to stimulate increased agricultural production in the periphery through use of technology, hybrid seed, and fertilizers is called the",
+        "choices": [
+            "First Agricultural Revolution.",
+            "Second Agricultural Revolution.",
+            "Third Agricultural Revolution.",
+            "Green Revolution."
+        ],
+        "initial_response": "Green Revolution.\n\nThe Green Revolution was an attempt by core countries to stimulate increased agricultural production in the periphery through use of technology, hybrid seed, and fertilizers.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "70": {
+        "question": "Shifting cultivation is most often practiced in",
+        "choices": [
+            "alpine tundra.",
+            "tropical forests.",
+            "flood plains.",
+            "deserts."
+        ],
+        "initial_response": "tropical and subtropical areas. It is a form of subsistence agriculture that involves clearing a piece of land by cutting down all the trees and burning all the vegetation. The land is then cultivated for a few years until the soil becomes exhausted. At this point, the farmer moves on to a new piece of land and the cycle begins again.\n\nShifting cultivation is often criticized because it is considered to be an inefficient and environmentally destructive form of agriculture. However, it is still practiced by many people in developing countries who have no other choice.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "71": {
+        "question": "Olives, grapes, and chickpeas are staple crops of which type of farming?",
+        "choices": [
+            "Pastoral nomadism",
+            "Subsistence",
+            "Plantation",
+            "Mediterranean"
+        ],
+        "initial_response": "Olive, grape, and chickpea farming is typically classified as Mediterranean farming.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "72": {
+        "question": "A person who practices the Hindu religion would be most likely to",
+        "choices": [
+            "visit a shrine built on the shore of a lake.",
+            "pray five times a day.",
+            "bathe in the Ganges River.",
+            "make a pilgrimage to Jerusalem."
+        ],
+        "initial_response": "believe in reincarnation.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "73": {
+        "question": "The language with the largest number of \"speakers\" is",
+        "choices": [
+            "English.",
+            "Russian.",
+            "Spanish.",
+            "Mandarin Chinese."
+        ],
+        "initial_response": "English, with 1.13 billion speakers.\n\nThe language with the second largest number of \"speakers\" is Mandarin Chinese, with 1.1 billion speakers.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "74": {
+        "question": "A primate city is",
+        "choices": [
+            "a large city located on the periphery of the country.",
+            "the most important city in a country.",
+            "when the largest city in a country is more than twice the size of the next largest city.",
+            "the largest city in a country."
+        ],
+        "initial_response": "a city that has a much higher population density than the surrounding areas, and contains more than double the national average population.\n\nThe term primate city was first coined by geographer Mark Jefferson in 1961, who used it to describe the phenomenon of a city's disproportionate size and influence within a country. The term has since been used more broadly to describe any city that is significantly larger than the surrounding area, regardless of population density.\n\nThere are a number of reasons why a city might become a primate city. A city may be the capital of a country, or it may be a major hub for trade or transportation. Additionally, a city may simply have a much higher population density than the surrounding area due to a variety of factors, such as a strong economy or a desirable location.\n\nNot all cities that are significantly larger than the surrounding area are considered primate cities. For a city to be considered a primate city, it must also have more than double the national average population. Additionally, the term is typically only used to describe cities within a single country.\n\nThere are a number of disadvantages that can come with being a primate city. A city's disproportionate size can lead to a number of problems, such as overcrowding, crime, and pollution. Additionally, a primate city can be difficult to govern effectively due to its large size and complex social structure.",
+        "llm_answer": "D",
+        "llm_is_correct": false
+    },
+    "75": {
+        "question": "Which language family is most widely spoken in North America and Europe and includes Baltic, Celtic, Germanic, and Greek?",
+        "choices": [
+            "Dravidian",
+            "Uralic-Altaic",
+            "Sino-Tibetan",
+            "Indo-European"
+        ],
+        "initial_response": "The Indo-European language family is most widely spoken in North America and Europe and includes Baltic, Celtic, Germanic, and Greek.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "76": {
+        "question": "Which theorist(s) tried to explain the prices of farm products as they relate to patterns of land use?",
+        "choices": [
+            "Rostow",
+            "Ravenstein",
+            "Von Th\u00fcnen",
+            "Burgess"
+        ],
+        "initial_response": "The Ricardian model was one of the first theories to try and explain the prices of farm products in relation to patterns of land use.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "77": {
+        "question": "If you wanted to find the global distribution of coal, you would use a",
+        "choices": [
+            "reference map.",
+            "topographic map.",
+            "thematic map.",
+            "location map."
+        ],
+        "initial_response": "map.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "78": {
+        "question": "The cities of Varanasi (Benares) in India and Mecca in Saudi Arabia are alike because both are",
+        "choices": [
+            "capitals of countries formerly colonized by the English",
+            "destinations for vast numbers of pilgrims",
+            "financial centers for a large fraction of the world's economy",
+            "examples of modern urban planning"
+        ],
+        "initial_response": "considered holy cities by the religions that originated there. Both cities are also pilgrimage sites for millions of people each year.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "79": {
+        "question": "China and Vietnam's dispute over the Spratley Islands is",
+        "choices": [
+            "a positional dispute.",
+            "a territorial dispute.",
+            "a resource dispute.",
+            "a functional dispute."
+        ],
+        "initial_response": "a territorial dispute over the sovereignty of the Spratley Islands in the South China Sea. The Spratley Islands are a group of more than 750 reefs, islets, cays, and atolls in the South China Sea. China, Taiwan, Vietnam, the Philippines, and Malaysia all claim sovereignty over the Spratley Islands.\n\nThe dispute began in the 1970s, when China and Vietnam both began to assert their sovereignty over the Spratley Islands. China has since built military facilities on some of the islands, and in 2014, China and Vietnam engaged in a brief military confrontation over one of the islands. The dispute has escalated in recent years, as all of the countries involved have continued to assert their sovereignty over the Spratley Islands.",
+        "llm_answer": "B",
+        "llm_is_correct": false
+    },
+    "80": {
+        "question": "Mary lives in a neighborhood with stores, offices, and restaurants so close that she does not need to own a car; however, she feels she has very little privacy. This is an example of a(n)",
+        "choices": [
+            "win-win.",
+            "trade-off.",
+            "infill.",
+            "leapfrog development."
+        ],
+        "initial_response": "__________.\n\nlifestyle",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "81": {
+        "question": "The Basques, Bretons, Kashmiris, and Tamils are all examples of",
+        "choices": [
+            "regionalist groups.",
+            "separatist groups.",
+            "terrorist groups.",
+            "interventionist groups."
+        ],
+        "initial_response": "ethnic groups that have fought for independence.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "82": {
+        "question": "The intensive agricultural practice of planting and harvesting the same crop more than once a year is called",
+        "choices": [
+            "swidden.",
+            "double cropping.",
+            "pastorialism.",
+            "intertillage."
+        ],
+        "initial_response": "double cropping.\n\nDouble cropping is a type of intensive agricultural practice in which a farmer plants and harvests the same crop more than once a year. This type of farming can be used to increase crop yields and improve the overall productivity of a farm. Double cropping can be done by planting two different crops in the same field during different seasons, or by planting the same crop in the same field twice during the same growing season.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "83": {
+        "question": "When a new fashion design is introduced globally, the information initially travels through a process known as",
+        "choices": [
+            "contagious diffusion",
+            "relocation diffusion",
+            "innovative diffusion",
+            "hierarchical diffusion"
+        ],
+        "initial_response": "the fashion pipeline.\n\nThe fashion pipeline is the process by which new fashion designs are introduced to the market. This process begins with designers creating new looks, which are then sent to manufacturers who produce the garments. The garments are then shipped to retailers, who sell them to consumers.\n\nThe fashion pipeline is a complex process that involves many different players, all of whom play a role in bringing new fashion designs to the market. The pipeline begins with designers, who create new looks. These looks are then sent to manufacturers, who produce the garments. The garments are then shipped to retailers, who sell them to consumers.\n\nThe fashion pipeline is a complex process, but it is an essential part of the fashion industry. Without the pipeline, new fashion designs would never make it to the market.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "84": {
+        "question": "Opponents of genetically modified organisms (GMOs) in food are afraid that the GMOs",
+        "choices": [
+            "will hinder global trade.",
+            "make plants more resistant to disease.",
+            "may cause irreversible changes in humans.",
+            "make plants more resistant to drought."
+        ],
+        "initial_response": "will cause health problems. They are also concerned that the GMOs will harm the environment.\n\nThere is no evidence that GMOs are harmful to human health. However, some people are concerned that GMOs may cause allergies or other health problems. There is also concern that GMOs may harm the environment.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "85": {
+        "question": "The world systems theory divides the world into",
+        "choices": [
+            "core, periphery, and semi-periphery.",
+            "rich and poor.",
+            "developed and undeveloped.",
+            "haves and have-nots."
+        ],
+        "initial_response": "three parts:\n\nThe core, the periphery, and the semi-periphery.\n\nThe core is the part of the world that is the most developed and powerful. The periphery is the part of the world that is less developed and less powerful. The semi-periphery is in between the two.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "86": {
+        "question": "The majority of Kurds are found in which country?",
+        "choices": [
+            "Iran",
+            "Iraq",
+            "Turkey",
+            "Egypt"
+        ],
+        "initial_response": "Turkey",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "87": {
+        "question": "In what country are the most Basque speakers found?",
+        "choices": [
+            "Denmark",
+            "Finland",
+            "Luxembourg",
+            "Spain"
+        ],
+        "initial_response": "The most Basque speakers are found in Spain.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "88": {
+        "question": "The most rapidly urbanizing area of the world is:",
+        "choices": [
+            "Europe",
+            "East Asia",
+            "Sub-Saharan Africa",
+            "South Asia"
+        ],
+        "initial_response": "The most rapidly urbanizing area of the world is Africa.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "89": {
+        "question": "The influence of neo-Malthusianism can be seen in",
+        "choices": [
+            "government programs for birth control and planning.",
+            "famine relief.",
+            "increased spending in social welfare programs.",
+            "increased total fertility rates."
+        ],
+        "initial_response": "the writings of many 19th-century social critics, including Henry David Thoreau, John Stuart Mill, and Karl Marx.\n\nIn the 20th century, the ideas of Malthus were developed and popularized by a number of thinkers, including the British economist John Maynard Keynes, the American biologist Garrett Hardin, and the Indian economist Amartya Sen.\n\nToday, Malthusian ideas continue to be influential in a number of fields, including economics, sociology, anthropology, and ecology.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "90": {
+        "question": "The process of devolution involves",
+        "choices": [
+            "the change of government from a democracy to a communist dictatorship.",
+            "the movement of power from the central government to regional governments in the country.",
+            "the movement of power from a monarchy to a military dictatorship.",
+            "the movement of power from regional governments to central governments."
+        ],
+        "initial_response": "the transfer of power from a central government to a regional or local government.\n\nThe United Kingdom is an example of a country that has undergone devolution. In the UK, devolution has transferred power from the central government in Westminster to the Scottish Parliament, the Welsh Assembly, and the Northern Ireland Assembly.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "91": {
+        "question": "The theory that cities grow outward from a core utilizing several nodes of growth was proposed by",
+        "choices": [
+            "Rostow.",
+            "Ravenstein.",
+            "von Th\u00fcnen.",
+            "Harris and Ullmann."
+        ],
+        "initial_response": "Christaller",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "92": {
+        "question": "The theory that the main purpose of a settlement or market town is to furnish goods and services to the surrounding market area is called the",
+        "choices": [
+            "urban hierarchy theory.",
+            "central place theory.",
+            "concentric zone model.",
+            "multiplier effect."
+        ],
+        "initial_response": "market town theory.\n\nThe market town theory is based on the idea that people living in rural areas need a place to buy goods and services, and that market towns are the best places to provide these services. Market towns are typically located near the center of a rural area, and they usually have a wide variety of businesses, including grocery stores, restaurants, and other retail establishments. This theory suggests that market towns play an important role in the economy of rural areas by providing a place for people to buy goods and services.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "93": {
+        "question": "The \"melting pot\" theory of combining several immigrant groups into one mainstream culture is called",
+        "choices": [
+            "amalgamation theory.",
+            "acculturation.",
+            "ethnic islands.",
+            "ethnic clustering."
+        ],
+        "initial_response": "assimilation.\n\nThe \"melting pot\" theory of combining several immigrant groups into one mainstream culture is called assimilation.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "94": {
+        "question": "Which theory below was used as justification for US involvement in Vietnam in the 1960s and 1970s?",
+        "choices": [
+            "Devolution",
+            "Colonialism",
+            "Heartland theory",
+            "Containment theory"
+        ],
+        "initial_response": "The theory of containment was used as justification for US involvement in Vietnam in the 1960s and 1970s.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "95": {
+        "question": "An isobar map shows lines connecting all points of equal",
+        "choices": [
+            "atmospheric pressure",
+            "surface temperature",
+            "elevation",
+            "precipitation"
+        ],
+        "initial_response": "pressure.\n\nThe lines on an isobar map are called isobars.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "96": {
+        "question": "Ralph purchases garden fertilizer at the nearby garden shop rather than drive 50 miles to the neighboring town for the same product. This reflects which type of spatial interaction?",
+        "choices": [
+            "Transferability",
+            "Complementarity",
+            "Intervening opportunity",
+            "Territoriality"
+        ],
+        "initial_response": "Ralph's purchase of garden fertilizer at the nearby garden shop reflects a type of spatial interaction known as proximity or contiguity.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "97": {
+        "question": "What type of countries generally possesses a greater variety of climates and resources than other countries?",
+        "choices": [
+            "Perforated states",
+            "Fragmented states",
+            "Elongated states",
+            "Prorupt states"
+        ],
+        "initial_response": "Countries located on or near a continent generally possess a greater variety of climates and resources than other countries.",
+        "llm_answer": "A",
+        "llm_is_correct": false
+    },
+    "98": {
+        "question": "The idea that you identify with, and give allegiance, to a nation-state is",
+        "choices": [
+            "regionalism.",
+            "diffusion.",
+            "iconography.",
+            "nationalism."
+        ],
+        "initial_response": "a relatively recent phenomenon.\n\nThe idea that you identify with, and give allegiance, to a nation-state is a relatively recent phenomenon. The concept of the nation-state is a relatively recent phenomenon. The idea that you identify with, and give allegiance, to a nation-state is a product of the nation-state.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "99": {
+        "question": "What condition occurs when the people of one state want to annex a territory whose population is ethnically related to that state's population but now under the rule of another state?",
+        "choices": [
+            "Nationalism",
+            "Resource dispute",
+            "Irredentism",
+            "Positional dispute"
+        ],
+        "initial_response": "The condition is called irredentism.",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "100": {
+        "question": "Variations in vocabulary, pronunciation, and rhythm in a spoken language are called",
+        "choices": [
+            "syntax.",
+            "isoglosses.",
+            "lingua francas.",
+            "dialects."
+        ],
+        "initial_response": "dialects.\n\nThere are many different dialects of English, as well as other languages. For example, there are dialects of Spanish, French, and German. Each dialect has its own unique features.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "101": {
+        "question": "Boundary problems along the United States\u2013Mexico border are caused by which type of issue below?",
+        "choices": [
+            "Ownership of fertile ground",
+            "Land use",
+            "Irredentism",
+            "Immigration"
+        ],
+        "initial_response": "The boundary problems along the United States\u2013Mexico border are caused by the fact that the border is not well defined in some areas.",
+        "llm_answer": "B",
+        "llm_is_correct": false
+    },
+    "102": {
+        "question": "In which country does language pose a centrifugal force?",
+        "choices": [
+            "Canada",
+            "United States",
+            "Brazil",
+            "Norway"
+        ],
+        "initial_response": "There is no definitive answer to this question as it depends on the individual and their experiences. However, some possible examples of countries where language may pose a centrifugal force include Canada, Belgium, and Switzerland.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "103": {
+        "question": "A chief factor that contributed to the Second Agricultural Revolution was",
+        "choices": [
+            "the Industrial Revolution.",
+            "World War I.",
+            "World War II.",
+            "the discovery of the plow."
+        ],
+        "initial_response": "the development of new technologies.\n\nNew technologies that were developed during the Second Agricultural Revolution included mechanized equipment, synthetic fertilizers, and pesticides. These technologies allowed farmers to produce more food with less labor, which helped to feed the growing population.",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "104": {
+        "question": "Zero population growth (ZPG) is achieved when",
+        "choices": [
+            "CBR \u2013 CDR 5 2.",
+            "Births 1 immigration 5 deaths 1 emigration.",
+            "Total fertility 5 3.",
+            "Replacement fertility is achieved."
+        ],
+        "initial_response": "the birth rate equals the death rate, resulting in a stable population.\n\nThe world's population is growing at an unsustainable rate. To achieve ZPG, the world's population must be reduced to a sustainable level.",
+        "llm_answer": "D",
+        "llm_is_correct": false
+    },
+    "105": {
+        "question": "A map that presents a single class of statistics is called a",
+        "choices": [
+            "general purpose map.",
+            "thematic map.",
+            "reference map.",
+            "mental map."
+        ],
+        "initial_response": "univariate map.\n\nA map that presents two or more classes of statistics is called a multivariate map.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "106": {
+        "question": "Which continent has the highest total fertility rates?",
+        "choices": [
+            "Africa",
+            "Asia",
+            "South America",
+            "Europe"
+        ],
+        "initial_response": "Africa",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "107": {
+        "question": "What monotheistic religion is based on the life and teachings of Jesus Christ of Nazareth?",
+        "choices": [
+            "Islam",
+            "Christianity",
+            "Hinduism",
+            "Buddhism"
+        ],
+        "initial_response": "Christianity",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "108": {
+        "question": "The global lingua franca is",
+        "choices": [
+            "Chinese.",
+            "English.",
+            "French.",
+            "Arabic."
+        ],
+        "initial_response": "English\n\nThere is no one global lingua franca. While English is the most widely spoken language in the world, it is not the native language of most people. Other languages, such as Spanish, French, Mandarin, and Hindi also have a large number of speakers.",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "109": {
+        "question": "What are the two major branches of Islam?",
+        "choices": [
+            "Sunni and Shinto",
+            "Shinto and Shiite",
+            "Sunni and Shiite",
+            "Shamanism and Shiite"
+        ],
+        "initial_response": "Sunni and Shia",
+        "llm_answer": "C",
+        "llm_is_correct": true
+    },
+    "110": {
+        "question": "What was the primary reason the Green Revolution did NOT help Africa much?",
+        "choices": [
+            "It targeted crops Africans don't grow and eat.",
+            "It required sophisticated machinery.",
+            "Population growth has fallen so drastically that Africans don't need the increased food production.",
+            "African agricultural production went up without its help."
+        ],
+        "initial_response": "The Green Revolution did not help Africa much because it was not well suited to the African environment and it did not address the needs of the poorest African farmers.",
+        "llm_answer": "C",
+        "llm_is_correct": false
+    },
+    "111": {
+        "question": "The largest exporter of agricultural goods in the world is",
+        "choices": [
+            "China.",
+            "Mexico.",
+            "Chile.",
+            "the United States."
+        ],
+        "initial_response": "the United States.\n\nThe United States is the world's largest exporter of agricultural products, accounting for approximately 15 percent of global agricultural trade. The United States exports more than $140 billion in agricultural products each year, and is a major supplier of grains, livestock, dairy products, fruits and vegetables, and processed foods. The United States is also a leading exporter of organic and genetically-modified (GMO) foods.",
+        "llm_answer": "D",
+        "llm_is_correct": true
+    },
+    "112": {
+        "question": "Which pair of religions below share a long-held tradition of cremating their dead?",
+        "choices": [
+            "Hindu and Buddhist",
+            "Hindu and Muslim",
+            "Muslim and Jewish",
+            "Christian and Buddhist"
+        ],
+        "initial_response": "Hinduism and Buddhism",
+        "llm_answer": "A",
+        "llm_is_correct": true
+    },
+    "113": {
+        "question": "The official languages of Guyana, Suriname, and French Guiana are English, Dutch, and French, respectively. On what continent are those countries located?",
+        "choices": [
+            "North America",
+            "South America",
+            "Africa",
+            "Asia"
+        ],
+        "initial_response": "South America",
+        "llm_answer": "B",
+        "llm_is_correct": true
+    },
+    "finish_time": "2023-10-13 14:32:25.792747",
+    "EM": 0.7017543859649122,
+    "model": "davinci"
+}
