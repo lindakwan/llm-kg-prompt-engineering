@@ -119,7 +119,7 @@ for i, item in enumerate(data):  # 41:42
             named_triples_keys = list(named_triples.keys())  # Initialise the list of relevant facts to all the facts
 
             round_num = 1
-            batch_size = 60
+            batch_size = 50
             relevant_facts = []
             # Do batch splitting
             for j in range(0, len(named_triples_keys), batch_size):
@@ -128,28 +128,6 @@ for i, item in enumerate(data):  # 41:42
                                                                   k=num_relevant_facts)
                 print(f"Round {round_num}: {len(relevant_facts)} facts extracted")
                 round_num += 1
-
-            # while len(relevant_facts) > num_relevant_facts:
-            #     new_relevant_facts = []
-            #     # Do batch splitting
-            #     for j in range(0, len(relevant_facts), batch_size):
-            #         sublist = list(relevant_facts)[j:j+batch_size]
-            #
-            #         # Count the number of words in the sublist
-            #         num_words = nlp_tasks.count_number_of_tokens(" ".join([f"{fact[0]} {fact[1]} {fact[2]}"
-            #                                                                for fact in sublist]))
-            #         print("Number of words:", num_words)
-            #
-            #         # If the number of words is greater than 4000, split the sublist in half
-            #         num_sublists = 1 + num_words // 600
-            #         for k in range(num_sublists):
-            #             smallSublist = list(relevant_facts)[j+(batch_size//num_sublists)*k:
-            #                                            j+(batch_size//num_sublists)*(k+1)]
-            #             cand_facts = llm_tasks.extract_relevant_facts(question, smallSublist, k=num_relevant_facts//num_sublists)
-            #             print(f"Round {round_num}: {len(cand_facts)} facts extracted")
-            #             new_relevant_facts.extend(cand_facts)
-            #         round_num += 1
-            #     relevant_facts = new_relevant_facts
 
             print("Relevant facts:", relevant_facts)
 
@@ -199,7 +177,7 @@ for i, item in enumerate(data):  # 41:42
                 expanded_named_triples_keys = list(expanded_named_triples.keys())
 
                 round_num = 1
-                batch_size = 60
+                batch_size = 50
                 expanded_rel_facts = []
                 # Do batch splitting
                 for j in range(0, len(expanded_named_triples_keys), batch_size):
@@ -209,29 +187,6 @@ for i, item in enumerate(data):  # 41:42
                     print(f"Round {round_num}: {len(expanded_rel_facts)} facts extracted")
                     round_num += 1
 
-                # while len(expanded_rel_facts) > num_relevant_facts:
-                #     new_relevant_facts = []
-                #     # Do batch splitting
-                #     for j in range(0, len(expanded_rel_facts), batch_size):
-                #         sublist = list(expanded_rel_facts)[j:j+batch_size]
-                #
-                #         # Count the number of words in the sublist
-                #         num_words = nlp_tasks.count_number_of_tokens(" ".join([f"{fact[0]} {fact[1]} {fact[2]}"
-                #                                                                for fact in sublist]))
-                #
-                #         print("Number of words:", num_words)
-                #
-                #         # If the number of words is greater than 4000, split the sublist in half
-                #         num_sublists = 1 + num_words // 600
-                #         for k in range(num_sublists):
-                #             sublist = list(expanded_rel_facts)[j+(batch_size//num_sublists)*k:
-                #                                                j+(batch_size//num_sublists)*(k+1)]
-                #             cand_facts = llm_tasks.extract_relevant_facts(question, sublist, k=num_relevant_facts//num_sublists)
-                #             print(f"Round {round_num}: {len(cand_facts)} facts extracted")
-                #             new_relevant_facts.extend(cand_facts)
-                #         round_num += 1
-                #     expanded_rel_facts = new_relevant_facts
-
                 print("Expanded relevant facts:", expanded_rel_facts)
 
                 qa_pairs[i]["expanded_relevant_facts"] = expanded_rel_facts
@@ -239,7 +194,8 @@ for i, item in enumerate(data):  # 41:42
                 # Convert expanded relevant facts to string representation
                 expanded_rel_facts_str = ""
                 for fact in expanded_rel_facts:
-                    expanded_rel_facts_str += f"{fact[0]} {fact[1]} {fact[2]}. "
+                    if fact not in relevant_facts:  # Remove duplicates
+                        expanded_rel_facts_str += f"{fact[0]} {fact[1]} {fact[2]}. "
 
                 qa_pairs[i]["expanded_relevant_facts_str"] = expanded_rel_facts_str
 

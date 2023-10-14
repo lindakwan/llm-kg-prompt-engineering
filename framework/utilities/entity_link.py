@@ -142,7 +142,7 @@ def fetch_uri_wikidata(item_name, context, ent_type='item', limit=3):
                 ext_descriptions.append(label)
 
         # Calculate the cosine similarities between the context and all the descriptions
-        cos_sims = emb_tasks.calculate_squared_cos_sim_multiple(context, ext_descriptions)
+        cos_sims = emb_tasks.calculate_cos_sim_multiple(context, ext_descriptions)
         print("Cosine similarities:", cos_sims)
 
         best_match = matches[cos_sims.argmax()]
@@ -188,7 +188,7 @@ def fetch_uri_or_none_wikidata(item_name, context, ent_type='item', limit=3):
                 ext_descriptions.append(label)
 
         # Calculate the cosine similarities between the context and all the descriptions
-        cos_sims = emb_tasks.calculate_squared_cos_sim_multiple(context, ext_descriptions)
+        cos_sims = emb_tasks.calculate_cos_sim_multiple(context, ext_descriptions)
         print("Cosine similarities:", cos_sims)
 
         best_match = matches[cos_sims.argmax()]
