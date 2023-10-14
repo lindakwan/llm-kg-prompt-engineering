@@ -34,7 +34,7 @@ def generate_response(question):
 
 def generate_response_weaker(question):
     """
-    Generate a response to a question using the davinci model.
+    Generate a response to a question using the babbage model.
     :param question: The question to generate a response to.
     :return: The response to the question with elaboration.
     """
@@ -46,6 +46,7 @@ def generate_response_weaker(question):
     )
 
     return response_json["choices"][0]["text"]
+
 
 def generate_response_with_elaboration(question):
     """
@@ -125,6 +126,23 @@ def generate_response_using_context(question, context_string):
     )
 
     return response_json["choices"][0]["message"]["content"]
+
+
+def generate_response_using_context_weaker(question, context_string):
+    """
+    Generate a response to the question provided the context using the babbage model.
+    :param question: The question to feed into the model.
+    :param context_string: The string containing the context.
+    :return: The response to the question.
+    """
+    response_json = openai.Completion.create(
+        engine="text-babbage-001",
+        prompt=f"Here is the context: {context_string}\nThe question is: {question}",
+        temperature=0,
+        max_tokens=1024
+    )
+
+    return response_json["choices"][0]["text"]
 
 
 def extract_entities(text):
@@ -421,6 +439,6 @@ def select_mc_response_based(question, response, choices):
         numbered_output = numbers[-1]
     letter_output = chr(ord('A') + int(numbered_output) - 1)
 
-    print("Generated answer:", letter_output)
+    # print("Generated answer:", letter_output)
 
     return letter_output
